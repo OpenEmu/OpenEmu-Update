@@ -15,7 +15,7 @@
 		    url="https://github.com/OpenEmu/Mednafen-Core/releases/download/v0.9.32/Mednafen_0.9.32.zip"
 		    sparkle:version="0.9.32"
 		    type="application/octet-stream"
-		    length="1363721"
+		    length="1363705"
 	    />
     </item>
   </channel>
