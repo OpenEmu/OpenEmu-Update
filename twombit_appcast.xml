@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>TwoMbit</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/twombit_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>TwoMbit Version 1.0.5</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/twombit/TwoMbit_1.0.5.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:40:55 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/TwoMbit-Core/releases/download/v1.0.5/TwoMbit_1.0.5.zip"
+		    sparkle:version="1.0.5"
+		    type="application/octet-stream"
+		    length="132267"
+	    />
+    </item>
+  </channel>
+</rss>

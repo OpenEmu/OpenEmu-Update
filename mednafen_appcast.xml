@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>Mednafen</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/mednafen_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>Mednafen Version 0.9.32</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/mednafen/Mednafen_0.9.32.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:40:55 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/Mednafen-Core/releases/download/v0.9.32/Mednafen_0.9.32.zip"
+		    sparkle:version="0.9.32"
+		    type="application/octet-stream"
+		    length="1363721"
+	    />
+    </item>
+  </channel>
+</rss>

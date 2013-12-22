@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>Nestopia</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/nestopia_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>Nestopia Version 1.42.1</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/nestopia/Nestopia_1.42.1.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:36:15 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/Nestopia-Core/releases/download/v1.42.1/Nestopia_1.42.1.zip"
+		    sparkle:version="1.42.1"
+		    type="application/octet-stream"
+		    length="792688"
+	    />
+    </item>
+  </channel>
+</rss>

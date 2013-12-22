@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>Picodrive</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/picodrive_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>Picodrive Version 1.91</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/picodrive/Picodrive_1.91.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:38:18 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/picodrive/releases/download/v1.91/Picodrive_1.91.zip"
+		    sparkle:version="1.91"
+		    type="application/octet-stream"
+		    length="393761"
+	    />
+    </item>
+  </channel>
+</rss>

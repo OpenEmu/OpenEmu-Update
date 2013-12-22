@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>VisualBoyAdvance</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/vba_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>VisualBoyAdvance Version 1.8.0</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/visualboyadvance/VisualBoyAdvance_1.8.0.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:30:09 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/VisualBoyAdvance-Core/releases/download/v1.8.0/VisualBoyAdvance_1.8.0.zip"
+		    sparkle:version="1.8.0"
+		    type="application/octet-stream"
+		    length="439336"
+	    />
+    </item>
+  </channel>
+</rss>

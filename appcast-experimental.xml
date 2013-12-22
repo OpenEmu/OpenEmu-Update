@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>OpenEmu</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/appcast-experimental.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>OpenEmu Version 1.0.0b7</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/coreapp/OpenEmu_1.0.0b7.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:26:40 -0500</pubDate>
+	    <enclosure
+		    url="http://github.com/downloads/openemu/openemu/OpenEmu_1.0.0b7.zip"
+		    sparkle:version="1.0.0b7"
+		    type="application/octet-stream"
+		    length="10702827"
+	    />
+    </item>
+  </channel>
+</rss>

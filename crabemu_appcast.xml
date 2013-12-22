@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>CrabEmu</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/crabemu_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>CrabEmu Version 0.2.0</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/crabemu/CrabEmu_0.2.0.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Sun, 27 Mar 2011 19:40:55 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/CrabEmu-Core/releases/download/v0.2.0/CrabEmu_0.2.0.zip"
+		    sparkle:version="0.2.0"
+		    type="application/octet-stream"
+		    length="108140"
+	    />
+    </item>
+  </channel>
+</rss>

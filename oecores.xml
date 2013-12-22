@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cores>
+  <core
+    id="org.openemu.higan"
+    name="Higan"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/higan_appcast.xml">
+
+    <description>Higan emulator</description>
+	<systems>
+		<system id="openemu.system.gb">Game Boy</system>
+		<system id="openemu.system.gba">Game Boy Advance</system>
+		<system id="openemu.system.nes">Nintendo (NES)</system>
+		<system id="openemu.system.snes">Super Nintendo (SNES)</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.crabemu"
+    name="CrabEmu"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/crabemu_appcast.xml">
+
+    <description>Sega Master System emulator</description>
+	<systems>
+		<system id="openemu.system.sms">Sega Master System</system>
+		<system id="openemu.system.gg">Game Gear</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.fceu"
+    name="FCEU"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/fceu_appcast.xml">
+
+    <description>Nintendo/Famicom emulator</description>
+	<systems>
+		<system id="openemu.system.nes">Nintendo (NES)</system>
+	</systems>
+  </core>
+	
+  <core
+    id="org.openemu.gambatte"
+    name="Gambatte"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/gambatte_appcast.xml">
+
+    <description>Game Boy Color emulator</description>
+	<systems>
+		<system id="openemu.system.gb">Game Boy</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.genesisplus"
+    name="Genesis Plus"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/genesisplus_appcast.xml">
+
+    <description>Sega Genesis emulator</description>
+	<systems>
+		<system id="openemu.system.sg">Sega Genesis/Mega Drive</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.neopop"
+    name="NeoPop"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/neopop_appcast.xml">
+
+    <description>Neo Geo Pocket emulator</description>
+	<systems>
+		<system id="openemu.system.ngp">Neo Geo Pocket</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.nestopia"
+    name="Nestopia"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/nestopia_appcast.xml">
+
+    <description>Nintendo/Famicom emulator</description>
+	<systems>
+		<system id="openemu.system.nes">Nintendo (NES)</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.snes9x"
+    name="Snes9X"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/snes9x_appcast.xml">
+
+    <description>Super Nintendo emulator</description>
+	<systems>
+		<system id="openemu.system.snes">Super Nintendo (SNES)</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.visualboyadvance"
+    name="Visual Boy Advance"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/vba_appcast.xml">
+
+    <description>Game Boy Advance emulator</description>
+	<systems>
+		<system id="openemu.system.gba">Game Boy Advance</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.desmume"
+    name="DeSmuME"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/desmume_appcast.xml">
+
+    <description>Nintendo DS emulator</description>
+	<systems>
+		<system id="openemu.system.nds">Nintendo DS</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.twombit"
+    name="TwoMbit"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/twombit_appcast.xml">
+
+    <description>Sega Master System emulator</description>
+	<systems>
+		<system id="openemu.system.sms">Sega Master System</system>
+		<system id="openemu.system.gg">Game Gear</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.mednafen"
+    name="Mednafen"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/mednafen_appcast.xml">
+
+    <description>Mednafen emulator</description>
+	<systems>
+		<system id="openemu.system.lynx">Atari Lynx</system>
+		<system id="openemu.system.pce">TurboGrafx-16/PC Engine/SuperGrafx</system>
+		<system id="openemu.system.pcecd">TurboGrafx-CD/PC Engine CD</system>
+		<system id="openemu.system.pcfx">PC-FX</system>
+		<system id="openemu.system.psx">Sony PlayStation</system>
+		<system id="openemu.system.vb">Virtual Boy</system>
+		<system id="openemu.system.ws">WonderSwan</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.picodrive"
+    name="Picodrive"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/picodrive_appcast.xml">
+
+    <description>Sega 32X emulator</description>
+	<systems>
+		<system id="openemu.system.32x">Sega 32X</system>
+	</systems>
+  </core>
+</cores>

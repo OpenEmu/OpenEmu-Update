@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>Stella</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/stella_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>Stella Version 3.4.1</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/stella/Stella_3.4.1.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/Stella-Core/releases/download/v3.4.1/Stella_3.4.1.zip"
+		    sparkle:version="3.4.1"
+		    type="application/octet-stream"
+		    length="365210"
+	    />
+    </item>
+  </channel>
+</rss>

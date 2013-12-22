@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>Mupen64Plus</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/mupen64plus_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>Mupen64Plus Version 2.0</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/mupen64plus/Mupen64Plus_2.0.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Wed, 2 Jan 2013 19:30:09 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/Mupen64Plus-Core/releases/download/v2.0/Mupen64Plus_2.0.zip"
+		    sparkle:version="2.0"
+		    type="application/octet-stream"
+		    length="1268361"
+	    />
+    </item>
+  </channel>
+</rss>

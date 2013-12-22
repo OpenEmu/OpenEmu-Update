@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>VecXGL</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/vecxgl_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>      
+    <item>
+	    <title>VecXGL Version 1.2</title>
+	    <sparkle:releaseNotesLink>
+	      http://openemu.org/category/releasenotes/vecxgl/VecXGL_1.2.html
+	    </sparkle:releaseNotesLink>
+	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <enclosure
+		    url="https://github.com/OpenEmu/VecXGL-Core/releases/download/v1.2/VecXGL_1.2.zip"
+		    sparkle:version="1.2"
+		    type="application/octet-stream"
+		    length="39105"
+	    />
+    </item>
+  </channel>
+</rss>
