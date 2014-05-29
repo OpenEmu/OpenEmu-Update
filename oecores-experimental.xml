@@ -78,6 +78,7 @@
 
     <description>Nintendo/Famicom emulator</description>
 	<systems>
+		<system id="openemu.system.fds">Famicom Disk System</system>
 		<system id="openemu.system.nes">Nintendo (NES)</system>
 	</systems>
   </core>
