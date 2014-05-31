@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>Yabause Version 0.9.13</title>
+	    <title>Yabause Version 0.9.13.1</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/yabause/Yabause_0.9.13.html
+	      http://openemu.org/category/releasenotes/yabause/Yabause_0.9.13.1.html
 	    </sparkle:releaseNotesLink>
 	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/yabause/releases/download/v0.9.13/Yabause_0.9.13.zip"
-		    sparkle:version="0.9.13"
+		    url="https://github.com/OpenEmu/yabause/releases/download/v0.9.13.1/Yabause_0.9.13.1.zip"
+		    sparkle:version="0.9.13.1"
 		    type="application/octet-stream"
-		    length="336794"
+		    length="329511"
 	    />
     </item>
   </channel>

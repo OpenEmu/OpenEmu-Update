@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>DeSmuME Version 0.9.10</title>
+	    <title>DeSmuME Version 0.9.10.1</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/desmume/DeSmuME_0.9.10.html
+	      http://openemu.org/category/releasenotes/desmume/DeSmuME_0.9.10.1.html
 	    </sparkle:releaseNotesLink>
 	    <pubDate>Sun, 27 Mar 2011 19:36:15 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/DeSmuME-Core/releases/download/v0.9.10/DeSmuME_0.9.10.zip"
-		    sparkle:version="0.9.10"
+		    url="https://github.com/OpenEmu/DeSmuME-Core/releases/download/v0.9.10.1/DeSmuME_0.9.10.1.zip"
+		    sparkle:version="0.9.10.1"
 		    type="application/octet-stream"
-		    length="1040527"
+		    length="1040557"
 	    />
     </item>
   </channel>

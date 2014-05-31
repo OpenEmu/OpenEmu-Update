@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>VisualBoyAdvance Version 1.8.0</title>
+	    <title>VisualBoyAdvance Version 1.8.0.1</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/visualboyadvance/VisualBoyAdvance_1.8.0.html
+	      http://openemu.org/category/releasenotes/visualboyadvance/VisualBoyAdvance_1.8.0.1.html
 	    </sparkle:releaseNotesLink>
 	    <pubDate>Sun, 27 Mar 2011 19:30:09 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/VisualBoyAdvance-Core/releases/download/v1.8.0/VisualBoyAdvance_1.8.0.zip"
-		    sparkle:version="1.8.0"
+		    url="https://github.com/OpenEmu/VisualBoyAdvance-Core/releases/download/v1.8.0.1/VisualBoyAdvance_1.8.0.1.zip"
+		    sparkle:version="1.8.0.1"
 		    type="application/octet-stream"
-		    length="440735"
+		    length="441977"
 	    />
     </item>
   </channel>
