@@ -24,6 +24,7 @@
 		<system id="openemu.system.sg1000">SG-1000</system>
 		<system id="openemu.system.sms">Sega Master System</system>
 		<system id="openemu.system.gg">Game Gear</system>
+		<system id="openemu.system.colecovision">ColecoVision</system>
 	</systems>
   </core>
 
