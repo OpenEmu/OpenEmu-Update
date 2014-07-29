@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>Gambatte Version 0.5.0.1</title>
+	    <title>Gambatte Version 0.5.0.2</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/gambatte/Gambatte_0.5.0.1.html
+	      http://openemu.org/category/releasenotes/gambatte/Gambatte_0.5.0.2.html
 	    </sparkle:releaseNotesLink>
 	    <pubDate>Thu, 15 Nov 2012 19:43:50 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/Gambatte-Core/releases/download/v0.5.0.1/Gambatte_0.5.0.1.zip"
-		    sparkle:version="0.5.0.1"
+		    url="https://github.com/OpenEmu/Gambatte-Core/releases/download/v0.5.0.2/Gambatte_0.5.0.2.zip"
+		    sparkle:version="0.5.0.2"
 		    type="application/octet-stream"
-		    length="238293"
+		    length="241080"
 	    />
     </item>
   </channel>
