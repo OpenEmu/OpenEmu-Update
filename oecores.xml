@@ -153,4 +153,15 @@
 		<system id="openemu.system.32x">Sega 32X</system>
 	</systems>
   </core>
+
+  <core
+    id="org.openemu.stella"
+    name="Stella"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/stella_appcast.xml">
+
+    <description>Atari 2600 emulator</description>
+	<systems>
+		<system id="openemu.system.2600">Atari 2600</system>
+	</systems>
+  </core>
 </cores>
