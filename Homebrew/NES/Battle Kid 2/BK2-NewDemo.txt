@@ -1,0 +1,33 @@
+===========================================================================
+Battle Kid 2: Mountain of Torment - Demo
+Compiled: 7/17/2012
+===========================================================================
+Greetings and thank you for downloading the Battle Kid 2 demo. The demo
+should run fine on any NES emulator. This demo is more of a reflection
+on how the final game is versus the demo that I released back in 2011, which
+was almost 11 months ago.
+
+You can play through the intro stage and the first parts of the main game.
+The demo will end when you reach the end of the first sector of the sewer
+area. You can also try out the wall grip item in the sewer area.
+
+===========================================================================
+Notes
+===========================================================================
+The password system is disabled in the demo. If you try to go to the password
+screen, a message will appear and the game will reset when you close it. It
+was just easiest to do things this way.
+
+Likewise, the save points will just write an empty blank for where passwords
+would normally go.
+
+To access the comm unit screen, pause the game and press select.
+
+Unlike the first demo, the message system on the comm unit screen works fine.
+
+The map is disabled in the main base. You don't have access to it normally in
+the final game until a little later anyway.
+
+"Grip Ignores A" is a setting for the wall grip. The default is if you are holding
+A and try to grip a wall, you can't do it. Toggle this setting if you want to be
+able to do it regardless of the A button.

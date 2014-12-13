@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<games>
+	<game
+		name      = "Power Pig"
+		system    = "openemu.system.gba"
+		developer = "genecyst games"
+		website   = "http://holyhellgba.blogspot.de/p/downloads.html"
+		file      = "http://www.otouv.org/gGames/downloads/powerpig.zip"
+		released  = "1404932321"
+		added     = "1417395600"
+		md5		 = "ba7dda66edd51fb758aa1f61af584c1f"
+		>
+		<description>You are a pig and you got to find the exit door for each level.
+Levels are full of animals that aren't properly happy to have you around and they'll try to kick your ass in any way.
+Fortunately the ghost of your granpa-pig has given you an amazing gravity gun that transform anything into light bubbles. This gravity gun require coins to work, so it's quite expensive to have one, but at least someone has filled the levels with coins... so you just need to grab them and charge your gun.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/160x120.png"></image>
+			<image type="ingame" src="http://images.apple.com/macbook-pro/design-retina/images/fluidgallery/gallery1_2256_2x.jpg"></image>
+			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-city3.png"></image>
+			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-jungle.png"></image>
+		</images>
+	</game>
+	
+	<game
+		name      = "Battle Kid: Fortress of Peril (demo)"
+		system    = "openemu.system.nes"
+		developer = "Sivak Games"
+		website   = "http://sivak.nintendoage.com/BK.html"
+		file      = "http://sivak.nintendoage.com/BK-demo.zip"
+		released  = "0"
+		added     = "1417395600"
+		md5		 = "cf75ebc501818119940a6b872e1e0511"
+		>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/160x120.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc1.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc2.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc3.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc4.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc5.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc6.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc7.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Battle Kid 2: Mountain of Torment (demo)"
+		system    = "openemu.system.nes"
+		developer = "Sivak Games"
+		website   = "http://sivak.nintendoage.com/BK2.html"
+		file      = "http://sivak.nintendoage.com/BK2-NewDemo.zip"
+      fileIndex = "1"
+		released  = "1355526000"
+		added     = "1417395600"
+		md5		 = "37d15ab83697dce281caee7c3ff2f6dd"
+		>
+		<description>Inspired from "I Wanna Be The Guy" and other classic platformers, this game follows the same format of having a large map in Metroidvania style where one has a large map to freely explore and must venture to various parts of it. You always die in one hit (3 hits for easy difficulty), but there are unlimited lives and a password system that allows you to continue where you left off. In total, there are over 650 rooms, 25 enemy types, 13 boss battles, 42 music tracks, and more bonus features this time around. 
+
+The adventure continues! Will the torment get to you?
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/160x120.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc1.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc2.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc3.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc4.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc5.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc6.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc7.jpg"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Donkey Kong VCS"
+		system    = "openemu.system.2600"
+		developer = "Andreas Dietrich"
+		website   = "http://atariage.com/forums/topic/206497-dk-vcs/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/D.K.VCS_131110_NTSC.a26"
+		released  = "1384045200"
+		added     = "1417395600"
+		md5		 = "608d4a5b4af91af479e8ae935f008a72"
+		>
+		<description>Donkey Kong VCS is a new conversion of the original arcade game for the Atari 2600 video computer system. Sporting 32K of ROM, this version for the first time features all four arcade stages as well as all cut-scenes.  Additionally, the game includes multi-colored graphics plus arcade quality animations and sounds!
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/220x165.png"></image>
+         <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Duck Attack!"
+		system    = "openemu.system.2600"
+		developer = "Will Nicholes"
+		website   = "http://willnicholes.com/duck/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Duck%20Attack!/DUCKNTSC.a26"
+		released  = "1277946000"
+		added     = "1417395600"
+		md5		 = "a4a333bb59cf16146e8008361560413d"
+		>
+		<description>The object of the game is to collect enough eggs to advance to the next level, while avoiding the mutant, fire-breathing ducks, and other deadly objects. Duck Attack! is an impressive exploration adventure game, squeezing every last ounce of power out of the Atari 2600's modest hardware.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Duck%20Attack!/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Duck%20Attack!/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Duck%20Attack!/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Duck%20Attack!/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Halo 2600"
+		system    = "openemu.system.2600"
+		developer = "Ed Fries"
+		website   = "http://atariage.com/store/index.php?l=product_detail&amp;p=1015"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/Halo2600_Final.a26"
+		released  = "1277946000"
+		added     = "1417395600"
+		md5		 = "4afa7f377eae1cafb4265c68f73f2718"
+		>
+		<description>Players control Master Chief in a non-scrolling exploration game with rooms to explore and a variety of enemies to shoot. The Chief faces a variety of enemies across 64 playfields, and must find hidden keys to unlock the game's force-fields in order to reach the final boss encounter. But first, he needs a weapon...
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Hunger Shark"
+		system    = "openemu.system.2600"
+		developer = "Anthony Luna"
+		website   = "http://luckycassette.itch.io/hunger-shark"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Hunger%20Shark/hungershark.0.2.4.a26"
+		released  = "1392166800"
+		added     = "1417395600"
+		md5		 = "919278fc296daeca578376d542166d8c"
+		>
+		<description>In Hunger Shark you play as a shark with an insatiable appetite. Eat people to avoid starvation, but watch out for that pesky Coast Guard!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Hunger%20Shark/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Hunger%20Shark/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Hunger%20Shark/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Hunger%20Shark/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Incoming!"
+		system    = "openemu.system.2600"
+		developer = "Ben Larson"
+		website   = "http://www.blarworld.net/software.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/Incoming1.02_NTSC.a26"
+		released  = "1256086800"
+		added     = "1417395600"
+		md5		 = "331e3c95f7c5d2e7869301d070b7de76"
+		>
+		<description>An artillery shooting game that can be played between two players or versus the computer. Destroy the other player's tank by firing shells across the board and hitting them.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Oystron"
+		system    = "openemu.system.2600"
+		developer = "Piero Cavina"
+		website   = "http://www.atariage.com/software_page.html?SoftwareLabelID=869"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Oystron/OYSTR29.a26"
+		released  = "881888400"
+		added     = "1417395600"
+		md5		 = "91f0a708eeb93c133e9672ad2c8e0429"
+		>
+		<description>Your objective in Oystron is to shoot the Space Oysters and convert them to pearls, collecting the pearls and then depositing them into the Pearls Zone. Enemies will attempt to steal the pearls once they reach the left edge of the screen, so you must act quickly!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Oystron/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Oystron/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Oystron/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Oystron/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Pac-Man 4K"
+		system    = "openemu.system.2600"
+		developer = "Dennis Debro"
+		website   = "http://www.atariage.com/store/index.php?l=product_detail&amp;p=1010"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/pacman4K_NTSC.a26"
+		released  = "1184720400"
+		added     = "1417395600"
+		md5		 = "6e88da2b704916eb04a998fed9e23a3e"
+		>
+		<description>Gobble your way through the maze of Pac-Land, chomping on dots and avoiding the four hungry monsters, Blinky, Pinky, Inky and Clyde. But if you can manage to eat an energizer, turn the tables on those monsters by feasting on them for bonus points!
+
+Dennis Debro sought to create an adaptation of Pac-Man more faithful than Atari's 1982 version for the VCS. Utilizing the same 4K memory limit as the original, Dennis' game is a feat of programming that finally brings Pac-Man to the Atari 2600 as it was intended.
+		</description>
+		<images>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Plim"
+		system    = "openemu.system.2600"
+		developer = "Chris Read"
+		website   = "http://www.atari2600land.com/plim/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Plim/plim61begin.a26"
+		released  = "1402534800"
+		added     = "1417395600"
+		md5		 = "17c3b009a60a03fb407611327e8f0d9d"
+		>
+		<description>Aliens have landed and are trying to annoy Frank! Can Frank survive the alien onslaught of annoyingness?
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Plim/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Plim/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Plim/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Plim/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Princess Rescue"
+		system    = "openemu.system.2600"
+		developer = "Chris Spry"
+		website   = "http://atariage.com/forums/topic/215058-princess-rescue-binaries-released/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/PrincessRescue_Final_NTSC.a26"
+		released  = "1375232400"
+		added     = "1417395600"
+		md5		 = "104468e44898b8e9fa4a1500fde8d4cb"
+		>
+		<description>Save the princess in this familiar platform game through 16 challenging scrolling levels!
+
+Collect power-ups and other items to help you complete your quest while fending off (or running past) the boss' minions along the way. Watch out as you finish castle stages as the ruthless boss comes in to try to do you away. Succeed and the princess will be forever grateful.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Stay Frosty 2: Stay Frostier (demo)"
+		system    = "openemu.system.2600"
+		developer = "Darrell Spice, Jr."
+		website   = "http://atariage.com/forums/topic/220074-stay-frosty-2-demo-released/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/SF2_demo_NTSC.a26"
+		released  = "1387933200"
+		added     = "1417395600"
+		md5		 = "73a85f7773ea2694c6c70ff672ded5ce"
+		>
+		<description>Everybody's favorite fabled frosty firefighter is back! But so are those pesky fireballs, and they're hotter than ever! This year they've kidnapped Santa and some of his helpers, so it's up to you to put out the fireballs and rescue your friends from their fiery fate.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Thrust+ Platinum"
+		system    = "openemu.system.2600"
+		developer = "Thomas Jentzsch"
+		website   = "http://www.qotile.net/xype/thrust.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Thrust/Thrust%20v1.27%20(PD).a26"
+		released  = "1072918800"
+		added     = "1417395600"
+		md5		 = "5e43c0391f7412ae64fae6f3742d6ee9"
+		>
+		<description>Thrust is a very impressive port of the popular Commodore 64 game of the same name. You must infiltrate each planet and steal the Klystron Pod then return to space while avoiding gun fire and maintaining a supply of fuel. The game features realistic gravity physics and requires a careful hand to guide your ship into the tunnels without crashing.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Thrust/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Thrust/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Thrust/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Thrust/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Power Pig"
+		system    = "openemu.system.gba"
+		developer = "genecyst games"
+		website   = "http://holyhellgba.blogspot.de/p/downloads.html"
+		file      = "http://www.otouv.org/gGames/downloads/powerpig.zip"
+		fileIndex = "2"
+		released  = "1404932321"
+		added     = "1417395600"
+		md5		 = "ba7dda66edd51fb758aa1f61af584c1f"
+		>
+		<description>You are a pig and you got to find the exit door for each level.
+Levels are full of animals that aren't properly happy to have you around and they'll try to kick your ass in any way.
+Fortunately the ghost of your granpa-pig has given you an amazing gravity gun that transform anything into light bubbles. This gravity gun require coins to work, so it's quite expensive to have one, but at least someone has filled the levels with coins... so you just need to grab them and charge your gun.
+		</description>
+		<images>
+			<image type="title"  src="http://www.otouv.org/gGames/downloads/title.png"></image>
+			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-country4.png"></image>
+			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-city3.png"></image>
+			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-jungle.png"></image>
+		</images>
+	</game>
+	
+	<game
+		name      = "Battle Kid: Fortress of Peril (demo)"
+		system    = "openemu.system.nes"
+		developer = "Sivak Games"
+		website   = "http://sivak.nintendoage.com/BK.html"
+		file      = "http://sivak.nintendoage.com/BK-demo.zip"
+		released  = "1266793200"
+		added     = "1417395600"
+		md5		 = "cf75ebc501818119940a6b872e1e0511"
+		>
+      <description>At least one paragraph of text (four sentences) should be written. At least one paragraph of text (four sentences) should be written. At least one paragraph of text (four sentences) should be written. At least one paragraph of text (four sentences) should be written.
+      </description>
+		<images>
+			<image type="cover"  src="https://upload.wikimedia.org/wikipedia/en/c/c6/Battle_Kid_Cover_Art.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc1.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc2.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc3.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc4.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc5.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc6.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc7.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Battle Kid 2: Mountain of Torment (demo)"
+		system    = "openemu.system.nes"
+		developer = "Sivak Games"
+		website   = "http://sivak.nintendoage.com/BK2.html"
+		file      = "http://sivak.nintendoage.com/BK2-NewDemo.zip"
+		fileIndex = "1" 
+		released  = "1355526000"
+		added     = "1417395600"
+		md5		 = "37d15ab83697dce281caee7c3ff2f6dd"
+		>
+		<description>Inspired from "I Wanna Be The Guy" and other classic platformers, this game follows the same format of having a large map in Metroidvania style where one has a large map to freely explore and must venture to various parts of it. You always die in one hit (3 hits for easy difficulty), but there are unlimited lives and a password system that allows you to continue where you left off. In total, there are over 650 rooms, 25 enemy types, 13 boss battles, 42 music tracks, and more bonus features this time around. 
+
+The adventure continues! Will the torment get to you?
+		</description>
+		<images>
+			<image type="cover"  src="http://static.giantbomb.com/uploads/scale_small/18/180827/2428260-bk2cover.png"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc1.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc2.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc3.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc4.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc5.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc6.jpg"></image>
+			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc7.jpg"></image>
+		</images>
+	</game>
+</games>

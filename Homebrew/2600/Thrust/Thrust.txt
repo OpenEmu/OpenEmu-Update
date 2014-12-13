@@ -1,0 +1,133 @@
+                                    -----------
+                                    T H R U S T
+
+                                   (C) 2000/2002
+
+                                  Thomas Jentzsch
+
+
+THE GAME
+--------
+The resistance is about to launch a major offensive against the Intergalactic
+Empire. In preparation for this, they have captured several battle-grade starships,
+but they lack the essential power sources for these formidable craft; Klystron
+Pods.
+You have been commissioned by the resistance to steal these pods from the
+Empire's storage planets. Each planet is defended by a battery of "Limpet"
+guns, powered by a nuclear power plant. By firing shots at the power plant,
+the guns can be temporarily disabled; the more shots fired at the nuclear reactor,
+the longer the guns will take to recharge. BUT BEWARE!! If you fire too many
+shots at the reactor, it will become critical, giving you just ten seconds to clear
+the planet before it is destroyed. If you have not already retrieved the pod
+stored at that planet, then you will have failed the mission. If you have retrieved
+the pod, and you manage to send the reactor into its critical phase, and leave
+the planet safely, you will receive a hefty bonus.
+Further into the Empire's system, you will encounter planets with REVERSE
+GRAVITY and something even more deadly...
+
+
+PLAYING THE GAME
+----------------
+You can control your ship with the standard joystick:
+LEFT    = ROTATE SHIP ANTICLOCKWISE
+RIGHT   = ROTATE SHIP CLOCKWISE
+FIRE    = FIRE (THRUST while joystick is DOWN)
+UP      = THRUST
+DOWN    = ACTIVATE TRACTOR BEAMS/EXTERNAL SHIELDS
+SELECT  = SELECT GAME VARIATION
+RESET   = ABORT GAME
+
+The Omega Booster Grip buttons are also supported:
+Trigger = FIRE
+Booster = THRUST
+
+Use the RIGHT DIFFICULTY switch to adjust colors for NTSC- or PAL-TVs.
+
+To collect a Klystron Pod, hover just above the pod, activate the tractor beam,
+and thrust away from the pod. When the automatic tow-bar has fixed to the
+pod, you can deactivate the tractor beam.
+To collect fuel, hover above a fuel cell, and activate the tractor beam.
+
+
+SCORING
+-------
+DESTROYING A LIMPET GUN        750 POINTS
+DESTROYING A FUEL CELL         150 POINTS
+PICKING UP A FUEL CELL         300 POINTS
+BONUS FOR MISSION COMPLETION   VARIES ACCORDINGLY
+BONUS FOR DESTROYING PLANET    MISSION BONUS + 2000 POINTS
+MISSION FAILURE                NO BONUS!!
+
+A spare ship is allocated for every 10.000 points.
+The game will end if (a) You die and have no spare ships
+                     (b) You run out of fuel
+
+Your fuel is displayed in yellow, your score in blue, and the countdown in red.
+Before the digits, your spare ships or the game variation are shown.
+
+
+GAME SELECT MATRIX
+------------------
+THRUST includes five game variations. Press the GAME SELECT switch until the
+number appears on the very left of the score display.
+
+Number             |  1  |  2  |  3  |  4  |   5    |
+-------------------+-----+-----+-----+-----+--------+
+Planets            | 1-6 | 3-8 | 1-6 | 3-8 |  1-6   |
+Difficulty Level   |  Normal   |  Expert   | Rookie |
+Lives              |  4        |  3        | 5      |
+Fuel               |  1000     |  500      | 2000   |
+Rotate Ship        |  normal   |  normal   | slow   |
+Atmosphere Density |  low      |  zero     | high   |
+Gun Fire           |  medium   |  high     | low    |
+
+The difficulty level Rookie is limited to the planets 1 to 6 and normal or reverse
+gravity. If you want to experience the other planets and the "even more deadly"
+factor, you have to master the game at a higher difficulty.
+
+After all missions of difficulty level Rookie (12 missions) or Normal (24 missions)
+are completed the difficulty increases to the next level.
+
+You shouldn't try to cheat the game, if you want to reach the end.
+
+
+ACKNOWLEDGMENTS
+---------------
+THRUST is based on the classic C64 game, which was sold by Firebird in 1985. Thanks
+to Jeremy C. Smith, who made the original.
+
+This game would not have been possible without valuable support of the members of
+Stellalist, the Atari 2600 programmers mailing list:
+
+                        www.biglist.com/lists/stella
+
+Thank you all!
+
+
+LEGAL STUFF
+-----------
+THRUST (C) 2000/2002 Thomas Jentzsch.
+This game is freeware, but copyrighted; it may be freely distributed, but it must
+be always accompanied by this documentation file. This program may be included on
+websites and shareware or freeware compilations, but please contact me first. You
+can't distribute THRUST on Atari 2600 cartridges without my explicit permission.
+Thomas Jentzsch makes no guarantees, written or implied, on this software. I'm not
+responsible for any damage due to the use of this software.
+
+
+MISC
+----
+THRUST has been developed and tested with z26 by John Saeger. It does not(!) work
+with older emulator versions that don't support illegal opcodes, like Stella (1.1),
+StellaX (1.1.3) and PCAE (2.4).
+
+You can buy Atari 2600 cartridges at Hozer Video Games:
+
+                        http://webpages.charter.net/hozervideo
+
+
+Please send any comments, questions, or suggestions to:
+
+                        tjentzsch@yahoo.de
+
+Enjoy!

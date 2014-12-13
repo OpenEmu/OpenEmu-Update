@@ -1,0 +1,50 @@
+Pacman4K
+(c) 2007 Dennis Debro
+
+123 BYTES OF RAM USED 5 BYTES FREE
+  4 BYTES OF ROM FREE
+  
+INTRODUCTION
+------------
+Move the little yellow Pac-man around the maze while eating dots for points. Along the way you will encounter four monsters that, when touched, Pac-man will lose a life. Once Pac-man eats an energizer (four blinking dots in each corner of the maze) then Pac-man can now chase the blue monsters for points. Periodically a bonus item will appear at the center of the maze. Eating this item will score bonus points. Eat all the dots in the maze and advance to the next level where the monsters move a little faster.
+
+PLAYING THE GAME
+----------------
+You control Pac-man with the joystick plugged into port 0.
+LEFT = Pac-man moves left
+RIGHT = Pac-man moves right
+UP = Pac-man moves up
+DOWN = Pac-man moves down
+SELECT = Select starting game level
+RESET = Restart the game for the selected game variation
+
+SCORING
+-------
+1)  Dots.............10 points
+2)  Energizers.......50 points
+3)  1st monster.....200 points
+4)  2nd monster.....400 points
+5)  3rd monster.....800 points
+6)  4th monster....1600 points
+7)  Cherries........100 points
+8)  Strawberry......300 points
+9)  Peach...........500 points
+10) Apple...........700 points
+11) Grapes.........1000 points
+12) Galaxian.......2000 points
+13) Mush...........3000 points
+14) Key............5000 points
+
+Extra Pac-man at 10,000 points
+
+NOTES
+-----
+Pacman4K started out as a challenge for me to see if I could get a no frills Pac-man written for the 2600 in 4K and stay faithful to the original arcade game. I made some sacrifices along the way. Most noticable was the decision to flicker the objects at a rate of 20Hz instead of developing a variable flicker algorithm.
+
+I did some work in this direction but found that it took up too much ROM to include the other features.
+
+Ebivision did a 4K Pac-man back in 1999. You can see pictures of their work at http://www.atariage.com/software_page.html?SoftwareLabelID=1022 and short video clips of it running while at the 1999 Classic Gaming Expo at http://www.cyberroach.com/cyromag/six/cge991.htm. I commend them for their work as this was a bases for my maze layout. They were able to do their game without using any undocumented 6502 opcodes. I used undocumented opcodes to reduce ROM and to help in kernel timing. Hats off to you Ebivision!
+
+You will find that each monster has it's own behavior. They are similar to the arcade version execpt for Clyde's. His behavoir was sacrificed to get the game into 4K. Instead he moves randomly through the maze which makes for an interesting game.
+
+Becareful when the pitch of the siren changes. When this happens Blinky will go into "Cruise Elroy" mode. While in this mode he moves a bit faster than the other monsters and also keeps a lookout for Pac-man.

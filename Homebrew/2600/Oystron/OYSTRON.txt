@@ -1,0 +1,162 @@
+
+                            O Y S T R O N
+                           
+     <<.....In the Irata solar system lies the planet Stella.
+                It is surrounded by an energy belt.
+              In this belt there live space oysters.
+     They make good food, so there are other outer space creatures
+               living among them, that eat the oysters.....>>
+               
+
+Piero Cavina presents OYSTRON: a new arcade action Atari 2600 game.
+Bring new life to your Atari VCS!
+Have more fun with a free 4K game, than with an expensive multi-media waste of time!
+
+
+LOADING THE GAME
+
+The easiest way to play Oystron is to use one of the available Atari VCS emulators.
+I recommend PCAE 2.0 by John Dullea, but I've also tried it on the Windows 95 and Mac versions of Stella with very good results (Stella for W95 seems to have some problems with sound, but maybe it's just me).
+But for the real 2600 experience, play it on the real thing!!
+If you have a Starpath Supercharger, you can load the .BIN file from your PC or MAC computer into the Supercharger with one of the BIN to WAV utilities available.
+Being a 4K game, Oystron can also be put on self build, Eprom-based carts. You can do this for personal use, but please do not distribute the game on Eproms!
+If you don't have a Supercharger and can't burn Eproms... don't worry, just wait for the official cart release!
+
+
+USING THE CONTROLLER
+
+Use your Joystick Controller with Oystron. Be sure the Joystick is firmly plugged into the controller jack at the back of your ATARI Video Computer System game. Oystron is a one-player only game, so use the Joystick controller plugged into the LEFT CONTROLLER jack. Hold the Joystick with the red button to your upper left, toward the television screen.
+
+
+CHOOSING A TV STANDARD
+
+This is very important if you want to play Oystron on a real Atari 2600.
+OYSTRON has been designed to be playable on both NTSC (American) and PAL (European) TV sets. Use the Player 2 (right) difficulty switch to choose your TV video standard: position A = NTSC, B = PAL. Please note that the game runs slightly faster in NTSC, and since most modern TV sets can sync to both NTSC and PAL modes, I recommend to play the game in NTSC mode even if you've a PAL TV.
+
+
+THE SCREEN
+
+The screen is divided between an upper game area, and a lower status area.
+The game area includes the special Pearls Zone, delimited by a grid of white dots. There's room for eighth rows of eight pearls each.
+In the status area you can find, from top left to bottom right:
+- an horizontal bar, which shows your progress in the current level
+  from the beginning to the Oystron Phase
+- the life indicator, it can show a maximum of 4 lives
+- the score (when playing), or various alternating information
+  when the game in Game Over status.
+- bombs count (when playing), or current variation number.
+
+
+DIFFICULTY SWITCHES
+
+Player 1 (left) difficulty switch is used to control the bounce of player's spaceship against the borders of the playfield.
+When the left switch is in position B (advanced), the spaceship will bounce making the gameplay more difficult.
+Switch to position A (novice) for an easier to control spaceship.
+
+Player 2 (right) is reserved for tv standard selection (see above).
+
+The Color/B&W switch is not used in Oystron.
+
+
+CHOOSING A VARIATION
+
+There are three game variations in Oystron: beginner, intermediate and expert.
+Press GAME SELECT to choose the desired game variation. The current variation number is shown in the bottom right part of the status area.
+
+
+STARTING THE GAME
+
+Press GAME RESET or push the fire button to start. You start the game with four lives and zero bombs.
+
+
+CONTROLLING THE SPACESHIP
+
+Your ship will move in whatever direction the Joystick is pushed. The red "fire" button will fire the missiles. Keep the red button pressed for continuous firing. 
+
+Fire button has two additional uses:
+
+- drop off a pearl in the collect zone during normal playing;
+- drop off bombs during the Oystron attack. 
+
+
+GAMEPLAY
+
+Enemies and Space Oysters will enter the screen on the right and attack you moving towards the left border.
+Some of them will bounce and go back to the right, others will disappear.
+Learn the behavior of the different kinds of enemies.
+
+Shoot repeatedly the Space Oysters and they will eventually turn into pearls. Collect the pearls and drop them in the Pearls Zone. Your ship glows when is ready to drop a pearl.
+
+You get a bomb putting 8 pearls in a row.
+
+Beware of the enemies that reach the left border of the playfield, since they will try to steal your pearls. Shoot the thief enemy to rescue the pearls.
+
+Floating pearls that reach the left border may mutate into enemies.
+
+Stolen or lost pearls bring undesired guests in... these guys become very annoying from level 3 onwards, so get rid of them as sooner as possible! You can't kill them, but you can send them out of the playfield pushing them left with your shots.
+
+Oystron phase: near the end of each level, you'll hear a warning signal and the screen will flash. After a few moments the Oystron will enter and your standard shots will be disabled. From this moment you can either kill him dropping the bombs and letting him step over them, or wait until he gets bored and mutates into a Space Oyster. You lose the bonus points if you let the Oystron go away. In both cases, you'll enter the Warp phase.
+If you're killed in the Oystron phase, you'll be put a little back in the level, and you'll have to face the Oystron again.
+
+Warp phase: during the warp phase, you'll travel at high speed between Space Oysters and enemies. The risk of collision will be high, but now everything is worth 100 points!
+A new level will start immediately after the end of the warp phase, with more enemies and troubles waiting for you.
+
+Scoring:
+Space Oysters (each hit): 10 points
+Enemies (formation destroyed): 30 points
+Oystron (killed with a bomb): 1530 points + (no. of bombs left)x100 points
+
+Extra ships: you win an extra ship every 4,000 points. From 75,000 to 99,990 points there are no extra ships. Why? Guess it! :-)
+
+
+HINTS
+
+This seems to be a good strategy: stay on the right part of the playfield, off the pearls zone, shooting left and right. Collect pearls here and when you've enough of them, rush down and complete an entire row.
+
+There's only a kind of enemy (except the Oystron itself) that can jump from a row to another; however, they will never jump on a row already occupied by something else. So when these enemies come out, busy rows are usually a safe place to stay.
+
+
+GIMMICK
+
+There's a way start the game near the end of the level with a load of bombs...
+
+
+OYSTORY
+
+Basically, Oystron started as an exercise in Atari 2600 programming early this year, when on Stellalist (the Atari VCS programmers mailing list) we were discussing about how to reuse a sprite to put more objects on the screen. After many lines of code I realized that I almost had all the elements for a full game. This was only the beginning of the real challenge: the Atari 2600 is a classic videogame system, so this had to be a game with a true classing feeling. I've tried to recreate the fun and excitement of the great early games, so you may find elements of Sinistar, Defender and Rip Off in Oystron. But you'll have to be the judge...
+
+
+FEEDBACK
+
+I would really like to hear your comments, suggestions, doubts about Oystron. Send your mail to: p.cavina@mo.nettuno.it.
+Playing Oystron, you might think of some features that you would like to see in the game: please note that, sadly, this is almost impossible. There are no more than 10 bytes available for the program, and this is not enough for any serious feature (before you ask, yes, the code has already been heavily optimized). Anyway, if you've something cool in mind, let me know... a less important feature might be dropped for a better one!
+Also, please tell me if you think that the various gameplay elements aren't balanced well enough.. this is the last chance to fine-tune the gameplay, since sooner or later we'll have to burn eproms for the cart release.
+
+
+ACKNOWLEDGMENTS
+
+That this project wouldn't have been possible without Stellalist, the Atari 2600 programmers mailing list:
+http://www.biglist.com/lists/stella/stella.html
+
+Thanks to the nice people on the list I have found the encouragement, the information and the advice needed to bring this project to completion.
+Jim Nitchals deserves a special mention, because he helped me a lot in optimizing the 6502 code. You should see what he can do to save just 1 byte! Without his help some features, like the Swiss-cheese guys, wouldn't have been possible.
+
+Also, I received a lot of encouragement and gameplay advice from Glenn Saunders, and I can't avoid mentioning Eckhard Stolberg, Nick S Bensema, Robert Colbert, Greg Troutman... 
+
+
+LEGAL STUFF
+
+Oystron (C)1997 Piero Cavina.
+This game is freeware, but copyrighted; it may be freely distributed, but it must be always accompanied by this documentation file. This program may be included on websites and shareware or freeware compilations, but please contact me first.
+You can't distribute Oystron on Atari 2600 cartridges without my explicit permission.
+Piero Cavina make no guarantees on this software. I'm not responsible for any damage due to the use of this software. 
+
+
+FINAL WORDS
+
+Have a lot of "classic" fun with Oystron. Isn't this the game you would have bought for Christmas 1981?! :)
+
+---
+
+Documentation for the binary file release of Oystron v. 2.9
+Version of this document: 1.2 (12/12/1997)
