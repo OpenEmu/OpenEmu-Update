@@ -23,7 +23,7 @@ Fortunately the ghost of your granpa-pig has given you an amazing gravity gun th
 	</game>
 	
 	<game
-		name      = "Battle Kid: Fortress of Peril (demo)"
+		name      = "Battle Kid: Fortress of Peril (Demo)"
 		system    = "openemu.system.nes"
 		developer = "Sivak Games"
 		website   = "http://sivak.nintendoage.com/BK.html"
@@ -45,7 +45,7 @@ Fortunately the ghost of your granpa-pig has given you an amazing gravity gun th
 	</game>
 
 	<game
-		name      = "Battle Kid 2: Mountain of Torment (demo)"
+		name      = "Battle Kid 2: Mountain of Torment (Demo)"
 		system    = "openemu.system.nes"
 		developer = "Sivak Games"
 		website   = "http://sivak.nintendoage.com/BK2.html"
@@ -257,7 +257,7 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
-		name      = "Stay Frosty 2: Stay Frostier (demo)"
+		name      = "Stay Frosty 2: Stay Frostier (Demo)"
 		system    = "openemu.system.2600"
 		developer = "Darrell Spice, Jr."
 		website   = "http://atariage.com/forums/topic/220074-stay-frosty-2-demo-released/"
@@ -297,6 +297,228 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
+		name      = "Alter Ego"
+		system    = "openemu.system.nes"
+		developer = "Shiru"
+		website   = "http://shiru.untergrund.net/software.shtml#nes"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Alter%20Ego/Alter_Ego.nes"
+		released  = "1311469200"
+		added     = "1417395600"
+		md5		 = "b12d0aefbde9b50eec53884d04d083b5"
+		>
+		<description>You control a hero who has a phantom twin, his alter ego. When the hero moves, the alter ego moves too in a mirrored fashion. In some levels the movements are mirrored horizontally, in other ones they are mirrored vertically. You can switch between the hero and his alter ego limited number of times in a level.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Alter%20Ego/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Alter%20Ego/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Alter%20Ego/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Alter%20Ego/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Assimilate"
+		system    = "openemu.system.nes"
+		developer = "Nessylum Games"
+		website   = "http://nessylum.wordpress.com/downloadplay-demo/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Assimilate/assimilate_full_dl.nes"
+		released  = "1344128400"
+		added     = "1417395600"
+		md5		 = "8fde56dfa8bed4c5e3200ed8bccda9a6"
+		>
+		<description>You control an alien spaceship named Ossan. The goal of each level is to maneuver Ossan around a series of deadly projectiles and enemies while kidnapping and assimilating the humans below. Scoop up a human with your tractor beam and use one of four tools to convert them into your alien slave. Then, plant them back in the same building from which you picked them up without dropping them. The level is completed when you have assimilated 100% of the humans.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Assimilate/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Assimilate/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Assimilate/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Assimilate/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Battle Kid: Fortress of Peril (Demo)"
+		system    = "openemu.system.nes"
+		developer = "Sivak Games"
+		website   = "http://sivak.nintendoage.com/BK.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid/BattleKid-Demo.nes"
+		released  = "1266793200"
+		added     = "1417395600"
+		md5		 = "cf75ebc501818119940a6b872e1e0511"
+		>
+		<description>Inspired from the indie game "I Wanna be the Guy" and other classic platformers, the game follows the style dubbed Metroidvania in that you do not have stages, but rather one large area to freely explore. You always die in one hit, but there are unlimited continues in the normal difficulty as well as a password system to resume where you last left off.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Battle Kid 2: Mountain of Torment (Demo)"
+		system    = "openemu.system.nes"
+		developer = "Sivak Games"
+		website   = "http://sivak.nintendoage.com/BK2.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid%202/BattleKid2-NewDemo.nes"
+		released  = "1355526000"
+		added     = "1417395600"
+		md5		 = "37d15ab83697dce281caee7c3ff2f6dd"
+		>
+		<description>The adventure continues! The sequel to the 2010 title Battle Kid: Fortress of Peril. The next phase of the vile group's plan has begun! The Supermech may have been destroyed, but that was only the beginning. You must venture through a giant mountain base and overcome its many dangers. Along the way, items will be found to allow access to new areas and grant you new abilities.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid%202/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid%202/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid%202/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid%202/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Blade Buster"
+		system    = "openemu.system.nes"
+		developer = "High Level Challenge!"
+		website   = "http://hlc6502.web.fc2.com/Bbuster.htm"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Blade%20Buster/BladeBuster.nes"
+		released  = "1330563600"
+		added     = "1417395600"
+		md5		 = "9b38e0826f35f1354fbd15e6639712b2"
+		>
+		<description>An impressive caravan-style shoot 'em up where you're given a quick burst of 2 minutes to rack up as many points as possible.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Blade%20Buster/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Blade%20Buster/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Blade%20Buster/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Blade%20Buster/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "D-Pad Hero"
+		system    = "openemu.system.nes"
+		developer = "D-Pad Hero team"
+		website   = "http://www.dpadhero.com"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero/dpadhero.nes"
+		released  = "1233450000"
+		added     = "1417395600"
+		md5		 = "3bb7e838d3c60dc529ade9aa9abb3686"
+		>
+		<description>A rhythm and music game paying homage to favorite NES games and popular music artists featuring chiptune versions of songs.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "D-Pad Hero 2"
+		system    = "openemu.system.nes"
+		developer = "D-Pad Hero team"
+		website   = "http://www.dpadhero.com"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero%202/dpadhero2.nes"
+		released  = "1273885200"
+		added     = "1417395600"
+		md5		 = "6e60832af3c6826c51f1d5517966f74f"
+		>
+		<description>The sequel to D-Pad Hero is refined and more difficult. This time the game style is changed allowing more buttons and a layout much like Guitar Hero.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero%202/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero%202/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero%202/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero%202/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Lawn Mower"
+		system    = "openemu.system.nes"
+		developer = "Shiru"
+		website   = "http://shiru.untergrund.net/software.shtml#nes"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Lawn%20Mower/Lawn_Mower.nes"
+		released  = "1307494800"
+		added     = "1417395600"
+		md5		 = "7bb697f710354e1fd9a3a7a91135b461"
+		>
+		<description>The goal of this game is to mow all the grass before you run out of gas. Collect fuel to keep yourself from running on empty.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Lawn%20Mower/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Lawn%20Mower/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Lawn%20Mower/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Lawn%20Mower/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Streemerz"
+		system    = "openemu.system.nes"
+		developer = "Faux Game Company"
+		website   = "http://www.fauxgame.com/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/streemerz-v02.nes"
+		released  = "1359680400"
+		added     = "1417395600"
+		md5		 = "ca57b36cd14291624e5864d33884535c"
+		>
+		<description>"Try climbing to the top of this one by throwing streamers and climbing them. On your way up you better watch out for the various pie throwing clowns, burning candles and bouncing balls, because if they get you, you’ll die a little each time."
+
+These were the orders given to you, Operative JOE when you were ordered to infiltrate the evil MASTER Y’s floating fortress to destroy the TIGER ARMY’s top secret weapon.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Super Bat Puncher (Demo)"
+		system    = "openemu.system.nes"
+		developer = "Morphcat Games"
+		website   = "http://morphcat.de/superbatpuncher/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/Super%20Bat%20Puncher%20Demo.nes"
+		released  = "1306890000"
+		added     = "1417395600"
+		md5		 = "0ed8f1c66a067a6c74dc7a6f57ca2ea3"
+		>
+		<description>Explore the deep, dark caverns of a mysterious planet and find out about the plague that threatens Earth.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Zooming Secretary"
+		system    = "openemu.system.nes"
+		developer = "Shiru"
+		website   = "http://shiru.untergrund.net/software.shtml#nes"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Zooming%20Secretary/Zooming_Secretary.nes"
+		released  = "1325034000"
+		added     = "1417395600"
+		md5		 = "c639bd1a3bec2cf6e995c3c0a795fb69"
+		>
+		<description>Playing the role of a secretary in her trial period at a new job, you have to work your way through an increasingly difficult week without being fired for failing to answer calls on time. When a phone rings, the topic that the call is about is represented by a symbol above the handset - and your task is to run to the matching filing cabinet then answer the call before the phone rings off.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Zooming%20Secretary/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Zooming%20Secretary/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Zooming%20Secretary/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Zooming%20Secretary/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Power Pig"
 		system    = "openemu.system.gba"
 		developer = "genecyst games"
@@ -316,57 +538,6 @@ Fortunately the ghost of your granpa-pig has given you an amazing gravity gun th
 			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-country4.png"></image>
 			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-city3.png"></image>
 			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-jungle.png"></image>
-		</images>
-	</game>
-	
-	<game
-		name      = "Battle Kid: Fortress of Peril (demo)"
-		system    = "openemu.system.nes"
-		developer = "Sivak Games"
-		website   = "http://sivak.nintendoage.com/BK.html"
-		file      = "http://sivak.nintendoage.com/BK-demo.zip"
-		released  = "1266793200"
-		added     = "1417395600"
-		md5		 = "cf75ebc501818119940a6b872e1e0511"
-		>
-      <description>At least one paragraph of text (four sentences) should be written. At least one paragraph of text (four sentences) should be written. At least one paragraph of text (four sentences) should be written. At least one paragraph of text (four sentences) should be written.
-      </description>
-		<images>
-			<image type="cover"  src="https://upload.wikimedia.org/wikipedia/en/c/c6/Battle_Kid_Cover_Art.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc1.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc2.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc3.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc4.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc5.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc6.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc7.png"></image>
-		</images>
-	</game>
-
-	<game
-		name      = "Battle Kid 2: Mountain of Torment (demo)"
-		system    = "openemu.system.nes"
-		developer = "Sivak Games"
-		website   = "http://sivak.nintendoage.com/BK2.html"
-		file      = "http://sivak.nintendoage.com/BK2-NewDemo.zip"
-		fileIndex = "1" 
-		released  = "1355526000"
-		added     = "1417395600"
-		md5		 = "37d15ab83697dce281caee7c3ff2f6dd"
-		>
-		<description>Inspired from "I Wanna Be The Guy" and other classic platformers, this game follows the same format of having a large map in Metroidvania style where one has a large map to freely explore and must venture to various parts of it. You always die in one hit (3 hits for easy difficulty), but there are unlimited lives and a password system that allows you to continue where you left off. In total, there are over 650 rooms, 25 enemy types, 13 boss battles, 42 music tracks, and more bonus features this time around. 
-
-The adventure continues! Will the torment get to you?
-		</description>
-		<images>
-			<image type="cover"  src="http://static.giantbomb.com/uploads/scale_small/18/180827/2428260-bk2cover.png"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc1.jpg"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc2.jpg"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc3.jpg"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc4.jpg"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc5.jpg"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc6.jpg"></image>
-			<image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc7.jpg"></image>
 		</images>
 	</game>
 </games>

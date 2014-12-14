@@ -1,0 +1,62 @@
+■High Level Challenge ! Presents■
+FC用(For Fan Clubs?) Shooting Game
+『BLADE BUSTER(ブレイドバスター)』
+ 
+◆Story◆
+ 
+Suddenly appearing from outer space, an airplane-like object of unknown
+origin quickly reduced the plant and its garrison to smithereens.
+ 
+Said the remaining soldiers, “it was as if they were on a fun hunting trip.”
+Possessing overwhelming offensive power, amazing manouervability, and speed,
+the blue airplane came to be called BLADE. 
+ 
+Afterward, at a rate beyond our ability to plan for,
+attacks by BLADE came one by one causing incredible damage.
+To stop this, the plan to launch massive numbers of
+unmanned drones, Blade Buster Project, was launched.
+
+
+★Operating System★
+ 
+ Requires an NES-supporting emulator.
+ It is possible that it may run on a real system.
+ Uses MMC3 CHR-ROM.
+
+★User Guide★
+ 
+　◆Title Screen
+　　Up/Down/Select：Choose between 2min/5min
+　　Start: Start game
+ 
+　◆In Game
+　　D-pad: Moves player
+　　A/B: Shoot (Rapid fire)
+　　Select: Speed select
+　　Start: Not used
+ 
+★Included files★
+ 
+　BladeBuster.txt: This file
+　BladeBuster.nes: Blade Buster ROM
+ 
+★紹介、転載について★
+ 
+　画像や動画の紹介は大変ありがたいですが、リンクを紹介する場合、
+　TOPページ「http://hlc6502.web.fc2.com/」か、BLADEBUSTERのページ
+　「http://hlc6502.web.fc2.com/Bbuster.htm」または、NET CARAVANの
+　ページ「http://hlc6502.web.fc2.com/NetCaravan.htm」にお願いします。
+ 
+　ファイルへの直接リンクや、ファイルの転載はご遠慮ください。
+ 
+　無許可での商用利用・転用を禁じます。
+ 
+★履歴★
+ 
+　2010年9月29日　初版公開
+　2012年3月 1日　修正版公開
+ 
+★連絡先★
+メールアドレス           kasion＠inter7.jp(＠を半角にしてください)
+ホームページアドレス  http://hlc6502.web.fc2.com/
+HLC!ゲストブック  http://hlc6502.bbs.fc2.com/
