@@ -457,6 +457,26 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
+		name      = "MineShaft"
+		system    = "openemu.system.nes"
+		developer = "Nioreh"
+		website   = "http://forums.nesdev.com/viewtopic.php?f=22&amp;t=8573"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/MineShaft/MineShaft.nes"
+		released  = "1327798800"
+		added     = "1417395600"
+		md5		 = "c0633d4f9f246604d4a62a00321fb58a"
+		>
+		<description>Descend down the shaft without falling too far or landing on too many red bars.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/MineShaft/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/MineShaft/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/MineShaft/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/MineShaft/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Streemerz"
 		system    = "openemu.system.nes"
 		developer = "Faux Game Company"
@@ -479,6 +499,26 @@ These were the orders given to you, Operative JOE when you were ordered to infil
 	</game>
 
 	<game
+		name      = "Sir Ababol"
+		system    = "openemu.system.nes"
+		developer = "The Mojon Twins"
+		website   = "http://www.mojontwins.com/juegos_mojonos/sir-ababol-nes/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Sir%20Ababol/Sir%20Ababol%20(2013)(The%20Mojon%20Twins)[!].nes"
+		released  = "1369616400"
+		added     = "1417395600"
+		md5		 = "b4cc3686288e08bab400fdeb594a1440"
+		>
+		<description>Control Sir Ababol accross the Monegrian fields and gather 24 ababol flowers. To be able to progress in your journey you’ll need some keys you will be able to use to open several doors to gain access to different sections. You can jump on the baddies to get rid of them, too. Be patient, think before you jump, and you’ll be successful!
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Sir%20Ababol/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Sir%20Ababol/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Sir%20Ababol/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Sir%20Ababol/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Super Bat Puncher (Demo)"
 		system    = "openemu.system.nes"
 		developer = "Morphcat Games"
@@ -495,6 +535,26 @@ These were the orders given to you, Operative JOE when you were ordered to infil
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/2.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/3.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Thwaite"
+		system    = "openemu.system.nes"
+		developer = "Damian Yerrick"
+		website   = "http://pineight.com/nes/#thwaite"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Thwaite/thwaite.nes"
+		released  = "1323306000"
+		added     = "1417395600"
+		md5		 = "12e266a8da2321b52cdf4e48dcbe3e0c"
+		>
+		<description>A hippie guitarist who has visited your small town for years has gone rogue and launched ICBMs toward your town. Break out the fireworks that you had been saving for Independence Day, turn them into makeshift anti-ballistic missiles (ABMs), and shoot down the incoming missiles.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Thwaite/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Thwaite/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Thwaite/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Thwaite/4.png"></image>
 		</images>
 	</game>
 
