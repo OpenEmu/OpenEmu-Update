@@ -72,6 +72,26 @@ The adventure continues! Will the torment get to you?
 	</game>
 
 	<game
+		name      = "Blinky Goes Up"
+		system    = "openemu.system.2600"
+		developer = "Jan Hermanns"
+		website   = "http://www.lov3machine.com/blinky/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Blinky%20Goes%20Up/Blinky_NTSC.a26"
+		released  = "1344992400"
+		added     = "1417395600"
+		md5		 = "42dda991eff238d26669fd33e353346d"
+		>
+		<description>One day Blinky finds himself at the bottom of a dark dungeon and there's only one way out... up!
+		</description>
+		<images>
+         <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Blinky%20Goes%20Up/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Blinky%20Goes%20Up/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Blinky%20Goes%20Up/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Blinky%20Goes%20Up/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Donkey Kong VCS"
 		system    = "openemu.system.2600"
 		developer = "Andreas Dietrich"
@@ -169,6 +189,26 @@ The adventure continues! Will the torment get to you?
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/2.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/3.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Lady Bug"
+		system    = "openemu.system.2600"
+		developer = "John W. Champeau"
+		website   = "http://atariage.com/software_page.html?SoftwareLabelID=2742"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Lady%20Bug/ladybug_FINAL_NTSC.a26"
+		released  = "1156640400"
+		added     = "1417395600"
+		md5		 = "a7c1fb4bb81f4a3317734aa6843fe029"
+		>
+		<description>Clear the maze of all the dots while avoiding up to four insects. Once all four insects have entered the maze, a bonus vegetable appears in the middle. Eating this veggie not only earns big points, but also freezes the insects for a few seconds. Also appearing in the maze are hearts that increase the bonus multiplier and letters that can be used to spell EXTRA for a bonus ladybug or SPECIAL to earn a round in the bounty harvest maze full of vegetables to eat! If the insects start to gain on the ladybug, she can use the revolving doors to block their attack as she tries to clear each maze.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Lady%20Bug/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Lady%20Bug/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Lady%20Bug/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Lady%20Bug/4.png"></image>
 		</images>
 	</game>
 
@@ -273,6 +313,26 @@ Collect power-ups and other items to help you complete your quest while fending 
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/2.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/3.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Swoops!"
+		system    = "openemu.system.2600"
+		developer = "Thomas Jentzsch"
+		website   = "https://atariage.com/software_page.html?SoftwareLabelID=2727"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Swoops!/Swoops!%20(v0.96).a26"
+		released  = "1127178000"
+		added     = "1417395600"
+		md5		 = "278f14887d601b5e5b620f1870bc09f6"
+		>
+		<description>A collection of three challenging and addicting 1K minigames. Navigate a helicopter through a treacherous cave at a nail-biting pace while avoiding obstacles (Cave 1K), bounce a ball jumping from platform to platform without falling off (Splatform 2600) and survive falling down an endless tunnel at ever increasing speeds (Crash 'n' Dive)!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Swoops!/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Swoops!/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Swoops!/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Swoops!/4.png"></image>
 		</images>
 	</game>
 
@@ -437,6 +497,26 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
+		name      = "Driar"
+		system    = "openemu.system.nes"
+		developer = "Stefan Adolfsson and David Eriksson"
+		website   = "http://driar.se/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Driar/Driar.nes"
+		released  = "1330218000"
+		added     = "1417395600"
+		md5		 = "1276bd89a20f343ac230370acdd8d8a0"
+		>
+		<description>Take control of Driar and collect all the stars on each level to progress. You can walk around the screen (if you exit the screen on the right side you will reappear on the left side) - remember this and use this to your advantage. There are 38 levels in total.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Driar/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Driar/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Driar/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Driar/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Lawn Mower"
 		system    = "openemu.system.nes"
 		developer = "Shiru"
@@ -535,6 +615,26 @@ These were the orders given to you, Operative JOE when you were ordered to infil
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/2.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/3.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Super PakPak"
+		system    = "openemu.system.nes"
+		developer = "AOH Games"
+		website   = "http://www.pouet.net/prod.php?which=55543"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20PakPak/superpakpak.nes"
+		released  = "1280624400"
+		added     = "1417395600"
+		md5		 = "9f4c7dab70be2af37cadc5be0166023d"
+		>
+		<description>A very fun 2-4 player Spacewar!/Thrust/Gravity force style game with destructable environments. At least two players are needed to start the game. HOLD button A at the start menu to begin a game. The game will begin after the counter counts to zero. In two player games, you need to get two kills in a round before the level ends. In three or four player games, the level ends when there is only one ship remaining.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20PakPak/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20PakPak/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20PakPak/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20PakPak/4.png"></image>
 		</images>
 	</game>
 

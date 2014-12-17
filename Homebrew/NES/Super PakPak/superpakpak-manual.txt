@@ -1,0 +1,292 @@
+______________________________________________________________________________
+                                                              
+           __ _____      _____.      ________  ____     _______
+           \_\\   (______\    |_____/  __   /_/  _/__ _/  _   /
+   __________ _\____     Y    |    /   /   /    _/   Y    / _/| .___________
+ ::\        | |    Y     |    |    _    __/\    Y    |   _    | |          /::
+ :|         : |_____     |_________|\___|   \____    ____Y    | :           |:
+ :|         .      `-----'                      `----'   `----' .           |:
+ :|          ________ _____  _____._____ ________ _____  _____._____ .      |:
+ :|         /  __   //  _  \_\    |    //  __   //  _  \_\    |    / .      |:
+ :|     _  /   /   /    _    Y    _  _/.   /   /    _    Y    _  _/. :      |:
+ :|_____/ /_    __/|    Y    |    |    |    __/|    Y    |    |    | |H7/dS!|:
+ <<-------- \___|  |____|    |____|    |\___|  |____|    |____|    | ------->> 
+                        `----'    `----'            `----'    `----'
+
+                  I N S T R U C T I O N   B O O K L E T
+                   Assembly 2010 Summer GameDev Version
+______________________________________________________________________________
+
+   [Table of Contents]
+
+1. INTRODUCTION
+2. GAMEPLAY & RULES
+3. TOOLS USED FOR CREATING THE GAME AND CREDITS
+4. PLAYING THE GAME ON A REAL CARTRIDGE
+5. MULTI-PLAYER GAME
+6. ANALOG CONTROLLER
+7. CONTACT INFO
+______________________________________________________________________________
+
+1. INTRODUCTION
+
+SUPER PAKPAK is a 2-4 player Spacewar!/Thrust/Gravity force style game for
+Nintendo Entertainment System and Famicom.
+
+It was programmed in a few weeks during the year 2010, and was submitted as
+an official entry for the Assembly Summer 2010 Game Development competition
+in Helsinki, Finland.
+
+This game is completely FREE.
+
+To play it, you need a fairly accurate emulator (do NOT use Nesticle!).
+
+______________________________________________________________________________
+
+2. GAMEPLAY & RULES
+
+At least two players are needed to start the game. HOLD button A at the start
+menu to begin a game. The game will begin after the counter counts to zero.
+
+In two player games, you need to get two kills in a round before the level
+ends. In three or four player games, the level ends when there is only one
+ship remaining.
+
+
+During the game you can use the following keys:
+
+START - Pause (during a pause you can return to the main menu by pressing
+the buttons DOWN, SELECT, A and B at the same time)
+
+LEFT, RIGHT - Turn the ship
+
+A - Throttle button increases the speed. When the ship has suffered enough
+damage, it bursts into flames and can not gain enough speed, hence it
+becomes harder to maneuver.
+
+B - Fire button fires the basic weapon.
+
+DOWN - Launches the secondary weapon. If you are landed on a base, this
+button changes the secondary weapon. Note that you can't fire the secondary
+weapon while touching the base, and it is momentarily inactive right after
+you leave the base or right after launching it. The weapon icon is shown on
+the statusbar, and it will flash when the weapon is unavailable.
+
+
+The secondary weapons are the following:
+
+BOMB - Drops down from the ship, explodes and emits 4 bullets upwards.
+Be careful not to launch this while you are near the ground or the enemy.
+The bomb itself does not do much direct damage (twice a bullet's).
+
+SPRAY CANNON - Emits a 4-bullet spray
+
+MINE - Could be planted anywhere. Does very high damage (3x a bullet's)
+and disappears after a while.
+
+VORTEX CANNON - Shoots thru any object, except the impenetrable walls.
+This does twice a bullet's damage.
+
+TELEPORT - Transports the ship to a random starting location. This is useful
+when trying to avoid a tight spot.
+
+
+You get a point by destroying another ship. If a ship gets destroyed
+indirectly (lava or crashing into a wall), the ship that damaged it the
+last time during the round will get a point.
+
+If a ship shoots itself or gets blown by an explosive in the level triggered
+by the ship itself, no one gets a point.
+
+There are 12 scenes in the game, after the 12th scene the game is reverted
+back to the first scene.
+
+After any player gets 50 points, the game ends and an end screen will appear.
+
+______________________________________________________________________________
+
+3. TOOLS USED FOR CREATING THIS GAME AND CREDITS
+
+Programming, graphics and levels: fuzb
+Title screen logo & Artwork: lowhiz
+Music: quarren
+Textfile ASCII: h7
+
+--
+
+Compiler and code editing tools: NESASM3 (by BunnyBoy),
+Programmer's Notepad (by Simon Steele)
+
+Graphic tools: Tile Layer Pro (by Kent Hansen), Autodesk Animator Pro,
+Autodesk 3D Studio 3, Microsoft Paint, Paint Shop Pro.
+
+Level editor and packer: Pin Eight NES Tools (by Damian Yerrick)
+
+Music tracker: FamiTracker (by jsr)
+
+Music engine: FamiTracker player (by jsr, ported for NESASM by banshaku)
+
+In-game sound routines: Modified from Fighter F-8000 (by KHS)
+
+Emulators: Nintendulator (by Quietust), Nestopia (by Martin Freij)
+
+Hardware: PowerPAK (by BunnyBoy), Nintendo AV Famicom
+
+Lookup tables: QuickBasic 4.5
+
+NES Documentation and info: http://nesdev.parodius.com/
+http://wiki.nesdev.com/ http://nesdev.parodius.com/bbs/index.php
+
+MD5 of the original ROM: 9f4c7dab70be2af37cadc5be0166023d *superpakpak.nes
+______________________________________________________________________________
+
+4. PLAYING THE GAME ON A REAL CONSOLE
+
+If you don't have a PowerPak, you can still play SUPER PAKPAK on a real NES.
+Get a UNROM (Pro Wrestling, Ikari, the original Contra, Rygar) donor
+cartridge and remove the PRG ROM chip. The other chip is a RAM, and it should
+not be removed. Burn a 27C512 EPROM with the game ROM (don't include the INES
+header which is the first 16 bytes). Bend up pin 22 of the EPROM and solder
+the chip in the place of the old PRG ROM. Solder a jumper wire from pin 22
+to pin 14.
+
+The original ROM pinout is the following.
+           ---_---
+PRG A15 - |01   28| - +5V
+PRG A12 - |02   27| - PRG A14
+PRG A7  - |03   26| - PRG A13
+PRG A6  - |04   25| - PRG A8
+PRG A5  - |05   24| - PRG A9
+PRG A4  - |06   23| - PRG A11
+PRG A3  - |07   22| - PRG A16 (This is /OE&VPP in the EPROM)
+PRG A2  - |08   21| - PRG A10
+PRG A1  - |09   20| - PRG /CE
+PRG A0  - |10   19| - PRG D7
+PRG D0  - |11   18| - PRG D6
+PRG D1  - |12   17| - PRG D5
+PRG D2  - |13   16| - PRG D4
+GND     - |14   15| - PRG D3
+           -------
+
+The 27C512 EPROM pinout is almost the same!
+Only the Pin 22 is Output enable/Programming voltage supply.
+The EPROM's Pin 22 should be pulled up and tied to ground (Pin 14).
+
+The original PRG A16 pin is not needed, because our game is only
+64 kilobytes.
+
+If you don't want to break an existing cartridge, you can buy a "ReproPak"
+PCB and a nice case from http://www.retrousb.com/.
+
+______________________________________________________________________________
+
+5. MULTI-PLAYER GAME
+
+You can play with a NES Four Score/NES Satellite adapter, or if you have
+a Famicom System, you can use regular Famicom multi-player controllers.
+
+If you have a regular NES, and you don't have a Four Score/Satellite,
+it is possible to hack two more controllers into the expansion port at the
+bottom of the NES (this actually adds Famicom multi-player feature to your
+NES, which is supported by some Japanese games).
+
+This is the controller pinout:
+                                 +-
+                           GND - |O\
+                           CLK - |OO\ - +5V
+                        Strobe - |OO| - D3
+                            D0 - |OO| - D4
+                                 +--+
+
+This is the expansion port pinout:
+                                  +-------\
+                              +5V |01   48| +5V
+                              GND |02   47| GND
+                         Audio In |03   46| NC
+                              R/W |04   45| Out2 (from CPU)
+                              A15 |05   44| Out1 (from CPU)
+                Cart con. pin #51 |06   43| Out0 (from CPU- strobe on sticks)
+                Cart con. pin #52 |07   42| Cart con. pin #16
+                Cart con. pin #53 |08   41| Cart con. pin #17
+                Cart con. pin #54 |09   40| Cart con. pin #18
+                Cart con. pin #55 |10   39| Cart con. pin #19
+                  /OE for stick 2 |11   38| Cart con. pin #20
+                     Player #1 D1 |12   37| /OE for stick 1
+                     Player #1 D3 |13   36| Player #1 D4
+                             /IRQ |14   35| Player #1 D0
+                     Player #2 D2 |15   34| /OE for stick 1
+                     Player #2 D3 |16   33| Player #1 D2
+                  /OE for stick 2 |17   32| D0
+                     Player #2,D4 |18   31| D1
+                     Player #2,D0 |19   30| D2
+                     Player #2,D1 |20   29| D3
+                        Audio out |21   28| D4
+                        Video out |22   27| D5
+                              +9V |23   26| D6
+                      4.00MHz CLK |24   25| D7
+                                  +-------/
+                              Expansion Connector
+
+Wire them the following way:
+
+Controller 3:
+GND ----> Expansion port pin 2 or 47 (GND).
++5V ----> Expansion port pin 1 or 48 (+5V).
+CLK ----> Expansion port pin 34 or 37 (/OE for stick 1)
+Strobe -> Expansion port pin 43 (Out0 - strobe on sticks)
+D0  ----> Expansion port pin 12 (Player #1 D1) (NOTE: Not to D0 !!)
+
+Controller 4:
+GND ----> Expansion port pin 2 or 47 (GND).
++5V ----> Expansion port pin 1 or 48 (+5V).
+CLK ----> Expansion port pin 11 or 17 (/OE for stick 2)
+Strobe -> Expansion port pin 43 (Out0 - strobe on sticks)
+D0  ----> Expansion port pin 20 (Player #2 D1) (NOTE: Not to D0 !!)
+
+Pinouts are from Kevin Horton's document "NES Cart Types"
+(http://kevtris.org/nes/nestuff2.txt).
+
+______________________________________________________________________________
+
+6. ANALOG CONTROLLER
+
+SUPER PAKPAK supports an analog controller! Too bad this analog controller
+does not exist yet. The analog controller DOES NOT work with a Four Score,
+only with the Famicom style multitap.
+ 
+If you want to try to make one, here are the shift register bits:
+
++--------------------------------------------------------+
+|Read# 1 | 2 |   3    |   4   | 5  |  6   |  7   |   8   |
++----+---------------------------------------------------+
+     |                     Joy#1/Joy#2                   |
+     +---------------------------------------------------+
+     | A | B | Select | Start | Up | Down | Left | Right |
+     +---------------------------------------------------+
+
++-----------------------------------------------+
+|  9  | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 
++-----------------------------------------------+
+|                     Analog                    |
++-----------------------------------------------+
+| D7  | D6  | D5  | D4  | D3  | D2  | D1  | D0  |
++-----------------------------------------------+
+
++---------------------------------------+
+| 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
++---------------------------------------+
+|             Adapter info              |
++---------------------------------------+
+| 1  | 1  | 0  | 0  | 1  | 0  | 1  | 1  |
++---------------------------------------+
+
+A good candidate would be a microcontroller with AD and a potentiometer
+with the stopper inside removed, so it rotates 360 degrees. You could also
+implement it in pure TTL logic and use an old AD080x AD-converter!
+______________________________________________________________________________
+
+7. CONTACT INFO
+
+You can e-mail the author at: fuzb@iki.fi
+You can find the author from IRC: fuzb @ ircnet/quakenet
+______________________________________________________________________________
