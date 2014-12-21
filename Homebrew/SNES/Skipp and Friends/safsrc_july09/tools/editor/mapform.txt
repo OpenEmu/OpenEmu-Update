@@ -1,0 +1,25 @@
+map format
+
+
+0000h	4K		map layer1 [broken up into regular 2 32x32 blocks]
+1000h	4K		map layer2 [broken up into regular 2 32x32 blocks]
+2000h	2K		'SOLID' map [64x32]
+2800h	2K		layer1 'DESTRUCTABLE' map [64x32]
+3000h	2K		layer2 'DESTRUCTABLE' map [64x32]
+3800h	2K		'slide' map [64x32] 0 = empty, 1 = slide left, 2 = slide up, 3 = slide right, 4 = slide down
+4000h	byte,byte	map width, map height
+4002h	byte		tileset index
+4003h	word		background colour
+
+4005h	byte		number of objects
+4004h	byte*x		object data
+
+object data:
+BYTE	type
+BYTE	direction
+BYTE	x
+BYTE	y
+BYTE	a0
+BYTE	a1
+BYTE	a2
+BYTE	a3

@@ -679,6 +679,131 @@ These were the orders given to you, Operative JOE when you were ordered to infil
 	</game>
 
 	<game
+		name      = "Classic Kong Complete"
+		system    = "openemu.system.snes"
+		developer = "Shiru"
+		website   = "https://code.google.com/p/classickong/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/Classic%20Kong%20Complete%20(U).smc"
+		released  = "1347930000"
+		added     = "1417395600"
+		md5		 = "34109a821497c892b2bba264acee2045"
+		>
+		<description>A remake of the classic arcade game with barrel jumping and ladder climbing madness for the SNES.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Jet Pilot Rising"
+		system    = "openemu.system.snes"
+		developer = "Dieter von Laser"
+		website   = "http://forum.snesfreaks.com/viewtopic.php?f=157&amp;t=13187"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Jet%20Pilot%20Rising/Jet%20Pilot%20Rising.sfc"
+		released  = "1388019600"
+		added     = "1417395600"
+		md5		 = "3cc707a5072ce9409f788e9fb905cb20"
+		>
+		<description>Pilot a rocket-riding cat past obstacles to collect coins. Featuring excellent visuals and a chiptune soundtrack.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Jet%20Pilot%20Rising/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Jet%20Pilot%20Rising/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Jet%20Pilot%20Rising/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Jet%20Pilot%20Rising/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "MazezaM Challenge"
+		system    = "openemu.system.snes"
+		developer = "Alekmaul"
+		website   = "http://www.portabledev.com/pages/consoles/snes/jeuxdev.-perso/mazezam-challenge.php"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/MazezaM.sfc"
+		released  = "1348794000"
+		added     = "1417395600"
+		md5		 = "dddaf6b133ef16c19a253b5465517513"
+		>
+		<description>MazezaM Challenge (pronounced "may-zam") is a simple puzzle game based on MazezaM
+from Malcolm Tyrrell.
+
+You enter the mazezam on the left and you have to get to the exit on the right by 
+pushing rows of blocks left and right. If you get stuck you can retry the mazezam, 
+but this will cost you a life. 
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "N-Warp Daisakusen"
+		system    = "openemu.system.snes"
+		developer = "Matthias &quot;d4s&quot; Nagler"
+		website   = "http://gra.dforce3000.de/index.php"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/N-Warp%20Daisakusen/N-Warp%20Daisakusen%20V1.1.smc"
+		released  = "1242349200"
+		added     = "1417395600"
+		md5		 = "e6c5d532286ea248cea10d878df20a70"
+		>
+		<description>A deathmatch minigame for 2-8 players. Compete for first place by beating and kicking each other.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/N-Warp%20Daisakusen/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/N-Warp%20Daisakusen/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/N-Warp%20Daisakusen/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/N-Warp%20Daisakusen/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Skipp and Friends: Unexpected Journey"
+		system    = "openemu.system.snes"
+		developer = "Mukunda Johnson"
+		website   = "http://mukunda.com/projects.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Skipp%20and%20Friends/SAF.smc"
+		released  = "1244422800"
+		added     = "1417395600"
+		md5		 = "06311a0076edb40702a557de4ba1e2f7"
+		>
+		<description>Move all three characters to the EXIT in each level. Each player has 2 limited special abilities that you may use to help advance through the level. The in-game status bar displays the name of each ability and how many times it can be used during that level.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Skipp%20and%20Friends/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Skipp%20and%20Friends/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Skipp%20and%20Friends/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Skipp%20and%20Friends/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Uwol: Quest for Money"
+		system    = "openemu.system.snes"
+		developer = "Alekmaul"
+		website   = "http://www.portabledev.com/pages/consoles/snes/jeuxdev.-perso/uwol-quest-for-money.php"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/UwolQuestForMoney.sfc"
+		released  = "1345338000"
+		added     = "1417395600"
+		md5		 = "50b5d42790301503b55f45ba4739ef9a"
+		>
+		<description>Port of the original game by The Mojon Twins. Features 55 levels where you must steal coins from a manor that is haunted by monsters.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Power Pig"
 		system    = "openemu.system.gba"
 		developer = "genecyst games"

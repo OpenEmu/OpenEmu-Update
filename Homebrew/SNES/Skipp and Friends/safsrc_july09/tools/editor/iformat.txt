@@ -1,0 +1,16 @@
+file format
+
+
+LONG: map width
+LONG: map height 
+LONG: music index
+LONG: bg color
+LONG: tileset bgcol
+
+map layer (X2):
+  LONG:nlayers
+  
+  each layer:
+    BOOL: enabled
+    STRING: name
+    TileEntry * MW*MH: map data

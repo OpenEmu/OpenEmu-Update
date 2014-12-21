@@ -1,0 +1,12 @@
+* Wedge's barrier can be used to distract enemies while your friends walk past
+
+* Apple's scream stuns enemies
+
+* Skipp's explosion can kill enemies
+
+* Skipp's rocket can pass over 'sliding' tiles
+
+* Wedge's laser is a bit hard to use, wait until the enemy is walking in a
+  line towards/away from Wedge before using the laser
+
+* boxes can block lasers

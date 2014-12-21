@@ -1,0 +1,38 @@
+VRAM is $8000 words large, addresses are in words
+
+$0000..$03ff nametable BG1 32x32 (near plane)
+$0400..$07ff nametable BG2 32x32 (far plane)
+
+$0000..$3fff tileset for BG1
+$1000..$13ff font graphics (first tile is $100)
+$1400..$17ff static tileset graphics (first tile is $140)
+$1800..$18ff animated tileset graphics
+
+$2000..$357f title screen logo
+
+$2000..$23ff mario sprites graphics
+$2400..$27ff items, score, platform sprites
+$2800..$2fff kong sprites
+$3000..$33ff enemies sprites
+#3a00..$3bff princess sprites
+$4000..$7bff tileset for BG2, fullscreen picture (first tile is $000)
+
+$7c00..$7fff nametable BG3 32x32 (offset table)
+
+
+16-color palette offsets:
+
+0	font graphics
+16	tileset graphics 1 (behind sprites)
+32	tileset graphics 2 (above sprites)
+80	title screen logo (top)
+96  title screen logo (bottom)
+112 background image
+
+128 mario sprites
+144 items, score, platform sprites
+160 kong sprites
+176 barrels
+192 enemies sprites
+208 princess sprites
+240 copy of items palette, for game over text
