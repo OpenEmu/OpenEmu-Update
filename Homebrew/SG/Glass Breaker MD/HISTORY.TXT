@@ -1,0 +1,13 @@
+2013.11.25
++ Added provisions to support flashcarts that do not have SRAM. Writing to them can cause lockups.
+
+2013.11.24 : Version 0.11 started
+? Removed checksum checking
++ Made some of the code a little bit more readable, holy hell what was I thinking when I wrote it LOL
++ Changed 50Hz lockout into notification that 60Hz works but is not ideal.
++ Adjusted some text to become visible in lower resolution.
++ Made sound enabled by default.
++ Fixed HUD placement issues. All done now !
+
+2007.02.xx : Version 0.1 released
+2006.09.xx : Version 0.1 started

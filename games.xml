@@ -679,6 +679,174 @@ These were the orders given to you, Operative JOE when you were ordered to infil
 	</game>
 
 	<game
+		name      = "Barbarian"
+		system    = "openemu.system.sg"
+		developer = "F.L."
+		website   = "http://barbarian.1987.free.fr/indexEN.htm"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Barbarian/barbarianCPC.gen"
+		released  = "1411606800"
+		added     = "1417395600"
+		md5		 = "6ac14b7e9b172cf874c44df06d2bb5b1"
+		>
+		<description>Remake of the original 1987 fighting game featuring gory two player combat.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Barbarian/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Barbarian/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Barbarian/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Barbarian/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Chase"
+		system    = "openemu.system.sg"
+		developer = "Jack Nolddor"
+		website   = "https://dl.dropboxusercontent.com/u/1383198/SegaRoms/ChaseMD/index.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/Chase%20(v1.0b).gen"
+		released  = "1407632400"
+		added     = "1417395600"
+		md5		 = "3b7c1cb7b22b3049c867dd32e5345068"
+		>
+		<description>Help Chase to collect all the coins scattered in every labyrinth of the tower in order to climb to the next floor, if you can reach the floor number ten and collect all the coins in it, you'll have escaped safe from the castle with the legendary loot.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Fix-It Felix Jr."
+		system    = "openemu.system.sg"
+		developer = "dra600n"
+		website   = "http://www.airwalkstudios.com/affinity/mainsite/downloads/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./FixItFelixJr_AirwalkStudios.gen"
+		released  = "1395709200"
+		added     = "1417395600"
+		md5		 = "38a3555768b31dc2abfc34d20ef546ca"
+		>
+		<description>Developers have paved over Ralph's home, building a luxury apartment tower in its place. Now, he's started smashing every window in sight! The residents of Niceland Tower have called upon the expertise of the only man capable of taking on Wreck-It Ralph, and repairing all the damage he's caused: Fit-It Felix Jr.!
+
+As Fix-It Felix Jr., you use your magical golden hammer to repair all of the smashed windows of Niceland Tower, moving up stage by stage, while avoiding the bricks that Wreck-it Ralph drops from above.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Glass Breaker MD"
+		system    = "openemu.system.sg"
+		developer = "TµEE co.(TM)"
+		website   = "http://gendev.spritesmind.net/forum/viewtopic.php?t=77"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Glass%20Breaker%20MD/GBMD.gen"
+		released  = "1385254800"
+		added     = "1417395600"
+		md5		 = "0d2500e886988979a3f763b2eeba8fae"
+		>
+		<description>Objective of this game is to break all the windows on the house. It is not the easiest task because the inhabitants don't let you do it so easily. You will encounter 5 enemies, each level adds one.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Glass%20Breaker%20MD/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Glass%20Breaker%20MD/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Glass%20Breaker%20MD/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Glass%20Breaker%20MD/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Oh Mummy"
+		system    = "openemu.system.sg"
+		developer = "1985 Alternativo"
+		website   = "http://www.fasebonus.net/2013/05/oh-mummy-genesis-liberado/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Oh%20Mummy/Oh%20Mummy%20Genesis%20(2013)(Fase Bonus)[pd].gen"
+		released  = "1369011600"
+		added     = "1417395600"
+		md5		 = "c97812258bbfa2567e58dcb2073e1f4a"
+		>
+		<description>Revive the classic 8-bit computer game in a new remake full of surprises. New pyramids have been discovered, but there are fearsome guardians guarding inside. Help the archaeologist Lance Colton and his partner Eve Chou to find all the treasures and get out alive!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Oh%20Mummy/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Oh%20Mummy/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Oh%20Mummy/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Oh%20Mummy/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Project MD"
+		system    = "openemu.system.sg"
+		developer = "Javier &quot;Sik&quot; Degirolmo"
+		website   = "http://oerg866.titandemo.de/projmd/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/projmd-20120429.gen"
+		released  = "1335661200"
+		added     = "1417395600"
+		md5		 = "44443e1bf4e989c8538202c513b02e64"
+		>
+		<description>Stephany is a Mega Drive fangirl. She's shy, but also smart. She built a virtual world inside her computer. This virtual world is called &quot;Project MD&quot;. This is a day inside that virtual world...
+
+Welcome to Project MD.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Rick Dangerous"
+		system    = "openemu.system.sg"
+		developer = "Pascal"
+		website   = "http://www.pascalorama.com/article.php?news=40&amp;cat=25"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/rickdangerous.gen"
+		released  = "1297731600"
+		added     = "1417395600"
+		md5		 = "43bad22212aa9177f8aa0e1666530a5c"
+		>
+		<description>A faithful port of the original 1989 Atari ST version.
+
+Will Rick Dangerous, intrepid Super Hero and part-time stamp collector, survive his first mission in the Aztec temple of the tribe? Should he do so, Rick will face new hazards in the Egyptian tomb and the enemy fortress.
+
+Controls: B + UP = Shoot Gun, B + DOWN = Set Dynamite, B + LEFT/RIGHT = Jab with Stick
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Sumo Slam!"
+		system    = "openemu.system.sg"
+		developer = "Shilenko &quot;Segaman&quot; Mikail"
+		website   = "http://elektropage.ru/publ/khaki/homebrew/sumo_slam/30-1-0-116"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Sumo%20Slam!/Sumo%20Slam!%20v1.0%20(2013)(SegaMan)[pd].gen"
+		released  = "1388192400"
+		added     = "1417395600"
+		md5		 = "aba9035c4712d06ef9c4df60db50164a"
+		>
+		<description>Play as a sumo wrestler in 4 different game modes (eating sushi, escape from bees, slam, king of the hill) using just one button to move your spinning wrestler.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Sumo%20Slam!/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Sumo%20Slam!/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Sumo%20Slam!/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Sumo%20Slam!/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Classic Kong Complete"
 		system    = "openemu.system.snes"
 		developer = "Shiru"
