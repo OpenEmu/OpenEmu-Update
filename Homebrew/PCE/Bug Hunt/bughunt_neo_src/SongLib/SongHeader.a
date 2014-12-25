@@ -1,0 +1,15 @@
+;/*---------------------------------------------------------------------------*/
+;/* SongHeader.a - assembly definitions for the song header information block */
+;/*---------------------------------------------------------------------------*/
+
+header   =   *
+trackIX  =   0
+pitchIX  =   2
+freqIX   =   4
+moduIX   =   6
+drumIX   =   8
+tempo    =   10
+nWaves   =   12
+waveBase =   14
+hdr_end  =   16
+

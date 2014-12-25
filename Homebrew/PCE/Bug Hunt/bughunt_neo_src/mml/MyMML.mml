@@ -1,0 +1,65 @@
+.include "mml/blank.mml"
+.include "mml/sohwin.mml"
+.include "mml/bkgb_title_kio_7.mml"
+.include "mml/bkgb_lvl2_kio_5.mml"
+.include "mml/ice.mml"
+.include "mml/mex.mml"
+.include "mml/mm.mml"
+
+;----------------------------------------------------------------------------------------------------------
+; GNOP sound effects. Not exactly much to this.
+;----------------------------------------------------------------------------------------------------------
+
+.Envelope
+     .mod 0 wiggle2
+     0,0,1,2,4,8,12,16,20,16,12,8,4,2,1,0,0,-1,-2,-4,-8,-12,-16,-20,-16,-12,-8,-4,-2,-1,0,0
+
+.Perc 0 
+       C:  E01 W00 P13,13 T4095 T4095 T3000         
+       C#: E01 W00 P15,15  T200  T400  T800 N15 N20 T1000 T750 N15 N20 T1000 T2000 T3000 T4095 N9 N15  
+       D:  E03 W30 P13,13 T200 n30  T350
+       D#: E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       E:  E01 W0  P15,15 T940  T103      N31 N27 N29			T500 T900
+       F:  E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       F#: E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       G:  E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       G#: E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       A:  E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       A#: E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+       B:  E17 W45 P15,15 T940  T103      N31 N27 N29 N26
+        
+;Only the first three drums have a defined sound.  The rest will sound like something but who knows
+;If it will sound any good.  
+
+;Only the first three drums have a defined sound.  The rest will sound like something but who knows
+;If it will sound any good.  
+
+.SUBTRACK  7   ehit
+.channel   0
+V31 O5 @M0 P15,15 L64 @22
+.channel 	6
+f
+
+.SUBTRACK  8   phit
+.channel 0
+V31 O4 @M0 P15,15 L16 @22
+.channel 6
+d+
+
+.SUBTRACK 9 menu
+.channel 0
+V24 O5 @M0 P15,15 L64 @22
+.channel 6
+A
+
+.SUBTRACK 10 OK
+.channel 0
+V28 O4 @M0 P15,15 L16 @01
+.channel 6
+c-
+
+.SUBTRACK 11 cancel
+.channel 0
+V28 O4 @M0 P15,15 L16 @01
+.channel 6
+d+

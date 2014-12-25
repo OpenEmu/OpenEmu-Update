@@ -1,0 +1,40 @@
+.TRACK
+.CHANNEL 0 Setup
+T76 V31 L4 ^D0
+
+.CHANNEL 1 sohwin_chone
+O4 @36 P13,13 @E03
+g4.f16g16a8.g8.a8
+b2
+
+
+
+.CHANNEL 2 sohwin_chtwo
+O4 @36 P13,13 @E03
+d4.c16d16e8.d8.e8
+f+2
+
+
+.CHANNEL 3 sohwin_chthree
+O4 @36 P13,13 @E03
+e4.d16e16f+8.e8.f+8
+g+2
+
+
+
+.CHANNEL 4 sohwin_chfour
+O4 @36 P6,6 @E03
+
+
+
+
+.CHANNEL 5 sohwin_chfive
+O4 @36 P6,6 @E03
+
+
+
+
+.Channel 6 sohwin_chsix
+O4 @36 P6,6 @E03
+
+

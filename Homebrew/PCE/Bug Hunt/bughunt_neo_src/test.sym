@@ -1,0 +1,2471 @@
+Label				Addr	Bank
+-----				----	----
+LL152				a69a	 15
+	.x01960			a75d	 15
+	.x01953			a71b	 15
+	.x01945			a6d8	 15
+bcSubSweep			d113	 02
+_scan_map_table.3		efb4	 00
+	.x2			f030	 00
+	.l4			f006	 00
+	.l3			eff5	 00
+	.l2			efe4	 00
+	.x1			f016	 00
+	.l1			efd3	 00
+psgSubVoiceStatus		2607	 f8
+psgSysEnvCnt			0010	 f0
+_bm_disable			fa81	 00
+_mov32.sub			f6f9	 00
+	.l1			f6fb	 00
+psgMainPanLeftAccum		23de	 f8
+psgTrackCtrl			22de	 f8
+SIZE_16x64			0030	 f0
+LL30				a6af	 14
+	.x00843			a6c5	 14
+LL28				a65e	 14
+	.x00838			a6ac	 14
+	.x_00832		a68a	 14
+	.x00828			a66b	 14
+cancel				bf36	 0a
+_gfx_point.2			f6c2	 00
+sStack0				25ab	 f8
+LL116				b64f	 14
+OK				bf33	 0a
+menu				bf30	 0a
+sohwin_chthree			8056	 09
+PSGF_TEMPO			0010	 f0
+_bm_errno			f9f6	 00
+mapwrap				26c3	 f8
+ARG_REG				0001	 f0
+__ldd_b				0000	 f0
+subFixFreq			d5c6	 02
+	.fixSign		d5ec	 02
+	.octaveUp		d5da	 02
+	.octaveDown		d5e3	 02
+	.Exit			d5f4	 02
+	.one			d5ce	 02
+mapbat_top			26c8	 f8
+PSG_DDA				0040	 f0
+psg_noise			0807	 f0
+LL99				b3c1	 14
+	.x01380			b3ea	 14
+	.x01377			b3d6	 14
+psg_env7			d8ae	 02
+gfx_getaddr			af33	 01
+ugt_y1				e943	 00
+	.gt_end			e952	 00
+	.gt_must_test_lobyte	e94c	 00
+joybuf				2681	 f8
+irq1_jmp			2202	 f8
+ac_identver_h			1afe	 f0
+DEVELO				0000	 f0
+LL207				b59c	 15
+LL187				af02	 15
+_tileset			43cc	 03
+ChanData			0806	 f0
+processVolume			c83e	 02
+	.fixLeft		c923	 02
+	.panLeftNeg		c905	 02
+	.volDone		c936	 02
+	.fixRight		c8cd	 02
+	.panRightNeg		c8b0	 02
+	.noRight		c8e0	 02
+	.saveVol		c880	 02
+	.doNeg			c860	 02
+	.noMainChange		c88a	 02
+psgMStop			c169	 02
+	.noAllFix		c1a7	 02
+	.stopChan		c196	 02
+	.stopMe			c18a	 02
+	.nextVoice		c19f	 02
+	.mvoiceLoop		c17c	 02
+	.mstopLoop		c17b	 02
+	.mstopExit		c1ad	 02
+_mouse_y			fade	 00
+_rti				e122	 00
+psg_lfofreq			0808	 f0
+perc005				be58	 0a
+subProcessFrequency		d4f4	 02
+	.doMod			d5ba	 02
+	.modNext		d5aa	 02
+	.noMod			d5c5	 02
+	.saveOffset		d58c	 02
+	.useIt			d57e	 02
+	.noPitch		d590	 02
+	.noDetune		d557	 02
+	.sweepTime		d52d	 02
+	.sweepDone		d54a	 02
+	.isTone			d4ff	 02
+__spr_max			201a	 f8
+_strncmp.3			e6d0	 00
+	.x_00130		e6f4	 00
+	.x_00129		e6ee	 00
+	.out			e707	 00
+	.plus			e6dd	 00
+	.cont			e6e4	 00
+	.minus			e6e0	 00
+	.cmplp			e6d4	 00
+setbgmap			0000	 f0
+LL65				aabf	 14
+	.x_00998		aacd	 14
+_set_color_rgb.4		f457	 00
+zp_ptr1				2012	 f8
+LL153				aac8	 15
+	.x02106			ab33	 15
+	.x02097			ab0a	 15
+	.x_02090		aad6	 15
+_title_color_cycle		aee4	 14
+_sngBank1			8000	 09
+bcSubSetModDelay		d0d0	 02
+_bcd_set.2			f7a7	 00
+sdiv_end			eb80	 00
+joytmp6				26ac	 f8
+psgMainPanRightDelta		23cc	 f8
+PSG_TRK_MAINPAUSE		0080	 f0
+__submi				0000	 f0
+_put_string.main		ef61	 00
+	.x_00268		ef8e	 00
+	.l2			ef78	 00
+	.l1			ef71	 00
+	.l3			ef8e	 00
+_dl				20fe	 f0
+LL31				a6c8	 14
+LL29				a6cb	 14
+LL0				4000	 03
+_p0_spr_data			bf75	 0a
+_joy				faa5	 00
+sStack1				25b4	 f8
+psgMainPEPtrHi			23a2	 f8
+LL117				b656	 14
+wiggle2				bdde	 0a
+bcSubFadeOut			d1f7	 02
+	.setFade		d204	 02
+bcSubTie			cf70	 02
+bcSetPitchEnvelope		c6e5	 02
+msflag				2984	 f8
+__subw				0000	 f0
+bcVolChange			c7b8	 02
+bcSetKeyOnOffRatio		c59b	 02
+_fade_color.2			f412	 00
+spr_pal				0000	 f0
+_ah				20f9	 f0
+phit				bf2d	 0a
+psg_env8			d8bb	 02
+_line_color			2981	 f8
+psgSubFadeOutSpeed		2613	 f8
+psgMainWaveNo			2474	 f8
+NO_FLIP_X			0000	 f0
+ac_base1_h			1a04	 f0
+__comw				0000	 f0
+LL210				b82c	 15
+LL208				b537	 15
+	.x02483			b549	 15
+	.x02481			b53f	 15
+LL190				af54	 15
+	.x_02266		af62	 15
+LL188				af17	 15
+_hh				2996	 f8
+_line_currx			2974	 f8
+perc006				be64	 0a
+_psgFadeOut			a344	 14
+getA_ult			e8f4	 00
+lib2_load_bat			a64a	 01
+	.l3			a663	 01
+	.l2			a653	 01
+	.l1			a64e	 01
+psgMainEnvDecayTime		2372	 f8
+__ldb_s				0000	 f0
+LL66				aad0	 14
+bcSetMod			c6b2	 02
+mapctablebank			26c0	 f8
+psgSubPEDelay			254b	 f8
+PSGSYS_SUB_ONLY			0001	 f0
+_bank_base			0000	 f0
+LL154				a773	 15
+	.x01983			a812	 15
+	.x01971			a7b6	 15
+_sngBank2			a000	 0a
+psgWaves			d94d	 02
+delay240			b49c	 01
+	.lp			b4a0	 01
+_joybuf				fabd	 00
+_joytrg				faad	 00
+_vsync				ef93	 00
+	.l1			ef99	 00
+_rndptr				2741	 f8
+psgSubModDelayCount		252d	 f8
+psgSubEnvelopePtrHi		24df	 f8
+ENV_RLS				0000	 f0
+PSGSYS_MAIN_ONLY		0000	 f0
+bcSweepAmount			c716	 02
+asl				ea20	 00
+	.asl_begin		ea30	 00
+	.asl_end		ea39	 00
+psgSubModCount			2521	 f8
+psgUserPitchEnvelope		22d9	 f8
+XRES_SHARP			0000	 f0
+color_reg_h			0403	 f0
+video_data_h			0003	 f0
+LL32				a6ce	 14
+	.x00849			a6e3	 14
+_badge1pal			bcc7	 0e
+LL1				a024	 14
+getMainStackFrame		c821	 02
+lib2_bm_write.4			b08e	 01
+	.l2			b0a8	 01
+	.l1			b09d	 01
+	.ok			b0c1	 01
+	.x1			b0cc	 01
+eqzp				e8bc	 00
+	.x1_eq			e8cb	 00
+	.x_ne			e8c9	 00
+sStack2				25bd	 f8
+VADDR_INC_32			0008	 f0
+lsrw				0000	 f0
+LL120				b6c0	 14
+	.x01514			b6ed	 14
+	.x01508			b6d2	 14
+	.x01506			b6c8	 14
+LL118				b749	 14
+	.x01539			b772	 14
+	.x01536			b75e	 14
+__spr_flag			201b	 f8
+START_BANK			0000	 f0
+VADDR_INC_1			0000	 f0
+_k_moveleft			2ae3	 f8
+bcSubChangeMode			d1d6	 02
+_fade_color.3			f412	 00
+	.l3			f447	 00
+	.l2			f433	 00
+	.l1			f422	 00
+	.l5			f451	 00
+	.l4			f44e	 00
+SIZE_16x32			0010	 f0
+ChannelSelect			0800	 f0
+psg_env9			d8c8	 02
+_bcd_init.clear			f79b	 00
+	.l2			f7a1	 00
+set_xres			e543	 00
+NO_FLIP_Y			0000	 f0
+__orw				0000	 f0
+LL211				b6d9	 15
+	.x_02560		b743	 15
+	.x02559			b73b	 15
+	.x02553			b716	 15
+	.x02548			b6fd	 15
+LL209				b5a1	 15
+LL191				af65	 15
+	.x02276			af96	 15
+	.x02273			af8a	 15
+LL189				af28	 15
+	.x02263			af51	 15
+bcSetPanPots			c58c	 02
+_line_curry			2976	 f8
+lib2_load_palette		a600	 01
+	.loop_a			a629	 01
+psgTemp1			20ea	 f8
+spr_ctrl			0000	 f0
+psg_freqhi			0803	 f0
+irq_m				20f5	 f0
+perc007				be73	 0a
+psgSubMMLOperations		ce01	 02
+mousneg				fadb	 00
+user_hsync			e169	 00
+clock_tt			2692	 f8
+psgTimerCount			22d4	 f8
+ac_identflag			1aff	 f0
+LL67				ab1f	 14
+_psgMainStatus			2992	 f8
+psgSetupSong			c31a	 02
+	.notNoiseChannel	c3a3	 02
+	.nextVoice		c3af	 02
+	.voiceLoop		c339	 02
+_line_adjust			297e	 f8
+_memcmp.3			e677	 00
+	.x_00121		e697	 00
+	.x_00120		e691	 00
+	.plus			e684	 00
+	.cont			e68b	 00
+	.minus			e687	 00
+	.cmplp			e67b	 00
+hdw				26de	 f8
+_font_color			2771	 f8
+__stbps				0000	 f0
+LL155				a75e	 15
+	.x01963			a770	 15
+	.x01961			a766	 15
+bcTrackDone			c812	 02
+__andwi				0000	 f0
+_bm_read.4			fa27	 00
+mapbat_bottom			26c9	 f8
+_ram_hdwr_tia_rts		26d3	 f8
+psgSubFreqHi			25ed	 f8
+psgSubOctave			2497	 f8
+colorport			0400	 f0
+LL33				a6f8	 14
+LL2				a058	 14
+PSGF_MVOFF			0011	 f0
+ChanVolume			001f	 f0
+_bm_testram			f883	 00
+	.l3			f89c	 00
+	.l2			f894	 00
+	.l1			f885	 00
+mapwidth			26b4	 f8
+rcr_on				e2be	 00
+sStack3				25c6	 f8
+psgMainTransposeAmount		2330	 f8
+psgPtr1				20e8	 f8
+psgFlags			20e7	 f8
+BGMAP_SIZE_32x64		0004	 f0
+__lbeq				0000	 f0
+LL121				b705	 14
+LL119				b749	 14
+psgFadeOut			c2b1	 02
+	.notNeg			c2c9	 02
+	.fadeExit		c2cc	 02
+joyold				2232	 f8
+vsync_hook			2208	 f8
+_map_get_tile.2			f53b	 00
+lezp				ea0f	 00
+rcr_off				e2ce	 00
+_decw				0000	 f0
+bhi				0000	 f0
+psgWaveEntries			002d	 f0
+_rndseed			2743	 f8
+psgMainEnvDurationHi		2360	 f8
+rorw				0000	 f0
+LL212				b7dc	 15
+LL192				b82f	 15
+LeftVolume			00f0	 f0
+psgMainPEDelayCount		23b4	 f8
+psg_WaveNo			22e2	 f8
+psgTemp2			20eb	 f8
+perc010				bea3	 0a
+perc008				be85	 0a
+_scroll				f594	 00
+_spr_x				f2eb	 00
+sub				0000	 f0
+LL70				ab56	 14
+	.x01038			abd0	 14
+LL68				ab2c	 14
+	.x01016			ab42	 14
+_tilemap			afc1	 0e
+bcSubRelTranspose		d18f	 02
+mainParseMMLCodes		c3cb	 02
+	.newNote		c3d1	 02
+SOFT_RESET			0006	 f0
+JOY_BITUP			0004	 f0
+bram_lock			1803	 f0
+LL156				a848	 15
+	.x02014			a8e0	 15
+	.x02002			a88b	 15
+scr_h				2246	 f8
+vdc_crh				20f4	 f0
+_track				2987	 f8
+processFrequency		caf7	 02
+	.doMod			cbbd	 02
+	.modNext		cbad	 02
+	.noMod			cbc8	 02
+	.saveOffset		cb8f	 02
+	.useIt			cb81	 02
+	.noPitch		cb93	 02
+	.noDetune		cb5a	 02
+	.sweepTime		cb30	 02
+	.sweepDone		cb4d	 02
+	.isTone			cb02	 02
+lib2_mousread			b407	 01
+	.exit			b49b	 01
+	.loop1			b409	 01
+_farpeekw.1			fb97	 00
+_bm_getptr.2			fa03	 00
+_bm_open			fa5d	 00
+gezp				e9ba	 00
+ac_port				1a00	 f0
+__stw_s				0000	 f0
+LL34				aa29	 14
+Channel000			8000	 09
+LL3				a06f	 14
+_init_satb			f3f7	 00
+	.l1			f3f9	 00
+le				ea0a	 00
+sStack4				25cf	 f8
+psgMainSweepDelta		23e4	 f8
+psgMainDetuneAmount		23ba	 f8
+psgPtr2				20ea	 f8
+LL122				b70c	 14
+psg_bios			fc13	 00
+	.psgBadParam		fc29	 00
+gtzp				e98c	 00
+	.true			e996	 00
+	.false			e99a	 00
+	.geta_ugt		e99e	 00
+HSR				0000	 f0
+_load_bat.4			e3d1	 00
+PSGF_SSTAT			000d	 f0
+s_xh				2705	 f8
+joyold6				269d	 f8
+bcSubSetPanPots			cf89	 02
+_random				fbe6	 00
+_font_base			276f	 f8
+divu10				e721	 00
+	.l2			e72f	 00
+	.l1			e728	 00
+psgSubFadeOutCount		2614	 f8
+psgMainSweepAccumLo		23ea	 f8
+ac_identver_l			1afd	 f0
+LL213				b78b	 15
+LL193				afb3	 15
+	.x02330			b11a	 15
+	.x02299			b024	 15
+	.x02293			afff	 15
+	.x02286			afd8	 15
+PSGF_ASTOP			0010	 f0
+bcSetTempo			c569	 02
+	.tempo1			c571	 02
+s_work				273e	 f8
+__fbank				200d	 f8
+perc011				beb2	 0a
+perc009				be94	 0a
+sStackHi			d235	 02
+_spr_y				f308	 00
+smul				ea74	 00
+psgSongNo			22e1	 f8
+LL69				ab45	 14
+	.x_01019		ab53	 14
+LL71				abfd	 14
+_psgDelay			a37c	 14
+_ram_hdwr_tia_size		26d1	 f8
+psgSubPEDelayCount		2551	 f8
+LL157				a81c	 15
+	.x01990			a830	 15
+_memcpy.3			e64f	 00
+	.x_00115		e663	 00
+	.x_00114		e65d	 00
+	.cpylp			e653	 00
+JOY_BITVI			0003	 f0
+_reset_satb			f3f7	 00
+_line_deltax			2978	 f8
+mulu32				e78e	 00
+	.next			e7d3	 00
+	.loop			e7a8	 00
+joytmp				26a7	 f8
+joy6				2693	 f8
+psgMainVoiceVolume		2312	 f8
+_adcw				0000	 f0
+_cx				20fc	 f0
+__addwi				0000	 f0
+_score				2af1	 f8
+LL35				a783	 14
+	.x00872			a799	 14
+Channel001			8008	 09
+LL4				a09a	 14
+ChanFreqHi			0803	 f0
+_spr_pal			f369	 00
+psgSubPanPot			25f9	 f8
+sStack5				25d8	 f8
+psgSubSweepAccumLo		2587	 f8
+JOY_IV				0002	 f0
+LL123				b7a0	 14
+PSGF_PLAY			000b	 f0
+HUC				0001	 f0
+smod				ebc7	 00
+_al				20f8	 f0
+subInitCheck			cd29	 02
+_clock_tt			fb52	 00
+sdiv_no_invert_secondary	eb65	 00
+BGMAP_SIZE_32x32		0000	 f0
+ac_base1_l			1a02	 f0
+LL214				b74c	 15
+	.x02568			b771	 15
+LL194				af97	 15
+	.x02279			afa9	 15
+	.x02277			af9f	 15
+_level				2aee	 f8
+psgSubDrumPtrLo			259f	 f8
+timer_cnt			0c00	 f0
+_si				20ee	 f0
+_rcr_on				e2be	 00
+psgSubSegnoLo			24c1	 f8
+psg_ch				0800	 f0
+LL72				abfa	 14
+fntcpy				0000	 f0
+ac_data1_alt			1a01	 f0
+LL160				a913	 15
+LL158				a845	 15
+_neosplash			a6f9	 14
+subDriveExit			cd2e	 02
+psgMStat			c135	 02
+	.voiceDone		c14c	 02
+	.isPlaying		c14a	 02
+	.voiceLoop		c141	 02
+	.mstatExit		c14f	 02
+timerport			0c00	 f0
+__subws				0000	 f0
+_call_bank			0017	 f0
+bcRepeatEnd			c60b	 02
+	.unStack		c625	 02
+_line_deltay			297a	 f8
+ule				ea15	 00
+JOY_BITV			0002	 f0
+decw				0000	 f0
+ARG_LABEL			0006	 f0
+color_reg_l			0402	 f0
+video_data_l			0002	 f0
+LL36				a79c	 14
+	.x_00875		a7aa	 14
+Channel002			800c	 09
+LL5				a0d3	 14
+bcSubVolChange			d1b5	 02
+_get_joy_events.sub		fb17	 00
+psgMainTieState			2482	 f8
+_tstw				0000	 f0
+ac_offset1_l			1a05	 f0
+_LD_en_delay			43a4	 03
+LL124				b773	 14
+	.x01542			b785	 14
+	.x01540			b77b	 14
+PSG_TRK_SUBPAUSE		0040	 f0
+mm_chtwo			a54c	 0a
+psgSubModBasePtrLo		2515	 f8
+_en_spr_data2			b79b	 0b
+bcSubAllTranspose		d19f	 02
+	.voxOff			d1af	 02
+	.voxLoop		d1a6	 02
+mapbank				26b1	 f8
+_main				a000	 15
+bg_y1				2210	 f8
+ac_base1_m			1a03	 f0
+LL215				b784	 15
+LL195				b5a1	 15
+	.x02526			b671	 15
+	.x02502			b5c6	 15
+PITCH_IX			0000	 f0
+bcSubOctaveUp			cf5e	 02
+bat_height			26d6	 f8
+s_bottom			272e	 f8
+__asrw				0000	 f0
+_en_spd				2a53	 f8
+_psgRegisterPC			a1cf	 14
+bcSubSegno			cfcc	 02
+_ram_hdwr_tia_src		26cd	 f8
+timer_ctrl			0c01	 f0
+LL73				ad82	 14
+	.x01125			adf5	 14
+	.x01121			addf	 14
+	.x_01117		adc9	 14
+	.x_01111		ad9d	 14
+	.x01109			ad8f	 14
+addSweep			cbf8	 02
+mStackHi			c838	 02
+_gfx_plot.3			f6b0	 00
+_ram_hdwr_tia_dest		26cf	 f8
+LL161				a8ea	 15
+	.x02021			a8fe	 15
+LL159				a913	 15
+	.x02041			a98a	 15
+	.x02036			a976	 15
+_pf				2af9	 f8
+ChanReset			0040	 f0
+_sub32.2			f716	 00
+	.l1			f71e	 00
+_satb				2773	 f8
+joycallback			2688	 f8
+psgMainDrumPtrHi		2408	 f8
+set_bgpal			0000	 f0
+__orws				0000	 f0
+_bm_mpr4			2982	 f8
+lib2_load_map_8			a780	 01
+	.l6			a7ef	 01
+	.l4			a7da	 01
+	.l3			a7b5	 01
+	.l5			a7ed	 01
+	.l1			a78e	 01
+	.l2			a793	 01
+__lbra				0000	 f0
+LL37				a7ad	 14
+Channel003			8010	 09
+LL6				a10e	 14
+bcSubSetOctave			cf56	 02
+bcSetRelVol			c5ab	 02
+	.isOkay			c5bc	 02
+	.wentLow		c5b6	 02
+ac_offset1_m			1a06	 f0
+LL125				bbc9	 14
+udiv				eb82	 00
+	.sdiv_end		ebaf	 00
+	.sdiv_begin		eb97	 00
+hsync_hook			220a	 f8
+__ldd_i				0000	 f0
+psgTempoTable			d794	 02
+lib2_set_xres			a9ad	 01
+	.xres_err		aa4d	 01
+	.xres_putit		aa17	 01
+	.hde_tab		aa5b	 01
+	.hds_tab		aa58	 01
+	.hsw_tab		aa55	 01
+	.vce_tab		aa52	 01
+	.x_00093		a9e3	 01
+	.x_00091		a9d6	 01
+	.xres_calc		a9e6	 01
+remap_data			e3aa	 00
+	.l1			e3be	 00
+psgMainTrackVolume		2468	 f8
+__lbne				0000	 f0
+gt				e918	 00
+	.gt_primary_minus	e928	 00
+bg_y2				2212	 f8
+setvwaddr			0000	 f0
+LL216				b784	 15
+LL196				b28a	 15
+	.x02397			b2e8	 15
+	.x02387			b29e	 15
+_rs				299c	 f8
+_tileset__data__		bf9d	 0b
+lib2_gfx_line.5			ab98	 01
+	.x_00437		adf6	 01
+	.ylppos			adee	 01
+	.ylp2			adf8	 01
+	.x_00434		adbe	 01
+	.ylp1			ad82	 01
+	.x_00429		ad82	 01
+	.x_00419		ad00	 01
+	.xlp3			ad02	 01
+	.x_00417		ace0	 01
+	.xlp2			ace0	 01
+	.xlppos			acd8	 01
+	.out			ae21	 01
+	.x_00415		acc0	 01
+	.xlp1			ac89	 01
+	.x_00410		ac89	 01
+	.xbiglp			ac32	 01
+	.ybiglp			ad2b	 01
+	.x_00402		ac32	 01
+	.x_00401		ac2d	 01
+	.l3			ac1f	 01
+	.l2			abe1	 01
+	.l1			abcd	 01
+	.x_00389		aba5	 01
+JOY_BITDN			0006	 f0
+spr_set				0000	 f0
+doRest1				c52f	 02
+_farpeekb.1			fb86	 00
+_set_joy_callback.4		fae5	 00
+	.l1			fb0a	 00
+lib2_load_font			a92e	 01
+	.t5			a992	 01
+	.t4			a98e	 01
+	.t3			a980	 01
+	.t2			a97c	 01
+	.t1			a971	 01
+	.p5			a968	 01
+	.p4			a964	 01
+	.p3			a956	 01
+	.p2			a952	 01
+	.p1			a947	 01
+	.copy			a946	 01
+	.l2			a940	 01
+	.l1			a939	 01
+joytrg				222d	 f8
+JOY_LEFT			0080	 f0
+tstw				0000	 f0
+adcw				0000	 f0
+__stb_s				0000	 f0
+__addw				0000	 f0
+LL74				ae88	 14
+_neotiles__data__		bce9	 0e
+bcSubDetune			d10b	 02
+bcCall				c738	 02
+	.skipHi12		c75b	 02
+psgFM				c0fd	 02
+psgSubDrive			ccf6	 02
+	.voiceNext		cd1b	 02
+	.voiceLoop		cd04	 02
+	.subStatusUpdate	cd26	 02
+video_reg			0000	 f0
+LL162				a913	 15
+PSGF_INIT			0002	 f0
+_peekw				fb7a	 00
+lib2_bm_disable			b238	 01
+_VSyncCnt			298a	 f8
+psgSystemNo			22df	 f8
+psg_inhibit			20e7	 f8
+JOY_V				0004	 f0
+videoport			0000	 f0
+vdc_crl				20f3	 f0
+_neo_font_pal			bca5	 0e
+mex_chone			951a	 09
+asr				ea49	 00
+	.asr_begin		ea59	 00
+	.asr_end		ea64	 00
+clock_hh			268f	 f8
+JOY_SEL				0004	 f0
+load_sprites			0000	 f0
+__stbi_s			0000	 f0
+LL40				a7d0	 14
+	.x_00885		a7de	 14
+LL38				a833	 14
+Channel004			8014	 09
+LL7				a149	 14
+_bm_id				f9fb	 00
+_gfx_line.5			f6d4	 00
+_put_char.2			ee87	 00
+LL126				b7cb	 14
+	.x01559			b7fd	 14
+_get_map_width			f0f9	 00
+_load_font.2			edfe	 00
+	.x_00243		ee0b	 00
+psgDataBankLow			22eb	 f8
+_farpeekw.sub			fbae	 00
+	.l1			fbbd	 00
+s_xl				26fd	 f8
+TIMER				0002	 f0
+lblo				0000	 f0
+ARG_INDIRECT			0004	 f0
+bcSubSetModCorrection		d0d8	 02
+_get_color.1			f409	 00
+mapaddr				26b2	 f8
+psgMainModDelayCount		2390	 f8
+setcolor			0000	 f0
+LL217				b82c	 15
+LL197				b16b	 15
+	.x02371			b23c	 15
+mex_chfive			9b3e	 09
+divu8				e70a	 00
+	.l2			e719	 00
+	.l1			e712	 00
+psgSubSweepDelta		2581	 f8
+_psgRegisterPE			a194	 14
+doRest2				cf3e	 02
+bcSubTrackDone			d20f	 02
+_load_vram.3			e420	 00
+lbhs				0000	 f0
+CDROM				0000	 f0
+LL75				ae6a	 14
+	.x01150			ae7f	 14
+MainVolume			0801	 f0
+bcSweepTime			c71e	 02
+bcSetTimeBase			c53d	 02
+psgMMLOperations		c3f2	 02
+LL163				a9fa	 15
+	.x02085			aab7	 15
+	.x02078			aa99	 15
+	.x02066			aa3d	 15
+psgBiosTable			fc34	 00
+_bm_enable			fa6f	 00
+_put_tile_16			f4bc	 00
+	.x_00356		f530	 00
+	.x_00351		f503	 00
+	.x_00349		f4f3	 00
+_put.xy				ee63	 00
+spr_x				0000	 f0
+_k_moveright			2ae5	 f8
+ChanDDA				0040	 f0
+_set_screen_size		f5df	 00
+_rndzp				2014	 f8
+psgSubEnvReleaseLo		2503	 f8
+lbpl				0000	 f0
+LL39				a7b7	 14
+	.x00882			a7cd	 14
+_neospr				bf0d	 11
+Channel005			8018	 09
+LL8				a184	 14
+subProcessFade			d607	 02
+	.nextVoice		d62d	 02
+	.voxLoop		d623	 02
+	.addHi			d617	 02
+	.noFade			d630	 02
+_put_char.3			ee7c	 00
+_strcmp.2			e6ac	 00
+	.x_00126		e6cc	 00
+	.x_00125		e6c6	 00
+	.out			e6ce	 00
+	.plus			e6b5	 00
+	.cont			e6bc	 00
+	.minus			e6b8	 00
+	.cmplp			e6ac	 00
+_gameover			2aed	 f8
+LL127				b800	 14
+	.x_01562		b80e	 14
+LL41				a7e1	 14
+_bm_free			f8e3	 00
+	.ok			f916	 00
+	.err			f922	 00
+_load_font.3			ee0b	 00
+	.l2			ee21	 00
+	.l1			ee1a	 00
+psgSubTrackPtrHi		2491	 f8
+psgMainTrackPtrLo		22ee	 f8
+HSYNC				0005	 f0
+color_reg			0402	 f0
+__ldw				0000	 f0
+bcAllTranspose			c7a2	 02
+	.nextVoice		c7b2	 02
+	.voxLoop		c7a9	 02
+ugt				e941	 00
+_irq1				e12a	 00
+	.l5			e157	 00
+	.exit			e15d	 00
+	.l4			e14e	 00
+	.l3			e148	 00
+	.hsync			e14e	 00
+	.vsync			e135	 00
+CHAR				0000	 f0
+lbcc				0000	 f0
+map				0000	 f0
+_bh				20fb	 f0
+hsw				26dc	 f8
+psgMainFreqLo			245c	 f8
+psgMainSweepTime		23f6	 f8
+psgMainModBasePtrHi		237e	 f8
+scroll				0000	 f0
+_set_bgpal			0000	 f0
+_LD_en_fly_prob			43ae	 03
+LL220				b883	 15
+	.x_02615		b891	 15
+LL218				b85d	 15
+LL198				b168	 15
+_en_delay			29c1	 f8
+_init				e028	 00
+	.fntld			e0d1	 00
+	.l2			e039	 00
+psgMainSegnoHi			232a	 f8
+FLIP_X				0008	 f0
+_config				af87	 14
+bcSubSetRelVol			cfa8	 02
+	.isOkay			cfb9	 02
+	.wentLow		cfb3	 02
+psgBiosCall			fc31	 00
+writevram			f609	 00
+	.x_00364		f625	 00
+	.x_00363		f61a	 00
+_gfx_pal			2973	 f8
+psgMainFrequencyHi		2306	 f8
+_pdt				2af7	 f8
+MODU_TAB			bdde	 0a
+_psgInit			a000	 14
+_disp_on			fc5e	 00
+lib2_mousinit			b378	 01
+	.mous			b3fd	 01
+	.l1			b3e7	 01
+	.loop1			b3d8	 01
+FONT_VADDR			0800	 f0
+__incw_s			0000	 f0
+LL164				a998	 15
+	.x02055			a9ed	 15
+LL76				ae31	 14
+_music				2af0	 f8
+spr_y				0000	 f0
+batcpy				0000	 f0
+stwz				0000	 f0
+MAGICKIT			0001	 f0
+_clock_hh			fb43	 00
+ac_identbase			1afd	 f0
+__addmi				0000	 f0
+ice_chthree			91b1	 09
+Channel006			801c	 09
+LL9				a1bf	 14
+_farmemget.3			fbc0	 00
+lib2_bm_create.2		b0cd	 01
+	.ok			b183	 01
+	.l3			b16a	 01
+	.l2			b163	 01
+	.sum			b172	 01
+	.l1			b146	 01
+	.x_00542		b10e	 01
+	.x1			b0d8	 01
+	.x2			b0da	 01
+	.go			b0e6	 01
+_strncpy.3			e623	 00
+	.x_00110		e639	 00
+	.x_00109		e633	 00
+	.out			e64e	 00
+	.lp			e627	 00
+_ram_hdwr_tia			26cc	 f8
+psgSubStackOffset		25e1	 f8
+_nb_bank			0018	 f0
+LL130				b8bb	 14
+	.x01591			b8ed	 14
+LL128				b811	 14
+LL42				a830	 14
+bcOctaveDown			c558	 02
+_set_font_color.2		ed60	 00
+random				e874	 00
+	.l1			e882	 00
+_vdc				2747	 f8
+psgMainModDelay			238a	 f8
+_num_en				29be	 f8
+_add32.2			f703	 00
+	.l1			f70b	 00
+_xres				0100	 f0
+_irq2				e123	 00
+	.user			e127	 00
+soft_reset			2284	 f8
+SIZE_32x16			0001	 f0
+lbmi				0000	 f0
+lib2_bm_open			b18d	 01
+	.x4			b20c	 01
+	.ok			b1ea	 01
+	.next			b1ef	 01
+	.l2			b1d2	 01
+	.x_00553		b1cd	 01
+	.x3			b208	 01
+	.x_00551		b1c1	 01
+	.x1			b1fe	 01
+	.l1			b19a	 01
+	.x2			b200	 01
+umul8				eb14	 00
+	.l2			eb27	 00
+	.l1			eb1b	 00
+lib2_load_map_16		a67f	 01
+	.x_00050		a77d	 01
+	.x_00049		a771	 01
+	.x_00047		a760	 01
+	.x_00042		a733	 01
+	.x_00040		a723	 01
+	.l6			a6fd	 01
+	.x_00034		a6c3	 01
+	.x_00033		a6bd	 01
+	.l4			a6c3	 01
+	.l3			a6b7	 01
+	.l2			a69e	 01
+	.l5			a6e1	 01
+	.l1			a690	 01
+psgSubSweepTime			2593	 f8
+LL221				b894	 15
+LL219				b86a	 15
+	.x02612			b880	 15
+LL199				b28a	 15
+_foo				29a0	 f8
+_psgMStop			a258	 14
+FLIP_Y				0080	 f0
+_hiscore			2af3	 f8
+mm_chthree			ac2f	 0a
+bcSubCall			d135	 02
+	.skipHi14		d158	 02
+_rts				e121	 00
+psgMainSweepTimeCount		23fc	 f8
+JOY_III				0001	 f0
+ice_chone			88a5	 09
+bcSubRepeatEnd			d008	 02
+	.unStack		d022	 02
+_put_raw.main			eeba	 00
+ltzp				e963	 00
+	.false			e96d	 00
+	.true			e971	 00
+	.geta_ult		e975	 00
+mStack0				240e	 f8
+LL165				a9f7	 15
+LL77				ae6a	 14
+_mouse_disable			faca	 00
+_map_put_tile.3			f545	 00
+__calls				0000	 f0
+_hilevel			2aef	 f8
+processDrums			c937	 02
+	.skip12			ca06	 02
+	.skip11			c9d7	 02
+	.nextDrumByte		ca00	 02
+	.usrDrumEnv		c9bc	 02
+	.skipHi10		c98f	 02
+	.noiseDone		c99b	 02
+	.isEnd			c9ec	 02
+	.isWave			c9e5	 02
+	.isPan			c9de	 02
+	.isEnv			c9a6	 02
+	.isFreq			c980	 02
+	.isNoise		c975	 02
+	.skipHi9		c95b	 02
+	.parseDrums		c953	 02
+	.drumOut		c943	 02
+	.isDrums		c944	 02
+psgMainEnvLevelHi		2354	 f8
+JOY_UP				0010	 f0
+lbeq				0000	 f0
+FREQ_IX				0000	 f0
+Channel007			8090	 09
+processFade			cc0a	 02
+	.nextVoice		cc30	 02
+	.voxLoop		cc26	 02
+	.addHi			cc1a	 02
+	.noFade			cc33	 02
+_set_map_data.1			f055	 00
+	.x_00287		f099	 00
+	.x_00285		f07a	 00
+	.l1			f0b1	 00
+lib2_put_number.3		ab32	 01
+psgMainVolumeChangeAccum	23c6	 f8
+LL131				b8f0	 14
+	.x_01594		b8fe	 14
+LL129				b942	 14
+LL43				a83d	 14
+	.x00903			a853	 14
+bcSetEnvelope			c63f	 02
+	.noRelease		c698	 02
+	.noHigh5		c66d	 02
+	.changeEnvelope		c673	 02
+	.userEnv		c654	 02
+_put_string.2			ef5c	 00
+rcr_init			e23c	 00
+	.r3			e250	 00
+rolw				0000	 f0
+AC_IDENT			0051	 f0
+mm_chfour			b4d9	 0a
+_bm_error			2983	 f8
+_put_tile.2			f48f	 00
+_spr_set			f282	 00
+	.l1			f28e	 00
+	.l2			f29f	 00
+bat_width			26d4	 f8
+rcr_set				e27e	 00
+MODU_IX				bec1	 0a
+_psgRegisterTrack		a0aa	 14
+psgCont				c260	 02
+	.nextSub		c29f	 02
+	.contSub		c28d	 02
+	.reStart		c2aa	 02
+	.nextMain		c278	 02
+	.contMain		c26e	 02
+	.doSub			c283	 02
+_srand				fbd2	 00
+setvdc				ecc6	 00
+	.l2			ecee	 00
+	.l1			ecd6	 00
+	.l3			ecfc	 00
+LL222				b8a5	 15
+psgSubDetuneAmount		2557	 f8
+psgSubEnvelopePtrLo		24d9	 f8
+_psgRegisterWave		a0e3	 14
+randomize			e80b	 00
+	.l1			e869	 00
+	.x_00166		e85f	 00
+	.x_00165		e851	 00
+	.x_00164		e843	 00
+__f				2999	 f8
+initTable			c0bd	 02
+_spr_get_x			f2fa	 00
+___case				ec0c	 00
+	.x00223			ec8d	 00
+	.end_case_default	eca8	 00
+	.x00215			ec45	 00
+	.begin_case		ec28	 00
+mStack1				241a	 f8
+psgMainPEPtrLo			239c	 f8
+_en_type			2abf	 f8
+LL166				aac5	 15
+LL80				aeb2	 14
+LL78				ae82	 14
+PSGF_BANK			0003	 f0
+doNote1				c452	 02
+	.noHigh3		c4c6	 02
+	.doNoise		c4cd	 02
+	.isTone			c49c	 02
+	.calcKeyOnLoop		c489	 02
+	.setDuration		c490	 02
+	.noHigh2		c472	 02
+	.mulDone		c472	 02
+	.mulLoop		c463	 02
+	.isOkay			c460	 02
+	.notPackedNote		c46a	 02
+_timer				e2e1	 00
+	.timer_clear		e303	 00
+	.timer_exit		e305	 00
+ARG_IMMED			0002	 f0
+_LD_en_dragon_prob		43b8	 03
+lib2_readjoy			b4c3	 01
+	.l6			b5b5	 01
+	.rdlp			b58a	 01
+	.delay			b5b3	 01
+	.hook			b5be	 01
+	.l5			b566	 01
+	.l4			b556	 01
+	.bitmsk			b5b9	 01
+	.l3			b53d	 01
+	.l2a			b513	 01
+	.type6			b50b	 01
+	.notswap		b4fe	 01
+	.l2			b4ea	 01
+	.readjoys		b575	 01
+_vreg				ef9c	 00
+	.l1			efa3	 00
+sdiv_no_invert_primary		eb40	 00
+s_top				2725	 f8
+JOY_VI				0008	 f0
+BGMAP_SIZE_128x64		0007	 f0
+ac_addoffset1			1a0a	 f0
+irq_disable			1402	 f0
+_bar				29a2	 f8
+Channel010			8341	 09
+Channel008			832b	 09
+bcSubOctaveDown			cf67	 02
+lib2_put_number.4		ab27	 01
+_strcpy.2			e5d5	 00
+	.x_00101		e5e7	 00
+	.x_00100		e5e1	 00
+	.out			e5e9	 00
+	.cpylp			e5d5	 00
+psgSubEnvDurationHi		24fd	 f8
+psgCurrentVoice			22e0	 f8
+setxres				0000	 f0
+_mstat				2988	 f8
+LL132				b901	 14
+LL44				a856	 14
+	.x_00906		a864	 14
+_lastjoy0			29ae	 f8
+kio_5_chone			8354	 09
+PSGF_PC				0009	 f0
+bcSubSetPitchEnvelope		d0e2	 02
+bcRepeatStart			c5dc	 02
+	.noHigh4		c5ea	 02
+	.isOkay			c5e3	 02
+_put_string.3			ef51	 00
+mapbat_ptr			26c4	 f8
+mapnbtile			26be	 f8
+JOY_BITRT			0005	 f0
+FLIP_MASK			0088	 f0
+neg				0000	 f0
+_color_reg			0402	 f0
+ChanON				0080	 f0
+_bcd_mov.2			f7a7	 00
+	.x1			f7be	 00
+_gfx_setbgpal			f632	 00
+_put_tile.3			f478	 00
+	.l1			f489	 00
+s_yh				2715	 f8
+psgSubVolumeChangeAmount	255d	 f8
+psgMainEnvReleaseHi		236c	 f8
+_set_map_data.main		f0d9	 00
+vdc_reg				20f7	 f0
+LL223				bfcb	 15
+LL10				a1fa	 14
+ChanBalance			0805	 f0
+initCheck			c314	 02
+psgMvOff			c22e	 02
+	.stopChannel		c251	 02
+	.nextVoice		c25a	 02
+	.mvLoop			c236	 02
+	.mvExit			c25f	 02
+set_bat_size			e555	 00
+	.height			e596	 00
+	.width			e58e	 00
+__rcr_on			e2c2	 00
+_sbcw				0000	 f0
+_neo_font			b0a3	 0e
+getWaveOffset			cce8	 02
+psgSubFreqLo			25e7	 f8
+JOY_RIGHT			0020	 f0
+__ldd_s_w			0000	 f0
+__boolw				0000	 f0
+_scroll_disable			f5d6	 00
+_spr_get_y			f318	 00
+mapctable			26c1	 f8
+mStack2				2426	 f8
+irq_status			1403	 f0
+__farptr_i			0000	 f0
+LL167				aac5	 15
+LL81				af86	 14
+LL79				ae88	 14
+	.x01156			ae9d	 14
+_psgRegisterEnvelope		a11e	 14
+doNote2				ce61	 02
+	.noHigh3		ced5	 02
+	.doNoise		cedc	 02
+	.isTone			ceab	 02
+	.calcKeyOnLoop		ce98	 02
+	.setDuration		ce9f	 02
+	.noHigh2		ce81	 02
+	.mulDone		ce81	 02
+	.mulLoop		ce72	 02
+	.isOkay			ce6f	 02
+	.getDuration		ce79	 02
+load_font			e40e	 00
+_set_sprpal			0000	 f0
+psgOff				c019	 02
+	.psgOffExit		c029	 02
+	.noStop			c020	 02
+psgUserVolEnvelope		22d5	 f8
+vec_off				0000	 f0
+_addw				0000	 f0
+__andws				0000	 f0
+__ldwi				0000	 f0
+_LD_en_wasp_prob		43c2	 03
+_en_state			2a9b	 f8
+Channel011			834c	 09
+Channel009			8336	 09
+psgSStop			c1ae	 02
+	.noAllFix		c1fe	 02
+	.stopPsgChannel		c1ed	 02
+	.flagsDone		c1d4	 02
+	.bitCheck		c1ce	 02
+	.nextVoice		c1f6	 02
+	.voiceLoop		c1bf	 02
+	.sstopLoop		c1be	 02
+	.sstopExit		c204	 02
+_set_map_data.3			f0d3	 00
+ult_y1				e8f8	 00
+	.lt_end			e907	 00
+	.lt_must_test_lobyte	e900	 00
+mousread			fc01	 00
+psgMainEnvDurationLo		235a	 f8
+JOY_BITSEL			0002	 f0
+XRES_SOFT			0004	 f0
+_dx				20fe	 f0
+LL45				a867	 14
+hde				26df	 f8
+_TimerCnt			298c	 f8
+wait_vsync			fc8e	 00
+	.callback		fcfe	 00
+	.t2			fcdb	 00
+	.t1			fcd4	 00
+	.t3			fcfb	 00
+	.x_00683		fcb3	 00
+	.l5			fcab	 00
+	.l4			fca8	 00
+	.l3			fca0	 00
+	.l2			fc9f	 00
+	.l1			fc94	 00
+psgMainPEDelay			23ae	 f8
+psg_freqlo			0802	 f0
+_lastjoy1			29b2	 f8
+LL133				b93f	 14
+_loopSong			a4c1	 14
+	.x00768			a4e9	 14
+sohwin_chone			8024	 09
+_psgTempo			a3b1	 14
+handleTies1			c503	 02
+	.noTie1			c50e	 02
+bcSetModDelay			c6d3	 02
+irq_cnt				2241	 f8
+bhs				0000	 f0
+_bl				20fa	 f0
+LL11				a232	 14
+msbutt				b4a9	 01
+vreg				0000	 f0
+irqport				1400	 f0
+LL224				ba58	 15
+	.x02698			bb2a	 15
+smul_no_invert_primary		ea87	 00
+_rand				fbde	 00
+_abs				f6e6	 00
+	.l1			f6f4	 00
+_spr_ctrl.2			f357	 00
+getvdc				ed08	 00
+	.l1			ed14	 00
+calc_vram_addr			e482	 00
+	.s32			e493	 00
+	.s128			e499	 00
+	.s64			e496	 00
+mStack3				2432	 f8
+psg_irqflag			20e6	 f8
+scr_mode			2244	 f8
+VADDR_INC_128			0018	 f0
+LL82				af01	 14
+	.x01175			af17	 14
+driveExit			c319	 02
+_spr_get_pal			f379	 00
+psgMainVolumeChangeAmount	23c0	 f8
+negw				0000	 f0
+__eorws				0000	 f0
+LL170				abab	 15
+	.x02128			abc6	 15
+LL168				aac5	 15
+bcSubSetEnvelope		d03c	 02
+	.noRelease		d095	 02
+	.noHigh5		d06a	 02
+	.changeEnvelope		d070	 02
+	.userEnv		d051	 02
+_gfx_init			f63b	 00
+	.x_00374		f679	 00
+	.l3			f669	 00
+	.l2			f666	 00
+_timer_user			e2de	 00
+blo				0000	 f0
+_k_tongueup			2ae7	 f8
+Channel012			889d	 09
+psg_enva			d8db	 02
+psgWave				c0e7	 02
+_set_map_data.4			f0ca	 00
+_load_background		0000	 f0
+LL46				a917	 14
+mex_chtwo			9767	 09
+PSGF_PE				0008	 f0
+psgSubPECount			2545	 f8
+JOY_BITII			0001	 f0
+__stwp				0000	 f0
+LL134				b94c	 14
+	.x01613			b97e	 14
+sStackLo			d22f	 02
+bcSubReturn			d162	 02
+	.skipHi15		d182	 02
+gfx_bittbl2			af2b	 01
+BGMAP_SIZE_128x32		0003	 f0
+lbne				0000	 f0
+ac_shftreg			1ae0	 f0
+Track000			bedb	 0a
+TEMPO				004b	 f0
+_psgOff				a068	 14
+handleTies2			cf12	 02
+	.noTie1			cf1d	 02
+lib2_farmemget.3		b2e6	 01
+	.l5			b377	 01
+	.l3			b34e	 01
+	.l2			b34c	 01
+	.l1			b338	 01
+	.l4			b354	 01
+	.t2			b32a	 01
+	.t1			b302	 01
+	.x_00578		b2f8	 01
+_put_tile_8			f49a	 00
+smul_end			eac7	 00
+cmp_false			e8e3	 00
+vsync				0000	 f0
+ac_shft_bits			1ae4	 f0
+LL12				a24c	 14
+bcSubSweepTime			d11b	 02
+_gfx_clear			f680	 00
+	.l4			f691	 00
+	.l3			f68f	 00
+	.l2			f68c	 00
+scroll_xh			26e4	 f8
+vdc_dcr				2243	 f8
+LL225				bbc9	 15
+	.x02727			bbee	 15
+LL100				b3c1	 14
+psgWaveTableEnd			deed	 f0
+_mouse_enable			fad0	 00
+psgMainEnvelopePtrHi		2342	 f8
+_subw				0000	 f0
+joyport				1000	 f0
+bcSubTranspose			d186	 02
+psgDCnt				c2cd	 02
+maptiletype			26b8	 f8
+mStack4				243e	 f8
+LL83				af1a	 14
+	.x_01178		af28	 14
+ChanFreqLo			0802	 f0
+bcSubPanRChange			d1c0	 02
+__arg				2afa	 f8
+joybuf6				26a2	 f8
+psgSubKeyOnDuration		24bb	 f8
+psgTrackIndexTable		22d0	 f8
+__phw				0000	 f0
+LL171				ab92	 15
+	.x02121			aba8	 15
+LL169				aac5	 15
+TRACK_IX			bf39	 0a
+_psgMStat			a242	 14
+psgBiosTableEnd			fc5e	 f0
+rcr4				e296	 00
+psgMainNoteDuration		230c	 f8
+FLIP_Y_MASK			0080	 f0
+sbcw				0000	 f0
+__addws				0000	 f0
+Channel013			950c	 09
+psg_envb			d8e8	 02
+_bcd_init.2			f78e	 00
+	.l1			f795	 00
+set_write			e465	 00
+ENV_DLY				0000	 f0
+LL47				a924	 14
+__foo				299b	 f8
+PSGF_ON				0000	 f0
+psgSubSetupSong			cd2f	 02
+	.notNoiseChannel	cdb8	 02
+	.nextVoice		cdc4	 02
+	.voiceLoop		cd4e	 02
+bcSetOctave			c547	 02
+psgSubVoiceVolume		24af	 f8
+update_satb			0000	 f0
+color_data_h			0405	 f0
+__aslw				0000	 f0
+LL135				b981	 14
+	.x_01616		b98f	 14
+_psgOn				a034	 14
+PSGF_TRACK			0004	 f0
+bcTie				c561	 02
+_get_joy_events.1		fb16	 00
+_bm_exist			f9bc	 00
+	.noerr			f9d1	 00
+	.l1			f9cf	 00
+psgMainPanLeftDelta		23d8	 f8
+__farptr_get			0000	 f0
+Track001			bee6	 0a
+bcSubUpdateTrackPtr		d215	 02
+	.noHi6			d21b	 02
+_bcd_add.2			f80e	 00
+	.l3			f855	 00
+	.l4			f85b	 00
+	.l2			f845	 00
+	.l1			f83e	 00
+	.x1			f853	 00
+s_cr				271d	 f8
+_k_pause			2aeb	 f8
+LL13				a257	 14
+psgSubPEPtrHi			253f	 f8
+psgUserPercTable		22db	 f8
+__lsrw				0000	 f0
+LL226				bb7b	 15
+LL101				b346	 14
+	.x01357			b36c	 14
+	.x01352			b358	 14
+	.x01350			b34e	 14
+_h				29a4	 f8
+_ss				2998	 f8
+PSGF_DCNT			0014	 f0
+bcPanRChange			c7c3	 02
+bcJump				c726	 02
+	.noHigh8		c72f	 02
+lib2_bm_enable			b210	 01
+	.x1			b223	 01
+	.l1			b215	 01
+mStack5				244a	 f8
+add				0000	 f0
+addw				0000	 f0
+LL84				af2b	 14
+lib2_bm_checksum		b243	 01
+	.l3			b270	 01
+	.l2			b26b	 01
+	.l1			b260	 01
+DATA_BANK			0004	 f0
+LL172				ab3a	 15
+_bcd_set.bcd			f7f1	 00
+	.l2			f808	 00
+	.l1			f7fa	 00
+	.x1			f80d	 00
+mulu8				e737	 00
+	.next			e74a	 00
+	.l1			e73e	 00
+mapheight			26b6	 f8
+rcr5				e2a4	 00
+Channel014			9512	 09
+psg_envc			d8f8	 02
+bat_hmask			26d7	 f8
+setvraddr			0000	 f0
+LL50				a97d	 14
+LL48				a924	 14
+_spr_pattern			f325	 00
+psg_driver			e309	 00
+	.noreset		e366	 00
+	.sndDone		e352	 00
+	.doSub			e339	 00
+psgUserModEnvelope		22d7	 f8
+SPR_VRAM			0000	 f0
+subw				0000	 f0
+LL136				b992	 14
+subProcessEnvelope		d406	 02
+	.decayOK		d4b7	 02
+	.doEnd			d4e6	 02
+	.doLevel		d4ce	 02
+	.doRelease		d4c9	 02
+	.doDecay		d4b2	 02
+	.nextCommand		d4a4	 02
+	.setMainVol		d493	 02
+	.envExit		d483	 02
+	.envOut			d496	 02
+	.relOK			d471	 02
+	.envDone		d487	 02
+	.durOK			d445	 02
+	.parseEnv		d497	 02
+	.addDecay		d428	 02
+	.onStill		d421	 02
+	.keyHit			d476	 02
+	.doKeyOff		d454	 02
+	.doRest			d47e	 02
+	.hasNote		d411	 02
+subProcessDrums			d334	 02
+	.skip12			d403	 02
+	.skip11			d3d4	 02
+	.nextDrumByte		d3fd	 02
+	.usrDrumEnv		d3b9	 02
+	.skipHi10		d38c	 02
+	.noiseDone		d398	 02
+	.isEnd			d3e9	 02
+	.isWave			d3e2	 02
+	.isPan			d3db	 02
+	.isEnv			d3a3	 02
+	.isFreq			d37d	 02
+	.isNoise		d372	 02
+	.skipHi9		d358	 02
+	.parseDrums		d350	 02
+	.drumOut		d340	 02
+	.isDrums		d341	 02
+subParseMMLCodes		cdda	 02
+	.newNote		cde0	 02
+_get_joy_events.2		fb0b	 00
+_bm_rawwrite.2			f995	 00
+	.err			f9b4	 00
+rand				e7fd	 00
+_color_data			0404	 f0
+Track002			bef3	 0a
+bcSubDalSegno			cfbf	 02
+mStackLo			c832	 02
+load_vram			e420	 00
+	.out			e445	 00
+	.l2			e43b	 00
+	.l1			e42b	 00
+	.l3			e441	 00
+s_yl				270d	 f8
+psgSubPanLeftAccum		257b	 f8
+psgMainFadeOutCount		2489	 f8
+_psgAllStop			a2cc	 14
+LL14				a282	 14
+bcUpdateTrackPtr		c818	 02
+	.noHi6			c81e	 02
+vsync_cnt			2680	 f8
+psgMainDrumPtrLo		2402	 f8
+ENV_LEV				0000	 f0
+PSG_INHIBIT			0080	 f0
+vdc_mwr				2242	 f8
+__fgetb				0000	 f0
+LL227				bbc9	 15
+LL102				b384	 14
+_i				29a6	 f8
+stw				0000	 f0
+__ldb				0000	 f0
+ChanControl			0804	 f0
+freqTable			d6ea	 02
+_cmp32.2			f772	 00
+	.l3			f78a	 00
+	.l2			f784	 00
+	.l1			f778	 00
+_mul32.2			f729	 00
+srand				e7d7	 00
+	.exit			e7fc	 00
+psgCurChannel			22ed	 f8
+LL85				af70	 14
+lib2_bm_setup_ptr		b279	 01
+	.ok			b2dc	 01
+	.l2			b2a6	 01
+	.l1			b29e	 01
+	.x1			b2a0	 01
+eq				e88e	 00
+	.eq_endyes		e89a	 00
+	.eq_endno		e8ab	 00
+__notw				0000	 f0
+__farptr			0000	 f0
+LL173				abab	 15
+bcFadeOut			c7fa	 02
+	.setFade		c807	 02
+psgEnv				c0f2	 02
+bat_vmask			26d8	 f8
+rcr6				e2b4	 00
+font_table			e377	 00
+psgMainFadeOutSpeed		2488	 f8
+_pause				a000	 16
+_en_pal_data			af77	 0b
+psg_envd			d908	 02
+_satb_update			f391	 00
+	.l3a			f3d5	 00
+	.l4			f3f5	 00
+	.l2			f3a1	 00
+	.l3			f3a5	 00
+	.l1			f39b	 00
+set_read			e448	 00
+mapbat_top_base			26c6	 f8
+LL51				a961	 14
+	.x00942			a977	 14
+LL49				a924	 14
+	.x00937			a95e	 14
+	.x_00931		a932	 14
+Channel015			9b38	 09
+sohwin_chfour			806f	 09
+mmlFetchNext			c3dc	 02
+	.noHigh1		c3e4	 02
+LL137				ba35	 14
+_psgMute			a2d4	 14
+Track003			befe	 0a
+_clock_reset			fb57	 00
+putnum.main			ab37	 01
+	.l4			ab85	 01
+	.l2			ab7f	 01
+	.l3			ab83	 01
+	.l1			ab65	 01
+	.l5			ab97	 01
+_line_xdir			2980	 f8
+__remain			2016	 f8
+read_joypad			fd01	 00
+ENV_END				0000	 f0
+JOY_RUN				0008	 f0
+mapcpy				0000	 f0
+_ch				20fd	 f0
+_ax				20f8	 f0
+_bp				20ec	 f0
+LL15				a2bc	 14
+psgMainDrive			c2d3	 02
+	.voiceNext		c306	 02
+	.voiceLoop		c2ef	 02
+	.mainStatusUpdate	c311	 02
+psgSubEnvelopeIndex		24e5	 f8
+LL230				bd7c	 15
+LL228				bc3f	 15
+LL103				b38b	 14
+_j				29a8	 f8
+bcChangeMode			c7d9	 02
+psgAStop			c205	 02
+	.mainDone		c221	 02
+	.doSubTrack		c21e	 02
+	.voiceLoop		c215	 02
+mshorz				2986	 f8
+_bm_sizeof			f9d2	 00
+	.l1			f9f3	 00
+_cls.1				ed2c	 00
+	.l3			ed3d	 00
+	.l2			ed3a	 00
+_spr_get_pattern		f33e	 00
+FONT_BANK			0001	 f0
+setmap				0000	 f0
+LL86				b7a9	 14
+ice_chtwo			8c95	 09
+bcSubSetWave			d034	 02
+_bcd_set.ascii			f7bf	 00
+	.l4			f7e9	 00
+	.l3			f7d0	 00
+	.l2			f7cd	 00
+	.l1			f7c0	 00
+lt_primary_minus		e8dd	 00
+psgSubFrequencyHi		24a3	 f8
+psgDataBankHigh			22ec	 f8
+vdc_sr				20f6	 f0
+__call				0000	 f0
+LL174				abce	 15
+_title_pal			a711	 13
+lib2_gfx_plot.3			ae22	 01
+	.l4a			aebd	 01
+	.l4			aeba	 01
+	.l3a			aeb1	 01
+	.l3			aeae	 01
+	.l2a			ae5c	 01
+	.l2			ae59	 01
+	.l1a			ae50	 01
+	.l1			ae4d	 01
+_spr_show			f2d0	 00
+	.l1			f2e1	 00
+	.l2			f2e2	 00
+psgMainDurationMultiplier	2336	 f8
+psg_lfoctrl			0809	 f0
+__swapw				0000	 f0
+psg_enve			d915	 02
+nezp				e9f9	 00
+	.x1_eq			ea08	 00
+	.x_ne			ea06	 00
+LL52				a97a	 14
+Channel016			9bca	 09
+PSGF_MSTOP			000e	 f0
+outputSounds			cc34	 02
+	.volExit		cce7	 02
+	.voxVol			ccdc	 02
+	.voxMute		ccd7	 02
+	.noiseOK		ccc6	 02
+	.notNoise		ccb7	 02
+	.sendByte		cc9d	 02
+	.loadWave		cc94	 02
+	.isUserWave		cc7f	 02
+	.waveOK			cca7	 02
+	.mainPlaying		cc5d	 02
+	.voxOK			cc4e	 02
+	.nextVoice		cce1	 02
+	.voxOn			cc40	 02
+	.voxLoop		cc36	 02
+psgSubEnvDecayTime		250f	 f8
+psgSubEnvLevelHi		24f1	 f8
+LL138				b8b3	 15
+_p0tongue			29bc	 f8
+LL140				b8b3	 15
+_mm				2997	 f8
+readvram			f5ef	 00
+ulezp				ea1a	 00
+PSGSYS_BOTH_120			0003	 f0
+irq2_jmp			2200	 f8
+Track004			bf09	 0a
+psgSStat			c150	 02
+	.voiceDone		c165	 02
+	.isPlaying		c163	 02
+	.checkLoop		c15a	 02
+	.sstatExit		c168	 02
+getA_ugt			e93f	 00
+_strncat.3			e5ea	 00
+	.x_00105		e60c	 00
+	.x_00104		e606	 00
+	.out			e622	 00
+	.x_00103		e5f8	 00
+	.cpylp			e5fa	 00
+	.endlp			e5ee	 00
+mapbat_x			26ca	 f8
+_psgCont			a30c	 14
+LL16				a2d3	 14
+scroll_top			26f0	 f8
+scroll_xl			26e0	 f8
+psgSubKeyOffPeriods		24b5	 f8
+__plw				0000	 f0
+SUPPORT_MOUSE			0001	 f0
+LL231				be4e	 15
+LL229				bc8d	 15
+	.x02756			bcb2	 15
+LL104				b418	 14
+_k				29aa	 f8
+bcSubJump			d123	 02
+	.noHigh8		d12c	 02
+s_idx				26fc	 f8
+_hsync_hndl			e1eb	 00
+	.r2			e235	 00
+	.out			e23b	 00
+	.r1			e203	 00
+bcReturn			c765	 02
+	.skipHi13		c785	 02
+mousinit			fbef	 00
+SIZE_16x16			0000	 f0
+__sp				2000	 f8
+LL87				b0fa	 14
+	.x01253			b110	 14
+lib2_bm_unlock			b227	 01
+psgSubTrackPtrLo		248b	 f8
+LL175				abf7	 15
+kio_5_chfour			8887	 09
+scr_w				2245	 f8
+__expr				2010	 f8
+psg_envf			d922	 02
+hook				ecc3	 00
+smul_no_invert_secondary	eaac	 00
+joyena				2227	 f8
+LL53				a991	 14
+	.x00951			a9a7	 14
+Channel017			bd83	 0a
+PSGF_ENV			0006	 f0
+lt				e8cd	 00
+_rndn1				2745	 f8
+psgMainModBasePtrLo		2378	 f8
+psgMainSegnoLo			2324	 f8
+LL141				a24b	 15
+	.x01768			a274	 15
+LL139				a0cf	 15
+	.x01717			a0dc	 15
+_title_tiles			43e0	 03
+psgMainFrequencyLo		2300	 f8
+color_data_l			0404	 f0
+__ldw_s				0000	 f0
+Track005			bf14	 0a
+psgPlay				c12c	 02
+_strcat.2			e5c9	 00
+	.x_00099		e5d3	 00
+	.endlp			e5c9	 00
+joyhook				2686	 f8
+psgMainKeyOnDuration		231e	 f8
+_en_t				29bf	 f8
+LL17				a2fc	 14
+LL232				a111	 16
+LL105				b3eb	 14
+	.x01383			b3fd	 14
+	.x01381			b3f3	 14
+processEnvelope			ca09	 02
+	.decayOK		caba	 02
+	.doEnd			cae9	 02
+	.doLevel		cad1	 02
+	.doRelease		cacc	 02
+	.doDecay		cab5	 02
+	.nextCommand		caa7	 02
+	.setMainVol		ca96	 02
+	.envExit		ca86	 02
+	.envOut			ca99	 02
+	.relOK			ca74	 02
+	.envDone		ca8a	 02
+	.durOK			ca48	 02
+	.parseEnv		ca9a	 02
+	.addDecay		ca2b	 02
+	.onStill		ca24	 02
+	.keyHit			ca79	 02
+	.doKeyOff		ca57	 02
+	.doRest			ca81	 02
+	.hasNote		ca14	 02
+_vsync_hndl			e16f	 00
+	.out			e1ea	 00
+	.l3			e1e7	 00
+	.clear_psg		e1db	 00
+	.skip_psg		e1dd	 00
+	.lclmm			e1b8	 00
+	.lclss			e1bc	 00
+	.lcltt			e1c0	 00
+	.l2			e180	 00
+	.l1			e17d	 00
+_psgSStop			a292	 14
+init_psg			e59e	 00
+	.clear			e5ac	 00
+vload				0000	 f0
+ac_shftreg_0			1ae0	 f0
+LL90				b41b	 14
+LL88				b7a6	 14
+_psgSubStatus			2994	 f8
+RightVolume			000f	 f0
+subOutputSounds			d631	 02
+	.volExit		d6e9	 02
+	.voxVol			d6de	 02
+	.voxMute		d6d9	 02
+	.noiseOK		d6c8	 02
+	.notNoise		d6b9	 02
+	.sendByte		d69f	 02
+	.loadWave		d696	 02
+	.isUserWave		d681	 02
+	.waveOK			d6a9	 02
+	.skipSub		d65c	 02
+	.voxOK			d65f	 02
+	.nextVoice		d6e3	 02
+	.voxOn			d63d	 02
+	.voxLoop		d633	 02
+ugezp				e9c5	 00
+LL176				ac01	 15
+	.x02140			ac17	 15
+psgSubPanRightAccum		256f	 f8
+PSG_SNG_NEED_INIT		0080	 f0
+SIZE_32x64			0031	 f0
+__ldd_s_b			0000	 f0
+defaultDelays			c0c5	 02
+ugtzp				e9a0	 00
+	.true			e9a6	 00
+	.false			e9b1	 00
+	.test_lo		e9aa	 00
+BATVAL				0000	 f0
+__ldwp				0000	 f0
+LL54				a9aa	 14
+	.x_00954		a9b8	 14
+Channel020			bd9a	 0a
+Channel018			bd89	 0a
+_peek				fb71	 00
+umul				eac9	 00
+ne				e9cb	 00
+	.ne_endeq		e9d7	 00
+	.ne_endne		e9e8	 00
+_rndn2				2746	 f8
+maptilebank			26b9	 f8
+scr_height			26da	 f8
+psgSubPanLeftDelta		2575	 f8
+psgSubVolumeChangeAccum		2563	 f8
+_p0state			29ba	 f8
+LL142				a277	 15
+	.x_01771		a285	 15
+_p0_pal_data			bf53	 0a
+setvinc				0000	 f0
+Track006			bf1f	 0a
+_bm_create.2			fa4b	 00
+PSGSYS_BOTH_240			0004	 f0
+setvec				0000	 f0
+JOY_II				0002	 f0
+color_data			0404	 f0
+__stw				0000	 f0
+kio_7_chone			8098	 09
+LL20				a3a1	 14
+LL18				a334	 14
+psgSubDurationMultiplier	24d3	 f8
+ac_cntrol1			1a09	 f0
+video_data			0002	 f0
+LL233				a000	 16
+	.x02858			a043	 16
+LL106				b473	 14
+	.x01419			b4d6	 14
+	.x01416			b4c2	 14
+	.x01408			b489	 14
+sohwin_chtwo			803d	 09
+DRUM_TAB			bec3	 0a
+msvert				2985	 f8
+psgMainEnvLevelLo		234e	 f8
+IRQ1				0001	 f0
+getOctave1			c4e3	 02
+lib2_bm_delete			afe0	 01
+	.out			b03e	 01
+_bm_size			f92d	 00
+	.ok			f957	 00
+	.err1			f963	 00
+	.err			f965	 00
+ac_shftreg_1			1ae1	 f0
+__popw				0000	 f0
+LL91				b274	 14
+	.x01317			b29d	 14
+	.x01314			b289	 14
+LL89				b161	 14
+	.x01281			b1c1	 14
+	.x01278			b1ad	 14
+	.x01270			b177	 14
+_neotiles			43d6	 03
+umod				ebc7	 00
+	.smod_end		ebf4	 00
+	.smod_begin		ebdc	 00
+ge				e9b5	 00
+psgTrackDelay			22dd	 f8
+JOY_BITLT			0007	 f0
+color_ctrl			0400	 f0
+__ptr				200b	 f8
+LL177				ac1a	 15
+	.x_02143		ac28	 15
+bcSubPanLChange			d1cb	 02
+sdiv				eb2d	 00
+JOY_TYPE6			0050	 f0
+spr_pattern			0000	 f0
+psg_pan				0805	 f0
+__pea_s				0000	 f0
+ehit				bf2a	 0a
+_pokew.2			fb68	 00
+lib2_gfx_point.2		aedd	 01
+	.l4			af1f	 01
+	.l3			af17	 01
+	.l2			aefa	 01
+	.l1			aef2	 01
+ult				e8f6	 00
+_reset				e010	 00
+spr_pri				0000	 f0
+_spawn				b8b4	 15
+	.x02662			ba07	 15
+_en_dir				2a77	 f8
+LL55				a9bb	 14
+Channel021			bda5	 0a
+Channel019			bd94	 0a
+_vram_addr.2			efa9	 00
+umul16				eaed	 00
+	.l2			eb10	 00
+	.l1			eaf9	 00
+_rcr_off			e2ce	 00
+_incw				0000	 f0
+__ldd_w				0000	 f0
+__pushw				0000	 f0
+LL143				a288	 15
+_put_digit.sub			ee4c	 00
+	.l1			ee53	 00
+NMI				0003	 f0
+_sstat				2989	 f8
+_p0spd				29b8	 f8
+mm_chone			9bd2	 09
+_srand32.2			fbda	 00
+mulu16				e750	 00
+	.x_00147		e78a	 00
+	.l3			e78a	 00
+	.l2			e76b	 00
+	.l1			e75d	 00
+JOY_BITI			0000	 f0
+_cl				20fc	 f0
+_k_tonguedown			2ae9	 f8
+kio_5_chthree			887c	 09
+LL21				a3d6	 14
+LL19				a36c	 14
+bcSubSetKeyOnOffRatio		cf98	 02
+_farpeekw.fast			fba5	 00
+cmp_ok				e92e	 00
+LL234				a058	 16
+LL107				b7a3	 14
+ice_chfour			93e2	 09
+_sngInit			a3e6	 14
+_psgRegisterFM			a159	 14
+_bm_delete			fa15	 00
+IRQ2				0000	 f0
+psg_env0			d868	 02
+getOctave2			cef2	 02
+_put_digit.2			ee41	 00
+disp_cr				268e	 f8
+psgSubEnvDurationLo		24f7	 f8
+cd_port				1800	 f0
+_p0x				29b4	 f8
+LL92				b1c2	 14
+	.x01291			b1fd	 14
+	.x01288			b1e9	 14
+	.x01284			b1d4	 14
+	.x01282			b1ca	 14
+bcSubGetStackInfo		d21e	 02
+ac_shftreg_2			1ae2	 f0
+__temp				2003	 f8
+LL200				b28a	 15
+LL180				ad08	 15
+LL178				ac2b	 15
+	.x02155			ac8b	 15
+_bm_rawread			f970	 00
+	.err			f98d	 00
+_mov32.2			f6f5	 00
+_put_digit.main			ee46	 00
+__tstw				0000	 f0
+psgPC				c113	 02
+maptileaddr			26ba	 f8
+_set_font_addr			ed6e	 00
+clock_ss			2691	 f8
+psgMainEnvReleaseLo		2366	 f8
+ARG_ABS				0003	 f0
+__stwi_s			0000	 f0
+__ldbp				0000	 f0
+LL56				a9cc	 14
+Channel022			bdab	 0a
+lib2_bm_getptr.2		af8a	 01
+	.empty			afd5	 01
+	.x2			afd6	 01
+_div32.2			f761	 00
+psgSubModCorrection		2533	 f8
+psgMainStackOffset		2456	 f8
+psgSubWaveNo			25ff	 f8
+__phb				0000	 f0
+LL144				a305	 15
+PSGF_OFF			0001	 f0
+vdc_blur			26db	 f8
+build_disp_list			aa5e	 01
+	.x2			ab24	 01
+	.x1			ab19	 01
+	.t5			ab11	 01
+	.t3			aafc	 01
+	.t2			aad9	 01
+	.t1			aad4	 01
+	.t4			ab0d	 01
+	.l3			aac4	 01
+	.check_list		ab18	 01
+	.l2			aab1	 01
+	.l1			aa72	 01
+	.l0			aa70	 01
+psgSubTieState			260d	 f8
+SIZE_32x32			0011	 f0
+__aslws				0000	 f0
+psgBiosEntries			0015	 f0
+_put_raw.2			eeb5	 00
+_cmpw				0000	 f0
+_fps				a42e	 14
+	.x00750			a483	 14
+LL22				a42d	 14
+bcSetPEDelay			c706	 02
+_load_default_font.1		edb2	 00
+	.x_00237		edbf	 00
+scroll_yh			26ec	 f8
+LIB2_BANK			0001	 f0
+JOY_BITRUN			0003	 f0
+LL235				a058	 16
+	.x02870			a0a4	 16
+	.x02868			a09a	 16
+LL108				b589	 14
+	.x01455			b5b2	 14
+	.x01452			b59e	 14
+LL110				b51c	 14
+	.x01433			b52e	 14
+	.x01431			b524	 14
+_SubCnt				2990	 f8
+__fptr				200e	 f8
+sohwin_chsix			8085	 09
+psg_env1			d872	 02
+octaveOffsets			c4db	 02
+bcPanLChange			c7ce	 02
+_put_digit.3			ee36	 00
+uge				e9c0	 00
+BGMAP_SIZE_64x64		0005	 f0
+_p0y				29b6	 f8
+LL93				b207	 14
+	.x01295			b219	 14
+	.x01293			b20f	 14
+_load_palette.3			e3bf	 00
+psgSubSweepTimeCount		2599	 f8
+JOY_BITIII			0000	 f0
+scroll_disable			0000	 f0
+_stw				0000	 f0
+ac_shftreg_3			1ae3	 f0
+LL201				b4b2	 15
+	.x02473			b50e	 15
+LL181				ad0d	 15
+LL179				ad10	 15
+	.x02181			ad57	 15
+N_WAVES				0000	 f0
+ARG_STRING			0005	 f0
+_title				aa2a	 14
+set_intvec			fc70	 00
+	.reset			fc78	 00
+	.exit			fc8c	 00
+	.vector			fc80	 00
+psgInit				c043	 02
+	.initTrackDone		c096	 02
+	.initSubTracks		c08f	 02
+	.waveLoop		c04e	 02
+	.parmOK			c049	 02
+_set_tile_data.1		f107	 00
+joytrg6				2698	 f8
+LL57				a9ff	 14
+	.x00969			aa14	 14
+Channel023			bdb6	 0a
+sohwin_chfive			807a	 09
+_set_font_pal			ed4e	 00
+psgMainSweepAccumHi		23f0	 f8
+psgMainKeyOffPeriods		2318	 f8
+JOY_I				0001	 f0
+LL145				a385	 15
+	.x01814			a39b	 15
+bcSetWave			c637	 02
+_bm_format			f8a4	 00
+	.setsz			f8d4	 00
+	.l2			f8c2	 00
+	.l1			f8ab	 00
+	.ok			f8d9	 00
+aslw				0000	 f0
+psg_ctrl			0804	 f0
+video_reg_h			0001	 f0
+_get_map_height			f100	 00
+_put_raw.3			eeaa	 00
+psgMainModCount			2384	 f8
+joy				2228	 f8
+_en_x				29c3	 f8
+LL23				a4c0	 14
+PSGF_MSTAT			000c	 f0
+_bm_check			f862	 00
+	.err			f87f	 00
+_put_char.main			ee8c	 00
+	.l1			ee99	 00
+_load_default_font.2		edbf	 00
+	.l3			ede8	 00
+	.l2			edd5	 00
+	.l1			edce	 00
+s_list				2736	 f8
+LIB1_BANK			0000	 f0
+LL236				a0b9	 16
+LL111				b513	 14
+	.x01430			b51b	 14
+LL109				b4d7	 14
+	.x01429			b512	 14
+	.x01426			b4fe	 14
+	.x01422			b4e9	 14
+	.x01420			b4df	 14
+mmlSubFetchNext			cdeb	 02
+	.noHigh1		cdf3	 02
+_bm_write.4			fa39	 00
+incw				0000	 f0
+_en_spawned			29c2	 f8
+psg_env2			d87c	 02
+bcDalSegno			c5c2	 02
+delay14				b4a8	 01
+ARG_NONE			0000	 f0
+LL94				b1fe	 14
+	.x01292			b206	 14
+_tile_pal			af9f	 0e
+_spr_hide			f2a0	 00
+	.l1			f2b1	 00
+	.l2			f2b2	 00
+unmap_data			e3a1	 00
+psgSubSweepAccumHi		258d	 f8
+LL202				b4b2	 15
+LL182				adb1	 15
+	.x02203			ade3	 15
+_disp_off			fc68	 00
+defaultTempos			c0cb	 02
+lib2_bm_read.4			b03f	 01
+	.l2			b06e	 01
+	.l1			b063	 01
+	.ok			b076	 01
+	.x1			b082	 01
+	.x2			b08d	 01
+_map_calc_tile_addr		f54d	 00
+	.l2			f56f	 00
+	.l1			f55c	 00
+_title_tiles__data__		a70f	 12
+perc000				bdff	 0a
+fixOctaves			cbc9	 02
+	.fixSign		cbef	 02
+	.octaveUp		cbdd	 02
+	.octaveDown		cbe6	 02
+	.Exit			cbf7	 02
+	.one			cbd1	 02
+bcTranspose			c789	 02
+psgPE				c108	 02
+psgSubModDelay			2527	 f8
+PSGSYS_BOTH_300			0005	 f0
+stb				0000	 f0
+LL60				aa72	 14
+	.x00985			aa88	 14
+LL58				aa29	 14
+Channel024			bdbc	 0a
+_psgSStat			a24d	 14
+psgTrack			c0dc	 02
+gfx_bittbl			af23	 01
+load_map_exit			a809	 01
+LL146				a39e	 15
+	.x_01817		a3ac	 15
+_neosprpal			beeb	 11
+_set_xres.1			f5e3	 00
+_line_error			297c	 f8
+_cls				ed22	 00
+psgSubDrumPtrHi			25a5	 f8
+psgSubTransposeAmount		24cd	 f8
+psgMainEnvelopeIndex		2348	 f8
+__subwi				0000	 f0
+__arg_idx			2002	 f8
+__stack				2000	 f8
+bcOctaveUp			c54f	 02
+scr_width			26d9	 f8
+psgSubSegnoHi			24c7	 f8
+_en_y				2a0b	 f8
+LL24				a4c0	 14
+WAVE_BASE			0000	 f0
+ARG_ABSOLUTE			0003	 f0
+psg_wavebuf			0806	 f0
+_LD_level_num			4390	 03
+LL237				a0b9	 16
+	.x02881			a0fc	 16
+LL112				b5e0	 14
+	.x01470			b609	 14
+	.x01467			b5f5	 14
+PSGF_CONT			0012	 f0
+psgSubPanRightDelta		2569	 f8
+psg_env3			d886	 02
+_clear_joy_events		fb1f	 00
+	.l2			fb3c	 00
+	.l1			fb23	 00
+clock_mm			2690	 f8
+LL95				b31c	 14
+	.x01349			b345	 14
+	.x01346			b331	 14
+_joy0				29ac	 f8
+kio_5_chfive			8892	 09
+_clock_ss			fb4d	 00
+LL203				b32d	 15
+	.x02426			b3b7	 15
+	.x02420			b392	 15
+	.x02409			b33f	 15
+	.x02407			b335	 15
+LL183				aed1	 15
+	.x02248			aef8	 15
+user_irq1			e166	 00
+psgSubModBasePtrHi		251b	 f8
+_draw_win			b7aa	 14
+perc001				be0e	 0a
+bcSetVoiceVolume		c57b	 02
+_load_map.6			f1d1	 00
+	.l7			f27b	 00
+	.x_00319		f24b	 00
+	.l4			f23f	 00
+	.l5			f25e	 00
+	.l3			f22b	 00
+	.x_00313		f203	 00
+	.l1			f1f7	 00
+	.l2			f216	 00
+	.x_00311		f1e7	 00
+	.l6			f273	 00
+	.x_00309		f1dc	 00
+_load_tile			f189	 00
+	.l1			f1b8	 00
+_set_tile_data.3		f13f	 00
+	.l1			f179	 00
+	.l2			f17a	 00
+_put_number.3			eecb	 00
+user_jmptbl			2200	 f8
+init_satb			0000	 f0
+set_sprpal			0000	 f0
+cmpw				0000	 f0
+LL59				aee3	 14
+LL61				aa8b	 14
+	.x_00988		aa99	 14
+Channel025			bdc7	 0a
+mouspos				fae3	 00
+psgSubPEPtrLo			2539	 f8
+PSG_IRQ				0001	 f0
+BGMAP_SIZE_64x32		0001	 f0
+LL147				a3af	 15
+_set_xres.2			f5e7	 00
+psgSubNoiseFlag			2605	 f8
+psgMainEnvelopePtrLo		233c	 f8
+lbcs				0000	 f0
+__orwi				0000	 f0
+_bss_end			2afa	 f0
+PSG_BANK			0002	 f0
+_dh				20ff	 f0
+_bx				20fa	 f0
+LL25				a4f7	 14
+bcRelTranspose			c792	 02
+psgMainPECount			23a8	 f8
+psgUserWaveTable		22d2	 f8
+timer_jmp			2204	 f8
+LL238				a111	 16
+LL113				b5b3	 14
+	.x01458			b5c5	 14
+	.x01456			b5bb	 14
+_psgRegisterBank		a070	 14
+bcSubSetTimeBase		cf4c	 02
+_put_hex.main			eeff	 00
+	.h4			ef31	 00
+	.h3			ef3a	 00
+	.h2			ef41	 00
+	.h1			ef4a	 00
+	.tbl			ef29	 00
+	.l2			ef21	 00
+	.l1			ef16	 00
+	.l3			ef28	 00
+ultzp				e977	 00
+	.true			e97d	 00
+	.false			e988	 00
+	.test_lo		e981	 00
+init_vdc			e4a7	 00
+	.l3			e4fc	 00
+	.l2			e4fb	 00
+	.l1			e4b0	 00
+	.table			e51f	 00
+psgMainPanRightAccum		23d2	 f8
+psg_env4			d890	 02
+subAddToOut			d5f5	 02
+bcSubSetMod			d0af	 02
+_spr_pri			f382	 00
+	.l1			f38e	 00
+_joy1				29b0	 f8
+LL96				b29e	 14
+	.x01325			b2c4	 14
+	.x01320			b2b0	 14
+	.x01318			b2a6	 14
+octaveOffsets2			ceea	 02
+HDR				0000	 f0
+maptilebase			26bc	 f8
+JOY_DOWN			0040	 f0
+__plb				0000	 f0
+LL204				b4b2	 15
+LL184				ae3d	 15
+	.x02225			ae6f	 15
+perc002				be1d	 0a
+bcSegno				c5cf	 02
+_bm_unlock			fa93	 00
+_put_number.4			eedd	 00
+_time				2af5	 f8
+LL62				aa9c	 14
+Channel026			bdcd	 0a
+psgMainVoiceStatus		247c	 f8
+nmi_jmp				2206	 f8
+psgport				0800	 f0
+__addw_s			0000	 f0
+__andw				0000	 f0
+LL150				b832	 15
+	.x02602			b84a	 15
+LL148				a3e5	 15
+PSGF_FM				0007	 f0
+_load_default_font		edb0	 00
+load_map_next_line		a8a0	 01
+	.l5			a92d	 01
+	.l4			a90e	 01
+	.l2			a8cd	 01
+	.l3			a8de	 01
+	.l1			a8cb	 01
+NO_FLIP				0000	 f0
+_en_spr_data			af99	 0b
+mex_chthree			99b4	 09
+bcSubSetVoiceVolume		cf78	 02
+psgSetTempo			c11e	 02
+	.okvalue		c124	 02
+load_bat			e3d1	 00
+load_palette			e3bf	 00
+ac_data1			1a00	 f0
+_di				20f0	 f0
+__lea_s				0000	 f0
+_p0tonguespd			29bb	 f8
+LL26				a4f7	 14
+kio_5_chtwo			84d8	 09
+_put_hex.3			eefa	 00
+scroll_cr			26f8	 f8
+scroll_yl			26e8	 f8
+_en_wait			29c0	 f8
+LL114				b696	 14
+	.x01505			b6bf	 14
+	.x01502			b6ab	 14
+_clock_mm			fb48	 00
+_get_font_addr			ed98	 00
+__sign				2016	 f8
+font_1				6000	 01
+psgMainPanPot			246e	 f8
+PSGSYS_BOTH_60			0002	 f0
+CONST_BANK			0003	 f0
+psg_env5			d89a	 02
+bcSetModCorrection		c6db	 02
+psgSysEnv			d848	 02
+_joyold				fab5	 00
+LL97				b2dc	 14
+_MainCnt			298e	 f8
+psgMainModCorrection		2396	 f8
+bg_x1				220c	 f8
+FLIP_X_MASK			0008	 f0
+LL205				b45d	 15
+LL185				aed1	 15
+_squirrelsplash			a4f8	 14
+	.x_00809		a5f5	 14
+PSGF_FDOUT			0013	 f0
+__ldb_p				0000	 f0
+perc003				be2c	 0a
+psgBank				c0d1	 02
+LL63				ab22	 14
+__fps				299a	 f8
+Channel027			bdd8	 0a
+_com32.1			f762	 00
+	.l1			f768	 00
+hds				26dd	 f8
+JOY_BITIV			0001	 f0
+maplibfunc			0000	 f0
+psg_mainvol			0801	 f0
+LL151				a683	 15
+	.x01935			a697	 15
+LL149				a607	 15
+	.x01922			a652	 15
+	.x01910			a614	 15
+_psgPlay			a20a	 14
+PSGF_WAVE			0005	 f0
+_mouse_exists			fac5	 00
+user_vsync			e16c	 00
+video_reg_l			0000	 f0
+PSGF_SSTOP			000f	 f0
+bcSubRepeatStart		cfd9	 02
+	.noHigh4		cfe7	 02
+	.isOkay			cfe0	 02
+subProcessVolume		d23b	 02
+	.fixLeft		d320	 02
+	.panLeftNeg		d302	 02
+	.volDone		d333	 02
+	.fixRight		d2ca	 02
+	.panRightNeg		d2ad	 02
+	.noRight		d2dd	 02
+	.saveVol		d27d	 02
+	.doNeg			d25d	 02
+	.noMainChange		d287	 02
+bcDetune			c70e	 02
+SIZE_MASK			0031	 f0
+LL27				a6f8	 14
+_poke.2				fb64	 00
+_spr_hide.sub			f2bb	 00
+_put_hex.4			eeef	 00
+_put.vram			ee6a	 00
+psgSubFrequencyLo		249d	 f8
+_LD_en_num			439a	 03
+LL115				b60a	 14
+	.x01479			b637	 14
+	.x01473			b61c	 14
+	.x01471			b612	 14
+_t				299e	 f8
+kio_7_chtwo			81e8	 09
+__rcr_off			e2d2	 00
+font_2				6300	 01
+psgSubEnvReleaseHi		2509	 f8
+__extw				0000	 f0
+__stwps				0000	 f0
+ChanXFer			0000	 f0
+psg_env6			d8a4	 02
+bcSubSetPEDelay			d103	 02
+_nmi				e370	 00
+	.user			e374	 00
+psgSubTrackVolume		25f3	 f8
+VSYNC				0004	 f0
+bram_unlock			1807	 f0
+_p0dir				29b9	 f8
+LL98				b2e3	 14
+psgOn				c000	 02
+	.psgOnExit		c018	 02
+	.noTurnOff		c007	 02
+__spr_ptr			2018	 f8
+load_map			e3e3	 00
+	.l1			e3fc	 00
+psgSubEnvLevelLo		24eb	 f8
+psgMainTrackPtrHi		22f4	 f8
+bg_x2				220e	 f8
+LL206				b4b2	 15
+LL186				aed1	 15
+psgSysEnvEnd			d868	 f0
+_mouse_x			fad6	 00
+_get_font_pal			ed8e	 00
+load_map_init			a813	 01
+	.l3			a869	 01
+	.l2			a852	 01
+	.l1			a822	 01
+map_data			e37f	 00
+	.l1			e390	 00
+psgMainNoiseFlag		247a	 f8
+perc004				be39	 0a
+scroll_bottom			26f4	 f8
+psgMainOctave			22fa	 f8
+vec_on				0000	 f0
+LL64				aaa6	 14
+	.x00995			aabc	 14
+ovlarray			6000	 04
+psgSubNoteDuration		24a9	 f8
+psgMainFreqHi			2462	 f8
+VADDR_INC_64			0010	 f0
+__negw				0000	 f0

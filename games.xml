@@ -972,6 +972,86 @@ but this will cost you a life.
 	</game>
 
 	<game
+		name      = "Bug Hunt"
+		system    = "openemu.system.pce"
+		developer = "sarang/cabbage"
+		website   = "http://www.neoflash.com/forum/index.php?topic=7676.0"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Bug%20Hunt/Neo_Bug_Hunt.pce"
+		released  = "1376960400"
+		added     = "1417395600"
+		md5		 = "c72dbc8a0f06ddd26b4d4e8bae0dc70f"
+		>
+		<description>Eat bugs while avoiding bees!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Bug%20Hunt/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Bug%20Hunt/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Bug%20Hunt/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Bug%20Hunt/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "HuZERO"
+		system    = "openemu.system.pce"
+		developer = "Chris Covell"
+		website   = "http://www.chrismcovell.com/creations.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/HuZERO/HuZERO_by_Chris_Covell.pce"
+		released  = "1416531600"
+		added     = "1417395600"
+		md5		 = "b14e14493c7c45b8d61c160236ac0f85"
+		>
+		<description>A futuristic racing game made as a tribute to a great Mode-7 racer on the SNES. This version is a "Summer Caravan" edition which, if you're familiar with Hudson's Caravans, gives you 2 minutes to attain a high score. And not die.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/HuZERO/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/HuZERO/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/HuZERO/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/HuZERO/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Reflectron"
+		system    = "openemu.system.pce"
+		developer = "Aetherbyte"
+		website   = "http://www.aetherbyte.com/aetherbyte-reflectron_for_pc-engine_and_turbografx-16.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Reflectron/reflectron.pce"
+		released  = "1385859600"
+		added     = "1417395600"
+		md5		 = "40540be45e4f802344cfcb9f43b527b0"
+		>
+		<description>Reflectron is a simple, addictive arcade style high-score action game. You are a Biological Entity Remover Node And Repair Droid (or B.E.R.N.A.R.D. for short), working for the evil robot overlord on his deadly mobile space station. Charged with maintaining the primary laser cannon, B.E.R.N.A.R.D has, however, developed something of a conscience. Instead, he has chosen to defy his master and do his best to stop the cannon's DELTA CRYSTAL from charging up by destroying the MEGA PROTONS with his cranial gun. Will he be able to stop the cannon from decimating another innocent world?
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Reflectron/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Reflectron/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Reflectron/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Reflectron/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Tongueman's Logic"
+		system    = "openemu.system.pce"
+		developer = "Chris Covell"
+		website   = "http://www.chrismcovell.com/TMLogic.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/reflectron.pce"
+		released  = "1193706000"
+		added     = "1417395600"
+		md5		 = "15107f07c3b7a65a7e784add44349961"
+		>
+		<description>A puzzle game in the same vein as "Mario's Picross" or "Oekaki Logic" featuring 200 different puzzles.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Power Pig"
 		system    = "openemu.system.gba"
 		developer = "genecyst games"

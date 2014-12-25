@@ -1,0 +1,93 @@
+.TRACK
+.CHANNEL 0 Setup
+T120 V31 L4 ^D0
+
+.CHANNEL 1 kio_7_chone
+O4 @38 P11,11 @E04
+g+4g+8e4e8<b4
+>c+4c+8d+4c+4c8
+<b4b8>e4e8<b4
+>c+4c+8d+4c+4c8
+g+4g+8e4e8<b4
+>c+4c+8d+4c+4c8
+<b4b8>e4e8<b4
+>c+4c+8d+4c+4c8
+c+4c+4c+4c+4
+d+8d+4d+8c+4d+4
+e4e8e8f+4f+8c+4.
+c+2.
+c+4c+4c+4c+4
+d+8d+4d+8c+4d+4
+e4e8e8<b4b8>e4
+e2.&e8
+g+4g+8e4e8<b4
+>c+4c+8d+4c+4c8
+<b4b8>e4e8<b4
+>c+4c+8d+4c+4c8
+g+4g+8e4e8<b4
+>c+4c+8d+4c+4c8
+<b4b8>e4e8<b4
+>c+4c+8d+4c+4c8
+c+4c+4c+4c+4
+d+8d+4d+8c+4d+4
+e4e8e8f+4f+8c+4.
+c+2.
+c+4c+4c+4c+4
+d+8d+4d+8c+4d+4
+e4e8e8<b4b8>e4
+e2.&e8/kio_7_chone/
+
+
+
+.CHANNEL 2 kio_7_chtwo
+O4 @36 P13,13 @E03
+o2e4e4e4.e4
+<a4a8b4b4
+>e4e4e4.e4
+<a4a8b4b4
+>e4e4e4.e4
+<a4a8b4b4
+>e4e4e4.e4
+<a4a8b4b4
+a4a4a4a8b4
+b4b8b4b8>c+4
+c+4c+8c+4c+8<a4
+a4a4a4a8
+a4a4a4a8b4
+b4b8b4b4
+>e8e4e8e8e4e8
+e8e4e8e8e4e8
+e4e4e4.e4
+<a4a8b4b4
+>e4e4e4.e4
+<a4a8b4b4
+>e4e4e4.e4
+<a4a8b4b4
+>e4e4e4.e4
+<a4a8b4b4
+a4a4a4a8b4
+b4b8b4b8>c+4
+c+4c+8c+4c+8<a4
+a4a4a4a8
+a4a4a4a8b4
+b4b8b4b4
+>e8e4e8e8e4e8
+e8e4e8e8e4e8/kio_7_chtwo/
+
+
+.CHANNEL 3 
+O5 @15 P11,11 @E13
+
+
+
+.CHANNEL 4 
+O2 @15 P11,11 @E13
+
+
+
+.CHANNEL 5 
+O2 @36 P11,11 @E01
+
+
+
+
