@@ -357,6 +357,250 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
+		name      = "Anguna"
+		system    = "openemu.system.gba"
+		developer = "Nathan Tolbert"
+		website   = "http://www.tolberts.net/anguna/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/anguna.gba"
+		released  = "1214182800"
+		added     = "1417395600"
+		md5		 = "9d3a663de5228414d7e6cda7244c5d91"
+		>
+		<description>Anguna is an older-style adventure game, which encourages exploration, and doesn't hold your hand and tell you where to go at every step of the way. Includes 5 dungeons and a large overworld to explore, multiple weapons and items, hidden rooms, secrets, and powerups plus lots of interesting enemies and boss monsters.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Another World"
+		system    = "openemu.system.gba"
+		developer = "Cyril &quot;Foxy&quot; Cogordan"
+		website   = "http://www.foxysofts.com/index.php?l=content/gba/anworld.inc"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Another%20World/Another_world.gba"
+		released  = "1114650000"
+		added     = "1417395600"
+		md5		 = "9cef2ca9fba8a4532629f8c7e7c9ddf8"
+		>
+		<description>A port of the PC classic "Another World/Out of this World" made in collaboration with original creator of the game Eric Chahi.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Another%20World/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Another%20World/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Another%20World/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Another%20World/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Blast Arena Advance"
+		system    = "openemu.system.gba"
+		developer = "Mathew Carr"
+		website   = "http://www.mrdictionary.net/blastarenacart/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Blast%20Arena%20Advance/blastarenaadvance.gba"
+		released  = "1195002000"
+		added     = "1417395600"
+		md5		 = "cde17fc4f3d41365cb92dd1187196cd8"
+		>
+		<description>Collect as many jittering yellow squares as possible, while avoiding the shrapnel thrown out by the explosions. Using your cunning and skill, ricochet the cursor against the walls of your Game Boy to outwit and evade the deadly shrapnel.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Blast%20Arena%20Advance/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Blast%20Arena%20Advance/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Blast%20Arena%20Advance/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Blast%20Arena%20Advance/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Broken Circle"
+		system    = "openemu.system.gba"
+		developer = "7 Raven Studios"
+		website   = "http://www.7ravenstudios.com/pages/games/bcdevinfo.php"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/Broken%20Circle%20(2009)(7 Raven Studios)[pd].gba"
+		released  = "1244509200"
+		added     = "1417395600"
+		md5		 = "420a1cf3e052ec30d3612d7d945c525e"
+		>
+		<description>A professionally designed turn-based RPG with isometric graphics and high quality battle animations. The developers had difficulty finding an interested publisher, partially because the game's 256Mbit size. After managing to reduce the game to 64Mbits, the GBA was near the end of its lifespan and too late to find a publisher so the game was released as a free download.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Motocross Challenge"
+		system    = "openemu.system.gba"
+		developer = "DHG Games"
+		website   = "https://web.archive.org/web/20070405010807/http://www.dhggames.com/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/Motocross.gba"
+		released  = "1176858000"
+		added     = "1417395600"
+		md5		 = "8b898cdf54095d09d9be2cfcb43ea040"
+		>
+		<description>Originally planned as a commercial GBA release, Motocross Challenge is an "Excitebike" style game that was thankfully released for free by the passionate developers at DHG Games after it was dropped by their publisher.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Powerpig"
+		system    = "openemu.system.gba"
+		developer = "Genecyst Games"
+		website   = "http://holyhellgba.blogspot.com/p/downloads.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Powerpig/powerpig.gba"
+		released  = "1376960400"
+		added     = "1417395600"
+		md5		 = "ba7dda66edd51fb758aa1f61af584c1f"
+		>
+		<description>Armed with a gravity gun which reloads through collecting coins, you must guide the porky protagonist through the pixelated scenery, gather up as many enemies as possible and make your way to the exit.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Powerpig/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Powerpig/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Powerpig/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Powerpig/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Reaxion"
+		system    = "openemu.system.gba"
+		developer = "Cosine Systems"
+		website   = "http://www.cosine.org.uk/products.php?prod=reaxion&amp;4mat=gba"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Reaxion/reaxion.gba"
+		released  = "1187658000"
+		added     = "1417395600"
+		md5		 = "688d128e11582dbfb4ec5565fb0afae5"
+		>
+		<description>A challenging puzzler similar to "Lights Out" with 99 levels.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Reaxion/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Reaxion/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Reaxion/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Reaxion/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Spout"
+		system    = "openemu.system.gba"
+		developer = "Alekmaul"
+		website   = "http://www.portabledev.com/pages/consoles/gba/jeuxdev.-perso/spoutgba.php"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/SpoutGBA.gba"
+		released  = "1151197200"
+		added     = "1417395600"
+		md5		 = "dc9be85f5ada0abeb2ab597d5178f03e"
+		>
+		<description>A port of the original game by Japanese developer Kuni.
+         
+Spout is a simple caveflying game. The aim is to get as high as possible, avoiding or destroying obstacles.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "T2002"
+		system    = "openemu.system.gba"
+		developer = "Pekaro Software"
+		website   = "http://www.pekaro.de/t2002.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/T2002/T2002.gba"
+		released  = "1325466000"
+		added     = "1417395600"
+		md5		 = "7aade49b9043d6c1339537f1e91d5a5c"
+		>
+		<description>T2002 is a fan project based on the legendary "Turrican" games.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/T2002/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/T2002/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/T2002/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/T2002/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Uranus Zero EV"
+		system    = "openemu.system.gba"
+		developer = "ZoneGN"
+		website   = "http://www.zophar.net/pdroms/gba/uranus-zero-ev-fix.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Uranus%20Zero%20EV/uranus0ev_fix.gba"
+		released  = "1048554000"
+		added     = "1417395600"
+		md5		 = "03deb68b670ebd258b9d7ef70288a9a2"
+		>
+		<description>A vertical scrolling space shoot-em-up.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Uranus%20Zero%20EV/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Uranus%20Zero%20EV/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Uranus%20Zero%20EV/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Uranus%20Zero%20EV/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Waimanu"
+		system    = "openemu.system.gba"
+		developer = "Disjointed Studio"
+		website   = "http://disjointedstudio.blogspot.com/2013/07/grinding-gba.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Waimanu/WaimanuGBA.gba"
+		released  = "1373245200"
+		added     = "1417395600"
+		md5		 = "dd849fc5fe36531624d152c0d17e4799"
+		>
+		<description>A GBA port of the DS re-imagining of the original "Pengo" game. The little blue penguin Waimanu can push blocks and make them slide to squash Wekas, the evil alien jellies. He can also destroy blocks that cannot be pushed that are against a wall or if there's another block behind them. Wekas can destroy blocks anytime.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Waimanu/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Waimanu/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Waimanu/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Waimanu/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "A Werewolf Tale"
+		system    = "openemu.system.gba"
+		developer = "Genecyst Games"
+		website   = "http://holyhellgba.blogspot.com/p/a-werewolf-tale-gba.html"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/aWerewolfTale.gba"
+		released  = "1345338000"
+		added     = "1417395600"
+		md5		 = "c43cbd5e71bcda81010fb408819c3ce6"
+		>
+		<description>A chaotic puzzle action game!
+         
+Your werewolf has the ability to walk on any wall or roof. He can punch, dash and jump. Punch or dash your enemies right in head to kill them. Use defense to stun your opponent in case of direct attack or to reflect the bullets they throw. When you jump, you go directly to the wall opposite to the one you stand.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Alter Ego"
 		system    = "openemu.system.nes"
 		developer = "Shiru"
@@ -1048,29 +1292,6 @@ but this will cost you a life.
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/2.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/3.png"></image>
 			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/4.png"></image>
-		</images>
-	</game>
-
-	<game
-		name      = "Power Pig"
-		system    = "openemu.system.gba"
-		developer = "genecyst games"
-		website   = "http://holyhellgba.blogspot.de/p/downloads.html"
-		file      = "http://www.otouv.org/gGames/downloads/powerpig.zip"
-		fileIndex = "2"
-		released  = "1404932321"
-		added     = "1417395600"
-		md5		 = "ba7dda66edd51fb758aa1f61af584c1f"
-		>
-		<description>You are a pig and you got to find the exit door for each level.
-Levels are full of animals that aren't properly happy to have you around and they'll try to kick your ass in any way.
-Fortunately the ghost of your granpa-pig has given you an amazing gravity gun that transform anything into light bubbles. This gravity gun require coins to work, so it's quite expensive to have one, but at least someone has filled the levels with coins... so you just need to grab them and charge your gun.
-		</description>
-		<images>
-			<image type="title"  src="http://www.otouv.org/gGames/downloads/title.png"></image>
-			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-country4.png"></image>
-			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-city3.png"></image>
-			<image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-jungle.png"></image>
 		</images>
 	</game>
 </games>

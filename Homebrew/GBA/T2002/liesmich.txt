@@ -1,0 +1,115 @@
+-----------------------------------
+            T2002 GBA
+ 
+       by pekaro software
+-----------------------------------
+
+
+EINLEITUNG
+
+T2002 ist eine Umsetzung der Turrican Spiele und wurde im Januar 2003 für Windows PC veröffentlicht. Es handelt sich um ein reines Fanprojekt ohne kommerzielle Absichten. Es steht kostenlos auf unserer Website http://www.pekaro.de zum Download bereit.
+
+
+RECHTLICHES
+
+Software, Grafik, Musik, Sounds, Texte sind urheberrechtlich geschützt und dürfen ohne vorherige Genehmigung nicht kopiert, reproduziert oder verändert werden.  
+
+T2002 verwendet Grafiken und Sounds der Amiga- und PC-Versionen von Turrican mit Erlaubnis der jeweiligen Entwickler bzw. Rechteinhaber.
+
+Die Benutzung von T2002 geschieht auf eigene Gefahr. Wir übernehmen keinerlei Haftung, weder für das einwandfreie Funktionieren der Software, noch für Schäden, die im Zusammenhang mit dem Download, der Installation oder der Nutzung entstehen.
+
+
+---------------------------------------------------------
+
+INHALT
+
+1)      Über T2002 GBA
+2)      Systemvoraussetzungen
+3)      T2002 GBA spielen
+4)      T2002 im Internet
+
+---------------------------------------------------------
+
+1) ÜBER T2002 GBA
+
+T2002 GBA ist die Game Boy Advance Version von T2002. Sie beinhaltet alle sieben Level von T2002 sowie einen neu gestalteten Bonuslevel. Erstmalig ist ein Kartenmodus enthalten, der eine Übersichtskarte des aktuellen Levels und den bereits zurückgelegten Weg anzeigt.
+
+---------------------------------------------------------
+
+2) SYSTEMVORAUSSETZUNGEN
+
+T2002 GBA läuft auf Game Boy Advance Emulatoren, z.B. Visual Boy Advance (http://vba.ngemu.com).
+
+---------------------------------------------------------
+
+3) T2002 GBA SPIELEN
+
+SPIEL STARTEN:
+
+Wird T2002 GBA gestartet, erscheint zuerst der Startbildschirm. Mit 
+Druck auf die Start-Taste gelangt man ins Hauptmenü. Dort
+kann mit Steuerkreuz auf/ab durch die Menüpunkte navigiert werden.
+Die Auswahl erfolgt mittels A-Taste.
+
+NEW GAME:
+
+Startet ein neues Spiel.
+
+CONTINUE:
+
+Setzt das zuletzt gespeicherte Spiel am Beginn des zuletzt betretenen Levels fort.
+Jedes Spiel wird automatisch gespeichert, sobald ein Level erfolgreich beendet wurde.
+Dadurch wird ein eventuell bereits vorhandener anderer Spielstand überschrieben.
+
+HISCORE:
+
+Die Eingabe des Namens in die Hiscoreliste erfolgt mittels Auswahl der
+Buchstaben durch das Steuerkreuz und abschließender Bestätigung mittels
+A-Taste.
+
+OPTION:
+
+Die Änderung der Einstellungen im Optionsmenü erfolgt mittels 
+Steuerkreuz links/rechts bzw. A-Taste.
+
+SPIEL-STEUERUNG: 
+
+Steuerkreuz links/rechts: laufen / rollen
+A-Taste: springen / Rad beenden
+Steuerkreuz  runter: ducken
+Steuerkreuz  runter und A-Taste: in Rad verwandeln
+B-Taste (kurz drücken): Primäre Waffe abfeuern
+B-Taste (länger drücken): Rundumstrahl aktivieren
+Linke-Schulter-Taste: Energielinien abfeuern
+Rechte-Schulter-Taste: Granaten abfeuern
+
+Start-Taste: Ingame Menu aufrufen
+Select-Taste: Kartenmodus aufrufen / beenden
+Steuerkreuz (im Kartenmodus): Kartenausschnitt verschieben
+Linke-Schulter-Taste (im Kartenmodus): Zurückgelegten Weg verbergen
+Rechte-Schulter-Taste (im Kartenmodus): Zurückgelegten Weg anzeigen 
+
+Die Belegung der A- und B-Taste kann im Optionsmenü getauscht werden.
+
+DIAMANTEN:
+
+Wenn man 100 Diamanten eingesammelt hat, wird die Energieleiste wieder aufgefüllt und um einen halben Teilstrich erweitert.
+
+---------------------------------------------------------
+
+4) T2002 IM INTERNET
+
+WEBSITE:
+
+http://www.pekaro.de
+
+KONTAKT:
+
+team@pekaro.de
+
+---------------------------------------------------------
+
+Viel Spaß!
+
+pekaro software Team
+02-JAN-2012
