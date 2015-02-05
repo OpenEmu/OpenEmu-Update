@@ -357,6 +357,26 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
+		name      = "Wall Jump Ninja"
+		system    = "openemu.system.2600"
+		developer = "Tim &quot;Walaber&quot; FitzRandolph"
+		website   = "http://atariage.com/forums/topic/232200-ninja-wall-jump-game-wip/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/wall_jump_ninja_20150115_v1_0_NTSC.a26"
+		released  = "1421283600"
+		added     = "1417395600"
+		md5		 = "3c56c0c5f6f97850ed0aa7bcc2a4e30e"
+		>
+		<description>As a ninja, you already have many skills. But there are many more to learn. Today you will learn the legendary technique of the wall jump. Use it wisely, or face certain doom at the hands of the death beam.
+		</description>
+		<images>
+			<image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/1.png"></image>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Anguna"
 		system    = "openemu.system.gba"
 		developer = "Nathan Tolbert"
