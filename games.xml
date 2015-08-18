@@ -377,6 +377,266 @@ Collect power-ups and other items to help you complete your quest while fending 
 	</game>
 
 	<game
+		name      = "Apple Snaffle"
+		system    = "openemu.system.7800"
+		developer = "Mark &quot;GroovyBee&quot; Ball"
+		website   = "http://atariage.com/forums/topic/144344-apple-snaffle-7800s-25th-birthday-game/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Apple%20Snaffle/AppleSnaffle_23_07_10.1.30.a78"
+		released  = "1280797200"
+		added     = "1417395600"
+		md5		 = "72b811415a58ea7248101144f4e18282"
+		>
+		<description>A Boulder Dash clone where you dig tunnels, avoid falling rocks and collect apples before time runs out.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Apple%20Snaffle/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Apple%20Snaffle/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Apple%20Snaffle/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Apple%20Snaffle/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Astro Blaster"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "http://atariage.com/forums/topic/219854-fighter-pilots-needed-in-sector-wars/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Astro%20Blaster/AstBlstr.A78"
+		released  = "1391216400"
+		added     = "1417395600"
+		md5		 = "015c390cc439aa9b00383ee07fe9976d"
+		>
+        <description>A port of the arcade game of the same name. In Astro Blaster, one or two players must advance through squadrons of alien ships in an attempt to dock with the mother ship. Players move their ship left or right and shoot at attacking squadrons. A special warp button allows the player to slow down the alien space ships and their laser fire, while maintaining his/her own ship and laser fire at normal speed.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Astro%20Blaster/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Astro%20Blaster/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Astro%20Blaster/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Astro%20Blaster/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Beef Drop"
+		system    = "openemu.system.7800"
+		developer = "Ken &quot;kenfused&quot; Siders"
+		website   = "http://kensclassics.org/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Beef%20Drop/bd7800demo.a78"
+		released  = "1160874000"
+		added     = "1417395600"
+		md5		 = "02d31c1d9f37455dfb03ac641eb19e16"
+		>
+		<description>Score as many points as possible by making hamburgers. To do so, Chef Pete must completely walk over each ingredient (buns, patties, lettuce, and more) in order to drop it to the next level. When all of the ingredients reach the tray at the bottom of the screen, the hamburger is complete! Assemble all four hamburgers to advance to the next round.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Beef%20Drop/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Beef%20Drop/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Beef%20Drop/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Beef%20Drop/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Bentley Bear's Crystal Quest"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "http://atariage.com/forums/topic/199637-work-in-progress-bentley-bear-crystal-quest/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Bentley%20Bear/Bentley.a78"
+		released  = "1383267600"
+		added     = "1417395600"
+		md5		 = "19f3d52546c452535b471076eae74701"
+		>
+		<description>A platformer inspired by the Sega classic Wonderboy starring Bentley Bear from another classic arcade game, Atari's Crystal Castles.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Bentley%20Bear/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Bentley%20Bear/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Bentley%20Bear/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Bentley%20Bear/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "b*nQ"
+		system    = "openemu.system.7800"
+		developer = "Ken &quot;kenfused&quot; Siders"
+		website   = "http://kensclassics.org/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/bonQ/bonQ.a78"
+		released  = "1181955600"
+		added     = "1417395600"
+		md5		 = "69494cf12a6e82e5175f83fe3d071362"
+		>
+		<description>Play by jumping on cubes, jumping on green objects, and luring the Snake to his death. When all of the cubes have been changed to the "change to" color, you will advance to the next round. After every four rounds you will advance to the next level. Later levels require jumping on cubes multiple times and the cubes will change in different color sequences, increasing the challenge of advancing to the next round.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/bonQ/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/bonQ/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/bonQ/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/bonQ/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Dungeon Stalker"
+		system    = "openemu.system.7800"
+		developer = "Steve Engelhardt &amp; Mike &quot;RevEng&quot; Saarna"
+		website   = "http://atariage.com/forums/topic/236861-dungeon-stalker-a-new-atari-7800-game/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/DungeonStalker_v1.245.a78"
+		released  = "1438736400"
+		added     = "1417395600"
+		md5		 = "6309d1f917a48fa5e0e3904f7fcc790e"
+		>
+		<description>Get ready for an exciting run through a dangerous dungeon. You will encounter waves of enemies that pursue you relentlessly. There's no way out... It's you against them until the end!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "FailSafe"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "http://atariage.com/forums/topic/154189-failsafe-7800-wip/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/FailSafe/FAILSAFE.A78"
+		released  = "1233450000"
+		added     = "1417395600"
+		md5		 = "67f25b1eef9f50bfa81cfebe86e89424"
+		>
+        <description>Make your way through five different terrains in search of the Depot where you will pick up Fail-Safe clues. One letter in the code, in its correct position, appears in the center of your fuel gauge. The sixth terrain is the most dangerous of all - the missile silo is heavily guarded by all enemies, including a mine field! If you make your way past that, you will have to enter the four-digit hexadecimal code to stop the launch and save the world. Do that, and you will start over in a more difficult environment.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/FailSafe/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/FailSafe/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/FailSafe/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/FailSafe/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Meteor Shower"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "http://atariage.com/forums/topic/182308-meteor-shower/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Meteor%20Shower/MeteorSh.A78"
+		released  = "1306026000"
+		added     = "1417395600"
+		md5		 = "21d1caaeca24e023fad3df23b452b93a"
+		>
+        <description>Meteors are falling to Earth! Defend Earth's surface by blasting away at the falling rocks... But beware! Alien forces have learned what was happening and are taking advantage of our vulnerability to attack us!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Meteor%20Shower/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Meteor%20Shower/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Meteor%20Shower/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Meteor%20Shower/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Pac-Man Collection"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "https://atariage.com/software_page.php?SoftwareID=4086"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Pac-Man%20Collection/Pac-Man%20Collection%20(Pokey).a78"
+		released  = "1138755600"
+		added     = "1417395600"
+		md5		 = "8257d90a71d7b7a726c1a69403b1bdef"
+		>
+		<description>The ultimate collection of a various official (and some not so official) releases of one of the most popular games in history. Featuring eight different game types (Pac-Man, Puck-Man, Ultra Pac-Man, Random Mazes Pac-Man, Hangly Man, Ms. Pac-Man, Ms. Pac-Attack, Ms. Random Mazes Pac-Man) and two modes (Plus and Fast) that add increased difficultly, speed, maze variation and bonuses.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Pac-Man%20Collection/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Pac-Man%20Collection/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Pac-Man%20Collection/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Pac-Man%20Collection/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Scramble"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "http://atariage.com/forums/topic/192136-happy-new-year-scramble-for-the-7800/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Scramble/Scramble.A78"
+		released  = "1328058000"
+		added     = "1417395600"
+		md5		 = "8ac39665c208638850a29952c630ddc1"
+		>
+        <description>Each round consists of five stages and a 'base', or final, stage. Destroy any targets on the ground, or in the air. You can (and should) destroy Rockets, UFOs, Fuel tanks (to give you more fuel), Bonus Items, and the Base itself at the very end. You cannot, however, destroy Meteors and should avoid them at all costs.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Scramble/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Scramble/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Scramble/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Scramble/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Super Circus AtariAge"
+		system    = "openemu.system.7800"
+		developer = "Bob &quot;PacManPlus&quot; DeCrescenzo"
+		website   = "http://atariage.com/forums/topic/167421-super-circus-atariage-new-wip/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Super%20Circus%20AtariAge/SUPERCIR.A78"
+		released  = "1281402000"
+		added     = "1417395600"
+		md5		 = "30cce141c5d13bacd4b43b8ddcb819c0"
+		>
+		<description>How good are your reflexes? As the clown bounces around in different directions you try to catch him on the teeter-totter. Send him up to the top of the big top to pop red, yellow and blue balloons worth different points. The harder the pop, the more you score!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Super%20Circus%20AtariAge/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Super%20Circus%20AtariAge/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Super%20Circus%20AtariAge/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Super%20Circus%20AtariAge/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "T:ME Salvo"
+		system    = "openemu.system.7800"
+		developer = "Mike &quot;RevEng&quot; Saarna"
+		website   = "http://atariage.com/forums/topic/224469-salvo/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/salvo.bas.a78"
+		released  = "1437872400"
+		added     = "1417395600"
+		md5		 = "9cf96d55ebb5e7866387d6d5ab720f9a"
+		>
+        <description>Shoot the enemies, and avoid being shot. After some time passes in the level, humanoids will begin appearing. Your enemies will kill the humanoids if they touch them, but if you run into the humanoids they will follow you. Keep them safe until the end of the level. Refuel your ammunition when an alarm sounds and more appears. Every 2 rounds you will reach the challenging stage, where 4 waves of enemies will race across the screen in patterns. If you shoot all 44 enemies you will earn an extra life.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Worm!"
+		system    = "openemu.system.7800"
+		developer = "Mark &quot;GroovyBee&quot; Ball"
+		website   = "http://atariage.com/forums/topic/157535-7800-worm/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Worm!/worm!.07_03_10.1.16.a78"
+		released  = "1267405200"
+		added     = "1417395600"
+		md5		 = "407d8305ee6604c2dc727bd774982c35"
+		>
+		<description>Help Brian the worm avoid the mushrooms and eat the flowers to escape from the garden. If you eat the mushrooms, bump into a wall or bite yourself you'll lose a life. Every time you eat a flower you get a little longer until you've eaten your fill. Both the flowers and mushrooms are placed in the gardens randomly. As you progress through the game you start each level longer than the last with more flowers to eat and mushrooms to avoid. After a certain number of levels you'll begin to get faster too.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Worm!/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Worm!/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Worm!/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Worm!/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Anguna"
 		system    = "openemu.system.gba"
 		developer = "Nathan Tolbert"
