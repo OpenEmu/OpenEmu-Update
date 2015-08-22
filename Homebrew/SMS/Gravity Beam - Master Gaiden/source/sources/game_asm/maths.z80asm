@@ -1,0 +1,146 @@
+; SEGA MASTER SYSTEM GAME THING
+; Not (c) 2013 Mathew Carr!
+; Started 21st January 2013.
+
+; Maths routines!
+
+.bank 0
+.section "multiply_code" free
+; HL = H * E
+; http://sgate.emt.bme.hu/patai/publications/z80guide/part4.html
+multiply_hl_equals_h_times_e:
+    push   bc
+    push   de
+
+    ld     l,0
+    ld     d,l
+
+    ld     b,8
+
+-:  add    hl,hl
+    jp     nc,+
+    add    hl,de
++:  djnz   -
+
+    pop    de
+    pop    bc
+    ret
+
+.ends
+
+.bank 0
+.section "multiply_square_code" free
+; Fluff to allow us to use the above routine.
+multiply_hl_equals_a_times_a:
+    push   af
+    push   de
+    
+    ; A = abs A
+    neg
+    jp     p,+
+    neg
++:
+
+    ld     h,a
+    ld     e,a
+
+    call   multiply_hl_equals_h_times_e
+
+    pop    de
+    pop    af
+    ret
+.ends
+
+.bank 0
+.section "multiply_16_code" free
+;16*16 multiplication
+;The following routine multiplies bc by de and places the result in dehl.
+;http://wikiti.brandonw.net/index.php?title=Z80_Routines:Math:Multiplication
+multiply_dehl_equals_bc_times_de:
+    push   af
+    push   bc
+
+    ld     hl,0
+
+    sla    e       ; optimised 1st iteration
+    rl     d
+    jp     nc,+
+    ld     h,b
+    ld     l,c
++:
+    ld     a,15
+-:
+    add    hl,hl
+    rl     e
+    rl     d
+    jp     nc,+
+    add    hl,bc
+    jp     nc,+
+    inc    de
+
++:  dec    a
+    jp     nz,-
+
+    pop    bc
+    pop    af
+
+    ret
+
+
+.ends
+
+.bank 0
+.section "square_root_code" free
+;-------------------------------
+;http://wikiti.brandonw.net/index.php?title=Z80_Routines:Math:Square_root
+;Square Root
+;Inputs:
+;HL = number to be square rooted
+;Outputs:
+;A  = square root
+;-------------------------------
+sqrt_hl_into_a:
+    push   de
+    push   hl
+
+    ld     a,$ff
+    ld     de,1
+sqrtloop:
+    inc    a
+    dec    e
+    dec    de
+    add    hl,de
+    jp     c,sqrtloop
+
+    pop    hl
+    pop    de
+
+    ret
+.ends
+
+
+.bank 0
+.section "division_code" free
+;16/8 division
+;http://wikiti.brandonw.net/index.php?title=Z80_Routines:Math:Division
+;The following routine divides hl by c and places the quotient in hl and the remainder in a
+divide_hl_equals_hl_over_c_remainder_a:
+    push   bc
+
+    xor    a
+    ld     b,16
+
+-:  add    hl,hl
+    rla
+    cp     c
+    jp     c,+
+    sub    c
+    inc    l
+
++:  djnz   -
+
+    pop    bc
+
+    ret
+.ends
+

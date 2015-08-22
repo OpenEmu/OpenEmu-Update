@@ -1,0 +1,44 @@
+<html>
+<head>
+<LINK REL="StyleSheet" HREF="gravitybeamdocs.css" TYPE="text/css">
+</head>
+<body>
+<h1>Gravity Beam: Master Gaiden Level Editing Documentation</h1>
+<h2>12th April 2013</h2>
+<p>Making levels for <i>Gravity Beam: Master Gaiden</i> is hyper easy.</p>
+<hr />
+
+<h3>Tiled Map Editor</h3>
+<p><i>"Tiled is a general purpose tile map editor. It's built to be easy to use, yet flexible enough to work with varying game engines, whether your game is an RPG, platformer or Breakout clone. Tiled is free software and written in C++, using the Qt application framework."</i></p>
+<p>I use Tiled to edit <i>Gravity Beam: Master Gaiden</i> and <i>Gravity Beam</i> levels. You can download it at <b>mapeditor.org</b>.</p>
+<p>It has extremely easy importing of images, placement of objects and arbitrary polyline placement. It also has a very easy to understand interface, it works on any OS, and it's free!</p>
+
+<h3>Tiled project</h3>
+<p>I've included the Tiled project file (.tmx) for the built in <i>GBMG</i> level.</p>
+<p>The level is a 64 megatile by 48 megatile map where the tiles are 16 pixels by 16 pixels. You can't have different sized levels without completely reassembling the game and ruining everything.</p>
+<img src="tiled.png" />
+<p>The map has only one layer: CanvasTiles.</p>
+<p>CanvasTiles is a tile layer, holding the indices of the tiles that make up what you see of the level.</p>
+<p>There is a single tileset using <tt>gaidentiles_uncollidableredattop_collidablebelow.png</tt> as the source image. You can resize the tile selector by holding CTRL and using the mousewheel.</p>
+<p>The megatiles in the tileset are laid out in a specific way: tiles 15 and above are solid, tiles 14 and lower are passable. This distinction is hardcoded into the source in the collision checks for the player and box.</p>
+<h3>Megatiles</h3>
+<p>A megatile is a 16x16 pixel group of four 8x8 SMS graphic tiles. The file <tt>gaidentiles_uncollidableredattop_collidablebelow.png</tt> is a vertical strip of megatiles prepared for convenience for use with the Tiled editor. The actual file that's included in the game is a tile-reduced version of this prepared by Usenti.</p>
+<p>I first drew all the graphics in their megatile form, making care to try and have repeating 8x8 subsections of tiles in preparation for tile creation. This check must be done manually, but you can repeatedly reduce tiles in Usenti to see if your changes have introduced new unique 8x8 tiles into the file.</p>
+<p>When all the tiles were drawn, I used Usenti's 'Reduce Tiles' option to reduce the megatile strip into only unique 8x8 subtiles. This file is then converted to 4bpp and included into a Huffman archive.</p>
+<p>To enable the game to select the appropriate 8x8 tiles when the camera pans over a megatile, the file <tt>megatiles_definitions.z80asm</tt> contains an array of [4byte] structures indicating what 8x8 tiles should be placed into the nametable for the given megatile. This is produced by <tt>2013megatilemanager.exe</tt> (see the <i>Gravity Beam: Master Gaiden Documentation</i> file).</p>
+<h3>Exporting the level</h3>
+<p>Once you've laid out the tiles, it's time to export the level.</p>
+<p>Go to File, Export As and export the map as a Json file. A Json file is a structured plaintext format that stores its data in a hierarchical key-value tree format. It's useful because it means we can use Javascript to parse the file and retrieve data by asking for what appears at a given path.</p>
+<p>If we assign the Json object to the variable <tt>myjson</tt>, the three layers can be found at <tt>myjson.layers[n]</tt> where <tt>n</tt> is an integer. I iterate through values of <tt>n</tt> to find the layer with the right name. I could assume the positions of the layers in the Json file based on their positions in the Tiled layer stack, but they might not always end up in the same places.</p>
+<p>The tile indices can be found at <tt>layer.data[]</tt> where <tt>layer.name == "CanvasTiles"</tt>. The tile indices are 1-based rather than 0-based though.</p>
+<h3>Converting the level</h3>
+<p><tt>json_to_ascii_gaiden.htm</tt> is a HTML file containing a Javascript script that reads the Json tree from <tt>var myjson</tt> and produces copy-pasteable HTML output that can be further processed to make the level. It gets the tileset data and makes it zero-based to match how the game executable expects it.</p>
+<p>To use <tt>json_to_ascii_gaiden.htm</tt>, copy the complete contents of your exported Json file at the top as <tt>var mysjon = {...</tt>. Then save it and open the file in a web browser. The output should appear as a plaintext list similar to the following:</p>
+<pre>; Level tile map data follows.
+
+        dc.b     0, 0, 0, 0, 0, 0, 0, 0, 0, 0...</pre>
+<p>This text is a series of WLA-DX compatible data declarations defining the tilemap indices for your level. You should be able to see your level reflected in the layout of the numbers. Then you can copy this text from the browser window into a <tt>.z80asm</tt> file and use WLA-DX to convert it into a block of binary data. <i>Gravity Beam: Master Gaiden</i> expects the level data to be compressed, so place <tt>levellayout_megatiles.bin</tt> into the directory <tt>huffman_archives</tt>.</p>
+<p>The starting and ending positions of the player and box are hard coded in the <tt>.z80asm</tt> source, as the game was designed for this level specifically. This also means that if you want to have a different goal than dragging the box out of the top of the level, you'll have to program that in yourself.</p>
+<p>Once you've got your <tt>.bin</tt> compressed and the positions re-coded, assemble and link the game, and everything should be fine!</p>
+</body>
+</html>

@@ -1,0 +1,1489 @@
+; SEGA MASTER SYSTEM GAME AUDIO THING
+; (c) 2013 Mathew Carr
+; Started 16th January 2013.
+
+; Interface:
+; ----------
+
+; AUDIO SYSTEM MAIN:
+
+; audio_init: assert full control over physical sound hardware and initalise music_ and sound_ system memory structures
+; Remember: RAM memory has undefined initial value on Master System!
+
+
+; MODULE PLAYER:
+
+; music_restart_cue: re-cue already currently selected song from the "start" of that song
+; Does not set the playing flag, that must be done with music_resume.
+
+; music_resume: desets stopped flag, allowing music to proceed on subsequent ticks
+
+; music_stop: stops currently playing music instantly. subsequent ticks do nothing
+
+; music_set_volume: jam the volume variable to this value
+; Volume parameter is in A.
+
+; music_begin_fade_out: manipulates the volume of the song from this point onwards
+; descending until it hits zero, then it does a music_stop
+
+; music_select_song: jam all music state to the start ("restart_cue") and sets
+; pointers to start of indicated song. Don't forget to callmusic_resume.
+; Music pointer is in HL.
+
+; music_tick: advance the music player by one PAL tick
+; Call this every frame.
+
+
+; INSTRUMENT PROGRAM RUNNER:
+
+; instruments_tick: advance instrument program status instances 0 1 and 2 by a single tick,
+; causing the properties of the sound chip to be refreshed with the appropriate tone requests.
+; ONLY handles instrument channels 0 1 and 2: these are the tone channels
+; Does not affect the sound chip's tone channels if they are assigned to the sound system.
+; This should be called every frame, regardless of whether the music is playing or stopped.
+
+; percussion_tick: advance the instrument program status instance 3.
+; Handles the noise channel, which does not share instrument programs with the tone channels.
+
+; SOUND EFFECT PLAYER:
+
+; sound_tick: advance the sound effect instance by a PAL tick
+; Call this every frame.
+
+; sound_release_all: force the sound effect instance to release its channel
+
+; sound_request: Attempts to instruct the sound player to play sound effect program C
+; may fail if there's a sound effect already being played
+
+; sound_force: Instructs the sound player to play sound effect program C right now, damn it.
+
+
+; The _tick functions should be called every frame and don't preserve registers!!
+
+
+; This structure holds the state of a single instrument program runtime
+; for the module player. The module player must set these parameters
+; for each of the three music channels as the song plays.
+.struct music_instrument_program_runtime_status_struct
+root_note_pitch      db              ; The root note number playing on this instrument channel, is $FF if no note is playing.
+note_age             db              ; The note age as an unsigned 16 bit value counting upward from zero
+instrument_number    db              ; The instrument program number to be executed
+channel_attenuation  db              ; The assigned attenuation for this channel alone. (We convert from VOL values as soon as the note is triggered!)
+pitch_bend           db              ; Currently unused, but is populated.
+unused_1             db              ; Pad out this structure to be eight bytes long.
+unused_2             db
+unused_3             db
+.endst
+
+.RAMSECTION "audio_variables" SLOT 1
+audio_state_memory_begin          .db  ; .db means 'I'm at the position of the next thing, but I'm not actually a thing myself'.
+music_playing                     db ; Yes or no. Yes is 1, no is 0. Cueing a new song sets this to zero.
+
+music_global_player_attenuation   db ; Global music playback volume as an attenuation.
+
+music_module_start_pointer        dw ; Pointer to start of current module
+music_module_current_pointer      dw ; Active module playback cursor position
+
+music_tick_counter                db ; Ticks within the current row. Counts upwards from zero.
+music_ticks_per_row               db ; Controls tempo
+music_rows_wait_counter           db ; Counts down towards zero to implement the delay between reading instruction from a WAIT playback directive
+
+music_instrument_program_runtime_status_begin          .db
+music_instrument_program_runtime_status instanceof music_instrument_program_runtime_status_struct 4
+music_instrument_program_runtime_status_end            .db
+
+sound_effect_program              db ; What number sound effect is playing, is $FF is no sound effect is playing.
+sound_effect_age                  db ; How many frames old is this sound effect as an unsigned 8 bit value counting upward from zero
+sound_effect_chip_channel_primary db ; What sound chip tone channel is this sound effect using, if any. $FF means no tone channel is asserted.
+
+audio_state_memory_end            .db
+.ends ; End of ram section
+
+.define audio_state_memory_size audio_state_memory_end-audio_state_memory_begin
+.export audio_state_memory_size
+
+.define music_instrument_program_runtime_status_size music_instrument_program_runtime_status_end-music_instrument_program_runtime_status_begin
+.export music_instrument_program_runtime_status_size
+
+; The code begins!
+
+.bank 0
+.section "audio_code" free
+audio_init:
+    ; Reset all the parameters of the audio system to a known state.
+    ; I'm going to memset the entire audio_state_memory_* range to zero.
+
+    push   af
+    push   bc
+    push   de
+    push   hl
+
+    ld     d,0                         ; Prepare a zero in D. We're going to spam it all over the place!
+    ld     bc,audio_state_memory_size  ; BC is our counter
+    ld     hl,audio_state_memory_begin ; HL is our destination ptr
+-:
+    ld     (hl),d                      ; Load memory at HL with D (which is a zero). It's faster than '(HL),n' according to the docs.
+    inc    hl
+    dec    bc
+    ld     a,b                         ; Load b into a (b is most significant byte of bc)
+    or     c                           ; a = b|c   OR instruction sets flags!
+    jp     nz,-                        ; WHILE BC <> 0 DO {(HL) = 0; HL++; BC--}
+
+    ; music_stop sets $FFs in the appropriate places for disabled notes.
+    call   music_stop
+    
+    ; sound_release_all puts $FF in the program slot so we know that's disabled
+    call   sound_release_all
+
+    pop    hl
+    pop    de
+    pop    bc
+    pop    af
+
+    ret
+; end audio_init
+
+music_restart_cue:
+    call   music_stop
+
+    push   hl
+
+    ; Reset the playback cursor to the start of the currently selected song.
+    ld     hl,(music_module_start_pointer)
+    ld     (music_module_current_pointer),hl
+
+    pop    hl
+
+    ret
+; end music_restart_cue
+
+music_resume:
+    push   af
+
+    ; The music is now playing!
+    ld     a,1
+    ld     (music_playing),a
+
+    pop    af
+
+    ret
+; end music_resume
+
+music_stop:
+    push   af
+    push   bc
+    push   de
+    push   hl
+
+    ; The music is now stopped!
+    xor    a
+    ld     (music_playing),a
+
+    ; We must also blank the state of all the instrument channels
+    ; to prevent lingering notes.
+
+    ; Reset the state of all the instrument channels. (Make everything in all the structs zero.)
+    ld     d,0                                              ; Prepare a zero in D. We're going to spam it all over the place!
+    ld     bc,music_instrument_program_runtime_status_size  ; BC is our counter
+    ld     hl,music_instrument_program_runtime_status_begin ; HL is our destination ptr
+-:
+    ld     (hl),d                      ; Load memory at HL with D (which is a zero). It's faster than '(HL),n' according to the docs.
+    inc    hl
+    dec    bc
+    ld     a,b                         ; Load b into a (b is most significant byte of bc)
+    or     c                           ; a = b|c   OR instruction sets flags!
+    jp     nz,-                        ; WHILE BC <> 0 DO {(HL) = 0; HL++; BC--}
+
+    ; Put the $FF back in to the appropriate places!
+    ld     a,$FF
+    ld     (music_instrument_program_runtime_status.1.root_note_pitch),a
+    ld     (music_instrument_program_runtime_status.2.root_note_pitch),a
+    ld     (music_instrument_program_runtime_status.3.root_note_pitch),a
+    ld     (music_instrument_program_runtime_status.4.root_note_pitch),a
+
+    pop    hl
+    pop    de
+    pop    bc
+    pop    af
+
+    ret
+; end music_stop
+
+; Volume parameter is in A.
+music_set_volume:
+    push   af
+
+    ; Convert volume to attenuation, then store.
+    call   audio_volume_to_attenuation                ; Convert the volume value to an attenuation.
+    ld     (music_global_player_attenuation),a
+
+    pop    af
+
+    ret
+; end music_set_volume
+
+music_select_song:
+    ld     (music_module_start_pointer),hl
+    call   music_restart_cue
+
+    ret
+; end music_select_song
+
+music_tick:
+    ; HOOOOOKAY.
+
+    ld     a,(music_playing)                          ; If music_playing == 0, return.
+    cp     0
+    jp     z,music_tick_return
+
+    ; Check to see if the tick counter has been exceeded from the last update.
+    ld     a,(music_ticks_per_row)
+    ld     b,a
+    ld     a,(music_tick_counter)
+    cp     b                                          ; FLAGS = consider result of (A-B), that is (music_tick_counter - music_ticks_per_row)
+    jp     m,music_tick_counter_limit_not_reached     ; If tick_counter < ticks_per_row, there are still ticks remaining, the counter should be left alone.
+    xor    a
+    ld     (music_tick_counter),a                     ; If tick_counter >= ticks_per_row, there are no ticks remaining, and the counter needs resetting.
+music_tick_counter_limit_not_reached:
+
+    ; Now check to see if the tick counter is zero. (As a result of song initialisation, or tick counter rollover.)
+    ; This specific ordering allows us to respond to the first row when the song is selected initially.
+    ;ld     a,(music_tick_counter) - unnecessary, A already holds this value.
+    cp     0                                          ; FLAGS = consider result of (A-0), that is, let us check if music_tick_counter is zero
+    jp     nz,music_no_row_advancement_this_tick      ; If music_tick_counter <> 0, no row advancement this tick.
+
+    ; There has been an advancement of row this tick!
+music_row_advancement_occured_this_tick:
+
+    ; Lets see if the row advancement has triggered a new instruction reading.
+    ld     a,(music_rows_wait_counter)
+    cp     0
+    jp     nz,music_rows_wait_counter_still_nonzero   ; We do not advance to the next row until the counter is zero at this point.
+
+    ld     de,(music_module_current_pointer)          ; Retrieve address of next instruction
+    
+    ; We're ready to interpret the next instructions.
+music_interpret_the_next_instructions:
+    ld     a,(de)                                     ; Retrieve first byte of next instruction
+    inc    de                                         ; Advance DE onto the next byte
+    cp     0                                          ; FLAGS = consider A.
+    jp     m,music_intrepret_playback_directive       ; If command[0] >= 80, it's a directive.
+
+    ; If it's not a directive, it's a channel event.
+    ; Locate the affected channel.
+    exx                                               ; We want the command byte a lot, so stash it in B'
+    ld     b,a                                        ; Stash the command byte in B'
+    exx                                               ; Return to normal registers.
+    and    %00000011                                  ; Isolate the channel number part of the command byte.
+    add    a,a                                        ; Offset = channel number * 8
+    add    a,a
+    add    a,a                                        ; A is now the offset to the channel structure from the start of the channel structures array.
+    ld     b,0                                        ; Clear high order bits of BC register pair.
+    ld     c,a                                        ; BC is now 16 bit offset within instrument program status section
+    ld     hl,music_instrument_program_runtime_status_begin ; HL is now pointer to start of instrument program status section.
+    add    hl,bc                                      ; HL is now complete pointer to start of appropriate structure for this channel.
+
+    ; We have the destination pointer in HL and the source pointer in DE.
+    ; Selectively copy the parameters from the channel event to the instrument program status structure:
+    exx
+    ld     a,b                                        ; Retrieve the command byte from B' into A
+    exx
+    ld     b,a                                        ; Put the command byte into regular B as well so it survives the following:
+    and    %01111100                                  ; Check out the bit membership of the command byte:
+    jp     nz,music_bit_fields_non_empty_so_analyse_parameters ; If the bit membership is non-empty, analyse the parameters that come after it:
+    ; At this point, we've encountered a blank bitfield, indicating a NOTE OFF, that corresponds to the instrument program status struct pointed to by HL
+    ld     (hl),$FF                                   ; NOTE OFF into the current instrument program status struct.
+    jp     music_interpret_the_next_instructions      ; And onto the next instruction.
+music_bit_fields_non_empty_so_analyse_parameters:
+    ; Command byte is in B.
+    ; DE points to the first parameter byte, which may have any purpose.
+    ; HL pointer to the first byte of the instrument structure, which is the root_note_pitch.
+
+    ; The structure of the command byte is %DBVIAPCC
+    ; DBVIAP are bits indicating whether this channel event packet is followed by those parameters.
+    ;  7 D is directive
+    ;  6 B is BEND
+    ;  5 V is VOLUME
+    ;  4 I is INSTRUMENT
+    ;  3 A is AGE
+    ;  2 P is PITCH
+    ; 10 CC is channel as a 2-bit integer.
+
+    ; This first section deals with the PITCH and NOTE AGE bits, which can interact with
+    ; each other. A PITCH change will trigger the note, and may set the note age to zero.
+    ; Unless the NOTE AGE exists, in which case, the NOTE AGE will tell us what to do about
+    ; the age.
+    ; Check for NOTE AGE first, so we can quickly deal with non legato notes.
+    bit    3,b                                        ; Test note age bit.
+    jp     nz,music_note_age_bit_set_so_its_fiddly    ; If the note age bit is set, we may have to do fiddly things like the legato or age jam:
+    ; If the AGE is not set, this may be a straightforward retrigger NOTE ON:
+    bit    2,b                                        ; Test pitch bit.
+    jp     z,music_channel_event_does_not_concern_pitch_or_age ; If the note column isn't active either, then don't do anything with age or pitch.
+    ; At this point, we have a pitch, with no note age, so it's a straightforward retriggering NOTE ON event.
+    ld     a,(de)                                     ; Load root_note_pitch value from input cursor
+    inc    de                                         ; Advance input cursor to next parameter
+    ld     (hl),a                                     ; Store note pitch.
+    inc    hl                                         ; Move destination cursor to note age.
+    xor    a
+    ld     (hl),a                                     ; Clear the note age two byte to zero:
+    inc    hl                                         ; HL now points to the instrument part of the status structure.
+    jp     music_continue_parsing_instrument_volume_and_bend ; Now we can move on to parsing the rest of the note.
+music_note_age_bit_set_so_its_fiddly:
+    ; The NOTE AGE bit is set. Check to see if we're going to set the pitch while we're at it:
+    bit    2,b                                        ; Test pitch bit.
+    jp     z,music_note_age_bit_set_but_not_pitch     ; Jump over the pitch setting if there's no pitch
+    ; At this point, we have a pitch and a note age. This means this is a special case
+    ; of NOTE ON, where the NOTE ON doesn't affect the note age, like it does a couple of lines above.
+    ld     a,(de)                                     ; Load root_note_pitch value from input cursor
+    inc    de                                         ; Advance input cursor to next parameter
+    ld     (hl),a                                     ; Store note pitch.
+music_note_age_bit_set_but_not_pitch:
+    ; Now the note age section is free to mangle the note age if it likes:
+    ld     a,(de)                                     ; Load note age value from input cursor
+    inc    de                                         ; Advance input cursor to next parameter
+    cp     0                                          ; Check for legato mode. (a NOTE ON, with note age present and set to zero)
+    jp     z,music_note_on_with_note_age_zero_legato_mode
+    ; We have a non zero note age, so it's time for a verbatim copy
+    inc    hl                                         ; Move destination cursor to note age lower byte.
+    ld     (hl),a                                     ; Insert note age value into note age field in structure.
+    inc    hl                                         ; Advance the destination pointer HL to the instrument part
+    jp     music_continue_parsing_instrument_volume_and_bend
+music_note_on_with_note_age_zero_legato_mode:
+music_channel_event_does_not_concern_pitch_or_age:
+    inc    hl                                         ; Advance the destination pointer HL to the instrument part
+    inc    hl
+music_continue_parsing_instrument_volume_and_bend:
+    ; At this point B still contains the command byte (somehow!)
+    ; DE points to a parameter byte which may contain anything (starting with the instrument number value)
+    ; HL pointer to the instrument number part of the destination structure
+    bit    4,b                                        ; Test instrument bit
+    jp     z,music_instrument_number_bit_not_present
+    ld     a,(de)                                     ; Load instrument_number value from input cursor
+    inc    de                                         ; Advance input cursor to next parameter
+    ld     (hl),a                                     ; Store instrument_number.
+music_instrument_number_bit_not_present:
+    inc    hl                                         ; Advance destination cursor to volume byte
+
+    bit    5,b                                        ; Test volume bit
+    jp     z,music_volume_bit_not_present
+    ld     a,(de)                                     ; Load volume value from input cursor
+    inc    de                                         ; Advance input cursor to next parameter
+    call   audio_volume_to_attenuation                ; Convert the volume value to an attenuation.
+    ld     (hl),a                                     ; Store volume.
+music_volume_bit_not_present:
+    inc    hl                                         ; Advance destination cursor to volume byte
+
+    bit    6,b                                        ; Test pitch_bend bit
+    jp     z,music_pitch_bend_bit_not_present
+    ld     a,(de)                                     ; Load pitch_bend value from input cursor
+    inc    de                                         ; Advance input cursor to next parameter
+    ld     (hl),a                                     ; Store pitch_bend.
+music_pitch_bend_bit_not_present:
+
+    jp     music_interpret_the_next_instructions      ; And onto the next instruction.
+    ; We have completely analysed the instruction as a Channel Event.
+
+music_intrepret_playback_directive:
+    ; Intrepret the command as a playback directive.
+    cp     $F0                                        ; FLAGS = consider command[0]-$F0
+    jp     p,music_interpret_playback_directive_not_WAIT ; If command[0] <= $F0, it's a WAIT. We already know about the high bit being set as it's a playback directive.
+    and    $7F                                        ; Retrieve the value of the wait from the lower seven bits of the command byte.
+    dec    a                                          ; Decrement WAIT value by 1.
+    ld     (music_rows_wait_counter),a                ; Wait for this many rows. The decrement signifies that the current row is included in the number of rows we wait.
+    ld     (music_module_current_pointer),de          ; DE already points to the start of the next command, store it for the next parse attempt next frame.
+    jp     music_parsing_complete_advance_tick_counter_and_return ; Parse nothing else.
+music_interpret_playback_directive_not_WAIT:
+    cp     $FD                                        ; FLAGS = consider command[0]-$FD
+    jp     nz,music_interpret_playback_directive_not_GOTO ; If command[0] == $FD, it's a GOTO
+    ld     a,(de)                                     ; DE is command[1], which is the lower byte of the goto value. Load lower byte into a
+    ld     l,a                                        ; Load lower byte into L
+    inc    de                                         ; Advance DE to command[1], which is the upper byte of the goto value.
+    ld     a,(de)                                     ; Load upper byte into a
+    ld     h,a                                        ; Load upper byte into H. HL now contains the complete goto value
+    ex     de,hl                                      ; Move goto value into DE.
+    ld     hl,(music_module_start_pointer)            ; HL = module start
+    add    hl,de                                      ; HL = module start + GOTO value.
+    ex     de,hl                                      ; DE points to the next instruction
+    jp     music_interpret_the_next_instructions      ; And onto the next instruction.
+music_interpret_playback_directive_not_GOTO:
+    cp     $FE                                        ; FLAGS = consider command[0]-$FE
+    jp     nz,music_interpret_playback_directive_not_TEMPO ; If command[0] == $FE, it's a TEMPO
+    ld     a,(de)                                     ; DE is command[1], which is the sole byte of the tempo value. Load byte into a.
+    ld     (music_ticks_per_row),a
+    inc    de                                         ; Advance DE to the start of the next command
+    jp     music_interpret_the_next_instructions      ; And onto the next instruction.
+music_interpret_playback_directive_not_TEMPO:
+; If there were any more playback directives, they could go here, but there aren't.
+; This means that we just assume that everything else is a STOP.
+;    cp     $FF                                        ; FLAGS = consider command[0]-$FF
+;    jp     nz,music_interpret_playback_directive_not_STOP ; If command[0] == $FF, it's a stop
+    call   music_stop
+    jp     music_parsing_complete_advance_tick_counter_and_return ; Parse nothing else.
+;music_interpret_playback_directive_not_STOP:
+
+music_rows_wait_counter_still_nonzero:                ; We advanced a row, but we're waiting additional rows until we parse more instructions:
+    ; Decrement the rows_wait_counter.
+    ;ld     a,(music_rows_wait_counter) - unnecessary, A already holds this value.
+    dec    a
+    ld     (music_rows_wait_counter),a
+
+music_parsing_complete_advance_tick_counter_and_return:
+music_no_row_advancement_this_tick:                   ; No row advancement this tick.
+
+    ; Every PAL frame, we advance the tick_counter by one tick. (tick_counter ascends positively)
+    ld     a,(music_tick_counter)
+    inc    a
+    ld     (music_tick_counter),a
+
+music_tick_return:                                    ; Return point that safely restores registers and exits.
+    ret
+; end music_tick
+
+
+; MODULE PLAYER:
+
+; music_begin_fade_out: manipulates the volume of the song from this point onwards
+; descending until it hits zero, then it does a music_stop
+
+
+; INSTRUMENT PROGRAM RUNNER:
+
+; instruments_tick: advance all the instrument program status instances by a single tick,
+; causing the properties of the sound chip to be refreshed with the appropriate tone requests.
+; This should be called every frame, regardless of whether the music is playing or stopped.
+instruments_tick:
+
+    xor    a                                          ; Instrument loop counter in A
+    ld     hl,music_instrument_program_runtime_status_begin ; HL points to the start of the instruments structure
+instruments_tick_handle_next_instrument:
+    ld     c,a                                        ; Stash the instrument loop counter in C
+    exx
+    ld     c,a                                        ; Stash the instrument loop counter in C' too
+    exx
+    ; HL points to the start of the instrument structure for the current instrument channel.
+
+    ; Check to see if the current instrument is active:
+    ld     a,(hl)                                     ; Retrieve the root_note_pitch in A
+    cp     $ff                                        ; Check to see if the channel is active by comparing the root note pitch to FF.
+    jp     nz,instruments_tick_proceed_with_note_playback ; We let execution continue on to the instrument program to allow for note age changes, but we shouldn't let it alter the sound chip!!
+    ; If the channel is not active, we might be able to set its attenuation to full, -IF- the channel is not owned by the sound effect system
+    ; Check to see if the music system owns the current chip channel:
+    ld     a,(sound_effect_chip_channel_primary)      ; Retrieve the tone channel number used by the current sound effect
+    cp     c                                          ; Compare instrument channel number against tone channel number dedicated to sound effect
+    jp     z,instruments_tick_channel_early_abort_due_to_non_ownership ; If z, the music system doesn't own this channel: do absolutely nothing to the sound chip and skip this instrument channel!
+    ; This channel is not active and the music system owns it! Set the volume to zero. (Attenuation to all 1s)
+    ld     a,c
+    rrca                                              ; Rotate the channel number into the %0cc00000 position
+    rrca
+    rrca
+    or     %10011111                                  ; Set bits %100V1111, meaning latch onto this channel, select attenuation register, and set attenuation to 1111.
+    out    (PORT_SN76489),a                           ; Output volume command!
+    ld     a,c                                        ; Get the instrument channel number back in A from C'
+instruments_tick_channel_early_abort_due_to_non_ownership:
+    ld     de,8                                       ; We're allowed to put the plus here, because the instrument channel number is already in A.
+    add    hl,de                                      ; Advance HL by 8, moving to the next instrument
+    jp     instruments_tick_increment_instrument_channel_counter
+    ; This routine continues below if the note playback is in effect:
+instruments_tick_proceed_with_note_playback:
+    ; ------------------------------------- ;
+    ; Instrument channel number is in C'    ;
+    ; Instrument structure pointer is in HL ;
+    ; ------------------------------------- ;
+    ; Perform a vector jump thing to the appropriate instrument.
+    inc    hl
+    inc    hl                                            ; Advance HL to the instrument number section of the struct
+    ld     a,(hl)
+    add    a,a                                           ; A = instrument number from IPRS struct * 2
+    ld     b,0
+    ld     c,a                                           ; BC = offset into vector table as 16 bit value
+    dec    hl
+    dec    hl                                            ; HL points back at the start of the struct
+    ex     de,hl                                         ; Save pointer to instrument structure in DE
+    ld     hl,instrument_program_vector_table            ; Construct pointer to instrument program:
+    add    hl,bc                                         ; We have the memory address containing the vector in HL.
+    ld     b,(hl)                                        ; Read the vector address from the table into HL.
+    inc    hl
+    ld     h,(hl)
+    ld     l,b
+    call   CallHL                                        ; call instrument_program_vector_table[2*instrument_number]
+
+instruments_tick_increment_instrument_channel_counter:
+    inc    a
+    cp     3
+    jp     nz,instruments_tick_handle_next_instrument
+
+    ret
+; end instruments_tick
+
+; This table holds the addresses of the instrument programs.
+instrument_program_vector_table:
+.dw instrument_tick_program_0
+.dw instrument_tick_program_1
+.dw instrument_tick_program_2
+.dw instrument_tick_program_3
+
+; These instrument programs are routines that read the given instrument program runtime status channel and
+; send messages to the sound chip on the tone channel indicated in A and C'.
+; They expect the pointer to the instrument program runtime status struct in DE, and the instrument number in A and C'
+; They are expected to return DE+8 in HL at the end! (This is a pointer to the next instrument. This lets us loop to the next instrument!)
+instrument_tick_program_0:
+    ex     de,hl                                         ; Retrieve instrument back from DE.
+
+    ; Instrument 0 is just a square wave, it doesn't react to its note age,
+    ; and it never expires, so there's really no point to incrementing it!
+
+    ; Check to see if the music system owns the current chip channel:
+    ; If it does: we can mess around with the sound chip registers.
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    exx
+    cp     c                                             ; Compare instrument channel number against tone channel number dedicated to sound effect
+    exx
+    jp     nz,+
+    ; If A = C', the music system doesn't own this channel: do absolutely nothing to the sound chip and skip this instrument channel!
+    ; Because the sound_effect_chip_channel_primary contains the same value as the current instrument channel under the cursor
+    ; we don't need to put it back in A explicitly before returning.
+    ld     de,8
+    add    hl,de                                         ; Advance HL by 8, moving to the next instrument
+    ret                                                  ; With pointer to next instrument in HL and instrument number in A, we're good to return
++:
+
+    push   hl
+       ld     a,(hl)                                     ; Retrieve the root_note_pitch number in A
+       add    a,a                                        ; Double it (we know there are <127 note pitch numbers! besides, 0x80 and above are playback directives remember?)
+       ld     h,0
+       ld     l,a                                        ; HL is offset into music_tone_value_array.
+       ld     de,music_tone_value_array
+       add    hl,de                                      ; HL = pointer to correct value from music_tone_value_array.
+       ld     e,(hl)                                     ; E is lower byte of tone value
+       inc    hl
+       ld     d,(hl)                                     ; DE is complete 16-bit tone value
+       ex     de,hl                                      ; HL is now complete 16-bit tone value.
+       ; Certain programs may want to affect the tone value, so do it now!
+       ; ld     a,(de)
+       exx
+       ld     a,c                                        ; Get the instrument number back in A from C'
+       exx
+       call   sound_chip_set_tone_period_value           ; Set tone period of channel A to value HL
+    pop    hl
+
+    inc    hl
+    inc    hl
+    inc    hl                                         ; Advance HL by 3, moving to the instrument volume.
+    ld     a,(music_global_player_attenuation)        ; Retrieve the global attenuation
+    add    a,(hl)                                     ; Add instrument attenuation retrieved from status struct.
+    ld     e,a                                        ; Store the final attenuation into E
+    exx
+    ld     a,c                                        ; Get the instrument channel number back in A from C'
+    exx
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+
+    ld     bc,5
+    add    hl,bc                                      ; Advance HL by a further 5, moving to the next instrument
+
+    ret
+
+instrument_tick_program_1:
+    ex     de,hl                                         ; Retrieve instrument back from DE.
+
+    ; Increment note age, reset root_note_pitch if note is expired.
+    ; This goes in the program because different instruments expire their notes differently.
+    inc    hl                                            ; Advance HL by 1, moving to the note age.
+    ld     a,(hl)                                        ; Note age into A
+    inc    a                                             ; Increment note age
+    cp     $20
+    jp     m,+                                           ; If note age < $20, then we're not looping it, ignore this stuff.
+    ld     a,$10
+    ; We didn't expire the note. The new note age is still in A. HL points to the note age field.
++:  ld     (hl),a                                        ; Store new note age.
+    dec    hl                                            ; Return HL to pointing at root_note_pitch
+    ld     b,a                                           ; Store note age in B for future calculations:
+
+    ; Check to see if the music system owns the current chip channel:
+    ; If it does: we can mess around with the sound chip registers.
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    exx
+    cp     c                                             ; Compare instrument channel number against tone channel number dedicated to sound effect
+    exx
+    jp     nz,+
+    ; If A = C', the music system doesn't own this channel: do absolutely nothing to the sound chip and skip this instrument channel!
+    ; Because the sound_effect_chip_channel_primary contains the same value as the current instrument channel under the cursor
+    ; we don't need to put it back in A explicitly before returning.
+    ld     de,8
+    add    hl,de                                         ; Advance HL by 8, moving to the next instrument
+    ret                                                  ; With pointer to next instrument in HL and instrument number in A, we're good to return
++:
+
+    push   hl
+       ld     a,(hl)                                     ; Retrieve the root_note_pitch number in A
+       add    a,a                                        ; Double it
+       ld     h,0
+       ld     l,a                                        ; HL is offset into music_tone_value_array.
+       ld     de,music_tone_value_array
+       add    hl,de                                      ; HL = pointer to correct value from music_tone_value_array.
+       ld     e,(hl)                                     ; E is lower byte of tone value
+       inc    hl
+       ld     d,(hl)                                     ; DE is complete 16-bit tone value
+       ex     de,hl                                      ; HL is now complete 16-bit tone value.
+       ; Certain programs may want to affect the tone value, so do it now!
+       ld     a,b                                        ; Load note age into B
+       cp     $10
+       jp     m,+                                        ; If note age >= 10, do a vibrato pitch wobble effect:
+       sub    $10                                        ; Get zero based elapsed time into wobble:
+       rrca
+       rrca
+       bit    0,a
+       jp     nz,++                                      ; For 01 and 11 cycles, do not alter the pitch.
+       bit    1,a
+       jp     p,+
+       ld     de,$-2                                     ; For 00 cycle, increase the tone value.
+       add    hl,de
+       jp     ++
++:     ld     de,$1                                      ; For 10 cycle, decrease the tone value.
+       add    hl,de
+++:
+       exx
+       ld     a,c                                        ; Get the instrument number back in A from C'
+       exx
+       call   sound_chip_set_tone_period_value
+    pop    hl
+
+    ld     d,0                                        ; D contains attenuation contribution from note age.
+    ld     a,b
+    cp     $4
+    jp     p,+                                        ; If note age < 4, attenuation value in D
+    cpl
+    and    $3                                         ; Attenuation decreases with note age sharply with first four 1/50ths of a second of note age.
+    rlca
+    rlca
+    ld     d,a
++:
+
+    inc    hl
+    inc    hl
+    inc    hl                                         ; Advance HL by 3, moving to the instrument volume.
+    ld     a,(music_global_player_attenuation)        ; Retrieve the global attenuation
+    add    a,(hl)                                     ; Add instrument attenuation retrieved from status struct.
+    add    a,d                                        ; Add an instrument specific attenuation contribution from D
+    ld     e,a                                        ; Store the final attenuation into E
+    exx
+    ld     a,c                                        ; Get the instrument channel number back in A from C'
+    exx
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+
+    ld     bc,5
+    add    hl,bc                                      ; Advance HL by a further 5, moving to the next instrument
+
+    ret
+
+instrument_tick_program_2:
+    ex     de,hl                                         ; Retrieve instrument back from DE.
+
+    ; Increment note age, reset root_note_pitch if note is expired.
+    ; This goes in the program because different instruments expire their notes differently.
+    inc    hl                                            ; Advance HL by 1, moving to the note age.
+    ld     a,(hl)                                        ; Note age into A
+    inc    a                                             ; Increment note age
+    jp     m,++                                          ; If note age reaches $80 and tries to hit 'negative numbers', don't store it.
+    ld     (hl),a                                        ; Store new note age if result is < $80
+    ; We didn't expire the note. The new note age is still in A. HL points to the note age field.
+++: dec    hl                                            ; Return HL to pointing at root_note_pitch
+    ld     b,a                                           ; Store note age in B for future calculations:
+
+    ; Check to see if the music system owns the current chip channel:
+    ; If it does: we can mess around with the sound chip registers.
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    exx
+    cp     c                                             ; Compare instrument channel number against tone channel number dedicated to sound effect
+    exx
+    jp     nz,+
+    ; If A = C', the music system doesn't own this channel: do absolutely nothing to the sound chip and skip this instrument channel!
+    ; Because the sound_effect_chip_channel_primary contains the same value as the current instrument channel under the cursor
+    ; we don't need to put it back in A explicitly before returning.
+    ld     de,8
+    add    hl,de                                         ; Advance HL by 8, moving to the next instrument
+    ret                                                  ; With pointer to next instrument in HL and instrument number in A, we're good to return
++:
+
+    push   hl
+       ld     a,(hl)                                     ; Retrieve the root_note_pitch number in A
+       add    a,a                                        ; Double it
+       ld     h,0
+       ld     l,a                                        ; HL is offset into music_tone_value_array.
+       ld     de,music_tone_value_array
+       add    hl,de                                      ; HL = pointer to correct value from music_tone_value_array.
+       ld     e,(hl)                                     ; E is lower byte of tone value
+       inc    hl
+       ld     d,(hl)                                     ; DE is complete 16-bit tone value
+       ex     de,hl                                      ; HL is now complete 16-bit tone value.
+       ; Certain programs may want to affect the tone value, so do it now!
+       exx
+       ld     a,c                                        ; Get the instrument number back in A from C'
+       exx
+       call   sound_chip_set_tone_period_value
+    pop    hl
+
+    ld     d,0                                        ; D contains attenuation contribution from note age.
+    ld     a,b
+    cp     $40
+    jp     m,+
+    inc    d
++:  cp     $50                                        ; Increase attenuation over time...
+    jp     m,+
+    inc    d
++:  cp     $60
+    jp     m,+
+    inc    d
++:
+
+    inc    hl
+    inc    hl
+    inc    hl                                         ; Advance HL by 3, moving to the instrument volume.
+    ld     a,(music_global_player_attenuation)        ; Retrieve the global attenuation
+    add    a,(hl)                                     ; Add instrument attenuation retrieved from status struct.
+    add    a,d                                        ; Add an instrument specific attenuation contribution from D
+    ld     e,a                                        ; Store the final attenuation into E
+    exx
+    ld     a,c                                        ; Get the instrument channel number back in A from C'
+    exx
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+
+    ld     bc,5
+    add    hl,bc                                      ; Advance HL by a further 5, moving to the next instrument
+
+    ret
+
+instrument_tick_program_3:
+    ex     de,hl                                         ; Retrieve instrument back from DE.
+
+    ; Increment note age, reset root_note_pitch if note is expired.
+    ; This goes in the program because different instruments expire their notes differently.
+    inc    hl                                            ; Advance HL by 1, moving to the note age.
+    ld     a,(hl)                                        ; Note age into A
+    inc    a                                             ; Increment note age
+    jp     m,++                                          ; If note age reaches $80 and tries to hit 'negative numbers', don't store it.
+    ld     (hl),a                                        ; Store new note age if result is < $80
+    ; We didn't expire the note. The new note age is still in A. HL points to the note age field.
+++: dec    hl                                            ; Return HL to pointing at root_note_pitch
+    ld     b,a                                           ; Store note age in B for future calculations:
+
+    ; Check to see if the music system owns the current chip channel:
+    ; If it does: we can mess around with the sound chip registers.
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    exx
+    cp     c                                             ; Compare instrument channel number against tone channel number dedicated to sound effect
+    exx
+    jp     nz,+
+    ; If A = C', the music system doesn't own this channel: do absolutely nothing to the sound chip and skip this instrument channel!
+    ; Because the sound_effect_chip_channel_primary contains the same value as the current instrument channel under the cursor
+    ; we don't need to put it back in A explicitly before returning.
+    ld     de,8
+    add    hl,de                                         ; Advance HL by 8, moving to the next instrument
+    ret                                                  ; With pointer to next instrument in HL and instrument number in A, we're good to return
++:
+
+    push   hl
+       ld     a,(hl)                                     ; Retrieve the root_note_pitch number in A
+       add    a,a                                        ; Double it
+       ld     h,0
+       ld     l,a                                        ; HL is offset into music_tone_value_array.
+       ld     de,music_tone_value_array
+       add    hl,de                                      ; HL = pointer to correct value from music_tone_value_array.
+       ld     e,(hl)                                     ; E is lower byte of tone value
+       inc    hl
+       ld     d,(hl)                                     ; DE is complete 16-bit tone value
+       ex     de,hl                                      ; HL is now complete 16-bit tone value.
+       ; Certain programs may want to affect the tone value, so do it now!
+       exx
+       ld     a,c                                        ; Get the instrument number back in A from C'
+       exx
+       call   sound_chip_set_tone_period_value
+    pop    hl
+
+    ld     d,0                                        ; D contains attenuation contribution from note age.
+    ld     a,b
+    cp     $04
+    jp     m,+
+    inc    d
++:  cp     $08                                        ; Increase attenuation over time...
+    jp     m,+
+    inc    d
++:  cp     $0C
+    jp     m,+
+    inc    d
++:  cp     $10
+    jp     m,+
+    inc    d
++:  cp     $14
+    jp     m,+
+    inc    d
++:  cp     $18
+    jp     m,+
+    inc    d
++:  cp     $1B
+    jp     m,+
+    inc    d
++:  cp     $20
+    jp     m,+
+    inc    d
++:  cp     $24
+    jp     m,+
+    inc    d
++:
+
+    inc    hl
+    inc    hl
+    inc    hl                                         ; Advance HL by 3, moving to the instrument volume.
+    ld     a,(music_global_player_attenuation)        ; Retrieve the global attenuation
+    add    a,(hl)                                     ; Add instrument attenuation retrieved from status struct.
+    add    a,d                                        ; Add an instrument specific attenuation contribution from D
+    ld     e,a                                        ; Store the final attenuation into E
+    exx
+    ld     a,c                                        ; Get the instrument channel number back in A from C'
+    exx
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+
+    ld     bc,5
+    add    hl,bc                                      ; Advance HL by a further 5, moving to the next instrument
+
+    ret
+
+; These are the wave period values used by the SN76489 to produce the tones.
+; These are 16 bit values for the notes I refer to as 0 to 7F. C-0 to A-10
+music_tone_value_array:                          ; You cannot use values more than $3FF, so the lowest note is: A-0.
+;.dw $69E, $63F, $5E5, $591, $541, $4F5, $4AE, $46B, $42B, $3EF, $3B7, $381, ; 12 notes per line, each line is an octave.
+    ; C     C#    D     D#    E     F     F#    G     G#    A     A#    B
+.dw   $1,   $1,   $1,   $1,   $1,   $1,   $1,   $1,   $1, $3EF, $3B7, $381, ; 12 notes per line, each line is an octave.
+.dw $34F, $31F, $2F2, $2C8, $2A0, $27A, $257, $235, $215, $1F7, $1DB, $1C0,
+.dw $1A7, $18F, $179, $164, $150, $13D, $12B, $11A, $10A,  $FB,  $ED,  $E0,
+.dw  $D3,  $C7,  $BC,  $B2,  $A8,  $9E,  $95,  $8D,  $85,  $7D,  $76,  $70,
+.dw  $69,  $63,  $5E,  $59,  $54,  $4F,  $4A,  $46,  $42,  $3E,  $3B,  $38,
+.dw  $34,  $31,  $2F,  $2C,  $2A,  $27,  $25,  $23,  $21,  $1F,  $1D,  $1C,
+.dw  $1A,  $18,  $17,  $16,  $15,  $13,  $12,  $11,  $10,   $F,   $E,   $E,
+.dw   $D,   $C,   $B,   $B,   $A,   $9,   $9,   $8,   $8,   $7,   $7,   $7,
+.dw   $6,   $6,   $5,   $5,   $5,   $4,   $4,   $4,   $4,   $3,   $3,   $3,
+.dw   $3,   $3,   $2,   $2,   $2,   $2,   $2,   $2,   $2,   $1,   $1,   $1,
+.dw   $1,   $1,   $1,   $1,   $1,   $1,   $1,   $1
+
+; These values map volumes in the range 0x0 to 0xF to attenuations
+; attenuations are logarithmic, so I should just be able to add 'em!
+; Remembering that attenuation should be max clamped at 15.
+audio_volume_to_attenuation_value_table:
+;    v0  v1  v2  v3  v4  v5  v6  v7  v8  v9 v10 v11 v12 v13 v14 v15
+.db  15, 14, 14, 12,  9,  8,  7,  6,  5,  4,  3,  2,  2,  1,  1,  0 ; Sorts looks linear, but it's not.
+
+; Converts a volume in A to an attenuation!
+audio_volume_to_attenuation:
+    push   de
+    push   hl
+    ld     h,0
+    ld     l,a
+    ld     de,audio_volume_to_attenuation_value_table
+    add    hl,de                                      ; Construct pointer into above table.
+    ld     a,(hl)                                     ; Retrieve attenuation.
+    pop    hl
+    pop    de
+    ret
+
+percussion_tick:
+    ld     hl,music_instrument_program_runtime_status.4 ; HL points to the start of the instruments structure for percussion channel
+
+    ; Check to see if the percussion instrument is active:
+    ld     a,(hl)                                     ; Retrieve the root_note_pitch in A
+    cp     $ff                                        ; Check the active flag.
+    jp     nz,percussion_tick_proceed_with_playback   ; We let execution continue on to the instrument program to allow for note age changes, but we shouldn't let it alter the sound chip!!
+    ; If the channel is not active, we might be able to set its attenuation to full, -IF- the channel is not owned by the sound effect system
+    ; Check to see if the music system owns the current chip channel:
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    cp     $ff                                           ; If the sound system owns FF, that means there's no sound playing
+    jp     z,+
+    ; If channel != FF, the music system may not own this channel.
+    ; Check to see if the current sound effect uses the noise channel.
+    ex     de,hl                                         ; Save current HL.
+    ld     b,0
+    ld     a,(sound_effect_program)                      ; Get the number of the current program in A, to allow adding from BC later.
+    ld     c,a
+    ld     hl,sound_effect_program_uses_percussion
+    add    hl,bc
+    ld     a,(hl)
+    cp     0
+    ; If this flag is set, do absolutely nothing to the sound chip and skip this instrument channel!
+    ret    nz
+    ex     de,hl                                         ; Restore old HL.
++:
+    ; This channel is not active and the music system owns it! Set the volume to zero. (Attenuation to all 1s)
+    ld     a,%11111111                                ; Set bits %1CCV1111, meaning latch onto the noise channel, select attenuation register, and set attenuation to 1111.
+    out    (PORT_SN76489),a                           ; Output volume command!
+    ret
+    ; This routine continues below if playback is in effect:
+percussion_tick_proceed_with_playback:
+
+    ; Perform a vector jump thing to the appropriate percussion tick program.
+    ld     a,(hl)
+    add    a,a                                           ; A = root note pitch number from IPRS struct * 2
+    ld     b,0
+    ld     c,a                                           ; BC = offset into vector table as 16 bit value
+    ld     hl,percussion_program_vector_table            ; Construct pointer to instrument program:
+    add    hl,bc                                         ; We have the memory address containing the vector in HL.
+    ld     b,(hl)                                        ; Read the vector address from the table into HL.
+    inc    hl
+    ld     h,(hl)
+    ld     l,b
+    jp     (hl)                                          ; call percussion_program_vector_table[2*root note pitch number]
+; END percussion_tick
+
+; This table holds the addresses of the instrument programs for the noise channel (channel 3).
+percussion_program_vector_table:
+.dw percussion_tick_program_0
+.dw percussion_tick_program_1
+.dw percussion_tick_program_2
+.dw percussion_tick_program_3
+.dw percussion_tick_program_4
+
+; These percussion programs are routines that read the given instrument program runtime status channel and
+; send messages to the sound chip on the noise channel.
+; They can invalidate whatever they like.
+percussion_tick_program_0: ; C-0, the bass drum.
+    ; Increment note age and store it. Reset root_note_pitch if note is expired.
+    ld     hl,music_instrument_program_runtime_status.4.note_age
+    inc    (hl)                                          ; Increment note age
+
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    cp     $ff                                           ; If the sound system owns FF, that means there's no sound playing
+    jp     z,+
+    ; If channel != FF, the music system may not own this channel.
+    ; Check to see if the current sound effect uses the noise channel.
+    ex     de,hl                                         ; Save current HL.
+    ld     b,0
+    ld     a,(sound_effect_program)                      ; Get the number of the current program in A, to allow adding from BC later.
+    ld     c,a
+    ld     hl,sound_effect_program_uses_percussion
+    add    hl,bc
+    ld     a,(hl)
+    cp     0
+    ; If this flag is set, do absolutely nothing to the sound chip and skip this instrument channel!
+    ret    nz
+    ex     de,hl                                         ; Restore old HL.
+
++:  ; No sound effect playing: nothing overrides this channel
+
+    ld     b,(hl)                                        ; Note age into B
+    ld     a,b                                           ; And A for comparisons.
+    cp     $10
+    jp     m,+                                           ; If note age < X, then ignore the following
+    dec    hl                                            ; HL points to root note pitch.
+    ld     (hl),$FF                                      ; Set root note pitch to $FF
+    ld     a,%11111111                                   ; Latch the noise channel's attenuation register, full attenuation (zero volume).
+    out    (PORT_SN76489),a                              ; KAPOW! The latch byte is out the bag.
+    ret
++:
+
+    ld     a,b
+    cp     1
+    jp     nz,+
+    ; If the note age is -NOW- 1, (i.e., it WAS zero) set the noise register value
+    ld     a,%11100110
+    out    (PORT_SN76489),a
++:
+    ; Change the attenuation based on note age! And channel attenuation!
+    ld     a,(music_global_player_attenuation)           ; Retrieve the global attenuation
+    ld     hl,music_instrument_program_runtime_status.4.channel_attenuation ; Save two T states by loading the explicitly rather than INC-ing twice
+    add    a,(hl)                                        ; Add instrument attenuation retrieved from status struct.
+    dec    b
+    add    a,b                                           ; Final attenuation = global + channel attenuation + f(note age)
+    jp     sound_chip_set_attenuation_value_noise
+; END percussion_tick_program_0
+
+percussion_tick_program_1: ; C#0, the snare drum.
+    ; Increment note age and store it. Reset root_note_pitch if note is expired.
+    ld     hl,music_instrument_program_runtime_status.4.note_age
+    inc    (hl)                                          ; Increment note age
+
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    cp     $ff                                           ; If the sound system owns FF, that means there's no sound playing
+    jp     z,+
+    ; If channel != FF, the music system may not own this channel.
+    ; Check to see if the current sound effect uses the noise channel.
+    ex     de,hl                                         ; Save current HL.
+    ld     b,0
+    ld     a,(sound_effect_program)                      ; Get the number of the current program in A, to allow adding from BC later.
+    ld     c,a
+    ld     hl,sound_effect_program_uses_percussion
+    add    hl,bc
+    ld     a,(hl)
+    cp     0
+    ; If this flag is set, do absolutely nothing to the sound chip and skip this instrument channel!
+    ret    nz
+    ex     de,hl                                         ; Restore old HL.
+
++:  ; No sound effect playing: nothing overrides this channel
+
+    ld     b,(hl)                                        ; Note age into B
+    ld     a,b                                           ; And A for comparisons.
+    cp     $20
+    jp     m,+                                           ; If note age < X, then ignore the following
+    dec    hl                                            ; HL points to root note pitch.
+    ld     (hl),$FF                                      ; Set root note pitch to $FF
+    ld     a,%11111111                                   ; Latch the noise channel's attenuation register, full attenuation (zero volume).
+    out    (PORT_SN76489),a                              ; KAPOW! The latch byte is out the bag.
+    ret
++:
+
+    ld     a,b
+    cp     1
+    jp     nz,+
+    ; If the note age is -NOW- 1, (i.e., it WAS zero) set the noise register value
+    ld     a,%11100100
+    out    (PORT_SN76489),a
++:
+    ; Change the attenuation based on note age! And channel attenuation!
+    ld     a,(music_global_player_attenuation)           ; Retrieve the global attenuation
+    ld     hl,music_instrument_program_runtime_status.4.channel_attenuation ; Save two T states by loading the explicitly rather than INC-ing twice
+    add    a,(hl)                                        ; Add instrument attenuation retrieved from status struct.
+    srl    b                                             ; Convert note age in 1-1F to 0 to F
+    dec    b
+    add    a,b                                           ; Final attenuation = global + channel attenuation + f(note age)
+    jp     sound_chip_set_attenuation_value_noise
+; END percussion_tick_program_1
+
+percussion_tick_program_2: ; D-0, the short high hat
+    ; Increment note age and store it. Reset root_note_pitch if note is expired.
+    ld     hl,music_instrument_program_runtime_status.4.note_age
+    inc    (hl)                                          ; Increment note age
+
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    cp     $ff                                           ; If the sound system owns FF, that means there's no sound playing
+    jp     z,+
+    ; If channel != FF, the music system may not own this channel.
+    ; Check to see if the current sound effect uses the noise channel.
+    ex     de,hl                                         ; Save current HL.
+    ld     b,0
+    ld     a,(sound_effect_program)                      ; Get the number of the current program in A, to allow adding from BC later.
+    ld     c,a
+    ld     hl,sound_effect_program_uses_percussion
+    add    hl,bc
+    ld     a,(hl)
+    cp     0
+    ; If this flag is set, do absolutely nothing to the sound chip and skip this instrument channel!
+    ret    nz
+    ex     de,hl                                         ; Restore old HL.
+
++:  ; No sound effect playing: nothing overrides this channel
+
+    ld     b,(hl)                                        ; Note age into B
+    ld     a,b                                           ; And A for comparisons.
+    cp     $08
+    jp     m,+                                           ; If note age < X, then ignore the following
+    dec    hl                                            ; HL points to root note pitch.
+    ld     (hl),$FF                                      ; Set root note pitch to $FF
+    ld     a,%11111111                                   ; Latch the noise channel's attenuation register, full attenuation (zero volume).
+    out    (PORT_SN76489),a                              ; KAPOW! The latch byte is out the bag.
+    ret
++:
+
+    ld     a,b
+    cp     1
+    jp     nz,+
+    ; If the note age is -NOW- 1, (i.e., it WAS zero) set the noise register value
+    ld     a,%11100100
+    out    (PORT_SN76489),a
++:
+    ; Change the attenuation based on note age! And channel attenuation!
+    ld     a,(music_global_player_attenuation)           ; Retrieve the global attenuation
+    ld     hl,music_instrument_program_runtime_status.4.channel_attenuation ; Save two T states by loading the explicitly rather than INC-ing twice
+    add    a,(hl)                                        ; Add instrument attenuation retrieved from status struct.
+    add    a,b                                           ; double b
+    add    a,b                                           ; Final attenuation = global + channel attenuation + f(note age)
+    jp     sound_chip_set_attenuation_value_noise
+; END percussion_tick_program_2
+
+percussion_tick_program_3: ; D#0, the long high hat
+    ; Increment note age and store it. Reset root_note_pitch if note is expired.
+    ld     hl,music_instrument_program_runtime_status.4.note_age
+    inc    (hl)                                          ; Increment note age
+
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    cp     $ff                                           ; If the sound system owns FF, that means there's no sound playing
+    jp     z,+
+    ; If channel != FF, the music system may not own this channel.
+    ; Check to see if the current sound effect uses the noise channel.
+    ex     de,hl                                         ; Save current HL.
+    ld     b,0
+    ld     a,(sound_effect_program)                      ; Get the number of the current program in A, to allow adding from BC later.
+    ld     c,a
+    ld     hl,sound_effect_program_uses_percussion
+    add    hl,bc
+    ld     a,(hl)
+    cp     0
+    ; If this flag is set, do absolutely nothing to the sound chip and skip this instrument channel!
+    ret    nz
+    ex     de,hl                                         ; Restore old HL.
+
++:  ; No sound effect playing: nothing overrides this channel
+
+    ld     b,(hl)                                        ; Note age into B
+    ld     a,b                                           ; And A for comparisons.
+    cp     $20
+    jp     m,+                                           ; If note age < X, then ignore the following
+    dec    hl                                            ; HL points to root note pitch.
+    ld     (hl),$FF                                      ; Set root note pitch to $FF
+    ld     a,%11111111                                   ; Latch the noise channel's attenuation register, full attenuation (zero volume).
+    out    (PORT_SN76489),a                              ; KAPOW! The latch byte is out the bag.
+    ret
++:
+
+    ld     a,b
+    cp     1
+    jp     nz,+
+    ; If the note age is -NOW- 1, (i.e., it WAS zero) set the noise register value
+    ld     a,%11100100
+    out    (PORT_SN76489),a
++:
+    ; Change the attenuation based on note age! And channel attenuation!
+    ld     a,(music_global_player_attenuation)           ; Retrieve the global attenuation
+    ld     hl,music_instrument_program_runtime_status.4.channel_attenuation ; Save two T states by loading the explicitly rather than INC-ing twice
+    add    a,(hl)                                        ; Add instrument attenuation retrieved from status struct.
+    srl    b                                             ; Convert note age in 1-1F to 0 to F
+    dec    b
+    add    a,b                                           ; Final attenuation = global + channel attenuation + f(note age)
+    jp     sound_chip_set_attenuation_value_noise
+; END percussion_tick_program_3
+
+percussion_tick_program_4: ; E-0, uninterrupted long noise.
+    ; Increment note age and store it. Reset root_note_pitch if note is expired.
+    ld     hl,music_instrument_program_runtime_status.4.note_age
+    inc    (hl)                                          ; Increment note age
+
+    ld     a,(sound_effect_chip_channel_primary)         ; Retrieve the tone channel number used by the current sound effect
+    cp     $ff                                           ; If the sound system owns FF, that means there's no sound playing
+    jp     z,+
+    ; If channel != FF, the music system may not own this channel.
+    ; Check to see if the current sound effect uses the noise channel.
+    ex     de,hl                                         ; Save current HL.
+    ld     b,0
+    ld     a,(sound_effect_program)                      ; Get the number of the current program in A, to allow adding from BC later.
+    ld     c,a
+    ld     hl,sound_effect_program_uses_percussion
+    add    hl,bc
+    ld     a,(hl)
+    cp     0
+    ; If this flag is set, do absolutely nothing to the sound chip and skip this instrument channel!
+    ret    nz
+    ex     de,hl                                         ; Restore old HL.
+
++:  ; No sound effect playing: nothing overrides this channel
+
+    ld     b,(hl)                                        ; Note age into B
+    ld     a,b                                           ; And A for comparisons.
+    cp     1
+    jp     nz,+
+    ; If the note age is -NOW- 1, (i.e., it WAS zero) set the noise register value
+    ld     a,%11100100
+    out    (PORT_SN76489),a
++:
+    ; Jam note age to 2 forever.
+    ld     a,2
+    ld     (hl),a
+
+    ; Change the attenuation based channel attenuation!
+    ld     a,(music_global_player_attenuation)           ; Retrieve the global attenuation
+    ld     hl,music_instrument_program_runtime_status.4.channel_attenuation ; Save two T states by loading the explicitly rather than INC-ing twice
+    add    a,(hl)                                        ; Add instrument attenuation retrieved from status struct.
+    add    a,b                                           ; Final attenuation = global + channel attenuation
+    jp     sound_chip_set_attenuation_value_noise
+; END percussion_tick_program_4
+
+; SOUND EFFECT PLAYER:
+
+sound_release_all:
+    push   af
+
+    ; Disable the sound effect player. That's all we gotta do.
+    ld     a,$FF
+    ld     (sound_effect_program),a
+    ld     (sound_effect_chip_channel_primary),a
+
+    pop    af
+    ret
+
+sound_request:
+    push   af
+
+    ; If the sound program is not FF, then definitely instruct it to play sound effect program C
+    ld     a,(sound_effect_program)
+    cp     $FF
+    call   z,sound_force
+
+    pop    af
+    ret
+
+sound_force:
+    push   af
+
+    ld     a,c
+    ; Initialise the sound effect channel addressed through HL as program C.
+    ld     (sound_effect_program),a                ; Set sound effect program to C
+    xor    a
+    ld     (sound_effect_age),a                    ; Set sound effect age to zero
+    ; Do we want cycling sound channels? I'm forcing it constant for now, because it sounds better: more consistent.
+    ; This should be chosen to fit in with the music you're playing.
+    ld     a,2
+;    ld     a,(sound_effect_chip_channel_primary)   ; Load old sound chip channel
+;    inc    a                                       ; If we didn't, advance the counter.
+;    cp     3                                       ; Test to see if we've reached the limit of tone channels
+;    jp     nz,sound_force_dont_loop_channel_allocation_yet
+;    xor    a
+;sound_force_dont_loop_channel_allocation_yet:
+    ld     (sound_effect_chip_channel_primary),a   ; Set sound effect channel to 'next' channel!
+
+    pop    af
+    ret
+
+
+sound_tick:
+    ; If the sound program is FF, do nothing
+    ld     a,(sound_effect_program)
+    cp     $FF
+    ret    z
+    ; There is a sound playing.
+    ld     c,a                                           ; Store sound effect number in C
+
+    ; See if the sound effect has expired:
+    ld     h,0
+    ld     l,a
+    ld     de,sound_effect_program_age_lengths
+    add    hl,de                                         ; Locate the length of the currently playing sound program
+    ld     b,(hl)                                        ; Read the length of the currently playing sound program into B.
+    ld     a,(sound_effect_age)
+    inc    a                                             ; Increment and store sound effect age
+    ld     (sound_effect_age),a
+    cp     b                                             ; Compare current note age with length stored in data array.
+    jp     nz,sound_tick_continue_with_sound_playback    ; If the two are equal:
+    ; The sound effect has reached its age limit and should terminate
+    ld     a,$FF
+    ld     (sound_effect_program),a                      ; Set the sound effect program to $FF.
+    ld     (sound_effect_chip_channel_primary),a         ; Set the sound channel to $FF as well.
+    ret
+sound_tick_continue_with_sound_playback:
+
+    ; Perform a vector jump thing to the appropriate sound effect tick program.
+    ld     a,c                                           ; Move sound effect number into A again.
+    add    a,a                                           ; A = sound effect doubled
+    ld     b,0
+    ld     c,a                                           ; BC = offset into vector table as 16 bit value
+    ld     hl,sound_effect_program_vector_table          ; Construct pointer to instrument program:
+    add    hl,bc                                         ; We have the memory address containing the vector in HL.
+    ld     b,(hl)                                        ; Read the vector address from the table into HL.
+    inc    hl
+    ld     h,(hl)
+    ld     l,b
+    jp     (hl)                                          ; call percussion_program_vector_table[2*root note pitch number]
+; END sound_tick
+
+; This table holds the addresses of the sound effect programs.
+sound_effect_program_vector_table:
+.dw sound_tick_program_0
+.dw sound_tick_program_1
+.dw sound_tick_program_2
+.dw sound_tick_program_3
+
+sound_tick_program_0: ; Beooushh. Beam out of range.
+    ; First we do the tone value:
+    ld     hl,$0200                                   ; Put an arbitrary value into the tone period value
+    ld     a,(sound_effect_age)
+    ld     b,0
+    ld     c,a
+    add    hl,bc
+    add    hl,bc
+    add    hl,bc
+    add    hl,bc
+    add    hl,bc                                      ; Add on the note age a couple of times to make a descending thing. TEMP.
+    add    hl,bc
+    add    hl,bc
+    add    hl,bc
+    ld     a,(sound_effect_chip_channel_primary)      ; Get the instrument number we use for the square part of this sound effect.
+    ld     c,a                                        ; Keep this safe in C.
+    call   sound_chip_set_tone_period_value           ; Set the tone counter value on the chip for channel A to HL.
+    ; Now we deal with attenuations:
+    ld     a,(sound_effect_age)                       ; Load current age into A.
+    cp     1                                          ; On note age one only, we need to set up the noise channel.
+    jp     nz,+                                       ; Jump over noise channel data OUT if sound effect age > 1. Latching noise data clears the shift register.
+    ld     b,a                                        ; Store note age in B temporarily
+    ld     a,%11100100
+    out    (PORT_SN76489),a                           ; Latch some kinda noise type data byte on sound effect age zero only.
+    ld     a,b
++:
+    ; For this default program, age goes from $00 to <$20. We're going to make it a number in the range $0 $F by shifting.
+    rrca
+    and    $f                                         ; Gotta and the attenuation, or else the sound_chip_set_attenuation_value routine assumes we're putting in >15 value.
+    ld     e,a                                        ; Put the four bit attenuation value into E
+    ld     a,c                                        ; Put the instrument value back in A
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+    ld     a,e
+    rrca
+    and    $f                                         ; Gotta and the attenuation, or else the sound_chip_set_attenuation_value routine assumes we're putting in >15 value.
+    ld     e,a
+    ld     a,3
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel 3 to E.
+    ; The sound program is done!
+    ret
+
+; Be deep! (crate is damaged.)
+sound_tick_program_1:
+    ; First we do the tone value:
+    ld     hl,$0050                                   ; Put an arbitrary value into the tone period value
+    ld     a,(sound_effect_chip_channel_primary)      ; Get the instrument number we use for the square part of this sound effect.
+    ld     c,a                                        ; Keep this safe in C.
+    call   sound_chip_set_tone_period_value           ; Set the tone counter value on the chip for channel A to HL.
+    ; Now we deal with attenuations:
+    ld     a,(sound_effect_age)                       ; Load current age into A.
+
+    ; Now to set the attenuation of channel C to either full or empty to make the be-deep volume envelope.
+    ld     e,2                                        ; By default there is no attenuation.
+    sub    6
+    jp     c,sound_tick_program_1_attenuation_ready   ; age < this => e = hi vol
++:  ld     e,$F                                       ; between 10 and 16 there is full attenuation.
+    sub    2
+    jp     c,sound_tick_program_1_attenuation_ready   ; age < this => e = lo vol
++:  ld     e,2                                        ; age >= this => e = hi vol
+
+sound_tick_program_1_attenuation_ready:
+    ld     a,c                                        ; Put the instrument value back in A
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+    ; The sound program is done!
+    ret
+
+; Beep 2, menu action.
+sound_tick_program_2:
+    ld     a,(sound_effect_age)                       ; Load current age into A.
+
+    ld     hl,$0060                                   ; Put an arbitrary (low pitch) value into the tone period value
+    ; Now to set the attenuation of channel C to either full or empty to make the be-deep volume envelope.
+    ld     e,2                                        ; By default there is low attenuation.
+    sub    4
+    jp     c,sound_tick_program_2_attenuation_ready   ; age < this => e = hi vol
+    ld     e,$F                                       ; between 10 and 16 there is full attenuation.
+    sub    1
+    jp     c,sound_tick_program_2_attenuation_ready   ; age < this => e = lo vol
+    ld     e,2                                        ; age >= this => e = hi vol
+    ld     hl,$0050                                   ; Put an arbitrary (high pitch) value into the tone period value if the sound is on the second half.
+
+sound_tick_program_2_attenuation_ready:
+    ld     a,(sound_effect_chip_channel_primary)      ; Get the instrument number we use for the square part of this sound effect.
+    ld     c,a                                        ; Keep this safe in C.
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+    ; The sound program is done!
+    call   sound_chip_set_tone_period_value           ; Set the tone counter value on the chip for channel A to HL.
+    ret
+
+; Beep 3, game start menu item selected.
+sound_tick_program_3:
+    ld     a,(sound_effect_age)                       ; Load current age into A.
+
+    ; Change tone value over time.
+    ld     hl,$01A7
+    sub    5
+    jp     c,sound_tick_program_3_tone_value_ready
+    ld     hl,$0150
+    sub    5
+    jp     c,sound_tick_program_3_tone_value_ready
+    ld     hl,$011A
+    sub    5
+    jp     c,sound_tick_program_3_tone_value_ready
+    ld     hl,$00D3
+    sub    5
+    jp     c,sound_tick_program_3_tone_value_ready
+    ld     hl,$00A8
+
+sound_tick_program_3_tone_value_ready:
+    ld     e,2                                        ; By default there is low attenuation.
+    ld     a,(sound_effect_chip_channel_primary)      ; Get the instrument number we use for the square part of this sound effect.
+    call   sound_chip_set_attenuation_value           ; Set the attenuation value on the chip for channel A to E.
+
+    ; The sound program is done!
+    call   sound_chip_set_tone_period_value           ; Set the tone counter value on the chip for channel A to HL.
+    ret
+
+; These are the lengths of the sound effect programs in frames.
+; I suppose having the age check code outside the sound effect programs makes things a tad simpler.
+; Unlike the tone programs, a sound effect doesn't ever LOOP.
+sound_effect_program_age_lengths:
+.db $20,$0E,$10,$19
+
+; If this flag is set for a sound channel, this means that they use the noise channel.
+; Otherwise noises should play as normal.
+sound_effect_program_uses_percussion:
+.db $01,$00,$00,$00
+
+; Put the tone period HL into sound chip channel A.
+sound_chip_set_tone_period_value:
+    push   af
+    push   bc
+
+    rrca                                              ; Rotate the instrument number into the correct position
+    rrca
+    rrca                                              ; The instrument number is now 0nn00000
+    ld     b,a                                        ; Store the rotated instrument number in B
+    ld     a,l                                        ; Load the lower byte into A
+    and    $0f                                        ; Isolate the lower nibble of the lower byte.
+    or     b                                          ; A now contains 0nn0dddd
+    or     $80                                        ; A now contains 1nn0dddd
+    out    (PORT_SN76489),a                           ; KAPOW! The latch byte is out the bag.
+    ld     a,l                                        ; Load the lower byte back into A again.
+    and    $f0                                        ; Isolate the higher nibble of the lower byte
+    or     h                                          ; A now contains dddd00DD
+    rrca
+    rrca
+    rrca
+    rrca                                              ; Now it's 00DDdddd
+    out    (PORT_SN76489),a                           ; HIT IT.
+
+    pop    bc
+    pop    af
+    ret
+
+; Put the attenuation value E (this function will do the clamping for you, to put it into four bits) into sound chip channel A.
+sound_chip_set_attenuation_value:
+    push   af
+    push   bc
+
+    rrca                                              ; Rotate the instrument number into the correct position
+    rrca
+    rrca                                              ; The instrument number is now 0nn00000
+    ld     b,a                                        ; Store the rotated instrument number in B
+    ld     a,e                                        ; Load the byte into A
+    cp     $F
+    jp     m,sound_chip_set_attenuation_value_attenuation_acceptable ; Don't affect A if attenuation is in range.
+    ld     a,$F                                       ; A = min(a, 15)
+sound_chip_set_attenuation_value_attenuation_acceptable:
+    or     b                                          ; A now contains 0nn0dddd
+    or     $90                                        ; A now contains 1nn1dddd
+    out    (PORT_SN76489),a                           ; KAPOW! The latch byte is out the bag.
+
+    pop    bc
+    pop    af
+    ret
+
+; Put the attenuation value A (this function will do the clamping for you, to put it into four bits) into the noise channel.
+sound_chip_set_attenuation_value_noise:
+    push   af
+
+    cp     $F
+    jp     m,sound_chip_set_attenuation_value_noise_attenuation_acceptable ; Don't affect A if attenuation is in range.
+    ld     a,$F                                       ; A = min(a, 15)
+sound_chip_set_attenuation_value_noise_attenuation_acceptable:
+    or     %11110000                                  ; Latch the noise channel's attenuation register.
+    out    (PORT_SN76489),a                           ; KAPOW! The latch byte is out the bag.
+
+    pop    af
+    ret
+
+.ends
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+From v0.9 to 0.B:
+ - graph bugs fix
+ - add score when game over and before each level
+ - fix and improve tutorial
+
+show decimal scores?
+test one octave deeper?
+
+do not clear all data for showLevel
+
+make a generic load data function using pile to get all adresses ?
+
+--------------------------------------------------------------------------------
+try to use only 32k ? currentyl using 44k (31k of data, 13k of code)
+memory usage (decimal) :
+1504 Tiles_jmimu $3910-3330
+1536 jmimu_TilemapStart $3f10-3910      -1k
+1536 Title_TilemapStart $4530-3f30      -1k
+1536 Forest_Tilemap_Start $4b50-4550    -1k
+1096 demo4_music $5aec-56a4     
+928 Title_Tiles_Start $5f34-5b94    
+1536 Tilemap2Start $736e-6d6e           -1k
+3072 Tiles_bg10_Start $187a-0c7a    
+4864 Tilemap10Start $2b9a-189a          -2k
+1536 Tilemap1Start $32e0-2ce0           -1k
+7680 Tilemap5Start $a37f-857f           -5k
+2554 end_music $ad79-a37f
+802 demo_music $b131-ae0f
+760 FontData_Start $b9f9-b701
+
+
+--------------------------------------------------------------------------------
+
+collisions:
+the first 3 bits of each tile in tilemap contains collision data.
+000: empty
+001: full
+010: half low
+011: half hi
+100: slope down (check x-flip)
+101: slope up (check x-flip)
+110: half side (check x-flip)
+111: special
+
+read collision data from rom (not vram): level data start + yscrolltotal + yscroll mod 8
+!!!!! force tilemap w to be a power of 2, make a xy2index function for each w.
+=> vram is simpler
+
+make a draw_rocket function that takes "small_rocket" into account.
+if small rocket, top collison point is less high.
+
+TODO: implement dumping
+TODO: implement color loop for fire
+--------------------------------------------------------------------------------
+each level has his onw SpecialTileFunction, called when touching a special case
+(most of the time try to land and end en level).
+SpecialTileFunction is a variable initialized at each level
+
+add tiles_vram_used in demo too
+
+--------------------------------------------------------------------------------
+ 3008 bytes for chars, divided by 4 using 1bpp tiles => 2256 bytes saved
+ 
+ re-arrange rom to have data specific to a level in one file, and chers in an other,
+ and be able to load chars using an other function
+ 
+ 3590 bytes for Brahms music
+ 2100 bytes for demo music
+ 4864 bytes for vertical level
+ 96 tiles for vertical level bg: 3072 bytes, if compressed : 2603 bytes
+ demo sprites :  768, 559 if compressed
+ demo tiles : 1536, 1075 if compressed
+
+ 1500 bytes for jmimu tilemap => make it 200!

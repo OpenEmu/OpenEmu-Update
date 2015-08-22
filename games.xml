@@ -1371,6 +1371,153 @@ Controls: B + UP = Shoot Gun, B + DOWN = Set Dynamite, B + LEFT/RIGHT = Jab with
 	</game>
 
 	<game
+		name      = "Bruce Lee"
+		system    = "openemu.system.sms"
+		developer = "Kagesan"
+		website   = "http://www.smspower.org/Homebrew/BruceLee-SMS"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/BruceLee-SMS-1.00.sms"
+		released  = "1425430800"
+		added     = "1417395600"
+		md5		 = "6d68c6fdff41aff161b45af42cbfe390"
+		>
+        <description>An attempt at recreating the classic Atari800/C64/Spectrum game "Bruce Lee" for the Master System.
+            
+Collect the lamps and fight Green Yamo and the Ninja!
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "DARC"
+		system    = "openemu.system.sms"
+		developer = "Richard &quot;Zipper&quot; Cornelisse"
+		website   = "http://www.smspower.org/Homebrew/DARC-SMS"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/DARC/DARC.sms"
+		released  = "1332810000"
+		added     = "1417395600"
+		md5		 = "466f43446d151b9e6793212d5ce8c373"
+		>
+        <description>A jetpack shooter game inspired by "Air Fortress" (NES), "H.E.R.O." and "Hero Core" (PC) where you can fly and shoot in separate directions. Each of the gamepad keys represent a shooting direction. Your goal is to infiltrate the alien fortress. Destroy the cores to disable force fields and advance through the game. During the game your shooting level will increase. As your level increases you will be able to destroy the blue and red crates found in the levels.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/DARC/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/DARC/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/DARC/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/DARC/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Gekioko PunPun Maru"
+		system    = "openemu.system.sms"
+		developer = "Mount Chocolate"
+		website   = "http://68000.web.fc2.com/oko/"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/punpun.sms"
+		released  = "1387069200"
+		added     = "1417395600"
+		md5		 = "23218cecb7670615da0d0485d2063076"
+		>
+        <description>A difficult arcade style platformer based on a Japanese meme roughly meaning "being angry" in a cute way, you destroy enemy ninjas and birds by huffing angry puffs of steam up at them.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Gravity Beam: Master Gaiden"
+		system    = "openemu.system.sms"
+		developer = "Mathew &quot;MrD&quot; Carr"
+		website   = "http://www.smspower.org/Homebrew/GravityBeamMasterGaiden-SMS"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gravity%20Beam%20-%20Master%20Gaiden/GravityBeamMasterGaiden_20130411_MathewCarr.sms"
+		released  = "1365642000"
+		added     = "1417395600"
+		md5		 = "f98f466bac62f6b5424b4b6e28350a92"
+		>
+        <description>Negotiate the caverns of Mars and locate the nuclear device. Engage your ship's GRAVITY BEAM to attach the device to your ship. Carry it back through the caves and out into space, where it can then be detonated safely.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gravity%20Beam%20-%20Master%20Gaiden/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gravity%20Beam%20-%20Master%20Gaiden/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gravity%20Beam%20-%20Master%20Gaiden/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gravity%20Beam%20-%20Master%20Gaiden/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "KunKun &amp; KokoKun 2 - Return of the Kun"
+		system    = "openemu.system.sms"
+		developer = "Bock"
+		website   = "http://www.smspower.org/Homebrew/KunKunAndKokoKun2-SMS"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun%20%5Bv0.99%5D.sms"
+		released  = "1295053200"
+		added     = "1417395600"
+		md5		 = "4d8eb720875887fb012b95ee60d282c2"
+		>
+        <description>A tribute to old school arcade games: it is cute, short, yet difficult and unforgiving.
+
+KunKun is a happy orange blob.
+KokoKun is a happy pink princess blob.
+KokoKun was taken hostage by some evil black blob.
+KunKun has to go and save KokoKun.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Lander2"
+		system    = "openemu.system.sms"
+		developer = "jmimu"
+		website   = "http://www.smspower.org/Homebrew/Lander2-SMS"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Lander2/lander2_v0C.sms"
+		released  = "1427418000"
+		added     = "1417395600"
+		md5		 = "d713e605fe9718a304c391e0c42c6cb8"
+		>
+        <description>Safely land your rocket on landing areas (horizontal with red dots) without using all your fuel.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Lander2/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Lander2/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Lander2/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Lander2/4.png"></image>
+		</images>
+	</game>
+
+	<game
+		name      = "Ono"
+		system    = "openemu.system.sms"
+		developer = "Maxim"
+		website   = "http://www.smspower.org/Homebrew/Ono-SMS"
+		file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Ono/ono%20%5Bv1.01%5D.sms"
+		released  = "1240275600"
+		added     = "1417395600"
+		md5		 = "e8045bbddf7aa93b6341a93c26234be5"
+		>
+        <description>One day, some evil colored circles started appearing around the edges of your world. When your bullets hit them, some of their color fell off onto the ground. When your bullets hit them some more, they split into two smaller circles! And when you shot them, they split too! But the tiniest colored circles didn't split, they just ran out of color and disappeared.
+		</description>
+		<images>
+			<image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Ono/1.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Ono/2.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Ono/3.png"></image>
+			<image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Ono/4.png"></image>
+		</images>
+	</game>
+
+	<game
 		name      = "Classic Kong Complete"
 		system    = "openemu.system.snes"
 		developer = "Shiru"

@@ -1,0 +1,241 @@
+<html>
+<head>
+<LINK REL="StyleSheet" HREF="gravitybeamdocs.css" TYPE="text/css">
+</head>
+<body>
+<h1>Gravity Beam: Master Gaiden Documentation</h1>
+<h2>12th April 2013</h2>
+<h3>Compiling The Game</h3>
+<p>Type <tt>make.bat</tt>. It's not rocket science.</p>
+<p><tt>make.bat</tt> is set to compile <tt>game.z80asm</tt> as <tt>object.o</tt>, and then link this as <tt>output.sms</tt>. All other source files are <tt>.include</tt>d by <tt>game.z80asm</tt>. A symbol table compatible with MEKA is saved as <tt>output.sms.sym</tt>. <tt>output.sms</tt> should be a 32kByte Sega Master System compatible ROM image file, with a correct checksum and footer, suitable for directly loading onto a 32kByte EEPROM.</p>
+<p>The game uses data from a large number of binary files. If any of these are changed, don't forget to re<tt>make</tt> the game.</p>
+<p>The game expects to find a Huffman encoded archive in <tt>huffman_archive_1.z80asm</tt>. This file is produced by <tt>2013huffmancatalogencoder.exe</tt> as a Huffman compressed form of all the <tt>.bin</tt> files specified in <tt>catalog_file_gfx_greenwing_ending_gaideningame.txt</tt>. To regenerate this archive, run <tt>huffmanencode.bat</tt>. This batch file invokes <tt>2013huffmancatalogencoder.exe</tt> on <tt>catalog_file_gfx_greenwing_ending_gaideningame.txt</tt>, compressing all the files and recreating the archive file. Don't forget to do this if you change any of the files in the archive!</p>
+<hr />
+<h3>Shims</h3>
+<p>I've written several shims in C and Javascript to automate things like graphics and level processing.</p>
+<p>I use gcc to compile the C programs as Windows commandline executables.</p>
+<h3><tt>2013huffmancatalogencoder.exe</tt></h3>
+<p>Reads a plaintext catalog file containing a list of files to compress and outputs a .z80asm file containing all the files huffman compressed according to their nibble distribution, together with a decompressor routine that can output to consecutive RAM locations or <tt>out (PORT_VDPData),a</tt>, that implicitly holds the huffman decompression table.</p>
+<h4>Usage</h4>
+<p><tt>Format: 2013huffmancatalogencoder.exe catalog_file.txt</tt></p>
+<p><tt>catalog_file.txt</tt> is a plaintext file describing the parameters to construct the compressed archive.</p>
+<p>The output file is a Z80 assembly source file containing a data section named <tt>prefix_section</tt>.</p>
+<p>At the top of the file is a large comment block showing a list of all the files included in the archive, their logical data labels, and their sizes in bytes before and after compression. This is followed by a table showing the distribution of input entities (bytes, nibbles) over all input files, their new bit sequence representations, and their estimated complete contribution to the output size. The final output size is listed, together with a guide to how much of my 32kbyte EEPROM was saved as a result of compression.</p>
+<p>Next is a series of equates giving the full size in bytes of each file contained within the archive. Then an enumeration giving each file in the archive an index from zero. This is followed by <tt>prefix_index</tt>, an array of {pointer to compressed data, full data size} pairs of <tt>.dw</tt> data definitions. The compressed data pointers are named <tt>prefix_filename_data</tt>. If doubled, the enumeration values can be used as an offset into the <tt>prefix_index</tt> array.</p>
+<p><tt>prefix_decompress</tt> is a <tt>CALL</tt>able subroutine that decompressed <tt>BC</tt> bytes of data from the compressed data located at <tt>HL</tt>. <tt>DE</tt> is the destination address in RAM. If this is set to <tt>$0000</tt>, the destination is <tt>out (PORT_VDPData),a</tt>.</p>
+<p>Finally come the compressed files themselves as <tt>.db</tt> desclarations. Each individual file in the archive is byte aligned and accessible through a unique <tt>prefix_filename_data</tt> label.</p>
+<h4>Catalog file format</h4>
+<p>The file consists of a number of directives in all capitals followed by a number of arguments, one on each line. When a new directive is encountered, the following lines are interpreted as arguments to that directive. All filenames are relative to the current working directory.</p>
+<p>Lines beginning with a semicolon are comments.</p>
+<h5><tt>OUTPUT_FILE_FILENAME</tt></h5>
+<p>The name of the output file that will contain the archive and the decompressor routine.</p>
+<h5><tt>ASM_TOKEN_PREFIX</tt></h5>
+<p>A prefix to all tokens produced by the program. It should probably end in an underscore. Convention is to use <tt>ha1_</tt> style names (<tt>ha</tt> stands for 'huffman archive').</p>
+<h5><tt>COMPRESSION_TYPE</tt></h5>
+<p>Use <tt>byte</tt> or <tt>nibble</tt> to specify whether the data should be compressed as a stream of bytes or nibbles. Defaults to <tt>nibble</tt>, which is just as well because I haven't implemented '<tt>byte</tt> yet.</p>
+<h5><tt>FILE_LISTING</tt></h5>
+<p>A list of input files to compress.</p>
+<h4>Method</h4>
+<p>The huffman compressor loads into memory all the files specified in the catalogue. It then steps through the files, entity by entity, populating a table of the total population of each element.</p>
+<p>To perform the encoding, the program creates a master 'bag' holding tokens representing every possible input entity, and assigns weights to each of these tokens equal to the total population of that entity.</p>
+<p>The function <tt>huffman_bag_split</tt> attempts to split the contents of a bag recursively into two bags (the 'zero-bag' and the 'one-bag') containing tokens of equal weight. When it's called upon the master bag, it splits the master bag into a tree of bags. The decision to place a token into a bag's zero-bag or one-bag sub bags represents the decision to use a 0 or 1 in the bit sequence that encodes this token. The leaf nodes of the tree contain one token each. The location of a token within this tree of bags is dependent on its population: the depth of a token within the tree is proportional to the inverse logarithm of its frequency of the entity within the population.</p>
+<p>The function <tt>huffman_bag_return_encoding_string</tt> traverses the tree and constructs a printable string that encodes the token.</p>
+<p>After the encoded files are generated, they are written to the output file together with some boilerplate decompressor code: the code that is constant between invocations of compression is the code that cycles the next bit from the read byte from the input stream into the carry flag, and the code that places completely decoded entities into the output location.</p>
+<p>The method by which the compressor selects which tokens go into each bag controls the quality of the compression: the more evenly the tokens are distributed between the bags, the smaller the output will be. At present, the bag split function simply places tokens into one bag until it has a weight greater than or equal to half the total weight of the tokens it has available. The function will also ensure that both sub-bags contain at least one element: this case occurs when we have weights 1-1-1-1-10: the 10 would be added to a bag containing 4 to bring the total weight up to 14, if the function did not abort and place the final element 10 into the second bag explicitly. If the bag split function is presented with a bag containing two elements, it will place one element in each bag.</p>
+<p>The decompressor consists of a number of distinct parts: the outer part, which continually requests complete output bytes until the <tt>BC</tt> register pair is zero; the data reader, which reads bits from the input location one at a time and cycles them into the carry flag; the incoming bit decision tree; and the data output routine. The root of the incoming bit decision tree is called like a subroutine (<tt>call ha1_decompress_perform_decompression</tt>) by the outer part, asking it to come up with an output byte. The huffman decoding table is implicitly encoded in the incoming bit decision tree: a mass of decisions through which execution flows as it reads each bit from the input bitstream. It contains calls to <tt>ha1_decompress_get_next_bit</tt> to retrieve the next bit from the input bitstream. When a complete output entity has been recovered, it alters the value in the accumulator and returns. The nibble decompressor needs to recover two nibbles in order to produce a complete output byte.</p>
+
+<hr />
+
+<h3><tt>2013megatilemanager.exe</tt></h3>
+<p>Given two binary input files, one containing a strip of unique 8x8 tiles (8-bit paletted graphics) that will be placed in the Master System's VRAM and one containing a strip of 16x16 tiles (8-bit paletted graphics) containing logical megatiles that are placed in the Tiled map editor, match up 8x8 subsections of the 16x16 logical tiles against the 8x8 graphic tiles and produce an output binary file containing a list of megatile-corner-to-graphic-tile indices.</p>
+<p>This is used to allow me to draw the megatiles with redundant 8x8 corners and place these megatiles in Tiled and then automatically detect which 8x8 graphic tiles are shared between multiple megatiles. The strip of unique tiles should be produced by Usenti's 'reduce tiles' function.</p>
+<h4>Usage</h4>
+<p><tt>Format: 2013megatilemanager.exe 8x8tiles.raw 16by16tiles.raw output.z80asm</tt></p>
+<p>Open <tt>output.z80asm</tt> in a text editor and you'll see a list of <tt>.db</tt> declarations matching megatile corners to 8x8 graphic tiles.</p>
+
+<hr />
+
+<h3><tt>2013smstileformat.exe</tt></h3>
+<p>Converts image files to an interleaved bitplane format easily displayable on the SMS. This program outputs 4 bits per pixel interleaved binary graphics. It espects the input in the format of a 8 pixel wide vertical strip of tiles.</p>
+<h4>Usage</h4>
+<p><tt>Format: 2013smstileformat.exe input.raw output.bin</tt></p>
+<p><tt>input.raw</tt> is a RAW image file. A RAW image file is a 256 colour paletted image that contains a series of unsigned bytes representing palette indices.</p>
+<p><tt>output.bin</tt> will be a binary file containing the bitplaned image. The program will overwrite this file silently if it exists.</p>
+<hr />
+
+<h3>Megatiles</h3>
+<p>A <i>Gravity Beam: Master Gaiden</i> level is a 64x48 grid of megatiles. Megatiles are 16x16 pixel sized tiles constructed from a tetrad of 8x8 SMS graphics tiles. The level layout is drawn in the Tiled map editor and stored as a grid of megatile indices. The game collision is done in terms of megatiles: all megatiles below a certain index are passable, all other megatiles are impassable.</p>
+<p>The use of megatiles allows the level to be stored at a quarter of the size it would be as 8x8 tiles, at a cost of flexibility.</p>
+<p>The use of megatiles requires a system which specifies which base 8x8 tiles a given megatile is constructed from. This is automatically handled by <tt>2013megatilemanager.exe</tt>.</p>
+<hr />
+
+<h3>Tile drawing routine</h3>
+<p>As the ingame camera moves around, new tiles are drawn on the incoming edge of the screen by the routines <tt>ingame_tiles_draw_column</tt> and <tt>ingame_tiles_draw_row</tt>. Hold onto your butts, because these routines ain't easy.</p>
+<p>To draw a row or column on the screen, we need to know which row or column we want to draw (counting in absolute global 8x8 tiles from 0), and what the other coordinate is. These two are used to calculate the starting destination VDP address in the name table for tile drawing, as well as determine the megatile data source start.</p>
+<p>Because the routines draw a whole row or column straight across the name table, the routines also need to know where the 'break in the screen' is located. At some point, as the tiles are being drawn into the nametable, we are going to have to rewind all the megatile data sources by the size of an entire screen to account for the way the 'visible tile screen' slides across the static-positioned name table.</p>
+<p>Also note that as we draw across the entire length of the name table, drawing always starts at a multiple of 32 tiles and the 'break in the screen' is used to locate the <b>left-most tile relative to the screen</b>.</p>
+<img src="tilemapviewer.png"/>
+<p>Both <tt>ingame_tiles_draw_column</tt> and <tt>ingame_tiles_draw_row</tt> work in a similar way. The following explanation assumes we are drawing a row.</p>
+<p>First, the address of the megatile at the left-most edge of the screen is calculated. This is not forgetting that drawing begins on a multiple of 32.</p>
+<p>Then, we acquire the address of the <tt>megatiles_corners</tt> array. Because we are drawing a row of tiles, we are either constantly reading from the top-most tile definitions or the bottom-most tile definitions. We branch on the row coordinate and select <tt>megatiles_corners</tt> or <tt>megatiles_corners+2</tt> depending on what we're doing. This saves us from having to constantly add 2 to the <tt>megatiles_corners</tt> as we travel across the row.</p>
+<p>Then, the VDP destination name table address is calculated. For drawing a row, we can submit this as a VDP control command as all the addresses we are going to write to are sequential. For column drawing, we need to maintain this destination address value somehow.</p>
+<p>Then comes the actual tile drawing loop:</p>
+<p>If we have reached the mid-name table split, we rewind the megatile data source pointer by the size of the screen.</p>
+<p>Then we retrieve the index of the current megatile under the cursor. If we're currently on an odd numbered tile, the megatile cursor is advanced. This flag is re-used later on to take advantage of the fact that we are alternating between drawing the top-left and top-right tiles as we scan the row.</p>
+<p>This is then used to construct the final offset into the <tt>megatiles_corners</tt> array. We multiply the megatile index by 4 to select the row associated with the current megatile, and then add 1 if we're on an odd X value (and 2 if we're on an odd Y value, but this is implicit due to the above handling of <tt>megatiles_corners</tt>).</p>
+<p>With the address <tt>megatiles_corners[...]</tt> constructed, we can retrieve the correct graphical tile index associated with this corner of the megatile and write this to the VDP.</p>
+<p>Repeat for the width of the screen.</p>
+<p>For column drawing, the VDP destination address needs to be reset every tile as the addreses are not contiguous.</p>
+<hr />
+
+<h3>Source blob list</h3>
+<p>Where I've written '2bpp', it means that I've arranged the palette of the graphics data so that all the colours lie in the range 0-3. Use bitwise math to put the bits back into the appropriate bitplanes!</p>
+<ul class="directory_tree">
+   <li>
+      <p><tt>graphics_bombleds.bin</tt> (huffman compressed)</p>
+      <p>The bombleds are a strip of 14 tiles, 4bpp.</p>
+   </li>
+   <li>
+      <p><tt>graphics_carrybox.bin</tt></p>
+      <p>The carrybox is two 8x8 tiles of vram pattern data, followed by two more rows for the linkage. There's no compression because it's 64+8 bytes big anyway!!</p>
+   </li>
+   <li>
+      <p><tt>graphics_contactlosttiles_2bpp.bin</tt> (huffman compressed)</p>
+      <p>The contact lost tiles are a list of 22 tiles, 2bpp. (It's huffman encoded, and then crushed to 2bpp, so it needs to be expanded from RAM to VRAM!)</p>
+   </li>
+   <li>
+      <p><tt>graphics_count_in_digits_2bpp.bin</tt></p>
+      <p>2bpp tiles for the large count in numbers when the level begins ingame.</p>
+   </li>
+   <li>
+      <p><tt>graphics_ending_crate_twoframes.bin</tt> (huffman compressed)</p>
+      <p>Crate ending sprites, 4bpp.</p>
+   </li>
+   <li>
+      <p><tt>graphics_ending_greenwingsprites_4bpp.bin</tt> (huffman compressed)</p>
+      <p>A large number of 4bpp tiles used to display the 'big ship', the large Greenwing sprite (and the smaller rotated version) shown during the intro, the menu and the end sequence.</p>
+   </li>
+   <li>
+      <p><tt>graphics_ending_greenwingsprites_map.bin</tt></p>
+      <p>List of indices into the huffman archive 1 greenwing huffman compressed tiles to allow me to draw the sprites! If you look at it in a hex editor set to eight columns wide, you'll see it describes a grid of numbers showing what sprites go where to show the big ship (and 128 bytes later, the smaller ship). <tt>$00</tt> in a byte indicates that there should be no sprite placed at that location.</p>
+   </li>
+   <li>
+      <p><tt>graphics_ending_spacetiles_2bpp.bin</tt></p>
+      <p>Space ending background tiles, 2bpp. Also contains the purple atmosphere tiles used during the ending.</p>
+   </li>
+   <li>
+      <p><tt>graphics_gaiden_ingame_tiles.bin</tt> (huffman compressed)</p>
+      <p>204 8x8 4bpp tiles used for the world scenery display ingame.</p>
+   </li>
+   <li>
+      <p><tt>graphics_greenfont_2bpp.bin</tt></p>
+      <p>The greenfont tiles are a list of 80 tiles, 2bpp.</p>
+   </li>
+   <li>
+      <p><tt>graphics_greenwing.bin</tt> (huffman compressed)</p>
+      <p>Contains all the frames for the greenwing. 3bpp. Must be extracted into RAM first: The top left and top right tiles are complete. The bottom left and bottom right tiles are missing their bottom three rows and for every four-byte bitplaned row of eight pixels, I've omitted the final high byte (all of the colours are in the range 0-7). Have fun reinflating that!</p>
+   </li>
+   <li>
+      <p><tt>graphics_master_gaiden_letters_2bpp.bin</tt></p>
+      <p>2bpp MASTERGIDN letters tile reduced.</p>
+   </li>
+   <li>
+      <p><tt>graphics_plot_1_radioactive_2bpp.bin</tt> (huffman compressed)</p>
+      <p>Radioactive logo 2bpp. Tile reduced. Only one side of the trefoil is given (the other side uses horizontal flip.) (It's huffman encoded, and then crushed to 2bpp, so it needs to be expanded from RAM to VRAM!)</p>
+   </li>
+   <li>
+      <p><tt>graphics_plot_1_radioactive_2bpp_map.bin</tt></p>
+      <p>List of indices into the radioactive logo.</p>
+   </li>
+   <li>
+      <p><tt>graphics_title_gravitybeamlogotiles.bin</tt></p>
+      <p>Gravity beam logo tiles. 2bpp.</p>
+   </li>
+   <li>
+      <p><tt>graphics_title_gravitybeamlogotiles_map.bin</tt></p>
+      <p>List of indices into the above tiles (23 x 8)</p>
+   </li>
+   <li>
+      <p><tt>levellayout_megatiles.bin</tt> (huffman compressed)</p>
+      <p>This is an 64 across by 48 down array of Megatiles describing the layout of the GBMG level. Zero-based, so remember to use the json to ascii tool.</p>
+   </li>
+   <li>
+      <p><tt>megatiles_definitions.bin</tt></p>
+      <p>This is an array of [4byte] structures indicating what 8x8 tiles should be placed into the nametable for the given Megatile. Top left, top right, bottom left, bottom right.</p>
+   </li>
+   <li>
+      <p><tt>musicmodule_explosionbeep.bin</tt></p>
+      <p>An SMS music module used to create the whine-hiss sound effect that's played when the crate explodes.</p>
+   </li>
+   <li>
+      <p><tt>musicmodule_fanfare.bin</tt></p>
+      <p>An SMS music module played during the end sequence.</p>
+   </li>
+   <li>
+      <p><tt>musicmodule_ingame.bin</tt></p>
+      <p>An SMS music module played during normal gameplay. 'The Last Five Minutes.'</p>
+   </li>
+   <li>
+      <p><tt>musicmodule_plot_1.bin</tt></p>
+      <p>An SMS music module played on the ALERT screen.</p>
+   </li>
+   <li>
+      <p><tt>musicmodule_plot_2.bin</tt></p>
+      <p>An SMS music module played on the 'A desperate call for help' screen, and also the title screen. 'Gravity Beam: Master Gaiden theme: A Desperate Call For Help Is Sent, Greenwing Saves The Day'</p>
+   </li>
+   <li>
+      <p><tt>sine_table.bin</tt></p>
+      <p>An array of 128 sine values, a full cycle. 16-bit signed, with range <tt>[$003B, $FFC5]</tt>. (59, -59 dec). Used for thrust calculation (these are direct contributions to player velocity.)</p>
+   </li>
+</ul>
+<hr />
+
+<h3>Source file list</h3>
+<ul class="directory_tree">
+   <li>
+      <p><tt>audio.z80asm</tt></p>
+      <p>Contains my SMS music player and sound effects engine as a re-usable component, with its own code and ramsections.</p>
+   </li>
+   <li>
+      <p><tt>segamastersystem.z80asm</tt></p>
+      <p>Contains all the system defines needed to compile the game, and my controller handling code as a re-usable component. This is not separate from the defines as the system PAUSE button NMI handler directly changes a part of the controller state.</p>
+   </li>
+   <li>
+      <p><tt>maths.z80asm</tt></p>
+      <p>Contains complex maths routines such as multiplication, division and square root. All taken from various sources, none written by me.</p>
+   </li>
+   <li>
+      <p><tt>game.z80asm</tt></p>
+      <p>Contains everything to do with <i>Gravity Beam: Master Gaiden</i> as a single file.</p>
+   </li>
+   <li>
+      <p><tt>megatiles_definitions.z80asm</tt></p>
+      <p>Automatically generated list of megatile-to-graphic tile assignments, produced by <tt>2013megatilemanager.exe</tt>.</p>
+   </li>
+   <li>
+      <p><tt>huffman_archives\huffman_archive_1.z80asm</tt></p>
+      <p>Automatically generated Huffman archive containing all the Huffman compressed binary data files, together with the decoder.</p>
+   </li>
+</ul>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+GRAVITY BEAM: MASTER GAIDEN
+---------------------------
+
+2013/04/11 by Mathew Carr (aka MrD)
+
+Fixed a bug with the 'boush' sound effect when trying
+to engage the beam outside of the range of the box.
+
+Previously, the percussion of the music would override
+the sound effect rather than vice versa.

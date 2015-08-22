@@ -1,0 +1,295 @@
+; SEGA MASTER SYSTEM GAME THING
+; (c) 2013 Mathew Carr
+; Started 16th January 2013.
+
+; This file contains directives that set up the environment for
+; assembly, producing a 32kb SMS rom. This targets my 32kb EEPROM
+; cartridge.
+
+; Another day, another incompatible system definition file.
+
+;==============================================================
+; WLA-DX banking setup
+;==============================================================
+.memorymap
+defaultslot 0
+slot 0 $0000 $8000 ; The ROM is a single slot starting at $0000 and is $8000 bytes big
+slot 1 $C000 $2000 ; The RAM is a single slot starting at $C000 and is $2000 bytes big
+.endme
+
+.rombankmap
+bankstotal 1       ; Right now, we're going to pretend there's a single 32KB ROM bank.
+banksize $8000
+banks 1
+.endro
+
+;==============================================================
+; SMS defines
+;==============================================================
+; The PORT defines let me work out what's going on when we IN and OUT
+; to the different subsystems of the SMS!
+; In this case, the VDP (video and stuff) chip.
+.define PORT_VDPControl                    $bf
+.define PORT_VDPStatus                     $bf
+.define PORT_VDPData                       $be
+
+.define PORT_VDPVCount                     $7e
+.define PORT_SN76489                       $7f
+
+.define PORT_IOPortAAndB                   $dc
+.define PORT_IOPortBAndMisc                $dd
+
+.define VDPCommand_VRAMWrite             $4000
+.define VDPCommand_RegWrite              $8000
+.define VDPCommand_CRAMWrite             $c000
+
+.define VDPCommand_VRAMWriteByte           $40
+.define VDPCommand_RegWriteByte            $80
+.define VDPCommand_CRAMWriteByte           $C0
+
+.define VRAM_PatternRAM                  $0000
+.define VRAM_NametableRAM                $3800
+.define VRAM_SpriteATRAM                 $3F00
+.define VRAM_SpriteAT_Y_RAM              $3F00
+.define VRAM_SpriteAT_XN_RAM             $3F80
+
+.define VRAM_NametableRAM_Highbyte         $38
+
+.define VDP_Status_VBlank_bit        %10000000
+
+.define VDP_Register_SpriteATBase          $05
+.define VDP_Register_ScrollX               $08
+.define VDP_Register_ScrollY               $09
+.define VDP_Register_HBlankCounter         $0A
+
+;Port $DC: I/O port A and B
+;Bit	Function
+;7	Port B Down pin input
+;6	Port B Up pin input
+;5	Port A TR pin input
+;4	Port A TL pin input
+;3	Port A Right pin input
+;2	Port A Left pin input
+;1	Port A Down pin input
+;0	Port A Up pin input
+;
+;Port $DD: I/O port B and miscellaneous
+;Bit	Function
+;7	Port B TH pin input
+;6	Port A TH pin input
+;5	Cartridge slot CONT pin *
+;4	Reset button (1= not pressed, 0= pressed) *
+;3	Port B TR pin input
+;2	Port B TL pin input
+;1	Port B Right pin input
+;0	Port B Left pin input
+
+; Declare variables by granting them space within the RAMSECTION, which I've
+; called "variables". SLOT 1 refers to the RAM slot we declared in .memorymap
+; in segamastersystem.z80asm
+.RAMSECTION "system_variables" SLOT 1
+var_isr_vector              DW ; This is the address to jump to on an interrupt.
+var_VBlankTokenReady        DB ; This is set to non-zero if the VBlank has occurred and we should do a frame.
+                               ; Subsequent VBlanks increment the counter!
+var_PauseNMITriggered       DB ; This is set to non-zero if the Pause NMI triggered.
+.ends ; End of ram section
+
+; The first 0xFF of the address space: it always refers to the
+; lowest 0xFF of the ROM, regardless of the bank switching employed.
+; This means that we have to treat it specially.
+; * The entry point to the ROM execution is 0x00
+; * The Vblank interrupt handler appears at 0x38
+; * The pause button handler (A non-maskable interrupt) appears in the ROM at 0x66.
+
+; These directives tell WLA where to put the following things in the file.
+.bank 0 slot 0
+.org $0000
+.section "Entry point" force ; force means must be placed at 0x0000
+;==============================================================
+; Boot section
+;==============================================================
+   di                  ; disable interrupts
+   im     1            ; Interrupt mode 1. These are detailed in the Z80 manual; 1 is apparently the only useful mode, so we use 1!
+   ld     sp,$dff0     ; Load stack pointer with $DFF0 (the end of available ram). Notice there's no hash symbol for loading immediate values.
+   jp     main         ; jump to main program
+.ends
+
+; Jump to main label because the game code should not appear
+; within the non-slottable 0xFF at the start of ROM.
+
+;==============================================================
+; Vblank/HBlank handler
+;==============================================================
+.org $0038
+   push hl
+      ld hl,(var_isr_vector)              ; Load the var_isr_vector into HL
+      call CallHL                         ; Jump to the memory at HL, in the form of a subroutine call.
+   pop hl
+   ei                                     ; Enable interrupts.
+   reti                                   ; Return from maskable interrupt
+
+; You might be wondering why we want to jump to the VBlankRoutine through this vector stuff...
+; Well, I'm not personally convinced it's absolutely necessary. I could just have a constant
+; in there. HOWEVER: If I want to do something clever, and ESPECIALLY if there's ROM bank
+; switching going on, there's no harm in allowing it to be retargeted! =^_^=
+
+; (The original code was the tutorial from maxim's world of stuff)
+
+; This is a routine 'fragment' that just jumps to the memory location stored in HL.
+; This mechanism allows us to jump to routines via a vector stored within a register pair.
+; Because this routine is always reached by a 'call' instruction, the subroutine
+; at the end of the jump only needs to RET to get us back to the caller.
+CallHL:
+    jp (hl)
+
+;==============================================================
+; Pause button handler
+;==============================================================
+; The pause button is a Non Maskable Interrupt that immediately jumps to $0066.
+.org $0066
+    push   af
+
+    ld     a,1<<CONTROLLER_BIT_PAUSE
+    ld     (var_PauseNMITriggered),a  ; Store 1<<CONTROLLER_BIT_PAUSE in var_PauseNMITriggered
+    ; We're using this method so we can just OR it with the controller bitmasks! Sneaky stuff!
+
+    pop    af
+    retn                              ; Do nothing (retn = return from NMI)
+
+;==============================================================
+; Controller abstraction code!
+;==============================================================
+
+; hit      = 0 to 1
+; held     = 1 to 1
+; released = 1 to 0
+; idle     = 0 to 0
+
+.struct ControllerStatus
+; Stores the current state of the joystick as an array of bits.
+StatusCurrent        db
+StatusPrevious       db
+; Stores the transitional resultant state of the joystick as an array of bits.
+StatusHit            db
+StatusHeld           db
+StatusReleased       db
+StatusIdle           db
+.endst
+
+.define ControllerStatus_size         6                       ; size of one instance.
+.define ControllerStatus_section_size ControllerStatus_size*2 ; size of all instances.
+
+.RAMSECTION "controller_variables" SLOT 1
+var_ControllerStatus instanceof ControllerStatus 2
+.ends ; End of ram section
+
+.define CONTROLLER_BIT_UP         0
+.define CONTROLLER_BIT_DOWN       1
+.define CONTROLLER_BIT_LEFT       2
+.define CONTROLLER_BIT_RIGHT      3
+.define CONTROLLER_BIT_BUTTON_1   4 ; Button 1 is the one on the left, also labelled START        1 START     2
+.define CONTROLLER_BIT_BUTTON_2   5 ; Button 2 is on the right.                                   O           O
+.define CONTROLLER_BIT_PAUSE      6 ; Pause button is treated like a controller button and is mirrored to both pads.
+.export CONTROLLER_BIT_UP, CONTROLLER_BIT_DOWN, CONTROLLER_BIT_LEFT, CONTROLLER_BIT_RIGHT, CONTROLLER_BIT_BUTTON_1, CONTROLLER_BIT_BUTTON_2, CONTROLLER_BIT_PAUSE
+
+.bank 0                               ; Within the ROM:
+.section "controller_code" free
+; Invalidates the crap outta everything.
+; You should call this at the start of your game.
+controller_init:
+    xor    a
+    ld     (var_PauseNMITriggered),a
+
+    ld     b,ControllerStatus_section_size
+    ld     hl,var_ControllerStatus
+controller_init_memory_clear_loop:
+    ld     (hl),a
+    inc    hl
+    djnz   controller_init_memory_clear_loop
+
+    ret
+
+; Call this every frame to collect the current state of the controller from the I/O ports
+; and massage it into a friendly format, and store it in the var_ControllerStatus instances.
+;
+; To query against the controllers, you can do the following:
+;        ld   a,(controller.1.statushit)       ; We want to see what's been hit on controller 1 (port A = player 1)
+;        bit  CONTROLLER_BIT_BUTTON_1,a        ; Set zero flag depending on whether the bit has been hit:
+;        jp   z,start_is_not_pressed           ; Execute handler only if start is pressed
+;          START HANDLER GOES HERE.
+;  start_is_not_pressed:
+;
+; Of course, you can do a conditional call 'CALL   NZ,do_something_on_start' instead if you prefer, if that boats yer' float.
+controller_update:
+    ; Push old state both both controllers explicitly.
+    ; We have to do this before the port interaction bit-splatter recipe.
+    ld     a,(var_ControllerStatus.1.StatusCurrent)
+    ld     (var_ControllerStatus.1.StatusPrevious),a
+    ld     a,(var_ControllerStatus.2.StatusCurrent)
+    ld     (var_ControllerStatus.2.StatusPrevious),a
+
+    ; Populate new states
+    ld     a,(var_PauseNMITriggered)                 ; The seventh bit comes from the PauseNMI, read it now!
+    ld     c,a                                       ; Put the pause bit contribution in c, both controllers can use this.
+    xor    a                                         ; Clear the pause flag after the controller update.
+    ld     (var_PauseNMITriggered),a
+    in     a,(PORT_IOPortAAndB)                      ; The first six bits of PortA come from this port.
+    cpl                                              ; I don't like the active-low inputs, so I'm using to invert them here
+    ld     b,a                                       ; There may be 'problems' if we repeatedly IN the controller port (remember the Amiga voltage crap?)
+    and    %00111111
+    or     c                                         ; The seventh bit comes from the PauseNMI!
+    ld     (var_ControllerStatus.1.StatusCurrent),a  ; Store current state for port A
+    ld     a,b                                       ; Get the original reading back to modify it a bit:
+    and    %11000000                                 ; Only the two two bits of the original reading are relevant for port B
+    ld     b,a
+    in     a,(PORT_IOPortBAndMisc)                   ; The rest of the bits come from this port.
+    cpl                                              ; I don't like the active-low inputs, so I'm using to invert them here
+    and    %00001111                                 ; Only the lower four bits are relevant for port B
+    or     b                                         ; And apply the top two bits from the original reading
+    rlca                                             ; Rotate two to the left to put them in the proper place.
+    rlca
+    or     c                                         ; The seventh bit comes from the PauseNMI!
+    ld     (var_ControllerStatus.2.StatusCurrent),a  ; Store current state for port B
+
+    ; Update composite bit arrays.
+    ; This has to loop twice for the two controllers.
+    ; We constantly inc HL to go through both 6 byte structure instances in a smart looking loop.
+    ld     hl,var_ControllerStatus.1
+    ld     d,2
+controller_update_composite_state_construction_loop:
+    ; Load the state bit arrays into B and C.
+    ld     b,(hl)
+    inc    hl
+    ld     c,(hl)
+    inc    hl
+    ; b = current, c = previous, hl = pointing at 'Hit'
+    ; HIT = current & !previous
+    ld     a,c
+    cpl
+    and    b
+    ld     (hl),a
+    inc    hl
+    ; HELD = current & previous
+    ld     a,b
+    and    c
+    ld     (hl),a
+    inc    hl
+    ; RELEASED = !current & previous
+    ld     a,b
+    cpl
+    and    c
+    ld     (hl),a
+    inc    hl
+    ; IDLE = !current & !previous = !(current or previous)
+    ld     a,b
+    or     c
+    cpl
+    ld     (hl),a
+    inc    hl
+    dec    d
+    jp     nz,controller_update_composite_state_construction_loop
+    
+    ; And that's Camel!
+
+    ret
+.ends

@@ -1,0 +1,137 @@
+<html>
+<head>
+<LINK REL="StyleSheet" HREF="gravitybeamdocs.css" TYPE="text/css">
+</head>
+<body>
+<h1>2013smscsvread, SMS Binary Music Modules and Music Player Documentation</h1>
+<h2>12th April 2013</h2>
+<p>My very first bit of Z80 programming was the music player used in <i>Gravity Beam: Master Gaiden</i>. The source file calls it <tt>SEGA MASTER SYSTEM GAME AUDIO THING</tt>, but I usually call it 'SMS music'. There are a number of components that support the player: a user-friendly method for creating modules, a convertor that converts these user-friendly modules into a dense binary format, a player that reads the binary format and updates a state machine with the correct values using appropriate timing, and an instrument runtime that sets the parameters of the SN76489 sound chip in the SMS based on this state.</p>
+<hr />
+
+<h4>Creating Modules</h4>
+<p>I use Microsoft Excel to write my music modules. You could use LibreOffice Calc if you were a CRAZY PERSON.</p>
+<p>Why? Because it's easy to use. It has an arbitrarily specifyable grid interface. Supports copy and paste. The actual conversion 'surface' the convertor expects is .csv, so you subsitute anything you like there, or write your own editor if you like.</p>
+<img src="modulexls.PNG">
+<p>Here's the 'plot_2' music from the <i>Gravity Beam: Master Gaiden</i> title screen. You can see that the layout is similar to that a MOD editor like OctaMED or OpenMPT. There are three tone channels and a noise channel, corresponding directly to the channels of the SN76489 in the SMS. Each channel is capable of playing a single tone of a single instrument channel at once.</p>
+<p>The module player works as follows: Every PAL frame, a counter is incremented. When that counter reaches the value of TEMPO, the playback cursor plays the next row of the module. When a SMS binary music module is prepared for playback, the next call to <tt>music_tick</tt> will play the very first row immediately.</p>
+<p>For each row, for each channel, there are five properties that can be set:</p>
+<ul>
+  <li>RNP, the root note pitch: A string of the form <tt>X-n</tt>, where X is a letter from A to G, the dash is either a dash or a hash and the number is from 1 to 5. The letter X by itself indicates a Note Off and instantly silences the channel. It's just like a MOD editor. B-2 is the note immediately preceding C-3. RNP refers to the fact that this is an index into an array of tone period values for the sound chip and these values are furthered mangled by instrument programs to provide vibrato and bends. You can't use notes lower than A-0 as the SN76489 cannot produce tones this low. You shouldn't really go above octave 4 either, because the tones become less musically accurate, and they sound sorta awful. This is why <i>Gravity Beam: Master Gaiden</i>'s ingame song has two different music tracks overlapping within the same octave during its final key sequence: it <i>would</i> have been higher, but it sounded awful.</li>
+  <li>INS, the instrument program number: The music player uses this to select an instrument program routine by means of a vector jump. The instrument program is an assembly routine that analyses the current note age, RNP, VOL and other parameters and determines what messages should be sent to the sound chip on each call to <tt>instruments_tick</tt>. In other words, an instrument program is a tone period and attenuation envelope generator. Like a naff Casio keyboard! Write your own instrument programs, if you like! It's (not) fun.</li>
+  <li>VOL, the volume: This the volume of the channel set at this point in time. It is from zero (silent) to fifteen. It is NOT an attenuation as a look-up table is used to convert between volumes and attenuations. Instrument programs usually add values to this attenuation before submitting the result to the sound chip in order to have notes fade out with increasing age.</li>
+  <li>AGE, the note age: If this value is present, then the note age of this channel is overridden to this value (note ages are measured in PAL frames). The note age is a timer that increases every PAL frame while the note is active; instrument programs use note age as a parameter to the envelope they produce. If AGE is not set, a row that contains an RNP in isolation is treated as the triggering of a new note. However, if you set AGE to 0 then the note age is not altered: I call this 'legato mode'.</li>
+  <li>BEN, pitch bend: Never got round to implementing this. Bytes you place here will be read and will be passed to the pitch bend record within the instrument program runtime status struct, but none of the instrument programs will actually act upon it.</li>
+</ul>
+<p>When a property is set, its value remains constant until it is explicitly re-set. The exception to this is the RNP, as an instrument program can set the RNP to OFF when the note age reaches some value. Only the property changes specified in the editor are reflected in the output file: use this to reduce the size of your binary modules by leaving cells blank when you can.</p>
+<p>The percussion channel works like a tone channel, except the RNP controls which drum is used. The instrument program number is ignored.  You'll notice in the top right of the screenshot I've written what notes reflect which percussion instrument. These are percussion programs I have written. Because the SMS only has a couple of noise pitch paramters, a lot of these sound very similar to each other. Use your imagination, together with the volume column, to create compelling drum effects!</p>
+<p>The leftmost column is used for labels. These are song positions you can instruct the playback cursor to return to using a <tt>GOTO</tt> directive in the module editor (you can't access labels from assembly code as they no longer exist at that point). The label <tt>end</tt> is used to indicate the final row of module data to parse. Everything in the file after that point is ignored. The label must be present or the parser will enter an infinite loop and would need to be manually terminated.</p>
+<p>There are a number of special directives that you can use. These go in the Directives column on the right, directly after the BEN column of the Percussion channel. To specify a directive, type its name in the cell, and its argument in the cell immediately following. To specify two directives on the same row, place the name of the second directive in the cell immediately to the right, and so on.</p>
+<ul>
+  <li><tt>TEMPO</tt> - sets the speed of the player in ticks per row. You can see in the screenshot that the build-up that's played at the start of the 'plot_2' music is at <tt>TEMPO 2</tt>, and the looping section of the song is played at <tt>TEMPO 6</tt>. When a SMS binary music module is prepared for playback, the next call to <tt>music_tick</tt> will play the very first row immediately, so make sure to have a <tt>TEMPO</tt> directive on your first line.</li>
+  <li><tt>GOTO</tt> - immediately sets the module playback cursor to the row with the given label. In this example, <tt>GOTO begin</tt> would restart the entire song. <tt>GOTO looppoint</tt> loops playback to the beginning of the looping section of the song. The key word here is 'immediately': <tt>GOTO</tt> should appear on the line on which you want playback to recommence. If you have beats on lines 1, 9, 17 and 25 then <tt>GOTO</tt> should be placed on line 33 for seamless looping.</li>
+  <li><tt>STOP</tt> - has no arguments. Stops playback and causes all music player controlled channels to immediately be set to silence. You really should end your module with either a <tt>STOP</tt> or a <tt>GOTO</tt> otherwise the playback will continue beyond the end of your song and into whatever memory is located after.</li>
+</ul>
+<p>It sounds like a lot, but it's really easy! Let's take another look at the 'plot_2' music and I'll show you how it works.</p>
+<img src="modulexls.PNG">
+<p>The first row contains the label 'begin'. This is just my convention. My ingame music doesn't have an intro sequence that's played only once, so I would use <tt>GOTO begin</tt> to loop that song. Because the 'plot_2' music contains a short ascending 'dooooop!' at the beginning, I instead use <tt>GOTO looppoint</tt>.</p>
+<p>You should use X to silence channels that you're not using at the beginning of a song. If you don't, the RNP and other parameters will be maintained from the previous song (safe values if you've <tt>audio_init</tt> immediately before, or garbage if you haven't).</p>
+<p>For this song, INS 3 is a normal steady tone that fades out after a short amount of time. Think of it like a piano note. For the first eight lines, I increase the RNP and VOL while repeatedly setting the AGE to 0. This creates an ascending sliding legato note.</p>
+<p>For the main body of the song, Channel 0 is the bass notes and Channel 1 is the main melody. Channel 2 contributes harmony during the second repeat of the first section. Notice that I've set the instrument to 3 on the channels explicitly again on this row. If you're going to give a row a label in preparation for <tt>GOTO</tt>, you should put INS and VOL values on it, otherwise the values from before the jump will be maintained.</p>
+<p>The remainder of the song that's visible on this page doesn't use INS or VOL changes, which results in a very small file size!</p>
+<p>Notice that at the end of the column for Channel 1 I change INS to 1. Instrument 1 is a note that doesn't fade out over time but instead alters its SN76489 tone value slightly over time to make a flute-like wobbling sound. If you read down the column of Channel 1, you can <i>see</i> the <i>GBMG</i> theme there 'dah---dah---da-dadadadah-dah--dah--dah-dah-dah-daaaaaaaaaaaaaaah'.</p>
+<p>The percussion channel shows the drumrolls as C-0 and D#0 notes.</p>
+<p>My SMS music format doesn't have crazy mixed up table or pattern support like Soundmon for the Amiga or Goattracker for the C64, which means that both source and binary versions of a song will contain repeated data, but on the plus side they're readable by humans. Plus, the player doesn't have a zillion levels of indirection to get to the actual data.</p>
+<p>There's no way to preview the song in Excel. The simplest way is to export it, convert it and include the binary song into an SMS rom and emulate it. (The hardest way is to write a binary module player that emulates the SN76489, and contains reimplementations of all your asm instrument and percussion programs. I did that, but it's out of date now.)</p>
+<h4>Converting Modules</h4>
+<p>Binary versions of music modules are produced by <tt>2013smscsvread.exe</tt>. This is a program used to convert plain-text music modules stored as <tt>.csv</tt> files into super-hyper compact <tt>.bin</tt> SMS music module files compatible with the SMS music module player included as part of <i>Gravity Beam: Master Gaiden</i>.</p>
+<p>First, save your Excel file as a <tt>.csv</tt> from Excel. It'll complain about the loss of formatting, but that's okay, we don't need it.</p>
+<p>Then convert it with <tt>2013smscsvread.exe</tt>. It will produce a <tt>.bin</tt> which you can then <tt>incbin</tt> into your SMS program.</p>
+<p><tt>Format: 2013smscsvread.exe input.csv output.bin</tt></p>
+<p>If <tt>2013smscsvread.exe</tt> hangs, it's probably because you didn't include a row labelled 'end'.</p>
+<h4>Playing Modules</h4>
+<p>First, call <tt>audio_init</tt> to reset the state of the audio system. You should do this as part of your very first initialisation code.</p>
+<p>To select a song for playback, load the pointer to the start of your binary song into <tt>HL</tt> and <tt>call music_select_song</tt>. This resets the music playback system to the start of your song. At this point, the playback will be halted. To begin playback, <tt>call music_resume</tt>.</p>
+<p>My player is not interrupt driver. To ensure smooth music playback, the following should be called every frame:</p>
+<ul>
+  <li><tt>music_tick</tt> - to advance the music player cursor and handle any new notes.</li>
+  <li><tt>instruments_tick</tt> - to advance the note ages of all active tone instrument playback runtimes and set the parameters of the tone channels on the chip.</li>
+  <li><tt>percussion_tick</tt> - to advance the note age of the percussion instrument playback runtime and set the parameters of the noise channel on the chip.</li>
+  <li><tt>sound_tick</tt> - to advance the age of the sound effect playback runtime and set the parameters of the tone or noise channels on the chip depending on the current sound effect.</li>
+</ul>
+<p>I call these things together at the end of a frame just before I <tt>halt</tt> for a vwait. The routines clobber the shadow registers, clobber the main registers, and mess around with <tt>out</tt> instructions. If you want to rewrite these things to be triggered on an interrupt, you'll have to work out how to do that safely yourself.</p>
+<p>The complete interface is documented in the source file <tt>audio.z80asm</tt>. If you want to know how to do something, check how <i>Gravity Beam: Master Gaiden</i> does it!</p>
+<hr />
+<h4>Binary File Format</h4>
+<p>An SMS binary music module is a contiguous series of variable length instructions for the SMS music player. When the <tt>music_tick_counter</tt> timer reaches the current <tt>TEMPO</tt> value, the music player continually reads instructions from the binary file until it reaches a <tt>WAIT</tt> or <tt>STOP</tt> instruction.</p>
+<p>An instruction is either a 'playback command' or a 'directive', depending on whether or not the high bit of the first byte is set. If the high bit is cleared, the command is a 'playback command', otherwise it is a directive.</p>
+<h5>Playback command:</h5>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3     4     5   </pre></p>
+<p><pre>[ COMMD (RNP) (AGE) (INS) (VOL) (BEN) ]</pre></p>
+<p>Playback commands can be anywhere from between 2 to 6 bytes long. The command byte <tt>COMMD</tt> contains a bitmask indicating which channel parameters it contains as a payload.</p>
+<p>The structure of <tt>COMMD</tt> is set according to the following bitmask:</p>
+<p><pre>The structure of the command byte is %DBVIAPCC</pre></p>
+<p><pre>DBVIAP are bits indicating whether this channel event packet is followed by those parameters.</pre></p>
+<p><pre> 7 D is directive</pre></p>
+<p><pre> 6 B is BEND</pre></p>
+<p><pre> 5 V is VOLUME</pre></p>
+<p><pre> 4 I is INSTRUMENT</pre></p>
+<p><pre> 3 A is AGE</pre></p>
+<p><pre> 2 P is PITCH</pre></p>
+<p><pre>10 CC is channel as a 2-bit integer.</pre></p>
+<p>Only those bytes which are specified in the bitmask are present. Elements that are present always appear in the order PITCH, AGE, INSTRUMENT, VOLUME and BEND. The elements do not have to be contiguous in the bitmask to be contiguous as payload bytes: it is possible to have a command which sets the PITCH and the INSTRUMENT but not the AGE. All parameters are unsigned 8-bit integers. A single byte playback command with no payload is degenerate.</p>
+<p>Example:</p>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3      </pre></p>
+<p><pre>[ COMMD (RNP) (INS) (VOL) ]</pre></p>
+<p><pre>[  $34   $10   $03   $05  ]</pre></p>
+<p><tt>$34</tt> is a playback command <tt>COMMD</tt> byte with bits <tt>%00110100</tt>: the channel is 0, the PITCH, INSTRUMENT and VOLUME are present in that order.</p>
+<p>The PITCH is $10 (this corresponds to note 16, which is E-1). The INSTRUMENT is 3 and the VOLUME is 5. This is the first Note On event in the 'plot_2' music file; you can see its plain-text counterpart in the screenshot above.</p>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3      </pre></p>
+<p><pre>[ COMMD (RNP) (AGE) (VOL) ]</pre></p>
+<p><pre>[  $2C   $11   $00   $06  ]</pre></p>
+<p><tt>$2C</tt> is a playback command <tt>COMMD</tt> byte with bits <tt>%00101100</tt>: the channel is 0, the PITCH, AGE and VOLUME are present in that order.</p>
+<p>The PITCH is $11 (this corresponds to note 17, which is F-1). The AGE is 0: specifying a PITCH and setting the AGE to 0 means that this is a 'legato mode' note! The VOLUME is 6. This is the second row in the 'plot_2' music file.
+<h5>Directives:</h5>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3     4     5   </pre></p>
+<p><pre>[ WAITv ]</pre></p>
+<p>A <tt>WAIT</tt> command is encoded as a single byte in the range <tt>$81</tt> to <tt>$EF</tt>. The number of rows to wait is stored in <tt>WAITv AND $7F</tt>. This is the number of rows to wait before attempting to read any more music instructions (including the current row). When consecutive rows in the editor contain instructions, they are separated by <tt>$81</tt>, representing the time between the current row and the next. When the music playback cursor encounters <tt>WAIT</tt>, instruction reading is halted and <tt>music_tick</tt> will return. You shouldn't try to place a <tt>WAIT</tt> manually in the Excel editor as <tt>WAIT</tt> commands are automatically placed after every row containing instructions or directives. The convertor will read how many blank rows are between successive instructions and compress large blocks of long notes/silence into a single <tt>WAIT</tt> byte.</p>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3     4     5   </pre></p>
+<p><pre>[ GOTO  lower upper ]</pre></p>
+<p><pre>[  $FD  lower upper ]</pre></p>
+<p>A <tt>GOTO</tt> command is encoded as a <tt>$FD</tt> byte, followed by an offset in bytes to jump to. <tt>lower</tt> and <tt>upper</tt> are combined to make a 16-bit unsigned value. The offset is relative to the beginning of the file. This means that  the byte sequence <tt>$FD $00 $00</tt> restarts the song from the very beginning. This command immediately resets the music instruction reading cursor, and instruction reading immediately resumes at the new address.</p>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3     4     5   </pre></p>
+<p><pre>[ TEMPO value ]</pre></p>
+<p><pre>[  $FE  value ]</pre></p>
+<p>A <tt>TEMPO</tt> command is encoded as a <tt>$FE</tt> byte, followed by the TEMPO value to use as an unsigned 8-bit integer.</p>
+<p><pre>  byte               </pre></p>
+<p><pre>    0     1     2     3     4     5   </pre></p>
+<p><pre>[ STOP  ]</pre></p>
+<p><pre>[  $FF  ]</pre></p>
+<p>A <tt>STOP</tt> command is encoded as a <tt>$FF</tt> byte by itself. When a <tt>STOP</tt> is encountered, the music playing flag is set to false and instruction reading halts.</p>
+<p>If a binary music module does not end in either a <tt>GOTO</tt> or a <tt>STOP</tt>, either something is very wrong, or you're doing something very tricky like having one song lead into another. Be careful if you do this because the music song start base pointer will still be pointing at the earlier song (because you didn't call <tt>music_select_song</tt>) so <tt>GOTO</tt> commands will still think you're in the first song and will malfunction in the second.</p>
+<p>Command bytes in the range <tt>$F0</tt> to <tt>$FC</tt> are left unused currently.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

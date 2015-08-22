@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1360824197 source:c:\documents\2013kuroneko\projects\2013z80\2013huffmanencoder\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cmath>
+	<string>
+	<vector>
+	<map>
+
+1361798943 source:c:\documents\2013kuroneko\projects\2013z80\2013huffmancatalogencoder\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cmath>
+	<string>
+	<vector>
+	<map>
+

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1358789863 source:c:\documents\2013kuroneko\projects\2013midiread\2013midiread\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cmath>
+	<vector>
+
+1359035899 source:c:\documents\2013kuroneko\projects\2013smscsvread\2013smscsvread\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cmath>
+	<vector>
+	<string>
+

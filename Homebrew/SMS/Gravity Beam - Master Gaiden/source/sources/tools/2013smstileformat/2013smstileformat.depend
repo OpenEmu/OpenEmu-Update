@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1359560252 source:c:\documents\2013kuroneko\projects\2013z80\2013smstileformat\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cmath>
+	<string>
+	<vector>
+	<map>
+

@@ -1,0 +1,34 @@
+Hi, here is my entry for the coding competition.
+
+Unfortunately I wasn't able to finish the game in the short time span. The planning was very tight and my personal life (read: work) took away too much of my free time.
+I was able to finish the main game engine. But the level design is far from finished. I still hope you enjoy the game even if it is rather short.
+After submission I will continue working on the game to complete the level design adding all planned features.
+
+DARC
+=======================
+DARC is a jetpack shooter game inspired several games ("Air fortress"(NES), “H.E.R.O”. and "Hero Core"(PC)). The protagonist can fly and shoot in separate directions. Each of the gamepad keys represent a shooting direction. Your goal is to infiltrate the alien fortress. Destroy the cores to disable force fields and advance through the game. During the game your shooting level will increase. As your level increases you will be able to destroy the blue and red crates found in the levels.
+During your exploration you can use the [PAUSE] button to show your current location in a map. Only the explored areas are visible.
+
+Compatibility:
+-----------------------
+The game supports the FM unit for music playback. If no FM unit is found there will be no music.
+
+The title screen is not supported by all emulators but it works on real hardware (although with some faulty pixels). Preferred emulators are 'Meka' and 'Kega Fusion364'. 
+
+
+Credits:
+-----------------------
+Code:		Richard Cornelisse (Huey aka Zipper)
+Music:		John Hassink
+Graphics:	Richard Cornelisse
+
+I used the following programs to make this game:
+	- CharacterMaker1999 	(gfx)
+	- Bmp2Tile 		(gfx)
+	- AyEdit		(sfx)
+	- Moonblaster 1.4	(music)
+	- BlitzBasic+		(level editor)
+	- sjasm			(assembler)
+	- UltraEdit		(coding)
+	
+Greetings to all people at SMSpower.org for your help and support!

@@ -1,0 +1,39 @@
+; Lines starting with a semicolon are comments.
+
+; 2013/02/22 mathew carr
+
+; Paths are relative to this catalog file.
+
+; Determines the output filename of the file containing
+; the stats in comments, the defines and the compressed data.
+OUTPUT_FILE_FILENAME
+huffman_archive_1.z80asm
+
+; What should be appended to the start of all the
+; tokens we produce, so we know what symbols
+; were produced as a result of this file.
+; Leave a trailing underscore. Or y'know. Don't. If you like.
+ASM_TOKEN_PREFIX
+ha1_
+
+; Change between 'nibble' or 'byte' compression types
+; Defaults to 'nibble'.
+COMPRESSION_TYPE
+nibble
+
+; List of files (relative to this catalog file) that
+; should be compressed
+; Must be the last item in the catalog file.
+FILE_LISTING
+graphics_bombleds.bin
+graphics_contactlosttiles_2bpp.bin
+graphics_ending_crate_twoframes.bin
+graphics_ending_greenwingsprites_4bpp.bin
+graphics_gaiden_ingame_tiles.bin
+graphics_greenwing.bin
+graphics_plot_1_radioactive_2bpp.bin
+levellayout_megatiles.bin
+
+; If you're gonna add more files, you'd best make sure they
+; conform to the same nibble distribution profile as the files
+; already present!

@@ -1,0 +1,16 @@
+Hi,
+Here is my entry for 2015 competition: "Lander2".
+It's a sequel to my 2013 entry "Lander1".
+
+The purpose of the game is to make your rocket land safely on landing areas (horizontal with red dots) without using all your fuel.
+
+How to play:
+ - press 1 to start and pass texts
+ - press 2 when you lost to restart from the first level
+ - press down to decrease vertical speed
+ - press left/right to change horizontal speed
+Warning: acceleration is in the opposite direction of the direction you press!
+
+I hope you'll enjoy it!
+
+jmimu

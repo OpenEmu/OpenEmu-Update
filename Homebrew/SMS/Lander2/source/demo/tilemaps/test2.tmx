@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="24" tilewidth="8" tileheight="8">
+ <tileset firstgid="1" name="bg" tilewidth="8" tileheight="8">
+  <image source="tree4_tiles.png" width="16" height="512"/>
+ </tileset>
+ <tileset firstgid="129" name="collisions" tilewidth="8" tileheight="8">
+  <image source="collisions.png" trans="ff00ff" width="64" height="16"/>
+ </tileset>
+ <layer name="bg" width="32" height="24">
+  <data encoding="base64" compression="zlib">
+   eJzt081OwkAUhuEhIiByB4CAqCCICiiyBvzjHsAfwD0JmF6+b5M2mRxnMi4Ik4CLJ18z55x22nQSSqnEjquhjktPz2+giStPz2/hGjcbuFcRJ6jgFFWcbek9SihrznHxh7269jnDHB+YYLrBvVYc+xxggS984i3yvqVvuu8OkMQQI0Pa6vG6TNe87D9ECo94MqStHq/LdM3L/jQyeMaLIW31eF2ma172HyGLV4wNaavH6zJd87L/GDmP2dd08BC5165DbdG71q7v0BV1/X7fhvlelLee5f8ZFSK+6vvC9/9vO5ehlbKf6/BMB4b5tfp9/gNhqfX9AC70TBc=
+  </data>
+ </layer>
+ <layer name="collisions" width="32" height="24" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwwENAAAMw6Ban/MLOSSsmqqq+uIBmjuDEA==
+  </data>
+ </layer>
+</map>

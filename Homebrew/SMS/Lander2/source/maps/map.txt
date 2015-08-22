@@ -1,0 +1,25 @@
+The tilsets are in two parts:
+upper half is hz-flip=0
+lower half is hz-flip=1
+for both graphics and collisions.
+
+If selected tile is on the first half we copy its number,
+in the other case because of hz-flip we have to take the
+symmetic number and record that it has to be flipped.
+For collisions we don't take that into account.
+
+8 collisions types:
+ * empty
+ * full
+ * bottom half
+ * top half
+ * bottom slope
+ * top slope
+ * side
+ * special
+These can be hz-flipped using the hz-flip bit.
+
+
+ 
+
+

@@ -1,0 +1,19 @@
+Depends on python-midi
+https://github.com/vishnubob/python-midi
+=> changed line 159 of src/fileio.py :
+            if cmd not in EventRegistry.MetaEvents:
+            #    raise Warning, "Unknown Meta MIDI Event: " + `cmd`
+                cmd=0
+sudo python setup.py install
+
+
+notes: http://computermusicresource.com/midikeys.html
+http://www.classicalmidiconnection.com/beethoven.html
+
+exemples faits avec MuseScore, 2e piste retirée avec MusE.
+
+
+TODO:
+enable pauses (if no note, search for next event=> pause duration)
+clear process
+auto make rom

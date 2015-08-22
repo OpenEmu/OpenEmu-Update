@@ -1,0 +1,1 @@
+C:\Documents\2013kuroneko\projects\2013z80\2013huffmancatalogencoder\bin\Release\2013huffmancatalogencoder.exe catalog_file_gfx_greenwing_ending_gaideningame.txt
