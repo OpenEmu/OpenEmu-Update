@@ -1,73 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <games>
     <game
-        name      = "Power Pig"
-        system    = "openemu.system.gba"
-        developer = "genecyst games"
-        website   = "http://holyhellgba.blogspot.de/p/downloads.html"
-        file      = "http://www.otouv.org/gGames/downloads/powerpig.zip"
-        released  = "1404932321"
+        name      = "Wall Jump Ninja"
+        system    = "openemu.system.2600"
+        developer = "Tim &quot;Walaber&quot; FitzRandolph"
+        website   = "http://atariage.com/forums/topic/232200-ninja-wall-jump-game-wip/"
+        file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/wall_jump_ninja_20150115_v1_0_NTSC.a26"
+        released  = "1421283600"
         added     = "1417395600"
-        md5		 = "ba7dda66edd51fb758aa1f61af584c1f"
+        md5		 = "3c56c0c5f6f97850ed0aa7bcc2a4e30e"
         >
-        <description>You are a pig and you got to find the exit door for each level.
-    Levels are full of animals that aren't properly happy to have you around and they'll try to kick your ass in any way.
-    Fortunately the ghost of your granpa-pig has given you an amazing gravity gun that transform anything into light bubbles. This gravity gun require coins to work, so it's quite expensive to have one, but at least someone has filled the levels with coins... so you just need to grab them and charge your gun.
+        <description>As a ninja, you already have many skills. But there are many more to learn. Today you will learn the legendary technique of the wall jump. Use it wisely, or face certain doom at the hands of the death beam.
         </description>
         <images>
-            <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/160x120.png"></image>
-            <image type="ingame" src="http://images.apple.com/macbook-pro/design-retina/images/fluidgallery/gallery1_2256_2x.jpg"></image>
-            <image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-city3.png"></image>
-            <image type="ingame" src="http://www.otouv.org/gGames/downloads/powerpig-jungle.png"></image>
+            <image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/1.png"></image>
+            <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/2.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/3.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/4.png"></image>
         </images>
     </game>
 
     <game
-        name      = "Battle Kid: Fortress of Peril (Demo)"
-        system    = "openemu.system.nes"
-        developer = "Sivak Games"
-        website   = "http://sivak.nintendoage.com/BK.html"
-        file      = "http://sivak.nintendoage.com/BK-demo.zip"
-        released  = "0"
+        name      = "Classic Kong Complete"
+        system    = "openemu.system.snes"
+        developer = "Shiru"
+        website   = "https://code.google.com/p/classickong/"
+        file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/Classic%20Kong%20Complete%20(U).smc"
+        released  = "1347930000"
         added     = "1417395600"
-        md5		 = "cf75ebc501818119940a6b872e1e0511"
+        md5		 = "34109a821497c892b2bba264acee2045"
         >
+        <description>A remake of the classic arcade game with barrel jumping and ladder climbing madness for the SNES.
+        </description>
         <images>
-            <image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/160x120.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc1.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc2.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc3.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc4.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc5.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc6.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BattleKid-sc7.png"></image>
+            <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/5.png"></image>
+            <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/1.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/2.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/3.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/4.png"></image>
         </images>
     </game>
 
     <game
-        name      = "Battle Kid 2: Mountain of Torment (Demo)"
+        name      = "Super Bat Puncher"
         system    = "openemu.system.nes"
-        developer = "Sivak Games"
-        website   = "http://sivak.nintendoage.com/BK2.html"
-        file      = "http://sivak.nintendoage.com/BK2-NewDemo.zip"
-      fileIndex = "1"
-        released  = "1355526000"
+        developer = "Morphcat Games"
+        website   = "http://morphcat.de/superbatpuncher/"
+        file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/Super%20Bat%20Puncher%20Demo.nes"
+        released  = "1306890000"
         added     = "1417395600"
-        md5		 = "37d15ab83697dce281caee7c3ff2f6dd"
+        md5		 = "0ed8f1c66a067a6c74dc7a6f57ca2ea3"
         >
-        <description>Inspired from "I Wanna Be The Guy" and other classic platformers, this game follows the same format of having a large map in Metroidvania style where one has a large map to freely explore and must venture to various parts of it. You always die in one hit (3 hits for easy difficulty), but there are unlimited lives and a password system that allows you to continue where you left off. In total, there are over 650 rooms, 25 enemy types, 13 boss battles, 42 music tracks, and more bonus features this time around. 
-
-    The adventure continues! Will the torment get to you?
+        <description>Explore the deep, dark caverns of a mysterious planet and find out about the plague that threatens Earth.
         </description>
         <images>
-            <image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/160x120.png"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc1.jpg"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc2.jpg"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc3.jpg"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc4.jpg"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc5.jpg"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc6.jpg"></image>
-            <image type="ingame" src="http://sivak.nintendoage.com/Screens/BK2-sc7.jpg"></image>
+            <image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/5.png"></image>
+            <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/1.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/2.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/3.png"></image>
+            <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/4.png"></image>
         </images>
     </game>
     <system id="openemu.system.2600">
@@ -104,8 +95,7 @@
             <description>Donkey Kong VCS is a new conversion of the original arcade game for the Atari 2600 video computer system. Sporting 32K of ROM, this version for the first time features all four arcade stages as well as all cut-scenes.  Additionally, the game includes multi-colored graphics plus arcade quality animations and sounds!
             </description>
             <images>
-                <image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/220x165.png"></image>
-             <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/1.png"></image>
+                <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/1.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/2.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/3.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/4.png"></image>
