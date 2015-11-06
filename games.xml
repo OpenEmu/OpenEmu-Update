@@ -87,10 +87,10 @@
             system    = "openemu.system.2600"
             developer = "Andreas Dietrich"
             website   = "http://atariage.com/forums/topic/206497-dk-vcs/"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/D.K.VCS_131110_NTSC.a26"
-            released  = "1384045200"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/D.K.VCS_PRGE_151015_NTSC.a26"
+            released  = "1445302800"
             added     = "1417395600"
-            md5		 = "608d4a5b4af91af479e8ae935f008a72"
+            md5		 = "8ee4909b0e1031e6984e2892d2483444"
             >
             <description>Donkey Kong VCS is a new conversion of the original arcade game for the Atari 2600 video computer system. Sporting 32K of ROM, this version for the first time features all four arcade stages as well as all cut-scenes.  Additionally, the game includes multi-colored graphics plus arcade quality animations and sounds!
             </description>
@@ -126,7 +126,7 @@
             name      = "Halo 2600"
             system    = "openemu.system.2600"
             developer = "Ed Fries"
-            website   = "http://atariage.com/store/index.php?l=product_detail&amp;p=1015"
+            website   = "http://atariage.com/store/index.php?l=product_detail&amp;p=998"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/Halo2600_Final.a26"
             released  = "1277946000"
             added     = "1417395600"
@@ -234,7 +234,7 @@
             >
             <description>Gobble your way through the maze of Pac-Land, chomping on dots and avoiding the four hungry monsters, Blinky, Pinky, Inky and Clyde. But if you can manage to eat an energizer, turn the tables on those monsters by feasting on them for bonus points!
 
-    Dennis Debro sought to create an adaptation of Pac-Man more faithful than Atari's 1982 version for the VCS. Utilizing the same 4K memory limit as the original, Dennis' game is a feat of programming that finally brings Pac-Man to the Atari 2600 as it was intended.
+Dennis Debro sought to create an adaptation of Pac-Man more faithful than Atari's 1982 version for the VCS. Utilizing the same 4K memory limit as the original, Dennis' game is a feat of programming that finally brings Pac-Man to the Atari 2600 as it was intended.
             </description>
             <images>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/1.png"></image>
@@ -276,7 +276,7 @@
             >
             <description>Save the princess in this familiar platform game through 16 challenging scrolling levels!
 
-    Collect power-ups and other items to help you complete your quest while fending off (or running past) the boss' minions along the way. Watch out as you finish castle stages as the ruthless boss comes in to try to do you away. Succeed and the princess will be forever grateful.
+Collect power-ups and other items to help you complete your quest while fending off (or running past) the boss' minions along the way. Watch out as you finish castle stages as the ruthless boss comes in to try to do you away. Succeed and the princess will be forever grateful.
             </description>
             <images>
                 <image type="cover"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/1.png"></image>
@@ -472,10 +472,10 @@
             system    = "openemu.system.7800"
             developer = "Steve Engelhardt &amp; Mike &quot;RevEng&quot; Saarna"
             website   = "http://atariage.com/forums/topic/236861-dungeon-stalker-a-new-atari-7800-game/"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/DungeonStalker_v1.245.a78"
-            released  = "1438736400"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/DungeonStalker_Final.a78"
+            released  = "1445475600"
             added     = "1417395600"
-            md5		 = "6309d1f917a48fa5e0e3904f7fcc790e"
+            md5		 = "eff3eb9f14d93b128f2c52524e938218"
             >
             <description>Get ready for an exciting run through a dangerous dungeon. You will encounter waves of enemies that pursue you relentlessly. There's no way out... It's you against them until the end!
             </description>
@@ -593,9 +593,9 @@
             developer = "Mike &quot;RevEng&quot; Saarna"
             website   = "http://atariage.com/forums/topic/224469-salvo/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/salvo.bas.a78"
-            released  = "1437872400"
+            released  = "1445475600"
             added     = "1417395600"
-            md5		 = "9cf96d55ebb5e7866387d6d5ab720f9a"
+            md5		 = "a99bb8f7d0175adf38d0aa900d092e90"
             >
             <description>Shoot the enemies, and avoid being shot. After some time passes in the level, humanoids will begin appearing. Your enemies will kill the humanoids if they touch them, but if you run into the humanoids they will follow you. Keep them safe until the end of the level. Refuel your ammunition when an alarm sounds and more appears. Every 2 rounds you will reach the challenging stage, where 4 waves of enemies will race across the screen in patterns. If you shoot all 44 enemies you will earn an extra life.
             </description>
@@ -840,8 +840,8 @@
             md5		 = "dc9be85f5ada0abeb2ab597d5178f03e"
             >
             <description>A port of the original game by Japanese developer Kuni.
-             
-    Spout is a simple caveflying game. The aim is to get as high as possible, avoiding or destroying obstacles.
+
+Spout is a simple caveflying game. The aim is to get as high as possible, avoiding or destroying obstacles.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/1.png"></image>
@@ -922,8 +922,8 @@
             md5		 = "c43cbd5e71bcda81010fb408819c3ce6"
             >
             <description>A chaotic puzzle action game!
-             
-    Your werewolf has the ability to walk on any wall or roof. He can punch, dash and jump. Punch or dash your enemies right in head to kill them. Use defense to stun your opponent in case of direct attack or to reflect the bullets they throw. When you jump, you go directly to the wall opposite to the one you stand.
+
+Your werewolf has the ability to walk on any wall or roof. He can punch, dash and jump. Punch or dash your enemies right in head to kill them. Use defense to stun your opponent in case of direct attack or to reflect the bullets they throw. When you jump, you go directly to the wall opposite to the one you stand.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/1.png"></image>
@@ -1146,7 +1146,7 @@
             >
             <description>"Try climbing to the top of this one by throwing streamers and climbing them. On your way up you better watch out for the various pie throwing clowns, burning candles and bouncing balls, because if they get you, you’ll die a little each time."
 
-    These were the orders given to you, Operative JOE when you were ordered to infiltrate the evil MASTER Y’s floating fortress to destroy the TIGER ARMY’s top secret weapon.
+These were the orders given to you, Operative JOE when you were ordered to infiltrate the evil MASTER Y’s floating fortress to destroy the TIGER ARMY’s top secret weapon.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/1.png"></image>
@@ -1309,7 +1309,7 @@
             >
             <description>Developers have paved over Ralph's home, building a luxury apartment tower in its place. Now, he's started smashing every window in sight! The residents of Niceland Tower have called upon the expertise of the only man capable of taking on Wreck-It Ralph, and repairing all the damage he's caused: Fit-It Felix Jr.!
 
-    As Fix-It Felix Jr., you use your magical golden hammer to repair all of the smashed windows of Niceland Tower, moving up stage by stage, while avoiding the bricks that Wreck-it Ralph drops from above.
+As Fix-It Felix Jr., you use your magical golden hammer to repair all of the smashed windows of Niceland Tower, moving up stage by stage, while avoiding the bricks that Wreck-it Ralph drops from above.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./1.png"></image>
@@ -1371,7 +1371,7 @@
             >
             <description>Stephany is a Mega Drive fangirl. She's shy, but also smart. She built a virtual world inside her computer. This virtual world is called &quot;Project MD&quot;. This is a day inside that virtual world...
 
-    Welcome to Project MD.
+Welcome to Project MD.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/1.png"></image>
@@ -1393,9 +1393,9 @@
             >
             <description>A faithful port of the original 1989 Atari ST version.
 
-    Will Rick Dangerous, intrepid Super Hero and part-time stamp collector, survive his first mission in the Aztec temple of the tribe? Should he do so, Rick will face new hazards in the Egyptian tomb and the enemy fortress.
+Will Rick Dangerous, intrepid Super Hero and part-time stamp collector, survive his first mission in the Aztec temple of the tribe? Should he do so, Rick will face new hazards in the Egyptian tomb and the enemy fortress.
 
-    Controls: B + UP = Shoot Gun, B + DOWN = Set Dynamite, B + LEFT/RIGHT = Jab with Stick
+Controls: B + UP = Shoot Gun, B + DOWN = Set Dynamite, B + LEFT/RIGHT = Jab with Stick
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/1.png"></image>
@@ -1437,8 +1437,8 @@
             md5		 = "6d68c6fdff41aff161b45af42cbfe390"
             >
             <description>An attempt at recreating the classic Atari800/C64/Spectrum game "Bruce Lee" for the Master System.
-                
-    Collect the lamps and fight Green Yamo and the Ninja!
+
+Collect the lamps and fight Green Yamo and the Ninja!
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/1.png"></image>
@@ -1520,10 +1520,10 @@
             >
             <description>A tribute to old school arcade games: it is cute, short, yet difficult and unforgiving.
 
-    KunKun is a happy orange blob.
-    KokoKun is a happy pink princess blob.
-    KokoKun was taken hostage by some evil black blob.
-    KunKun has to go and save KokoKun.
+KunKun is a happy orange blob.
+KokoKun is a happy pink princess blob.
+KokoKun was taken hostage by some evil black blob.
+KunKun has to go and save KokoKun.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/1.png"></image>
@@ -1618,18 +1618,15 @@
             name      = "MazezaM Challenge"
             system    = "openemu.system.snes"
             developer = "Alekmaul"
-            website   = "http://www.portabledev.com/pages/consoles/snes/jeuxdev.-perso/mazezam-challenge.php"
+            website   = "http://www.portabledev.com/jeux/supernes/mazezam-snes/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/MazezaM.sfc"
             released  = "1348794000"
             added     = "1417395600"
             md5		 = "dddaf6b133ef16c19a253b5465517513"
             >
-            <description>MazezaM Challenge (pronounced "may-zam") is a simple puzzle game based on MazezaM
-    from Malcolm Tyrrell.
-
-    You enter the mazezam on the left and you have to get to the exit on the right by 
-    pushing rows of blocks left and right. If you get stuck you can retry the mazezam, 
-    but this will cost you a life. 
+            <description>MazezaM Challenge (pronounced "may-zam") is a simple puzzle game based on MazezaM from Malcolm Tyrrell.
+                
+You enter the mazezam on the left and you have to get to the exit on the right by pushing rows of blocks left and right. If you get stuck you can retry the mazezam, but this will cost you a life.
             </description>
             <images>
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/1.png"></image>
@@ -1683,7 +1680,7 @@
             name      = "Uwol: Quest for Money"
             system    = "openemu.system.snes"
             developer = "Alekmaul"
-            website   = "http://www.portabledev.com/pages/consoles/snes/jeuxdev.-perso/uwol-quest-for-money.php"
+            website   = "http://www.portabledev.com/jeux/supernes/uwol-snes/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/UwolQuestForMoney.sfc"
             released  = "1345338000"
             added     = "1417395600"
