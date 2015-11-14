@@ -87,7 +87,7 @@
             system    = "openemu.system.2600"
             developer = "Andreas Dietrich"
             website   = "http://atariage.com/forums/topic/206497-dk-vcs/"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/D.K.VCS_PRGE_151015_NTSC.a26"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/D.K.VCS_PRGE_151015_NTSC.a26"
             released  = "1445302800"
             added     = "1417395600"
             md5		 = "8ee4909b0e1031e6984e2892d2483444"
@@ -629,6 +629,26 @@ Collect power-ups and other items to help you complete your quest while fending 
     </system>
     <system id="openemu.system.colecovision">
         <game
+            name      = "Digger"
+            system    = "openemu.system.colecovision"
+            developer = "Mystery Man"
+            website   = "http://atariage.com/forums/topic/233102-team-pixelboy-news-bulletin-december-25th-2014/"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/digger_cv.rom"
+            released  = "1419469200"
+            added     = "1417395600"
+            md5		 = "df2d9c0aa0211ed0365815c8052b828d"
+            >
+            <description>Welcome to deep underground caves filled with emeralds and gold, but also with hideous monsters determined to catch you. Only legendary diggers can survive long enough to have their name and score printed in golden letters in the records. How long can you last?
+            </description>
+            <images>
+                <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/1.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/2.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/3.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/4.png"></image>
+            </images>
+        </game>
+    
+        <game
             name      = "GhostBlaster"
             system    = "openemu.system.colecovision"
             developer = "Daniel Bienvenu"
@@ -645,6 +665,26 @@ Collect power-ups and other items to help you complete your quest while fending 
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/GhostBlaster/2.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/GhostBlaster/3.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/GhostBlaster/4.png"></image>
+            </images>
+        </game>
+
+        <game
+            name      = "Quest for the Golden Chalice"
+            system    = "openemu.system.colecovision"
+            developer = "Team Pixelboy"
+            website   = "http://atariage.com/forums/topic/233102-team-pixelboy-news-bulletin-december-25th-2014/"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Quest%20for%20the%20Golden%20Chalice/quest_golden_chalice_colecovision.rom"
+            released  = "1419469200"
+            added     = "1417395600"
+            md5		 = "eabcb4a9a1eac2c6f8a7d002987d9e55"
+            >
+            <description>Guide the Prince as he runs across the kingdom, locating keys, a sword and other assorted objects, in an effort to locate the Golden Chalice and carry it back home. Don't let the dragons get too close, or they will have the Prince for lunch! Also be wary of the giant bat, who will steal objects and move them around, causing the Prince additional headaches!
+            </description>
+            <images>
+                <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Quest%20for%20the%20Golden%20Chalice/1.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Quest%20for%20the%20Golden%20Chalice/2.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Quest%20for%20the%20Golden%20Chalice/3.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Quest%20for%20the%20Golden%20Chalice/4.png"></image>
             </images>
         </game>
 
@@ -1472,11 +1512,11 @@ Collect the lamps and fight Green Yamo and the Ninja!
             name      = "Gekioko PunPun Maru"
             system    = "openemu.system.sms"
             developer = "Mount Chocolate"
-            website   = "http://68000.web.fc2.com/oko/"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/punpun.sms"
+            website   = "http://www.smspower.org/Homebrew/GekiokoPunPunMaru-SMS"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/punpun_20151031b.sms"
             released  = "1387069200"
             added     = "1417395600"
-            md5		 = "23218cecb7670615da0d0485d2063076"
+            md5		 = "df2466108c54a3c1f1aeba7bb8ea871f"
             >
             <description>A difficult arcade style platformer based on a Japanese meme roughly meaning "being angry" in a cute way, you destroy enemy ninjas and birds by huffing angry puffs of steam up at them.
             </description>

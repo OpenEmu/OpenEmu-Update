@@ -1,0 +1,76 @@
+============================================
+           DIGGER - User's manual
+============================================
+Original PC game (C) 1983 Windmill Software
+
+Remake for ColecoVision by Mystery Man
+
+Last updated: December 17th 2014
+============================================
+
+
+Welcome to deep underground caves filled with emeralds and gold, but also with hideous monsters
+determined to catch you. Only legendary diggers can survive long enough to have their name and
+score printed in golden letters in the records. How long can you last?
+
+
+Controls
+--------
+This is a one-player game. Use either hand controllers to direct your digger. Press either the
+left or right trigger button to fire a rock bullet. You will need to wait until your digger
+recharges before you can fire another rock.
+
+Some other useful keys:
+    * - Pause
+    # - Toggle background music
+    2 - Toggle sound effects 
+
+
+Gameplay
+--------
+Eat all the emeralds or kill all the enemy monsters to complete the level and move on to the
+next.
+
+Dig under a money bag and it will fall down. If it falls down one layer only, it will remain
+intact, but it if falls down more than one layer, the money bag will open when it lands, and
+you can grab the gold coins inside before they disappear.
+
+If a falling money bag catches and crushes one or more enemy monsters on its way down, you
+will earn points for the kills. Your digger can also get crushed, so get out of the way when
+a money bag falls down!
+
+When you kill enemy monsters, watch for a special prize which may appear at the location where
+enemy monsters spawn. If you eat a special prize, the screen will turn white, the music will
+change, and your digger will be able to eat the enemy monsters for a short period of time!
+
+You start with three lives. You lose a digger when an enemy monster catches it, or when your
+digger gets crushed by a falling money bag. When all your lives are gone, the game is over.
+
+If your final score breaks a record, you will be asked to enter your initials: Press the
+joystick up or down to change the active letter, and press either trigger button to select
+a letter.
+
+
+Scoring
+-------
+Collecting an emerald                             25 points
+Eating an uninterrupted sequence of 8 emeralds:  250 points
+Collecting gold coins from a fallen money bag:   500 points
+Killing an enemy monster                         250 points
+Eating a special prize                          1000 points
+
+You earn an extra life at 20,000 points, and every 20,000 points afterwards.
+
+
+Tips
+----
+You can push resting money bags sideways. Enemy monsters can also do this.
+
+Enemies will pick up gold coins when they walk over them, just to keep you from getting them
+yourself.
+
+The longer you take to finish a level (and the more emeralds you collect) the angrier the
+enemies become. Some will become green with anger and will start chewing through the walls
+and home in on your digger directly.
+  
+A previous digger left this criptic message: You can sustain a bag if it is not falling down.

@@ -1,0 +1,72 @@
+-- Description --
+bmptn create a VDP pixel pattern file form a Windows DIB (.bmp) file.
+ bmptn は Windows DIB (.bmp) から VDP のパターンファイルを作ります。
+
+-- How to complie --
+You will compile this program as Windows/UNIX command line application.
+This source code includes GCC unique functions.
+If you complie on non-GCC compiler, please replace the unique functions.
+The unique functions begin as "__". For example, "__attribute__".
+I think these will replace with Visual Studio functions but I have never tried that.
+ Windows/UNIX のコマンドライン アプリケーションとしてコンパイル出来ます。
+ ソースコードにはGCC固有の機能が含まれています。
+ もしGCC以外のコンパイラーでコンパイルする場合は、GCC固有の機能を置き換えてください。
+ 固有の機能は "__" で始まります。 例: "__attribute__"
+ これらはVisual Studioの機能で置き換える事が出来ると思いますが、自分は試した事が無いです。
+
+-- Licence --
+This program is a free software.
+You can modifying and distribute this program without anyone's agreement.
+ このプログラムはフリーウェアです。
+ 誰の承諾も無しにこのプログラムを変更し配布する事が出来ます。
+
+03/09/2013 (C) Mt. Chocolate
+
+-- Usage --
+1st argument is a input file as Windows DIB format.
+ 1番目の引数は Windows DIB フォーマットの入力ファイルです。
+
+2nd argument is a output file as VDP pixel pattern format.
+When the file suffix is .pal, output is a VDP palette (CRAM image) format file.
+When the file suffix is not .pal, output is a VDP pattern (VRAM image) format file.
+ 2番目の引数は VDP パターンフォーマット又は VDP パレットフォーマットの出力ファイルです。
+ ファイル名のサフィックスが .pal なら VDP パレットフォーマット (VRAM image) のファイルを出力します。
+ ファイル名のサフィックスが .pal 以外なら VDP パターンフォーマット (CRAM image) のファイルを出力します。
+
+The following example is best simple usage. It create all patterns as 8 pixels height.
+ 以下はもっともシンプルな使い方の例です。 8 pixelの高さのパターンを作ります。
+
+	bmptn sample.bmp sample.ptn
+
+The following example create all patterns as 32 pixels height.
+ 以下の例では全てのパターンを 32 pixelの高さで作ります。
+
+	bmptn sample.bmp sample.ptn 32
+
+the following example create 5 different types of patterns when sample.bmp is 96 pixel in height.
+ 以下の例では sample.bmp が 96 pixelの高さの時、5種類の異なるパターンを作ります。
+
+	bmptn sample.bmp sample.ptn 32 24 8 16 
+	      |          |          |  |  |  |  |
+	      |          |          |  |  |  |  (5th row = 16 pixels)
+	      |          |          |  |  |  (4th row)
+	      |          |          |  |  (3rd row)
+	      |          |          |  (2nd row)
+	      |          |          (1st row)
+	      |          Pattern file
+	      Bmp file
+
+The following example is a usage for VDP palette.
+ 以下は VDP パレットを作る例です。
+
+	bmptn sample.bmp sample.pal
+
+The created VDP palette file contain 16 palettes maximum and one palette has 16 colors.
+When a palette contain 16 consecutive pure brack, just exit at preview palette.
+For example, when first 28 colors is not pure black and other 224 colors are pure black,
+the created file has only 2 palettes = 32 colors.
+ 生成された VDP パレット ファイルには 16 色パレットが最大 16 パレットが含まれます。
+ もしパレットに連続した 16 の黒色が含まれている場合、その直前のパレットで終了します。
+ 例えば最初の 28 色が黒色以外で残りの 224 色が黒色だった場合、
+ 生成されるファイルは 2 パレット = 32 色だけになります。
+
