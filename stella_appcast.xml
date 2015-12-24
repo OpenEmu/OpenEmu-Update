@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>Stella Version 3.9.3</title>
+	    <title>Stella Version 3.9.3.1</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/stella/Stella_3.9.3.html
+	      http://openemu.org/category/releasenotes/stella/Stella_3.9.3.1.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/Stella-Core/releases/download/v3.9.3/Stella_3.9.3.zip"
-		    sparkle:version="3.9.3"
+		    url="https://github.com/OpenEmu/Stella-Core/releases/download/v3.9.3.1/Stella_3.9.3.1.zip"
+		    sparkle:version="3.9.3.1"
 		    type="application/octet-stream"
-		    length="378983"
+		    length="381228"
 	    />
     </item>
   </channel>

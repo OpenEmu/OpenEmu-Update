@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>PPSSPP Version 0.9.9.1</title>
+	    <title>PPSSPP Version 1.1.1</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/ppsspp/PPSSPP_0.9.9.1.html
+	      http://openemu.org/category/releasenotes/ppsspp/PPSSPP_1.1.1.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/PPSSPP-Core/releases/download/v0.9.9.1/PPSSPP_0.9.9.1.zip"
-		    sparkle:version="0.9.9.1"
+		    url="https://github.com/OpenEmu/PPSSPP-Core/releases/download/v1.1.1/PPSSPP_1.1.1.zip"
+		    sparkle:version="1.1.1"
 		    type="application/octet-stream"
-		    length="8430845"
+		    length="8420596"
 	    />
     </item>
   </channel>

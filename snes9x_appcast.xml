@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>SNES9x Version 1.53.3</title>
+	    <title>SNES9x Version 1.53.4</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.sourceforge.net/category/releasenotes/snes9x/SNES9x_1.53.3.html
+	      http://openemu.sourceforge.net/category/releasenotes/snes9x/SNES9x_1.53.4.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Sun, 27 Mar 2011 19:34:07 -0500</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:34:07 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.53.3/SNES9x_1.53.3.zip"
-		    sparkle:version="1.53.3"
+		    url="https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.53.4/SNES9x_1.53.4.zip"
+		    sparkle:version="1.53.4"
 		    type="application/octet-stream"
-		    length="690779"
+		    length="927819"
 	    />
     </item>
   </channel>

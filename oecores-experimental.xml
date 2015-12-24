@@ -7,9 +7,6 @@
 
     <description>Higan emulator</description>
 	<systems>
-		<system id="openemu.system.gb">Game Boy</system>
-		<system id="openemu.system.gba">Game Boy Advance</system>
-		<system id="openemu.system.nes">Nintendo (NES)</system>
 		<system id="openemu.system.snes">Super Nintendo (SNES)</system>
 	</systems>
   </core>
@@ -38,7 +35,7 @@
 		<system id="openemu.system.nes">Nintendo (NES)</system>
 	</systems>
   </core>
-	
+
   <core
     id="org.openemu.gambatte"
     name="Gambatte"
@@ -58,6 +55,7 @@
     <description>Sega Genesis emulator</description>
 	<systems>
 		<system id="openemu.system.sg">Sega Genesis/Mega Drive</system>
+		<system id="openemu.system.scd">Sega CD/Mega CD</system>
 	</systems>
   </core>
 
@@ -231,6 +229,28 @@
     <description>Vectrex emulator</description>
 	<systems>
 		<system id="openemu.system.vectrex">Vectrex</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.bliss"
+    name="Bliss"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/bliss_appcast.xml">
+
+    <description>Intellivision emulator</description>
+	<systems>
+		<system id="openemu.system.intellivision">Intellivision</system>
+	</systems>
+  </core>
+
+  <core
+    id="org.openemu.o2em"
+    name="O2EM"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/o2em_appcast.xml">
+
+    <description>Odyssey2/Videopac emulator</description>
+	<systems>
+		<system id="openemu.system.odyssey2">Odyssey2/Videopac</system>
 	</systems>
   </core>
 

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
   <channel>
-    <title>OpenEmu</title>
-    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/appcast.xml</link>
+    <title>Bliss</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/bliss_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>OpenEmu Version 2.0</title>
+	    <title>Bliss Version 2.1.0</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/rnotes/2.0.html
+	      http://openemu.org/category/releasenotes/Bliss/Bliss_2.1.0.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 12:19:50 -0600</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0/OpenEmu_2.0.zip"
-		    sparkle:version="2.0"
+		    url="https://github.com/OpenEmu/Bliss-Core/releases/download/v2.1.0/Bliss_2.1.0.zip"
+		    sparkle:version="2.1.0"
 		    type="application/octet-stream"
-		    length="36608373"
+		    length="108334"
 	    />
     </item>
   </channel>

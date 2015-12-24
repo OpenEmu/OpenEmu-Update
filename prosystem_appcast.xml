@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>ProSystem Version 1.3.0.1</title>
+	    <title>ProSystem Version 1.4</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/prosystem/ProSystem_1.3.0.1.html
+	      http://openemu.org/category/releasenotes/prosystem/ProSystem_1.4.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.3.0.1/ProSystem_1.3.0.1.zip"
-		    sparkle:version="1.3.0.1"
+		    url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4/ProSystem_1.4.zip"
+		    sparkle:version="1.4"
 		    type="application/octet-stream"
-		    length="60075"
+		    length="61517"
 	    />
     </item>
   </channel>

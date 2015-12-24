@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>Atari800 Version 3.1.0</title>
+	    <title>Atari800 Version 3.1.1</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/atari800/Atari800_3.1.0.html
+	      http://openemu.org/category/releasenotes/atari800/Atari800_3.1.1.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/Atari800-Core/releases/download/v3.1.0/Atari800_3.1.0.zip"
-		    sparkle:version="3.1.0"
+		    url="https://github.com/OpenEmu/Atari800-Core/releases/download/v3.1.1/Atari800_3.1.1.zip"
+		    sparkle:version="3.1.1"
 		    type="application/octet-stream"
-		    length="225337"
+		    length="165918"
 	    />
     </item>
   </channel>

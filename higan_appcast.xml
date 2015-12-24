@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>Higan Version 0.93.1</title>
+	    <title>Higan Version 0.95</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/higan/Higan_0.93.1.html
+	      http://openemu.org/category/releasenotes/higan/Higan_0.95.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Thu, 15 Nov 2012 19:32:53 -0500</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/Higan-Core/releases/download/v0.93.1/Higan_0.93.1.zip"
-		    sparkle:version="0.93.1"
+		    url="https://github.com/OpenEmu/Higan-Core/releases/download/v0.95/Higan_0.95.zip"
+		    sparkle:version="0.95"
 		    type="application/octet-stream"
-		    length="758843"
+		    length="792570"
 	    />
     </item>
   </channel>

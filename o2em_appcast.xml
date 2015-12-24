@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
   <channel>
-    <title>OpenEmu</title>
-    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/appcast.xml</link>
+    <title>O2EM</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/o2em_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>      
     <item>
-	    <title>OpenEmu Version 2.0</title>
+	    <title>O2EM Version 1.18</title>
 	    <sparkle:releaseNotesLink>
-	      http://openemu.org/rnotes/2.0.html
+	      http://openemu.org/category/releasenotes/O2EM/O2EM_1.18.html
 	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 12:19:50 -0600</pubDate>
+	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
 	    <enclosure
-		    url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0/OpenEmu_2.0.zip"
-		    sparkle:version="2.0"
+		    url="https://github.com/OpenEmu/O2EM-Core/releases/download/v1.18/O2EM_1.18.zip"
+		    sparkle:version="1.18"
 		    type="application/octet-stream"
-		    length="36608373"
+		    length="40647"
 	    />
     </item>
   </channel>
