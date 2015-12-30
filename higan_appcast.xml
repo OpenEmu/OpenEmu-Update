@@ -4,19 +4,19 @@
     <title>Higan</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/higan_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>Higan Version 0.95</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/higan/Higan_0.95.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/Higan-Core/releases/download/v0.95/Higan_0.95.zip"
-		    sparkle:version="0.95"
-		    type="application/octet-stream"
-		    length="792570"
-	    />
+      <title>Higan Version 0.95</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/higan/Higan_0.95.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/Higan-Core/releases/download/v0.95/Higan_0.95.zip"
+        sparkle:version="0.95"
+        type="application/octet-stream"
+        length="792570"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

@@ -4,19 +4,19 @@
     <title>ProSystem</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/prosystem_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>ProSystem Version 1.4</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/prosystem/ProSystem_1.4.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4/ProSystem_1.4.zip"
-		    sparkle:version="1.4"
-		    type="application/octet-stream"
-		    length="61517"
-	    />
+      <title>ProSystem Version 1.4</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/prosystem/ProSystem_1.4.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4/ProSystem_1.4.zip"
+        sparkle:version="1.4"
+        type="application/octet-stream"
+        length="61517"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

@@ -4,19 +4,19 @@
     <title>GenesisPlus</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/genesisplus_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>GenesisPlus Version 1.7.4.3</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/genesisplus/GenesisPlus_1.7.4.3.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:38:18 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.3/GenesisPlus_1.7.4.3.zip"
-		    sparkle:version="1.7.4.3"
-		    type="application/octet-stream"
-		    length="559617"
-	    />
+      <title>GenesisPlus Version 1.7.4.3</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/genesisplus/GenesisPlus_1.7.4.3.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:38:18 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.3/GenesisPlus_1.7.4.3.zip"
+        sparkle:version="1.7.4.3"
+        type="application/octet-stream"
+        length="559617"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

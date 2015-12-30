@@ -4,19 +4,19 @@
     <title>VecXGL</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/vecxgl_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>VecXGL Version 1.2.1</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/vecxgl/VecXGL_1.2.1.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/VecXGL-Core/releases/download/v1.2.1/VecXGL_1.2.1.zip"
-		    sparkle:version="1.2.1"
-		    type="application/octet-stream"
-		    length="41782"
-	    />
+      <title>VecXGL Version 1.2.1</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/vecxgl/VecXGL_1.2.1.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/VecXGL-Core/releases/download/v1.2.1/VecXGL_1.2.1.zip"
+        sparkle:version="1.2.1"
+        type="application/octet-stream"
+        length="41782"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

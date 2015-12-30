@@ -8,7 +8,7 @@
         file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/wall_jump_ninja_20150115_v1_0_NTSC.a26"
         released  = "1421283600"
         added     = "1417395600"
-        md5		 = "3c56c0c5f6f97850ed0aa7bcc2a4e30e"
+        md5       = "3c56c0c5f6f97850ed0aa7bcc2a4e30e"
         >
         <description>As a ninja, you already have many skills. But there are many more to learn. Today you will learn the legendary technique of the wall jump. Use it wisely, or face certain doom at the hands of the death beam.
         </description>
@@ -28,7 +28,7 @@
         file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/Classic%20Kong%20Complete%20(U).smc"
         released  = "1347930000"
         added     = "1417395600"
-        md5		 = "34109a821497c892b2bba264acee2045"
+        md5       = "34109a821497c892b2bba264acee2045"
         >
         <description>A remake of the classic arcade game with barrel jumping and ladder climbing madness for the SNES.
         </description>
@@ -49,7 +49,7 @@
         file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/Super%20Bat%20Puncher%20Demo.nes"
         released  = "1306890000"
         added     = "1417395600"
-        md5		 = "0ed8f1c66a067a6c74dc7a6f57ca2ea3"
+        md5       = "0ed8f1c66a067a6c74dc7a6f57ca2ea3"
         >
         <description>Explore the deep, dark caverns of a mysterious planet and find out about the plague that threatens Earth.
         </description>
@@ -70,7 +70,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Blinky%20Goes%20Up/Blinky_NTSC.a26"
             released  = "1344992400"
             added     = "1417395600"
-            md5		 = "42dda991eff238d26669fd33e353346d"
+            md5       = "42dda991eff238d26669fd33e353346d"
             >
             <description>One day Blinky finds himself at the bottom of a dark dungeon and there's only one way out... up!
             </description>
@@ -90,7 +90,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/D.K.VCS_PRGE_151015_NTSC.a26"
             released  = "1445302800"
             added     = "1417395600"
-            md5		 = "8ee4909b0e1031e6984e2892d2483444"
+            md5       = "8ee4909b0e1031e6984e2892d2483444"
             >
             <description>Donkey Kong VCS is a new conversion of the original arcade game for the Atari 2600 video computer system. Sporting 32K of ROM, this version for the first time features all four arcade stages as well as all cut-scenes.  Additionally, the game includes multi-colored graphics plus arcade quality animations and sounds!
             </description>
@@ -110,7 +110,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Duck%20Attack!/DUCKNTSC.a26"
             released  = "1277946000"
             added     = "1417395600"
-            md5		 = "a4a333bb59cf16146e8008361560413d"
+            md5       = "a4a333bb59cf16146e8008361560413d"
             >
             <description>The object of the game is to collect enough eggs to advance to the next level, while avoiding the mutant, fire-breathing ducks, and other deadly objects. Duck Attack! is an impressive exploration adventure game, squeezing every last ounce of power out of the Atari 2600's modest hardware.
             </description>
@@ -130,7 +130,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Halo%202600/Halo2600_Final.a26"
             released  = "1277946000"
             added     = "1417395600"
-            md5		 = "4afa7f377eae1cafb4265c68f73f2718"
+            md5       = "4afa7f377eae1cafb4265c68f73f2718"
             >
             <description>Players control Master Chief in a non-scrolling exploration game with rooms to explore and a variety of enemies to shoot. The Chief faces a variety of enemies across 64 playfields, and must find hidden keys to unlock the game's force-fields in order to reach the final boss encounter. But first, he needs a weapon...
             </description>
@@ -150,7 +150,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Hunger%20Shark/hungershark.0.2.4.a26"
             released  = "1392166800"
             added     = "1417395600"
-            md5		 = "919278fc296daeca578376d542166d8c"
+            md5       = "919278fc296daeca578376d542166d8c"
             >
             <description>In Hunger Shark you play as a shark with an insatiable appetite. Eat people to avoid starvation, but watch out for that pesky Coast Guard!
             </description>
@@ -170,7 +170,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Incoming!/Incoming1.02_NTSC.a26"
             released  = "1256086800"
             added     = "1417395600"
-            md5		 = "331e3c95f7c5d2e7869301d070b7de76"
+            md5       = "331e3c95f7c5d2e7869301d070b7de76"
             >
             <description>An artillery shooting game that can be played between two players or versus the computer. Destroy the other player's tank by firing shells across the board and hitting them.
             </description>
@@ -190,7 +190,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Lady%20Bug/ladybug_FINAL_NTSC.a26"
             released  = "1156640400"
             added     = "1417395600"
-            md5		 = "a7c1fb4bb81f4a3317734aa6843fe029"
+            md5       = "a7c1fb4bb81f4a3317734aa6843fe029"
             >
             <description>Clear the maze of all the dots while avoiding up to four insects. Once all four insects have entered the maze, a bonus vegetable appears in the middle. Eating this veggie not only earns big points, but also freezes the insects for a few seconds. Also appearing in the maze are hearts that increase the bonus multiplier and letters that can be used to spell EXTRA for a bonus ladybug or SPECIAL to earn a round in the bounty harvest maze full of vegetables to eat! If the insects start to gain on the ladybug, she can use the revolving doors to block their attack as she tries to clear each maze.
             </description>
@@ -210,7 +210,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Oystron/OYSTR29.a26"
             released  = "881888400"
             added     = "1417395600"
-            md5		 = "91f0a708eeb93c133e9672ad2c8e0429"
+            md5       = "91f0a708eeb93c133e9672ad2c8e0429"
             >
             <description>Your objective in Oystron is to shoot the Space Oysters and convert them to pearls, collecting the pearls and then depositing them into the Pearls Zone. Enemies will attempt to steal the pearls once they reach the left edge of the screen, so you must act quickly!
             </description>
@@ -230,7 +230,7 @@
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Pac-Man%204K/pacman4K_NTSC.a26"
             released  = "1184720400"
             added     = "1417395600"
-            md5		 = "6e88da2b704916eb04a998fed9e23a3e"
+            md5       = "6e88da2b704916eb04a998fed9e23a3e"
             >
             <description>Gobble your way through the maze of Pac-Land, chomping on dots and avoiding the four hungry monsters, Blinky, Pinky, Inky and Clyde. But if you can manage to eat an energizer, turn the tables on those monsters by feasting on them for bonus points!
 
@@ -252,7 +252,7 @@ Dennis Debro sought to create an adaptation of Pac-Man more faithful than Atari'
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Plim/plim61begin.a26"
             released  = "1402534800"
             added     = "1417395600"
-            md5		 = "17c3b009a60a03fb407611327e8f0d9d"
+            md5       = "17c3b009a60a03fb407611327e8f0d9d"
             >
             <description>Aliens have landed and are trying to annoy Frank! Can Frank survive the alien onslaught of annoyingness?
             </description>
@@ -272,7 +272,7 @@ Dennis Debro sought to create an adaptation of Pac-Man more faithful than Atari'
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Princess%20Rescue/PrincessRescue_Final_NTSC.a26"
             released  = "1375232400"
             added     = "1417395600"
-            md5		 = "104468e44898b8e9fa4a1500fde8d4cb"
+            md5       = "104468e44898b8e9fa4a1500fde8d4cb"
             >
             <description>Save the princess in this familiar platform game through 16 challenging scrolling levels!
 
@@ -294,7 +294,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Stay%20Frosty%202/SF2_demo_NTSC.a26"
             released  = "1387933200"
             added     = "1417395600"
-            md5		 = "73a85f7773ea2694c6c70ff672ded5ce"
+            md5       = "73a85f7773ea2694c6c70ff672ded5ce"
             >
             <description>Everybody's favorite fabled frosty firefighter is back! But so are those pesky fireballs, and they're hotter than ever! This year they've kidnapped Santa and some of his helpers, so it's up to you to put out the fireballs and rescue your friends from their fiery fate.
             </description>
@@ -314,7 +314,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Swoops!/Swoops!%20(v0.96).a26"
             released  = "1127178000"
             added     = "1417395600"
-            md5		 = "278f14887d601b5e5b620f1870bc09f6"
+            md5       = "278f14887d601b5e5b620f1870bc09f6"
             >
             <description>A collection of three challenging and addicting 1K minigames. Navigate a helicopter through a treacherous cave at a nail-biting pace while avoiding obstacles (Cave 1K), bounce a ball jumping from platform to platform without falling off (Splatform 2600) and survive falling down an endless tunnel at ever increasing speeds (Crash 'n' Dive)!
             </description>
@@ -334,7 +334,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Thrust/Thrust%20v1.27%20(PD).a26"
             released  = "1072918800"
             added     = "1417395600"
-            md5		 = "5e43c0391f7412ae64fae6f3742d6ee9"
+            md5       = "5e43c0391f7412ae64fae6f3742d6ee9"
             >
             <description>Thrust is a very impressive port of the popular Commodore 64 game of the same name. You must infiltrate each planet and steal the Klystron Pod then return to space while avoiding gun fire and maintaining a supply of fuel. The game features realistic gravity physics and requires a careful hand to guide your ship into the tunnels without crashing.
             </description>
@@ -354,7 +354,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Wall%20Jump%20Ninja/wall_jump_ninja_20150115_v1_0_NTSC.a26"
             released  = "1421283600"
             added     = "1417395600"
-            md5		 = "3c56c0c5f6f97850ed0aa7bcc2a4e30e"
+            md5       = "3c56c0c5f6f97850ed0aa7bcc2a4e30e"
             >
             <description>As a ninja, you already have many skills. But there are many more to learn. Today you will learn the legendary technique of the wall jump. Use it wisely, or face certain doom at the hands of the death beam.
             </description>
@@ -375,7 +375,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Apple%20Snaffle/AppleSnaffle_23_07_10.1.30.a78"
             released  = "1280797200"
             added     = "1417395600"
-            md5		 = "72b811415a58ea7248101144f4e18282"
+            md5       = "72b811415a58ea7248101144f4e18282"
             >
             <description>A Boulder Dash clone where you dig tunnels, avoid falling rocks and collect apples before time runs out.
             </description>
@@ -395,7 +395,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Astro%20Blaster/AstBlstr.A78"
             released  = "1391216400"
             added     = "1417395600"
-            md5		 = "015c390cc439aa9b00383ee07fe9976d"
+            md5       = "015c390cc439aa9b00383ee07fe9976d"
             >
             <description>A port of the arcade game of the same name. In Astro Blaster, one or two players must advance through squadrons of alien ships in an attempt to dock with the mother ship. Players move their ship left or right and shoot at attacking squadrons. A special warp button allows the player to slow down the alien space ships and their laser fire, while maintaining his/her own ship and laser fire at normal speed.
             </description>
@@ -415,7 +415,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Beef%20Drop/bd7800demo.a78"
             released  = "1160874000"
             added     = "1417395600"
-            md5		 = "02d31c1d9f37455dfb03ac641eb19e16"
+            md5       = "02d31c1d9f37455dfb03ac641eb19e16"
             >
             <description>Score as many points as possible by making hamburgers. To do so, Chef Pete must completely walk over each ingredient (buns, patties, lettuce, and more) in order to drop it to the next level. When all of the ingredients reach the tray at the bottom of the screen, the hamburger is complete! Assemble all four hamburgers to advance to the next round.
             </description>
@@ -435,7 +435,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Bentley%20Bear/Bentley.a78"
             released  = "1383267600"
             added     = "1417395600"
-            md5		 = "19f3d52546c452535b471076eae74701"
+            md5       = "19f3d52546c452535b471076eae74701"
             >
             <description>A platformer inspired by the Sega classic Wonderboy starring Bentley Bear from another classic arcade game, Atari's Crystal Castles.
             </description>
@@ -455,7 +455,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/bonQ/bonQ.a78"
             released  = "1181955600"
             added     = "1417395600"
-            md5		 = "69494cf12a6e82e5175f83fe3d071362"
+            md5       = "69494cf12a6e82e5175f83fe3d071362"
             >
             <description>Play by jumping on cubes, jumping on green objects, and luring the Snake to his death. When all of the cubes have been changed to the "change to" color, you will advance to the next round. After every four rounds you will advance to the next level. Later levels require jumping on cubes multiple times and the cubes will change in different color sequences, increasing the challenge of advancing to the next round.
             </description>
@@ -475,7 +475,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Dungeon%20Stalker/DungeonStalker_Final.a78"
             released  = "1445475600"
             added     = "1417395600"
-            md5		 = "eff3eb9f14d93b128f2c52524e938218"
+            md5       = "eff3eb9f14d93b128f2c52524e938218"
             >
             <description>Get ready for an exciting run through a dangerous dungeon. You will encounter waves of enemies that pursue you relentlessly. There's no way out... It's you against them until the end!
             </description>
@@ -495,7 +495,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/FailSafe/FAILSAFE.A78"
             released  = "1233450000"
             added     = "1417395600"
-            md5		 = "67f25b1eef9f50bfa81cfebe86e89424"
+            md5       = "67f25b1eef9f50bfa81cfebe86e89424"
             >
             <description>Make your way through five different terrains in search of the Depot where you will pick up Fail-Safe clues. One letter in the code, in its correct position, appears in the center of your fuel gauge. The sixth terrain is the most dangerous of all - the missile silo is heavily guarded by all enemies, including a mine field! If you make your way past that, you will have to enter the four-digit hexadecimal code to stop the launch and save the world. Do that, and you will start over in a more difficult environment.
             </description>
@@ -515,7 +515,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Meteor%20Shower/MeteorSh.A78"
             released  = "1306026000"
             added     = "1417395600"
-            md5		 = "21d1caaeca24e023fad3df23b452b93a"
+            md5       = "21d1caaeca24e023fad3df23b452b93a"
             >
             <description>Meteors are falling to Earth! Defend Earth's surface by blasting away at the falling rocks... But beware! Alien forces have learned what was happening and are taking advantage of our vulnerability to attack us!
             </description>
@@ -535,7 +535,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Pac-Man%20Collection/Pac-Man%20Collection%20(Pokey).a78"
             released  = "1138755600"
             added     = "1417395600"
-            md5		 = "8257d90a71d7b7a726c1a69403b1bdef"
+            md5       = "8257d90a71d7b7a726c1a69403b1bdef"
             >
             <description>The ultimate collection of a various official (and some not so official) releases of one of the most popular games in history. Featuring eight different game types (Pac-Man, Puck-Man, Ultra Pac-Man, Random Mazes Pac-Man, Hangly Man, Ms. Pac-Man, Ms. Pac-Attack, Ms. Random Mazes Pac-Man) and two modes (Plus and Fast) that add increased difficultly, speed, maze variation and bonuses.
             </description>
@@ -555,7 +555,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Scramble/Scramble.A78"
             released  = "1328058000"
             added     = "1417395600"
-            md5		 = "8ac39665c208638850a29952c630ddc1"
+            md5       = "8ac39665c208638850a29952c630ddc1"
             >
             <description>Each round consists of five stages and a 'base', or final, stage. Destroy any targets on the ground, or in the air. You can (and should) destroy Rockets, UFOs, Fuel tanks (to give you more fuel), Bonus Items, and the Base itself at the very end. You cannot, however, destroy Meteors and should avoid them at all costs.
             </description>
@@ -575,7 +575,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Super%20Circus%20AtariAge/SUPERCIR.A78"
             released  = "1281402000"
             added     = "1417395600"
-            md5		 = "30cce141c5d13bacd4b43b8ddcb819c0"
+            md5       = "30cce141c5d13bacd4b43b8ddcb819c0"
             >
             <description>How good are your reflexes? As the clown bounces around in different directions you try to catch him on the teeter-totter. Send him up to the top of the big top to pop red, yellow and blue balloons worth different points. The harder the pop, the more you score!
             </description>
@@ -595,7 +595,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/salvo.bas.a78"
             released  = "1445475600"
             added     = "1417395600"
-            md5		 = "a99bb8f7d0175adf38d0aa900d092e90"
+            md5       = "a99bb8f7d0175adf38d0aa900d092e90"
             >
             <description>Shoot the enemies, and avoid being shot. After some time passes in the level, humanoids will begin appearing. Your enemies will kill the humanoids if they touch them, but if you run into the humanoids they will follow you. Keep them safe until the end of the level. Refuel your ammunition when an alarm sounds and more appears. Every 2 rounds you will reach the challenging stage, where 4 waves of enemies will race across the screen in patterns. If you shoot all 44 enemies you will earn an extra life.
             </description>
@@ -615,7 +615,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/Worm!/worm!.07_03_10.1.16.a78"
             released  = "1267405200"
             added     = "1417395600"
-            md5		 = "407d8305ee6604c2dc727bd774982c35"
+            md5       = "407d8305ee6604c2dc727bd774982c35"
             >
             <description>Help Brian the worm avoid the mushrooms and eat the flowers to escape from the garden. If you eat the mushrooms, bump into a wall or bite yourself you'll lose a life. Every time you eat a flower you get a little longer until you've eaten your fill. Both the flowers and mushrooms are placed in the gardens randomly. As you progress through the game you start each level longer than the last with more flowers to eat and mushrooms to avoid. After a certain number of levels you'll begin to get faster too.
             </description>
@@ -636,7 +636,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/digger_cv.rom"
             released  = "1419469200"
             added     = "1417395600"
-            md5		 = "df2d9c0aa0211ed0365815c8052b828d"
+            md5       = "df2d9c0aa0211ed0365815c8052b828d"
             >
             <description>Welcome to deep underground caves filled with emeralds and gold, but also with hideous monsters determined to catch you. Only legendary diggers can survive long enough to have their name and score printed in golden letters in the records. How long can you last?
             </description>
@@ -647,7 +647,7 @@ Collect power-ups and other items to help you complete your quest while fending 
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Digger/4.png"></image>
             </images>
         </game>
-    
+
         <game
             name      = "GhostBlaster"
             system    = "openemu.system.colecovision"
@@ -656,7 +656,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/GhostBlaster/ghostblasterreva.rom"
             released  = "1233450000"
             added     = "1417395600"
-            md5		 = "3de2007c806a26c4c62cdb47bb3d6a6b"
+            md5       = "3de2007c806a26c4c62cdb47bb3d6a6b"
             >
             <description>The one and only GhostBlaster has to eliminate all of the ghosts and collect gems.
             </description>
@@ -676,7 +676,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Quest%20for%20the%20Golden%20Chalice/quest_golden_chalice_colecovision.rom"
             released  = "1419469200"
             added     = "1417395600"
-            md5		 = "eabcb4a9a1eac2c6f8a7d002987d9e55"
+            md5       = "eabcb4a9a1eac2c6f8a7d002987d9e55"
             >
             <description>Guide the Prince as he runs across the kingdom, locating keys, a sword and other assorted objects, in an effort to locate the Golden Chalice and carry it back home. Don't let the dragons get too close, or they will have the Prince for lunch! Also be wary of the giant bat, who will steal objects and move them around, causing the Prince additional headaches!
             </description>
@@ -696,7 +696,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Sky%20Jaguar/JA_13.rom"
             released  = "1075597200"
             added     = "1417395600"
-            md5		 = "50b88196194bb3f1c87ea5f6b8e0ab7e"
+            md5       = "50b88196194bb3f1c87ea5f6b8e0ab7e"
             >
             <description>A port of the MSX original. When a weakened and vulnerable Earth is invaded by the vicious Zephyr army, the planet's only hope is a fleet of powerful ships, the Sky Jaguars. It'll take sharp reflexes and amazing skill to survive the Zephyrians' unrelenting assault... can you last long enough to discover and destroy the enemy's hidden headquarters?
             </description>
@@ -716,7 +716,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/COLECOVISION/Yie%20Ar%20Kung-Fu/KU_13.rom"
             released  = "1107219600"
             added     = "1417395600"
-            md5		 = "9620e6aced6991f84d26a9d99ef51543"
+            md5       = "9620e6aced6991f84d26a9d99ef51543"
             >
             <description>A port of the MSX original. In this spin-off of the exciting and innovative arcade game, you'll battle your way to the top of a mysterious palace filled with the world's most dangerous warriors. Can you withstand the might of the Chop Suey Triad Gang and save China from the diabolical Willy Wu? Whatever happens, you'll agree that your ColecoVision has never seen a fight this furious!
             </description>
@@ -737,7 +737,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/anguna.gba"
             released  = "1214182800"
             added     = "1417395600"
-            md5		 = "9d3a663de5228414d7e6cda7244c5d91"
+            md5       = "9d3a663de5228414d7e6cda7244c5d91"
             >
             <description>Anguna is an older-style adventure game, which encourages exploration, and doesn't hold your hand and tell you where to go at every step of the way. Includes 5 dungeons and a large overworld to explore, multiple weapons and items, hidden rooms, secrets, and powerups plus lots of interesting enemies and boss monsters.
             </description>
@@ -757,7 +757,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Another%20World/Another_world.gba"
             released  = "1114650000"
             added     = "1417395600"
-            md5		 = "9cef2ca9fba8a4532629f8c7e7c9ddf8"
+            md5       = "9cef2ca9fba8a4532629f8c7e7c9ddf8"
             >
             <description>A port of the PC classic "Another World/Out of this World" made in collaboration with original creator of the game Eric Chahi.
             </description>
@@ -777,7 +777,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Blast%20Arena%20Advance/blastarenaadvance.gba"
             released  = "1195002000"
             added     = "1417395600"
-            md5		 = "cde17fc4f3d41365cb92dd1187196cd8"
+            md5       = "cde17fc4f3d41365cb92dd1187196cd8"
             >
             <description>Collect as many jittering yellow squares as possible, while avoiding the shrapnel thrown out by the explosions. Using your cunning and skill, ricochet the cursor against the walls of your Game Boy to outwit and evade the deadly shrapnel.
             </description>
@@ -797,7 +797,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/Broken%20Circle%20(2009)(7 Raven Studios)[pd].gba"
             released  = "1244509200"
             added     = "1417395600"
-            md5		 = "420a1cf3e052ec30d3612d7d945c525e"
+            md5       = "420a1cf3e052ec30d3612d7d945c525e"
             >
             <description>A professionally designed turn-based RPG with isometric graphics and high quality battle animations. The developers had difficulty finding an interested publisher, partially because the game's 256Mbit size. After managing to reduce the game to 64Mbits, the GBA was near the end of its lifespan and too late to find a publisher so the game was released as a free download.
             </description>
@@ -817,7 +817,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/Motocross.gba"
             released  = "1176858000"
             added     = "1417395600"
-            md5		 = "8b898cdf54095d09d9be2cfcb43ea040"
+            md5       = "8b898cdf54095d09d9be2cfcb43ea040"
             >
             <description>Originally planned as a commercial GBA release, Motocross Challenge is an "Excitebike" style game that was thankfully released for free by the passionate developers at DHG Games after it was dropped by their publisher.
             </description>
@@ -837,7 +837,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Powerpig/powerpig.gba"
             released  = "1376960400"
             added     = "1417395600"
-            md5		 = "ba7dda66edd51fb758aa1f61af584c1f"
+            md5       = "ba7dda66edd51fb758aa1f61af584c1f"
             >
             <description>Armed with a gravity gun which reloads through collecting coins, you must guide the porky protagonist through the pixelated scenery, gather up as many enemies as possible and make your way to the exit.
             </description>
@@ -857,7 +857,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Reaxion/reaxion.gba"
             released  = "1187658000"
             added     = "1417395600"
-            md5		 = "688d128e11582dbfb4ec5565fb0afae5"
+            md5       = "688d128e11582dbfb4ec5565fb0afae5"
             >
             <description>A challenging puzzler similar to "Lights Out" with 99 levels.
             </description>
@@ -877,7 +877,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Spout/SpoutGBA.gba"
             released  = "1151197200"
             added     = "1417395600"
-            md5		 = "dc9be85f5ada0abeb2ab597d5178f03e"
+            md5       = "dc9be85f5ada0abeb2ab597d5178f03e"
             >
             <description>A port of the original game by Japanese developer Kuni.
 
@@ -899,7 +899,7 @@ Spout is a simple caveflying game. The aim is to get as high as possible, avoidi
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/T2002/T2002.gba"
             released  = "1325466000"
             added     = "1417395600"
-            md5		 = "7aade49b9043d6c1339537f1e91d5a5c"
+            md5       = "7aade49b9043d6c1339537f1e91d5a5c"
             >
             <description>T2002 is a fan project based on the legendary "Turrican" games.
             </description>
@@ -919,7 +919,7 @@ Spout is a simple caveflying game. The aim is to get as high as possible, avoidi
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Uranus%20Zero%20EV/uranus0ev_fix.gba"
             released  = "1048554000"
             added     = "1417395600"
-            md5		 = "03deb68b670ebd258b9d7ef70288a9a2"
+            md5       = "03deb68b670ebd258b9d7ef70288a9a2"
             >
             <description>A vertical scrolling space shoot-em-up.
             </description>
@@ -939,7 +939,7 @@ Spout is a simple caveflying game. The aim is to get as high as possible, avoidi
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Waimanu/WaimanuGBA.gba"
             released  = "1373245200"
             added     = "1417395600"
-            md5		 = "dd849fc5fe36531624d152c0d17e4799"
+            md5       = "dd849fc5fe36531624d152c0d17e4799"
             >
             <description>A GBA port of the DS re-imagining of the original "Pengo" game. The little blue penguin Waimanu can push blocks and make them slide to squash Wekas, the evil alien jellies. He can also destroy blocks that cannot be pushed that are against a wall or if there's another block behind them. Wekas can destroy blocks anytime.
             </description>
@@ -959,7 +959,7 @@ Spout is a simple caveflying game. The aim is to get as high as possible, avoidi
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/A%20Werewolf%20Tale/aWerewolfTale.gba"
             released  = "1345338000"
             added     = "1417395600"
-            md5		 = "c43cbd5e71bcda81010fb408819c3ce6"
+            md5       = "c43cbd5e71bcda81010fb408819c3ce6"
             >
             <description>A chaotic puzzle action game!
 
@@ -982,7 +982,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Alter%20Ego/Alter_Ego.nes"
             released  = "1311469200"
             added     = "1417395600"
-            md5		 = "b12d0aefbde9b50eec53884d04d083b5"
+            md5       = "b12d0aefbde9b50eec53884d04d083b5"
             >
             <description>You control a hero who has a phantom twin, his alter ego. When the hero moves, the alter ego moves too in a mirrored fashion. In some levels the movements are mirrored horizontally, in other ones they are mirrored vertically. You can switch between the hero and his alter ego limited number of times in a level.
             </description>
@@ -1002,7 +1002,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Assimilate/assimilate_full_dl.nes"
             released  = "1344128400"
             added     = "1417395600"
-            md5		 = "8fde56dfa8bed4c5e3200ed8bccda9a6"
+            md5       = "8fde56dfa8bed4c5e3200ed8bccda9a6"
             >
             <description>You control an alien spaceship named Ossan. The goal of each level is to maneuver Ossan around a series of deadly projectiles and enemies while kidnapping and assimilating the humans below. Scoop up a human with your tractor beam and use one of four tools to convert them into your alien slave. Then, plant them back in the same building from which you picked them up without dropping them. The level is completed when you have assimilated 100% of the humans.
             </description>
@@ -1022,7 +1022,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid/BattleKid-Demo.nes"
             released  = "1266793200"
             added     = "1417395600"
-            md5		 = "cf75ebc501818119940a6b872e1e0511"
+            md5       = "cf75ebc501818119940a6b872e1e0511"
             >
             <description>Inspired from the indie game "I Wanna be the Guy" and other classic platformers, the game follows the style dubbed Metroidvania in that you do not have stages, but rather one large area to freely explore. You always die in one hit, but there are unlimited continues in the normal difficulty as well as a password system to resume where you last left off.
             </description>
@@ -1042,7 +1042,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Battle%20Kid%202/BattleKid2-NewDemo.nes"
             released  = "1355526000"
             added     = "1417395600"
-            md5		 = "37d15ab83697dce281caee7c3ff2f6dd"
+            md5       = "37d15ab83697dce281caee7c3ff2f6dd"
             >
             <description>The adventure continues! The sequel to the 2010 title Battle Kid: Fortress of Peril. The next phase of the vile group's plan has begun! The Supermech may have been destroyed, but that was only the beginning. You must venture through a giant mountain base and overcome its many dangers. Along the way, items will be found to allow access to new areas and grant you new abilities.
             </description>
@@ -1062,7 +1062,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Blade%20Buster/BladeBuster.nes"
             released  = "1330563600"
             added     = "1417395600"
-            md5		 = "9b38e0826f35f1354fbd15e6639712b2"
+            md5       = "9b38e0826f35f1354fbd15e6639712b2"
             >
             <description>An impressive caravan-style shoot 'em up where you're given a quick burst of 2 minutes to rack up as many points as possible.
             </description>
@@ -1082,7 +1082,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero/dpadhero.nes"
             released  = "1233450000"
             added     = "1417395600"
-            md5		 = "3bb7e838d3c60dc529ade9aa9abb3686"
+            md5       = "3bb7e838d3c60dc529ade9aa9abb3686"
             >
             <description>A rhythm and music game paying homage to favorite NES games and popular music artists featuring chiptune versions of songs.
             </description>
@@ -1102,7 +1102,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/D-Pad%20Hero%202/dpadhero2.nes"
             released  = "1273885200"
             added     = "1417395600"
-            md5		 = "6e60832af3c6826c51f1d5517966f74f"
+            md5       = "6e60832af3c6826c51f1d5517966f74f"
             >
             <description>The sequel to D-Pad Hero is refined and more difficult. This time the game style is changed allowing more buttons and a layout much like Guitar Hero.
             </description>
@@ -1122,7 +1122,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Driar/Driar.nes"
             released  = "1330218000"
             added     = "1417395600"
-            md5		 = "1276bd89a20f343ac230370acdd8d8a0"
+            md5       = "1276bd89a20f343ac230370acdd8d8a0"
             >
             <description>Take control of Driar and collect all the stars on each level to progress. You can walk around the screen (if you exit the screen on the right side you will reappear on the left side) - remember this and use this to your advantage. There are 38 levels in total.
             </description>
@@ -1142,7 +1142,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Lawn%20Mower/Lawn_Mower.nes"
             released  = "1307494800"
             added     = "1417395600"
-            md5		 = "7bb697f710354e1fd9a3a7a91135b461"
+            md5       = "7bb697f710354e1fd9a3a7a91135b461"
             >
             <description>The goal of this game is to mow all the grass before you run out of gas. Collect fuel to keep yourself from running on empty.
             </description>
@@ -1162,7 +1162,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/MineShaft/MineShaft.nes"
             released  = "1327798800"
             added     = "1417395600"
-            md5		 = "c0633d4f9f246604d4a62a00321fb58a"
+            md5       = "c0633d4f9f246604d4a62a00321fb58a"
             >
             <description>Descend down the shaft without falling too far or landing on too many red bars.
             </description>
@@ -1182,7 +1182,7 @@ Your werewolf has the ability to walk on any wall or roof. He can punch, dash an
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Streemerz/streemerz-v02.nes"
             released  = "1359680400"
             added     = "1417395600"
-            md5		 = "ca57b36cd14291624e5864d33884535c"
+            md5       = "ca57b36cd14291624e5864d33884535c"
             >
             <description>"Try climbing to the top of this one by throwing streamers and climbing them. On your way up you better watch out for the various pie throwing clowns, burning candles and bouncing balls, because if they get you, you’ll die a little each time."
 
@@ -1204,7 +1204,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Sir%20Ababol/Sir%20Ababol%20(2013)(The%20Mojon%20Twins)[!].nes"
             released  = "1369616400"
             added     = "1417395600"
-            md5		 = "b4cc3686288e08bab400fdeb594a1440"
+            md5       = "b4cc3686288e08bab400fdeb594a1440"
             >
             <description>Control Sir Ababol accross the Monegrian fields and gather 24 ababol flowers. To be able to progress in your journey you’ll need some keys you will be able to use to open several doors to gain access to different sections. You can jump on the baddies to get rid of them, too. Be patient, think before you jump, and you’ll be successful!
             </description>
@@ -1224,7 +1224,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20Bat%20Puncher/Super%20Bat%20Puncher%20Demo.nes"
             released  = "1306890000"
             added     = "1417395600"
-            md5		 = "0ed8f1c66a067a6c74dc7a6f57ca2ea3"
+            md5       = "0ed8f1c66a067a6c74dc7a6f57ca2ea3"
             >
             <description>Explore the deep, dark caverns of a mysterious planet and find out about the plague that threatens Earth.
             </description>
@@ -1244,7 +1244,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Super%20PakPak/superpakpak.nes"
             released  = "1280624400"
             added     = "1417395600"
-            md5		 = "9f4c7dab70be2af37cadc5be0166023d"
+            md5       = "9f4c7dab70be2af37cadc5be0166023d"
             >
             <description>A very fun 2-4 player Spacewar!/Thrust/Gravity force style game with destructable environments. At least two players are needed to start the game. HOLD button A at the start menu to begin a game. The game will begin after the counter counts to zero. In two player games, you need to get two kills in a round before the level ends. In three or four player games, the level ends when there is only one ship remaining.
             </description>
@@ -1264,7 +1264,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Thwaite/thwaite.nes"
             released  = "1323306000"
             added     = "1417395600"
-            md5		 = "12e266a8da2321b52cdf4e48dcbe3e0c"
+            md5       = "12e266a8da2321b52cdf4e48dcbe3e0c"
             >
             <description>A hippie guitarist who has visited your small town for years has gone rogue and launched ICBMs toward your town. Break out the fireworks that you had been saving for Independence Day, turn them into makeshift anti-ballistic missiles (ABMs), and shoot down the incoming missiles.
             </description>
@@ -1284,7 +1284,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/NES/Zooming%20Secretary/Zooming_Secretary.nes"
             released  = "1325034000"
             added     = "1417395600"
-            md5		 = "c639bd1a3bec2cf6e995c3c0a795fb69"
+            md5       = "c639bd1a3bec2cf6e995c3c0a795fb69"
             >
             <description>Playing the role of a secretary in her trial period at a new job, you have to work your way through an increasingly difficult week without being fired for failing to answer calls on time. When a phone rings, the topic that the call is about is represented by a symbol above the handset - and your task is to run to the matching filing cabinet then answer the call before the phone rings off.
             </description>
@@ -1305,7 +1305,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Barbarian/barbarianCPC.gen"
             released  = "1411606800"
             added     = "1417395600"
-            md5		 = "6ac14b7e9b172cf874c44df06d2bb5b1"
+            md5       = "6ac14b7e9b172cf874c44df06d2bb5b1"
             >
             <description>Remake of the original 1987 fighting game featuring gory two player combat.
             </description>
@@ -1325,7 +1325,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/Chase%20(v1.0b).gen"
             released  = "1407632400"
             added     = "1417395600"
-            md5		 = "3b7c1cb7b22b3049c867dd32e5345068"
+            md5       = "3b7c1cb7b22b3049c867dd32e5345068"
             >
             <description>Help Chase to collect all the coins scattered in every labyrinth of the tower in order to climb to the next floor, if you can reach the floor number ten and collect all the coins in it, you'll have escaped safe from the castle with the legendary loot.
             </description>
@@ -1345,7 +1345,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./FixItFelixJr_AirwalkStudios.gen"
             released  = "1395709200"
             added     = "1417395600"
-            md5		 = "38a3555768b31dc2abfc34d20ef546ca"
+            md5       = "38a3555768b31dc2abfc34d20ef546ca"
             >
             <description>Developers have paved over Ralph's home, building a luxury apartment tower in its place. Now, he's started smashing every window in sight! The residents of Niceland Tower have called upon the expertise of the only man capable of taking on Wreck-It Ralph, and repairing all the damage he's caused: Fit-It Felix Jr.!
 
@@ -1367,7 +1367,7 @@ As Fix-It Felix Jr., you use your magical golden hammer to repair all of the sma
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Glass%20Breaker%20MD/GBMD.gen"
             released  = "1385254800"
             added     = "1417395600"
-            md5		 = "0d2500e886988979a3f763b2eeba8fae"
+            md5       = "0d2500e886988979a3f763b2eeba8fae"
             >
             <description>Objective of this game is to break all the windows on the house. It is not the easiest task because the inhabitants don't let you do it so easily. You will encounter 5 enemies, each level adds one.
             </description>
@@ -1387,7 +1387,7 @@ As Fix-It Felix Jr., you use your magical golden hammer to repair all of the sma
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Oh%20Mummy/Oh%20Mummy%20Genesis%20(2013)(Fase Bonus)[pd].gen"
             released  = "1369011600"
             added     = "1417395600"
-            md5		 = "c97812258bbfa2567e58dcb2073e1f4a"
+            md5       = "c97812258bbfa2567e58dcb2073e1f4a"
             >
             <description>Revive the classic 8-bit computer game in a new remake full of surprises. New pyramids have been discovered, but there are fearsome guardians guarding inside. Help the archaeologist Lance Colton and his partner Eve Chou to find all the treasures and get out alive!
             </description>
@@ -1407,7 +1407,7 @@ As Fix-It Felix Jr., you use your magical golden hammer to repair all of the sma
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Project%20MD/projmd-20120429.gen"
             released  = "1335661200"
             added     = "1417395600"
-            md5		 = "44443e1bf4e989c8538202c513b02e64"
+            md5       = "44443e1bf4e989c8538202c513b02e64"
             >
             <description>Stephany is a Mega Drive fangirl. She's shy, but also smart. She built a virtual world inside her computer. This virtual world is called &quot;Project MD&quot;. This is a day inside that virtual world...
 
@@ -1429,7 +1429,7 @@ Welcome to Project MD.
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/rickdangerous.gen"
             released  = "1297731600"
             added     = "1417395600"
-            md5		 = "43bad22212aa9177f8aa0e1666530a5c"
+            md5       = "43bad22212aa9177f8aa0e1666530a5c"
             >
             <description>A faithful port of the original 1989 Atari ST version.
 
@@ -1453,7 +1453,7 @@ Controls: B + UP = Shoot Gun, B + DOWN = Set Dynamite, B + LEFT/RIGHT = Jab with
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Sumo%20Slam!/Sumo%20Slam!%20v1.0%20(2013)(SegaMan)[pd].gen"
             released  = "1388192400"
             added     = "1417395600"
-            md5		 = "aba9035c4712d06ef9c4df60db50164a"
+            md5       = "aba9035c4712d06ef9c4df60db50164a"
             >
             <description>Play as a sumo wrestler in 4 different game modes (eating sushi, escape from bees, slam, king of the hill) using just one button to move your spinning wrestler.
             </description>
@@ -1474,7 +1474,7 @@ Controls: B + UP = Shoot Gun, B + DOWN = Set Dynamite, B + LEFT/RIGHT = Jab with
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Bruce%20Lee/BruceLee-SMS-1.00.sms"
             released  = "1425430800"
             added     = "1417395600"
-            md5		 = "6d68c6fdff41aff161b45af42cbfe390"
+            md5       = "6d68c6fdff41aff161b45af42cbfe390"
             >
             <description>An attempt at recreating the classic Atari800/C64/Spectrum game "Bruce Lee" for the Master System.
 
@@ -1496,7 +1496,7 @@ Collect the lamps and fight Green Yamo and the Ninja!
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/DARC/DARC.sms"
             released  = "1332810000"
             added     = "1417395600"
-            md5		 = "466f43446d151b9e6793212d5ce8c373"
+            md5       = "466f43446d151b9e6793212d5ce8c373"
             >
             <description>A jetpack shooter game inspired by "Air Fortress" (NES), "H.E.R.O." and "Hero Core" (PC) where you can fly and shoot in separate directions. Each of the gamepad keys represent a shooting direction. Your goal is to infiltrate the alien fortress. Destroy the cores to disable force fields and advance through the game. During the game your shooting level will increase. As your level increases you will be able to destroy the blue and red crates found in the levels.
             </description>
@@ -1516,7 +1516,7 @@ Collect the lamps and fight Green Yamo and the Ninja!
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gekioko%20PunPun%20Maru/punpun_20151031b.sms"
             released  = "1387069200"
             added     = "1417395600"
-            md5		 = "df2466108c54a3c1f1aeba7bb8ea871f"
+            md5       = "df2466108c54a3c1f1aeba7bb8ea871f"
             >
             <description>A difficult arcade style platformer based on a Japanese meme roughly meaning "being angry" in a cute way, you destroy enemy ninjas and birds by huffing angry puffs of steam up at them.
             </description>
@@ -1536,7 +1536,7 @@ Collect the lamps and fight Green Yamo and the Ninja!
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Gravity%20Beam%20-%20Master%20Gaiden/GravityBeamMasterGaiden_20130411_MathewCarr.sms"
             released  = "1365642000"
             added     = "1417395600"
-            md5		 = "f98f466bac62f6b5424b4b6e28350a92"
+            md5       = "f98f466bac62f6b5424b4b6e28350a92"
             >
             <description>Negotiate the caverns of Mars and locate the nuclear device. Engage your ship's GRAVITY BEAM to attach the device to your ship. Carry it back through the caves and out into space, where it can then be detonated safely.
             </description>
@@ -1556,7 +1556,7 @@ Collect the lamps and fight Green Yamo and the Ninja!
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun/KunKun%20&amp;%20KokoKun%202%20-%20Return%20of%20the%20Kun%20%5Bv0.99%5D.sms"
             released  = "1295053200"
             added     = "1417395600"
-            md5		 = "4d8eb720875887fb012b95ee60d282c2"
+            md5       = "4d8eb720875887fb012b95ee60d282c2"
             >
             <description>A tribute to old school arcade games: it is cute, short, yet difficult and unforgiving.
 
@@ -1581,7 +1581,7 @@ KunKun has to go and save KokoKun.
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Lander2/lander2_v0C.sms"
             released  = "1427418000"
             added     = "1417395600"
-            md5		 = "d713e605fe9718a304c391e0c42c6cb8"
+            md5       = "d713e605fe9718a304c391e0c42c6cb8"
             >
             <description>Safely land your rocket on landing areas (horizontal with red dots) without using all your fuel.
             </description>
@@ -1601,7 +1601,7 @@ KunKun has to go and save KokoKun.
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SMS/Ono/ono%20%5Bv1.01%5D.sms"
             released  = "1240275600"
             added     = "1417395600"
-            md5		 = "e8045bbddf7aa93b6341a93c26234be5"
+            md5       = "e8045bbddf7aa93b6341a93c26234be5"
             >
             <description>One day, some evil colored circles started appearing around the edges of your world. When your bullets hit them, some of their color fell off onto the ground. When your bullets hit them some more, they split into two smaller circles! And when you shot them, they split too! But the tiniest colored circles didn't split, they just ran out of color and disappeared.
             </description>
@@ -1622,7 +1622,7 @@ KunKun has to go and save KokoKun.
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Classic%20Kong%20Complete/Classic%20Kong%20Complete%20(U).smc"
             released  = "1347930000"
             added     = "1417395600"
-            md5		 = "34109a821497c892b2bba264acee2045"
+            md5       = "34109a821497c892b2bba264acee2045"
             >
             <description>A remake of the classic arcade game with barrel jumping and ladder climbing madness for the SNES.
             </description>
@@ -1642,7 +1642,7 @@ KunKun has to go and save KokoKun.
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Jet%20Pilot%20Rising/Jet%20Pilot%20Rising.sfc"
             released  = "1388019600"
             added     = "1417395600"
-            md5		 = "3cc707a5072ce9409f788e9fb905cb20"
+            md5       = "3cc707a5072ce9409f788e9fb905cb20"
             >
             <description>Pilot a rocket-riding cat past obstacles to collect coins. Featuring excellent visuals and a chiptune soundtrack.
             </description>
@@ -1662,10 +1662,10 @@ KunKun has to go and save KokoKun.
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/MazezaM%20Challenge/MazezaM.sfc"
             released  = "1348794000"
             added     = "1417395600"
-            md5		 = "dddaf6b133ef16c19a253b5465517513"
+            md5       = "dddaf6b133ef16c19a253b5465517513"
             >
             <description>MazezaM Challenge (pronounced "may-zam") is a simple puzzle game based on MazezaM from Malcolm Tyrrell.
-                
+
 You enter the mazezam on the left and you have to get to the exit on the right by pushing rows of blocks left and right. If you get stuck you can retry the mazezam, but this will cost you a life.
             </description>
             <images>
@@ -1684,7 +1684,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/N-Warp%20Daisakusen/N-Warp%20Daisakusen%20V1.1.smc"
             released  = "1242349200"
             added     = "1417395600"
-            md5		 = "e6c5d532286ea248cea10d878df20a70"
+            md5       = "e6c5d532286ea248cea10d878df20a70"
             >
             <description>A deathmatch minigame for 2-8 players. Compete for first place by beating and kicking each other.
             </description>
@@ -1704,7 +1704,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Skipp%20and%20Friends/SAF.smc"
             released  = "1244422800"
             added     = "1417395600"
-            md5		 = "06311a0076edb40702a557de4ba1e2f7"
+            md5       = "06311a0076edb40702a557de4ba1e2f7"
             >
             <description>Move all three characters to the EXIT in each level. Each player has 2 limited special abilities that you may use to help advance through the level. The in-game status bar displays the name of each ability and how many times it can be used during that level.
             </description>
@@ -1724,7 +1724,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SNES/Uwol/UwolQuestForMoney.sfc"
             released  = "1345338000"
             added     = "1417395600"
-            md5		 = "50b5d42790301503b55f45ba4739ef9a"
+            md5       = "50b5d42790301503b55f45ba4739ef9a"
             >
             <description>Port of the original game by The Mojon Twins. Features 55 levels where you must steal coins from a manor that is haunted by monsters.
             </description>
@@ -1745,7 +1745,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Bug%20Hunt/Neo_Bug_Hunt.pce"
             released  = "1376960400"
             added     = "1417395600"
-            md5		 = "c72dbc8a0f06ddd26b4d4e8bae0dc70f"
+            md5       = "c72dbc8a0f06ddd26b4d4e8bae0dc70f"
             >
             <description>Eat bugs while avoiding bees!
             </description>
@@ -1765,7 +1765,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/HuZERO/HuZERO_by_Chris_Covell.pce"
             released  = "1416531600"
             added     = "1417395600"
-            md5		 = "b14e14493c7c45b8d61c160236ac0f85"
+            md5       = "b14e14493c7c45b8d61c160236ac0f85"
             >
             <description>A futuristic racing game made as a tribute to a great Mode-7 racer on the SNES. This version is a "Summer Caravan" edition which, if you're familiar with Hudson's Caravans, gives you 2 minutes to attain a high score. And not die.
             </description>
@@ -1785,7 +1785,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Reflectron/reflectron.pce"
             released  = "1385859600"
             added     = "1417395600"
-            md5		 = "40540be45e4f802344cfcb9f43b527b0"
+            md5       = "40540be45e4f802344cfcb9f43b527b0"
             >
             <description>Reflectron is a simple, addictive arcade style high-score action game. You are a Biological Entity Remover Node And Repair Droid (or B.E.R.N.A.R.D. for short), working for the evil robot overlord on his deadly mobile space station. Charged with maintaining the primary laser cannon, B.E.R.N.A.R.D has, however, developed something of a conscience. Instead, he has chosen to defy his master and do his best to stop the cannon's DELTA CRYSTAL from charging up by destroying the MEGA PROTONS with his cranial gun. Will he be able to stop the cannon from decimating another innocent world?
             </description>
@@ -1805,7 +1805,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/reflectron.pce"
             released  = "1193706000"
             added     = "1417395600"
-            md5		 = "15107f07c3b7a65a7e784add44349961"
+            md5       = "15107f07c3b7a65a7e784add44349961"
             >
             <description>A puzzle game in the same vein as "Mario's Picross" or "Oekaki Logic" featuring 200 different puzzles.
             </description>

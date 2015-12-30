@@ -4,19 +4,19 @@
     <title>VisualBoyAdvance</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/vba_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>VisualBoyAdvance Version 1.8.0.1232</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/visualboyadvance/VisualBoyAdvance_1.8.0.1232.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:30:09 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/VisualBoyAdvance-Core/releases/download/v1.8.0.1232/VisualBoyAdvance_1.8.0.1232.zip"
-		    sparkle:version="1.8.0.1232"
-		    type="application/octet-stream"
-		    length="531422"
-	    />
+      <title>VisualBoyAdvance Version 1.8.0.1232</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/visualboyadvance/VisualBoyAdvance_1.8.0.1232.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:30:09 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/VisualBoyAdvance-Core/releases/download/v1.8.0.1232/VisualBoyAdvance_1.8.0.1232.zip"
+        sparkle:version="1.8.0.1232"
+        type="application/octet-stream"
+        length="531422"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

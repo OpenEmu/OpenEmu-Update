@@ -4,19 +4,19 @@
     <title>FCEU</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/fceu_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>FCEU Version 2.2.2</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/fceu/FCEU_2.2.2.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:43:50 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/FCEU-Core/releases/download/v2.2.2/FCEU_2.2.2.zip"
-		    sparkle:version="2.2.2"
-		    type="application/octet-stream"
-		    length="348364"
-	    />
+      <title>FCEU Version 2.2.2</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/fceu/FCEU_2.2.2.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:43:50 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/FCEU-Core/releases/download/v2.2.2/FCEU_2.2.2.zip"
+        sparkle:version="2.2.2"
+        type="application/octet-stream"
+        length="348364"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

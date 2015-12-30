@@ -4,19 +4,19 @@
     <title>Bliss</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/bliss_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>Bliss Version 2.1.0</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/Bliss/Bliss_2.1.0.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/Bliss-Core/releases/download/v2.1.0/Bliss_2.1.0.zip"
-		    sparkle:version="2.1.0"
-		    type="application/octet-stream"
-		    length="108334"
-	    />
+      <title>Bliss Version 2.1.0</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/Bliss/Bliss_2.1.0.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/Bliss-Core/releases/download/v2.1.0/Bliss_2.1.0.zip"
+        sparkle:version="2.1.0"
+        type="application/octet-stream"
+        length="108334"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

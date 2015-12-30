@@ -4,19 +4,19 @@
     <title>Yabause</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/yabause_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>Yabause Version 0.9.14</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/yabause/Yabause_0.9.14.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/yabause/releases/download/v0.9.14/Yabause_0.9.14.zip"
-		    sparkle:version="0.9.14"
-		    type="application/octet-stream"
-		    length="325095"
-	    />
+      <title>Yabause Version 0.9.14</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/yabause/Yabause_0.9.14.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/yabause/releases/download/v0.9.14/Yabause_0.9.14.zip"
+        sparkle:version="0.9.14"
+        type="application/octet-stream"
+        length="325095"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>

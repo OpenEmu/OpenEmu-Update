@@ -4,19 +4,19 @@
     <title>OpenEmu</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/appcast-experimental.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>OpenEmu Version 2.0.1</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/rnotes/2.0.1.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Thur, 24 Dec 2015 12:19:50 -0600</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0.1/OpenEmu_2.0.1-experimental.zip"
-		    sparkle:version="2.0.1"
-		    type="application/octet-stream"
-		    length="36638453"
-	    />
+      <title>OpenEmu Version 2.0.1</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/rnotes/2.0.1.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Thur, 24 Dec 2015 12:19:50 -0600</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0.1/OpenEmu_2.0.1-experimental.zip"
+        sparkle:version="2.0.1"
+        type="application/octet-stream"
+        length="36638453"
+      />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
