@@ -4,19 +4,20 @@
     <title>Mupen64Plus</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/mupen64plus_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>Mupen64Plus Version 2.5</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/mupen64plus/Mupen64Plus_2.5.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:30:09 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/Mupen64Plus-Core/releases/download/v2.5/Mupen64Plus_2.5.zip"
-		    sparkle:version="2.5"
-		    type="application/octet-stream"
-		    length="1498239"
-	    />
+      <title>Mupen64Plus Version 2.5</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/mupen64plus/Mupen64Plus_2.5.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:30:09 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/Mupen64Plus-Core/releases/download/v2.5/Mupen64Plus_2.5.zip"
+        sparkle:version="2.5"
+        type="application/octet-stream"
+        length="1498239"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>

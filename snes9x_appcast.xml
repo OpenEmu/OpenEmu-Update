@@ -4,19 +4,20 @@
     <title>SNES9x</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/snes9x_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>SNES9x Version 1.53.4</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.sourceforge.net/category/releasenotes/snes9x/SNES9x_1.53.4.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:34:07 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.53.4/SNES9x_1.53.4.zip"
-		    sparkle:version="1.53.4"
-		    type="application/octet-stream"
-		    length="927819"
-	    />
+      <title>SNES9x Version 1.53.4</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.sourceforge.net/category/releasenotes/snes9x/SNES9x_1.53.4.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:34:07 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.53.4/SNES9x_1.53.4.zip"
+        sparkle:version="1.53.4"
+        type="application/octet-stream"
+        length="927819"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>

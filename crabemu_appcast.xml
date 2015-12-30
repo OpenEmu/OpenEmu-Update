@@ -4,19 +4,20 @@
     <title>CrabEmu</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/crabemu_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>CrabEmu Version 0.2.1.256</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/crabemu/CrabEmu_0.2.1.256.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:40:55 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/CrabEmu-Core/releases/download/v0.2.1.256/CrabEmu_0.2.1.256.zip"
-		    sparkle:version="0.2.1.256"
-		    type="application/octet-stream"
-		    length="108762"
-	    />
+      <title>CrabEmu Version 0.2.1.256</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/crabemu/CrabEmu_0.2.1.256.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:40:55 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/CrabEmu-Core/releases/download/v0.2.1.256/CrabEmu_0.2.1.256.zip"
+        sparkle:version="0.2.1.256"
+        type="application/octet-stream"
+        length="108762"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>

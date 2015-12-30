@@ -4,19 +4,20 @@
     <title>Atari800</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/atari800_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>Atari800 Version 3.1.1</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/atari800/Atari800_3.1.1.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/Atari800-Core/releases/download/v3.1.1/Atari800_3.1.1.zip"
-		    sparkle:version="3.1.1"
-		    type="application/octet-stream"
-		    length="165918"
-	    />
+      <title>Atari800 Version 3.1.1</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/atari800/Atari800_3.1.1.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/Atari800-Core/releases/download/v3.1.1/Atari800_3.1.1.zip"
+        sparkle:version="3.1.1"
+        type="application/octet-stream"
+        length="165918"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>

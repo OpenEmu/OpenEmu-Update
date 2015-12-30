@@ -4,19 +4,20 @@
     <title>Nestopia</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/nestopia_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>Nestopia Version 1.42.5</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/nestopia/Nestopia_1.42.5.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:36:15 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/Nestopia-Core/releases/download/v1.42.5/Nestopia_1.42.5.zip"
-		    sparkle:version="1.42.5"
-		    type="application/octet-stream"
-		    length="696224"
-	    />
+      <title>Nestopia Version 1.42.5</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/nestopia/Nestopia_1.42.5.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:36:15 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/Nestopia-Core/releases/download/v1.42.5/Nestopia_1.42.5.zip"
+        sparkle:version="1.42.5"
+        type="application/octet-stream"
+        length="696224"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>

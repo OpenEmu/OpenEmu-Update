@@ -4,19 +4,20 @@
     <title>O2EM</title>
     <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/o2em_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
-    <language>en</language>      
+    <language>en</language>
     <item>
-	    <title>O2EM Version 1.18</title>
-	    <sparkle:releaseNotesLink>
-	      http://openemu.org/category/releasenotes/O2EM/O2EM_1.18.html
-	    </sparkle:releaseNotesLink>
-	    <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
-	    <enclosure
-		    url="https://github.com/OpenEmu/O2EM-Core/releases/download/v1.18/O2EM_1.18.zip"
-		    sparkle:version="1.18"
-		    type="application/octet-stream"
-		    length="40647"
-	    />
+      <title>O2EM Version 1.18</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/O2EM/O2EM_1.18.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/O2EM-Core/releases/download/v1.18/O2EM_1.18.zip"
+        sparkle:version="1.18"
+        type="application/octet-stream"
+        length="40647"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>
