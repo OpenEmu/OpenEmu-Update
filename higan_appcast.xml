@@ -17,6 +17,7 @@
 		    type="application/octet-stream"
 		    length="792570"
 	    />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
   </channel>
 </rss>
