@@ -1802,7 +1802,7 @@ You enter the mazezam on the left and you have to get to the exit on the right b
             system    = "openemu.system.pce"
             developer = "Chris Covell"
             website   = "http://www.chrismcovell.com/TMLogic.html"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/reflectron.pce"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/PCE/Tonguemans%20Logic/Tongueman's%20Logic%20(FINAL%201.0).pce"
             released  = "1193706000"
             added     = "1417395600"
             md5       = "15107f07c3b7a65a7e784add44349961"
