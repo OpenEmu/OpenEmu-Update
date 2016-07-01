@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Bliss Version 2.1.0</title>
+      <title>Bliss Version 2.1.1</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/Bliss/Bliss_2.1.0.html
+        http://openemu.org/category/releasenotes/Bliss/Bliss_2.1.1.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <pubDate>Fri, 1 Jul 2016 19:32:53 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/Bliss-Core/releases/download/v2.1.0/Bliss_2.1.0.zip"
-        sparkle:version="2.1.0"
+        url="https://github.com/OpenEmu/Bliss-Core/releases/download/v2.1.1/Bliss_2.1.1.zip"
+        sparkle:version="2.1.1"
         type="application/octet-stream"
-        length="108334"
+        length="110382"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>

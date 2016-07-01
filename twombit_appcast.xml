@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>TwoMbit Version 1.0.5.2</title>
+      <title>TwoMbit Version 1.0.5.3</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/twombit/TwoMbit_1.0.5.2.html
+        http://openemu.org/category/releasenotes/twombit/TwoMbit_1.0.5.3.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Dec 2015 19:40:55 -0500</pubDate>
+      <pubDate>Fri, 1 Jul 2016 19:40:55 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/TwoMbit-Core/releases/download/v1.0.5.2/TwoMbit_1.0.5.2.zip"
-        sparkle:version="1.0.5.2"
+        url="https://github.com/OpenEmu/TwoMbit-Core/releases/download/v1.0.5.3/TwoMbit_1.0.5.3.zip"
+        sparkle:version="1.0.5.3"
         type="application/octet-stream"
-        length="125995"
+        length="126389"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>

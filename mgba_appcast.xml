@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
   <channel>
-    <title>ProSystem</title>
-    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/prosystem_appcast.xml</link>
+    <title>mGBA</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/mgba_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>ProSystem Version 1.4.1</title>
+      <title>mGBA Version 0.4.0</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/prosystem/ProSystem_1.4.1.html
+        http://openemu.org/category/releasenotes/mgba/mGBA_0.4.0.html
       </sparkle:releaseNotesLink>
-      <pubDate>Fri, 1 Jul 2016 19:32:53 -0500</pubDate>
+      <pubDate>Fri, 1 Jul 2016 19:30:09 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4.1/ProSystem_1.4.1.zip"
-        sparkle:version="1.4.1"
+        url="https://github.com/OpenEmu/mGBA-Core/releases/download/v0.4.0/mGBA_0.4.0.zip"
+        sparkle:version="0.4.0"
         type="application/octet-stream"
-        length="63452"
+        length="136864"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>

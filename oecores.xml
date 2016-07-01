@@ -242,4 +242,15 @@
       <system id="openemu.system.odyssey2">Odyssey2/Videopac</system>
     </systems>
   </core>
+
+  <core
+    id="org.openemu.mgba"
+    name="mGBA"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/mgba_appcast.xml">
+
+    <description>Game Boy Advance emulator</description>
+    <systems>
+      <system id="openemu.system.gba">Game Boy Advance</system>
+    </systems>
+  </core>
 </cores>

@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>NeoPop Version 1.1</title>
+      <title>NeoPop Version 1.2</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/neopop/NeoPop_1.1.html
+        http://openemu.org/category/releasenotes/neopop/NeoPop_1.2.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Dec 2015 19:38:18 -0500</pubDate>
+      <pubDate>Fri, 1 Jul 2016 19:38:18 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/NeoPop-Core/releases/download/v1.1/NeoPop_1.1.zip"
-        sparkle:version="1.1"
+        url="https://github.com/OpenEmu/NeoPop-Core/releases/download/v1.2/NeoPop_1.2.zip"
+        sparkle:version="1.2"
         type="application/octet-stream"
-        length="82018"
+        length="81107"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>

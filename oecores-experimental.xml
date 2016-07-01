@@ -255,6 +255,17 @@
   </core>
 
   <core
+    id="org.openemu.mgba"
+    name="mGBA"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/mgba_appcast.xml">
+
+    <description>Game Boy Advance emulator</description>
+    <systems>
+      <system id="openemu.system.gba">Game Boy Advance</system>
+    </systems>
+  </core>
+
+  <core
     id="org.openemu.yabause"
     name="Yabause"
     appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/yabause_appcast.xml">
