@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>VecXGL Version 1.2.1</title>
+      <title>VecXGL Version 1.2.2</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/vecxgl/VecXGL_1.2.1.html
+        http://openemu.org/category/releasenotes/vecxgl/VecXGL_1.2.2.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <pubDate>Fri, 8 Jul 2015 19:32:53 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/VecXGL-Core/releases/download/v1.2.1/VecXGL_1.2.1.zip"
-        sparkle:version="1.2.1"
+        url="https://github.com/OpenEmu/VecXGL-Core/releases/download/v1.2.2/VecXGL_1.2.2.zip"
+        sparkle:version="1.2.2"
         type="application/octet-stream"
-        length="41782"
+        length="41156"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
