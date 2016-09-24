@@ -135,10 +135,12 @@
     <description>Mednafen emulator</description>
     <systems>
       <system id="openemu.system.lynx">Atari Lynx</system>
+      <system id="openemu.system.ngp">Neo Geo Pocket</system>
       <system id="openemu.system.pce">TurboGrafx-16/PC Engine/SuperGrafx</system>
       <system id="openemu.system.pcecd">TurboGrafx-CD/PC Engine CD</system>
       <system id="openemu.system.pcfx">PC-FX</system>
       <system id="openemu.system.psx">Sony PlayStation</system>
+      <system id="openemu.system.saturn">Sega Saturn</system>
       <system id="openemu.system.vb">Virtual Boy</system>
       <system id="openemu.system.ws">WonderSwan</system>
     </systems>
