@@ -60,17 +60,6 @@
   </core>
 
   <core
-    id="org.openemu.neopop"
-    name="NeoPop"
-    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/neopop_appcast.xml">
-
-    <description>Neo Geo Pocket emulator</description>
-    <systems>
-      <system id="openemu.system.ngp">Neo Geo Pocket</system>
-    </systems>
-  </core>
-
-  <core
     id="org.openemu.nestopia"
     name="Nestopia"
     appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/nestopia_appcast.xml">
@@ -90,17 +79,6 @@
     <description>Super Nintendo emulator</description>
     <systems>
       <system id="openemu.system.snes">Super Nintendo (SNES)</system>
-    </systems>
-  </core>
-
-  <core
-    id="org.openemu.visualboyadvance"
-    name="Visual Boy Advance"
-    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/vba_appcast.xml">
-
-    <description>Game Boy Advance emulator</description>
-    <systems>
-      <system id="openemu.system.gba">Game Boy Advance</system>
     </systems>
   </core>
 
