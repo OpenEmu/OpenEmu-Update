@@ -87,10 +87,10 @@
             system    = "openemu.system.2600"
             developer = "Andreas Dietrich"
             website   = "http://atariage.com/forums/topic/206497-dk-vcs/"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/D.K.VCS_PRGE_151015_NTSC.a26"
-            released  = "1445302800"
-            added     = "1417395600"
-            md5       = "8ee4909b0e1031e6984e2892d2483444"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Donkey%20Kong%20VCS/D.K.VCS_1.0_170304_NTSC.a26"
+            released  = "1488589200"
+            added     = "1493160656"
+            md5       = "f1ae6305fa33a948e36deb0ef12af852"
             >
             <description>Donkey Kong VCS is a new conversion of the original arcade game for the Atari 2600 video computer system. Sporting 32K of ROM, this version for the first time features all four arcade stages as well as all cut-scenes.  Additionally, the game includes multi-colored graphics plus arcade quality animations and sounds!
             </description>
@@ -593,9 +593,9 @@ Collect power-ups and other items to help you complete your quest while fending 
             developer = "Mike &quot;RevEng&quot; Saarna"
             website   = "http://atariage.com/forums/topic/224469-salvo/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/7800/TME%20Salvo/salvo.bas.a78"
-            released  = "1445475600"
-            added     = "1417395600"
-            md5       = "a99bb8f7d0175adf38d0aa900d092e90"
+            released  = "1473469200"
+            added     = "1493160656"
+            md5       = "668c10974001dc1b02466bdaaa6c7d2b"
             >
             <description>Shoot the enemies, and avoid being shot. After some time passes in the level, humanoids will begin appearing. Your enemies will kill the humanoids if they touch them, but if you run into the humanoids they will follow you. Keep them safe until the end of the level. Refuel your ammunition when an alarm sounds and more appears. Every 2 rounds you will reach the challenging stage, where 4 waves of enemies will race across the screen in patterns. If you shoot all 44 enemies you will earn an extra life.
             </description>
@@ -745,7 +745,7 @@ Collect power-ups and other items to help you complete your quest while fending 
                 <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/1.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/2.png"></image>
                 <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/3.png"></image>
-                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/4.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Anguna/4.PNG"></image>
             </images>
         </game>
 
@@ -793,7 +793,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             name      = "Broken Circle"
             system    = "openemu.system.gba"
             developer = "7 Raven Studios"
-            website   = "http://www.7ravenstudios.com/pages/games/bcdevinfo.php"
+            website   = "https://web-beta.archive.org/web/20160725074819/http://www.7ravenstudios.com/pages/games/bcdevinfo.php"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Broken%20Circle/Broken%20Circle%20(2009)(7 Raven Studios)[pd].gba"
             released  = "1244509200"
             added     = "1417395600"
@@ -813,7 +813,7 @@ Collect power-ups and other items to help you complete your quest while fending 
             name      = "Motocross Challenge"
             system    = "openemu.system.gba"
             developer = "DHG Games"
-            website   = "https://web.archive.org/web/20070405010807/http://www.dhggames.com/"
+            website   = "https://web-beta.archive.org/web/20070405010807/http://www.dhggames.com/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/GBA/Motocross%20Challenge/Motocross.gba"
             released  = "1176858000"
             added     = "1417395600"
@@ -1321,11 +1321,11 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             name      = "Chase"
             system    = "openemu.system.sg"
             developer = "Jack Nolddor"
-            website   = "https://dl.dropboxusercontent.com/u/1383198/SegaRoms/ChaseMD/index.html"
-            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/Chase%20(v1.0b).gen"
-            released  = "1407632400"
-            added     = "1417395600"
-            md5       = "3b7c1cb7b22b3049c867dd32e5345068"
+            website   = "https://gitlab.com/nolddor/chase-md"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Chase/Chase%20(v2.00).gen"
+            released  = "1452992400"
+            added     = "1493160656"
+            md5       = "9aa4a322c442bcc1e974c0676ffbb399"
             >
             <description>Help Chase to collect all the coins scattered in every labyrinth of the tower in order to climb to the next floor, if you can reach the floor number ten and collect all the coins in it, you'll have escaped safe from the castle with the legendary loot.
             </description>
@@ -1341,7 +1341,7 @@ These were the orders given to you, Operative JOE when you were ordered to infil
             name      = "Fix-It Felix Jr."
             system    = "openemu.system.sg"
             developer = "dra600n"
-            website   = "http://www.airwalkstudios.com/affinity/mainsite/downloads/"
+            website   = "https://web-beta.archive.org/web/20150526202022/http://www.airwalkstudios.com/affinity/mainsite/downloads/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Fix-It%20Felix%20Jr./FixItFelixJr_AirwalkStudios.gen"
             released  = "1395709200"
             added     = "1417395600"
@@ -1425,7 +1425,7 @@ Welcome to Project MD.
             name      = "Rick Dangerous"
             system    = "openemu.system.sg"
             developer = "Pascal"
-            website   = "http://www.pascalorama.com/article.php?news=40&amp;cat=25"
+            website   = "http://www.pascalorama.com/rick-dangerous/"
             file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/SG/Rick%20Dangerous/rickdangerous.gen"
             released  = "1297731600"
             added     = "1417395600"
