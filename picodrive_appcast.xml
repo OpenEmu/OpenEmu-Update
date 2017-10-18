@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Picodrive Version 1.91.3</title>
+      <title>Picodrive Version 1.92</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/picodrive/Picodrive_1.91.3.html
+        http://openemu.org/category/releasenotes/picodrive/Picodrive_1.92.html
       </sparkle:releaseNotesLink>
-      <pubDate>Fri, 1 Jul 2016 19:38:18 -0500</pubDate>
+      <pubDate>Tue, 17 Oct 2017 19:38:18 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/picodrive/releases/download/v1.91.3/Picodrive_1.91.3.zip"
-        sparkle:version="1.91.3"
+        url="https://github.com/OpenEmu/picodrive/releases/download/v1.92/Picodrive_1.92.zip"
+        sparkle:version="1.92"
         type="application/octet-stream"
-        length="330213"
+        length="336003"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
