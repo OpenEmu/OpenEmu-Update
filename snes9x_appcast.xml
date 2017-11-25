@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>SNES9x Version 1.54.1.1</title>
+      <title>SNES9x Version 1.55</title>
       <sparkle:releaseNotesLink>
-        http://openemu.sourceforge.net/category/releasenotes/snes9x/SNES9x_1.54.1.1.html
+        http://openemu.sourceforge.net/category/releasenotes/snes9x/SNES9x_1.55.html
       </sparkle:releaseNotesLink>
-      <pubDate>Sun, 9 Apr 2017 19:34:07 -0500</pubDate>
+      <pubDate>Fri, 24 Nov 2017 19:34:07 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.54.1.1/SNES9x_1.54.1.1.zip"
-        sparkle:version="1.54.1.1"
+        url="https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.55/SNES9x_1.55.zip"
+        sparkle:version="1.55"
         type="application/octet-stream"
-        length="941841"
+        length="1058920"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
