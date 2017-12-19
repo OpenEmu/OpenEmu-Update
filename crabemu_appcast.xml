@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>CrabEmu Version 0.2.1.268</title>
+      <title>CrabEmu Version 0.2.1.269</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/crabemu/CrabEmu_0.2.1.268.html
+        http://openemu.org/category/releasenotes/crabemu/CrabEmu_0.2.1.269.html
       </sparkle:releaseNotesLink>
-      <pubDate>Fri, 1 Jul 2016 19:40:55 -0500</pubDate>
+      <pubDate>Mon, 18 Dec 2017 19:40:55 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/CrabEmu-Core/releases/download/v0.2.1.268/CrabEmu_0.2.1.268.zip"
-        sparkle:version="0.2.1.268"
+        url="https://github.com/OpenEmu/CrabEmu-Core/releases/download/v0.2.1.269/CrabEmu_0.2.1.269.zip"
+        sparkle:version="0.2.1.269"
         type="application/octet-stream"
-        length="112009"
+        length="113048"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
