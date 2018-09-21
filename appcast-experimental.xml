@@ -19,6 +19,7 @@
         length="44053255"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+      <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
     </item>
   </channel>
 </rss>
