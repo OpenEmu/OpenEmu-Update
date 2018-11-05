@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>O2EM Version 1.18</title>
+      <title>O2EM Version 1.18.1</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/O2EM/O2EM_1.18.html
+        http://openemu.org/category/releasenotes/O2EM/O2EM_1.18.1.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Dec 2015 19:32:53 -0500</pubDate>
+      <pubDate>Mon, 5 Nov 2018 19:32:53 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/O2EM-Core/releases/download/v1.18/O2EM_1.18.zip"
-        sparkle:version="1.18"
+        url="https://github.com/OpenEmu/O2EM-Core/releases/download/v1.18.1/O2EM_1.18.1.zip"
+        sparkle:version="1.18.1"
         type="application/octet-stream"
-        length="40647"
+        length="39973"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
