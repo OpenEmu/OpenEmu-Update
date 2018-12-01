@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Mupen64Plus Version 2.5.7</title>
+      <title>Mupen64Plus Version 2.5.8</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/mupen64plus/Mupen64Plus_2.5.7.html
+        http://openemu.org/category/releasenotes/mupen64plus/Mupen64Plus_2.5.8.html
       </sparkle:releaseNotesLink>
-      <pubDate>Fri, 5 Oct 2018 19:30:09 -0500</pubDate>
+      <pubDate>Sat, 1 Dec 2018 19:30:09 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/Mupen64Plus-Core/releases/download/v2.5.7/Mupen64Plus_2.5.7.zip"
-        sparkle:version="2.5.7"
+        url="https://github.com/OpenEmu/Mupen64Plus-Core/releases/download/v2.5.8/Mupen64Plus_2.5.8.zip"
+        sparkle:version="2.5.8"
         type="application/octet-stream"
-        length="1047066"
+        length="1047773"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
