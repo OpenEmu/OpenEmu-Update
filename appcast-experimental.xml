@@ -6,17 +6,17 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>OpenEmu Version 2.0.7</title>
+      <title>OpenEmu Version 2.0.8</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/rnotes/2.0.7.html
+        http://openemu.org/rnotes/2.0.8.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 19 Sep 2018 12:19:50 -0600</pubDate>
+      <pubDate>Mon, 3 Dec 2018 12:19:50 -0600</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0.7/OpenEmu_2.0.7-experimental.zip"
-        sparkle:version="2.0.7"
-        sparkle:dsaSignature="MCwCFEpYxANSt5iH++CHQClMHRAV3fggAhR6avY23dqNY6H+ZjWNTRFy/k4zBQ=="
+        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0.8/OpenEmu_2.0.8-experimental.zip"
+        sparkle:version="2.0.8"
+        sparkle:dsaSignature="MCwCFDRQXisjcKQBeFZ7N+YWHmrqQI9cAhR1746Kxr6lXiRgluUPm7FzFNOh3A=="
         type="application/octet-stream"
-        length="44053255"
+        length="44035089"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
       <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
