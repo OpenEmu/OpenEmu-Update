@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Mednafen Version 1.22.2</title>
+      <title>Mednafen Version 1.23.0</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/mednafen/Mednafen_1.22.2.html
+        http://openemu.org/category/releasenotes/mednafen/Mednafen_1.23.0.html
       </sparkle:releaseNotesLink>
-      <pubDate>Thu, 6 Jun 2019 19:40:55 -0500</pubDate>
+      <pubDate>Wed, 23 Oct 2019 19:40:55 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/Mednafen-Core/releases/download/v1.22.2/Mednafen_1.22.2.zip"
-        sparkle:version="1.22.2"
+        url="https://github.com/OpenEmu/Mednafen-Core/releases/download/v1.23.0/Mednafen_1.23.0.zip"
+        sparkle:version="1.23.0"
         type="application/octet-stream"
-        length="5060851"
+        length="5365082"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
