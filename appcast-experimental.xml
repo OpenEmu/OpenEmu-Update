@@ -14,6 +14,7 @@
       <enclosure
         url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.1/OpenEmu_2.1-experimental.zip"
         sparkle:version="2.1"
+        sparkle:dsaSignature="MCwCFAL9rteixlosh0UqD3DwR1Y+iMSwAhQGIBPwUWp3CzRt5hJOyD04g2yuog=="
         type="application/octet-stream"
         length="41740329"
       />
