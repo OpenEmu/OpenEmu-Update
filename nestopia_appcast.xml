@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>Nestopia Version 1.49.0.3</title>
+      <title>Nestopia Version 1.49.0.4</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/nestopia/Nestopia_1.49.0.3.html
+        http://openemu.org/category/releasenotes/nestopia/Nestopia_1.49.0.4.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Oct 2019 19:36:15 -0500</pubDate>
+      <pubDate>Wed, 27 Nov 2019 19:36:15 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/Nestopia-Core/releases/download/v1.49.0.3/Nestopia_1.49.0.3.zip"
-        sparkle:version="1.49.0.3"
+        url="https://github.com/OpenEmu/Nestopia-Core/releases/download/v1.49.0.4/Nestopia_1.49.0.4.zip"
+        sparkle:version="1.49.0.4"
         type="application/octet-stream"
-        length="766490"
+        length="737693"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
