@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
   <channel>
-    <title>DeSmuME</title>
-    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/desmume_appcast.xml</link>
+    <title>dolphin</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/dolphin_appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>DeSmuME Version 0.9.11.3</title>
+      <title>dolphin Version 5.0.1</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/desmume/DeSmuME_0.9.11.3.html
+        http://openemu.org/category/releasenotes/dolphin/dolphin_5.0.1.html
       </sparkle:releaseNotesLink>
       <pubDate>Fri, 27 Dec 2019 19:36:15 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/DeSmuME-Core/releases/download/v0.9.11.3/DeSmuME_0.9.11.3.zip"
-        sparkle:version="0.9.11.3"
+        url="https://github.com/OpenEmu/dolphin/releases/download/v5.0.1/dolphin_5.0.1.zip"
+        sparkle:version="5.0.1"
         type="application/octet-stream"
-        length="885478"
+        length="8283163"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
     </item>

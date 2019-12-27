@@ -232,4 +232,15 @@
       <system id="openemu.system.gba">Game Boy Advance</system>
     </systems>
   </core>
+
+  <core
+    id="org.openemu.dolphin"
+    name="dolphin"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/dolphin_appcast.xml">
+
+    <description>GameCube emulator</description>
+    <systems>
+      <system id="openemu.system.gc">GameCube</system>
+    </systems>
+  </core>
 </cores>
