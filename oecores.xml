@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cores>
   <core
-    id="org.openemu.higan"
-    name="Higan"
-    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/higan_appcast.xml">
+    id="org.openemu.bsnes"
+    name="BSNES"
+    appcastURL="https://raw.github.com/OpenEmu/OpenEmu-Update/master/bsnes_appcast.xml">
 
-    <description>Higan emulator</description>
+    <description>BSNES emulator</description>
     <systems>
       <system id="openemu.system.snes">Super Nintendo (SNES)</system>
     </systems>
