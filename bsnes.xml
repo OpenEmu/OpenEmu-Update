@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0' xmlns:sparkle='http://www.andymatuschak.org/xml-namespaces/sparkle' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel>
+    <title>BSNES</title>
+    <link>https://raw.github.com/OpenEmu/OpenEmu-Update/master/bsnes_appcast.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+    <item>
+      <title>BSNES Version 114</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/category/releasenotes/bsnes/BSNES_114.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Thu, 23 Jan 2020 19:32:53 -0500</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/BSNES-Core/releases/download/v114/BSNES_114.zip"
+        sparkle:version="114"
+        type="application/octet-stream"
+        length="888301"
+      />
+      <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+    </item>
+  </channel>
+</rss>
