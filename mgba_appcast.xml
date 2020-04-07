@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>mGBA Version 0.7.3</title>
+      <title>mGBA Version 0.8.1</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/mgba/mGBA_0.7.3.html
+        http://openemu.org/category/releasenotes/mgba/mGBA_0.8.1.html
       </sparkle:releaseNotesLink>
-      <pubDate>Mon, 21 Oct 2019 19:30:09 -0500</pubDate>
+      <pubDate>Tue, 7 Apr 2020 19:30:09 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/mGBA-Core/releases/download/v0.7.3/mGBA_0.7.3.zip"
-        sparkle:version="0.7.3"
+        url="https://github.com/OpenEmu/mGBA-Core/releases/download/v0.8.1/mGBA_0.8.1.zip"
+        sparkle:version="0.8.1"
         type="application/octet-stream"
-        length="203453"
+        length="238967"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
