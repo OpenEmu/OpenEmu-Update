@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>BSNES Version 114</title>
+      <title>BSNES Version 115</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/bsnes/BSNES_114.html
+        http://openemu.org/category/releasenotes/bsnes/BSNES_115.html
       </sparkle:releaseNotesLink>
-      <pubDate>Thu, 23 Jan 2020 19:32:53 -0500</pubDate>
+      <pubDate>Mon, 4 May 2020 19:32:53 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/BSNES-Core/releases/download/v114/BSNES_114.zip"
-        sparkle:version="114"
+        url="https://github.com/OpenEmu/BSNES-Core/releases/download/v115/BSNES_115.zip"
+        sparkle:version="115"
         type="application/octet-stream"
-        length="888301"
+        length="889020"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
     </item>
