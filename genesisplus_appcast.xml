@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>GenesisPlus Version 1.7.4.11</title>
+      <title>GenesisPlus Version 1.7.4.12</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/genesisplus/GenesisPlus_1.7.4.11.html
+        http://openemu.org/category/releasenotes/genesisplus/GenesisPlus_1.7.4.12.html
       </sparkle:releaseNotesLink>
-      <pubDate>Wed, 23 Oct 2019 19:38:18 -0500</pubDate>
+      <pubDate>Wed, 19 Aug 2020 19:38:18 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.11/GenesisPlus_1.7.4.11.zip"
-        sparkle:version="1.7.4.11"
+        url="https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.12/GenesisPlus_1.7.4.12.zip"
+        sparkle:version="1.7.4.12"
         type="application/octet-stream"
-        length="606830"
+        length="572485"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
