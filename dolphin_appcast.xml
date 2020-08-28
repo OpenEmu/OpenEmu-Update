@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>dolphin Version 5.0.2</title>
+      <title>dolphin Version 5.0.4</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/dolphin/dolphin_5.0.2.html
+        http://openemu.org/category/releasenotes/dolphin/dolphin_5.0.4.html
       </sparkle:releaseNotesLink>
-      <pubDate>Thu, 23 Jan 2020 19:36:15 -0500</pubDate>
+      <pubDate>Fri, 28 Aug 2020 19:36:15 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/dolphin/releases/download/v5.0.2/dolphin_5.0.2.zip"
-        sparkle:version="5.0.2"
+        url="https://github.com/OpenEmu/dolphin/releases/download/v5.0.4/dolphin_5.0.4.zip"
+        sparkle:version="5.0.4"
         type="application/octet-stream"
-        length="8533878"
+        length="9381030"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
     </item>
