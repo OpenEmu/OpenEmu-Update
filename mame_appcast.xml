@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>MAME Version 0.219</title>
+      <title>MAME Version 0.225</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/mame/MAME_0.219.html
+        http://openemu.org/category/releasenotes/mame/MAME_0.225.html
       </sparkle:releaseNotesLink>
-      <pubDate>Thu, 2 Apr 2020 19:32:53 -0500</pubDate>
+      <pubDate>Mon, 5 Oct 2020 19:32:53 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/UME-Core/releases/download/v0.219/MAME_0.219.zip"
-        sparkle:version="0.219.0"
+        url="https://github.com/OpenEmu/UME-Core/releases/download/v0.225/MAME_0.225.zip"
+        sparkle:version="0.225.0"
         type="application/octet-stream"
-        length="60582098"
+        length="63147417"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
     </item>
