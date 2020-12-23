@@ -14,9 +14,9 @@
       <enclosure
         url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.3/OpenEmu_2.3-experimental.zip"
         sparkle:version="2.3"
-        sparkle:dsaSignature="MCwCFC0Luuaz/AsG184QolU9B0BPG8DTAhQsqViDc5PdWopsGTsK09kFhpV0BQ=="
+        sparkle:dsaSignature="MC0CFQCavXVYuykEQ80P1BW50Xo/e3W2fwIUDbaBb1T/RTWFdYWi6rHZ/szelOM="
         type="application/octet-stream"
-        length="36214710"
+        length="34475158"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
       <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
