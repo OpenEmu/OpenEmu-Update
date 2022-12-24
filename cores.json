@@ -1,0 +1,462 @@
+[
+  {
+    "id" : "org.openemu.atari800",
+    "releases" : [
+      {
+        "sha256" : "88295a9df0a77bd9a9d81e79a06f2719a040bef91f065429eba1ea7ef62a1d6e",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Atari800-Core/releases/download/v3.1.1/Atari800_3.1.1.zip",
+        "version" : "3.1.1"
+      }
+    ],
+    "name" : "Atari800",
+    "systems" : [
+      "openemu.system.5200"
+    ]
+  },
+  {
+    "id" : "org.openemu.bliss",
+    "releases" : [
+      {
+        "sha256" : "a5722fe6ba1522e1c6a65e2c73edcfdb5a53e97febae02d35fb6c18e65fa13b8",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Bliss-Core/releases/download/v2.1.2/Bliss_2.1.2.zip",
+        "version" : "2.1.2"
+      }
+    ],
+    "name" : "Bliss",
+    "systems" : [
+      "openemu.system.intellivision"
+    ]
+  },
+  {
+    "id" : "org.openemu.bsnes",
+    "releases" : [
+      {
+        "sha256" : "251f675f503faff0fcd233f5428d656ad4bcea330a4b73d4fc6e66b9e80490d6",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.14",
+        "url" : "https://github.com/OpenEmu/BSNES-Core/releases/download/v115/BSNES_115.zip",
+        "version" : "115"
+      }
+    ],
+    "name" : "BSNES",
+    "systems" : [
+      "openemu.system.snes"
+    ]
+  },
+  {
+    "id" : "org.openemu.crabemu",
+    "releases" : [
+      {
+        "sha256" : "e60f06701b0394b7d864121bcee6fa9d15d2040e9605c1bc4c08c73bced5cedc",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/CrabEmu-Core/releases/download/v0.2.1.269/CrabEmu_0.2.1.269.zip",
+        "version" : "0.2.1.269"
+      }
+    ],
+    "name" : "CrabEmu",
+    "systems" : [
+      "openemu.system.colecovision"
+    ]
+  },
+  {
+    "id" : "org.openemu.desmume",
+    "releases" : [
+      {
+        "sha256" : "6d381d6b041b8a7240f8ade10febdf07f81c221adcc88ff57a86e809151608bd",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.14",
+        "url" : "https://github.com/OpenEmu/DeSmuME-Core/releases/download/v0.9.11.3/DeSmuME_0.9.11.3.zip",
+        "version" : "0.9.11.3"
+      }
+    ],
+    "name" : "DeSmuME",
+    "systems" : [
+      "openemu.system.nds"
+    ]
+  },
+  {
+    "id" : "org.openemu.dolphin",
+    "releases" : [
+      {
+        "sha256" : "6792e4c872efc2fd8bbf8df7caf5ee9615414e6957b619c5e857d1fb953a80bd",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.14",
+        "url" : "https://github.com/OpenEmu/dolphin/releases/download/v5.0.4/dolphin_5.0.4.zip",
+        "version" : "5.0.4"
+      }
+    ],
+    "name" : "dolphin",
+    "systems" : [
+      "openemu.system.gc"
+    ]
+  },
+  {
+    "id" : "org.openemu.fceu",
+    "releases" : [
+      {
+        "sha256" : "34e4fb09846a8150880ee89c4ed7453dbfb3f9e30f1b2cea49f2fd52f7405ad5",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/FCEU-Core/releases/download/v2.2.3.2/FCEU_2.2.3.2.zip",
+        "version" : "2.2.3.2"
+      },
+      {
+        "sha256" : "e72f466ed2f1f6ea85cbd09081d2e6676a378818719b1497b0d6214a1d0c4070",
+        "architectures" : [
+          "x86_64",
+          "arm64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/FCEU-Core/releases/download/v2.6.3/FCEU_2.6.3.zip",
+        "version" : "2.6.3"
+      }
+    ],
+    "name" : "FCEU",
+    "systems" : [
+      "openemu.system.nes"
+    ]
+  },
+  {
+    "id" : "org.openemu.gambatte",
+    "releases" : [
+      {
+        "sha256" : "4a1d52032d9011ef89a69cc3d7d95e6a797eee4e122544e0bbd0c7d0b5c97bbf",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Gambatte-Core/releases/download/v0.5.0.689/Gambatte_0.5.0.689.zip",
+        "version" : "0.5.0.689"
+      }
+    ],
+    "name" : "Gambatte",
+    "systems" : [
+      "openemu.system.gb"
+    ]
+  },
+  {
+    "id" : "org.openemu.genesisplus",
+    "releases" : [
+      {
+        "sha256" : "386c1199b93733b7789979d719ecab0fed4ad01b25c7fde54ab88f8e9c907f38",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.14/GenesisPlus_1.7.4.14.zip",
+        "version" : "1.7.4.14"
+      },
+      {
+        "sha256" : "85cae5eee871e5bf77e65e2a0fccee40be5eda56f12586e7d0bc08aefafe7479",
+        "architectures" : [
+          "x86_64",
+          "arm64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.15/GenesisPlus_1.7.4.15.zip",
+        "version" : "1.7.4.15"
+      }
+    ],
+    "name" : "GenesisPlus",
+    "systems" : [
+      "openemu.system.sg",
+      "openemu.system.scd",
+      "openemu.system.sg1000",
+      "openemu.system.sms",
+      "openemu.system.gg"
+    ]
+  },
+  {
+    "id" : "org.openemu.higan",
+    "releases" : [
+      {
+        "sha256" : "11b0e95ee5f6735c92fece48fe9e3132c7977814ddb310d4b67bc36907a49d85",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Higan-Core/releases/download/v0.95.3/Higan_0.95.3.zip",
+        "version" : "0.95.3"
+      }
+    ],
+    "name" : "Higan",
+    "systems" : [
+      "openemu.system.snes"
+    ],
+    "deprecated" : true
+  },
+  {
+    "id" : "org.openemu.mednafen",
+    "releases" : [
+      {
+        "sha256" : "830f358152b2b9f0d89d43c81ebba2be3157f833602b13490bf7d1d66129d485",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Mednafen-Core/releases/download/v1.26.1/Mednafen_1.26.1.zip",
+        "version" : "1.26.1"
+      }
+    ],
+    "name" : "Mednafen",
+    "systems" : [
+      "openemu.system.lynx",
+      "openemu.system.ngp",
+      "openemu.system.pce",
+      "openemu.system.pcecd",
+      "openemu.system.pcfx",
+      "openemu.system.psx",
+      "openemu.system.saturn",
+      "openemu.system.vb",
+      "openemu.system.ws"
+    ]
+  },
+  {
+    "id" : "org.openemu.mgba",
+    "releases" : [
+      {
+        "sha256" : "3ec607002f6caab8edcf84dd7bc2de9958a263b86c3321124d0f05a2b0517b13",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/mGBA-Core/releases/download/v0.8.4/mGBA_0.8.4.zip",
+        "version" : "0.8.4"
+      },
+      {
+        "sha256" : "4677984ac2fade94850832af2f0be240a529fb6fc29270933e948b50319d11e5",
+        "architectures" : [
+          "x86_64",
+          "arm64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/mGBA-Core/releases/download/v0.10.0/mGBA_0.10.0.zip",
+        "version" : "0.10.0"
+      }
+    ],
+    "name" : "mGBA",
+    "systems" : [
+      "openemu.system.gba"
+    ]
+  },
+  {
+    "id" : "org.openemu.mupen64plus",
+    "releases" : [
+      {
+        "sha256" : "8e1982df8489f6d345b8f2c78610823e98d4bbf5020bb457aa2a620572d5e312",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Mupen64Plus-Core/releases/download/v2.5.9/Mupen64Plus_2.5.9.zip",
+        "version" : "2.5.9"
+      }
+    ],
+    "name" : "Mupen64Plus",
+    "systems" : [
+      "openemu.system.n64"
+    ]
+  },
+  {
+    "id" : "org.openemu.nestopia",
+    "releases" : [
+      {
+        "sha256" : "f40d2bde6c8fe511b4984f80546ef34e9c9b5ad7ce3b37dbd7f941137382b7b3",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Nestopia-Core/releases/download/v1.51.1/Nestopia_1.51.1.zip",
+        "version" : "1.51.1"
+      }
+    ],
+    "name" : "Nestopia",
+    "systems" : [
+      "openemu.system.fds",
+      "openemu.system.nes"
+    ]
+  },
+  {
+    "id" : "org.openemu.o2em",
+    "releases" : [
+      {
+        "sha256" : "cc6314a7b46d17130d1ee4c50a9ec3cb45827c8b4855bcfe7dacd27f6e2e55a9",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/O2EM-Core/releases/download/v1.18.1/O2EM_1.18.1.zip",
+        "version" : "1.18.1"
+      }
+    ],
+    "name" : "O2EM",
+    "systems" : [
+      "openemu.system.odyssey2"
+    ]
+  },
+  {
+    "id" : "org.openemu.picodrive",
+    "releases" : [
+      {
+        "sha256" : "f99dddf5a96f8806bf1c6ee085388d1cd970a17897af5cc7f756b627cd5efb8c",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/picodrive/releases/download/v1.93/Picodrive_1.93.zip",
+        "version" : "1.93"
+      }
+    ],
+    "name" : "Picodrive",
+    "systems" : [
+      "openemu.system.32x"
+    ]
+  },
+  {
+    "id" : "org.openemu.ppsspp",
+    "releases" : [
+      {
+        "sha256" : "0f53f093af6071df924ec42027ff3a4a61c90b10b25674787a13bc0cebaf15e2",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/PPSSPP-Core/releases/download/v1.10.3.1/PPSSPP_1.10.3.1.zip",
+        "version" : "1.10.3.1"
+      }
+    ],
+    "name" : "PPSSPP",
+    "systems" : [
+      "openemu.system.psp"
+    ]
+  },
+  {
+    "id" : "org.openemu.prosystem",
+    "releases" : [
+      {
+        "sha256" : "fda5504aa3ba7b046b60d5e857f095708e403ef7a3e58dc1d3ecc30251265734",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4.2/ProSystem_1.4.2.zip",
+        "version" : "1.4.2"
+      }
+    ],
+    "name" : "ProSystem",
+    "systems" : [
+      "openemu.system.7800"
+    ]
+  },
+  {
+    "id" : "org.openemu.snes9x",
+    "releases" : [
+      {
+        "sha256" : "e3260caecfe5c55fc7b6ea9f3cbd29a97ae28710f614d555727fbe1f5b4d85f4",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.60/SNES9x_1.60.zip",
+        "version" : "1.60"
+      },
+      {
+        "sha256" : "ae5160f38257c8c99490642ca9fdfbf2d3acca29291cdbbda80d50662e0bf0c0",
+        "architectures" : [
+          "x86_64",
+          "arm64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.61/SNES9x_1.61.zip",
+        "version" : "1.61"
+      }
+    ],
+    "name" : "SNES9x",
+    "systems" : [
+      "openemu.system.snes"
+    ]
+  },
+  {
+    "id" : "org.openemu.stella",
+    "releases" : [
+      {
+        "sha256" : "401153bb6783c9f050c7ad3344c179bdd0954884b0b1ae6a10624f95bd8fd771",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/Stella-Core/releases/download/v3.9.3.3/Stella_3.9.3.3.zip",
+        "version" : "3.9.3.3"
+      }
+    ],
+    "name" : "Stella",
+    "systems" : [
+      "openemu.system.2600"
+    ]
+  },
+  {
+    "id" : "org.openemu.vecxgl",
+    "releases" : [
+      {
+        "sha256" : "27ad5a344ccfc3f8d7c5c630b7974306be142b2a805cca348de74c85a712a4d7",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.11",
+        "url" : "https://github.com/OpenEmu/VecXGL-Core/releases/download/v1.2.2/VecXGL_1.2.2.zip",
+        "version" : "1.2.2"
+      }
+    ],
+    "name" : "VecXGL",
+    "systems" : [
+      "openemu.system.vectrex"
+    ]
+  },
+  {
+    "id" : "org.openemu.mame",
+    "releases" : [
+      {
+        "sha256" : "7e97d79f33f2b8d848321aaba395f05a0c1eb4b316b825ae4654ac14c5ba7866",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.14",
+        "url" : "https://github.com/OpenEmu/UME-Core/releases/download/v0.235/MAME_0.235.zip",
+        "version" : "0.235.0"
+      },
+      {
+        "sha256" : "2c0d8de8aca283c31112f9fca76bcab45100b420ba3a7e705a74fa7a0e5980da",
+        "architectures" : [
+          "x86_64"
+        ],
+        "minimumSystemVersion" : "10.15",
+        "url" : "https://github.com/OpenEmu/UME-Core/releases/download/v0.250.0.1/MAME_0.250.0.1.zip",
+        "version" : "0.250.0.1"
+      }
+    ],
+    "name" : "MAME",
+    "systems" : [
+      "openemu.system.arcade"
+    ],
+    "experimental" : true
+  }
+]
