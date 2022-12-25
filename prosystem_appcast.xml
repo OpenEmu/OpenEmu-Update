@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>ProSystem Version 1.4.2</title>
+      <title>ProSystem Version 1.5.1</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/prosystem/ProSystem_1.4.2.html
+        http://openemu.org/category/releasenotes/prosystem/ProSystem_1.5.1.html
       </sparkle:releaseNotesLink>
-      <pubDate>Mon, 21 Dec 2020 19:32:53 -0500</pubDate>
+      <pubDate>Sat, 24 Dec 2022 19:32:53 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4.2/ProSystem_1.4.2.zip"
-        sparkle:version="1.4.2"
+        url="https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.5.1/ProSystem_1.5.1.zip"
+        sparkle:version="1.5.1"
         type="application/octet-stream"
-        length="72020"
+        length="82604"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
