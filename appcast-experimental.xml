@@ -21,5 +21,21 @@
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
       <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
     </item>
+    <item>
+      <title>OpenEmu Version 2.0.9.1</title>
+      <sparkle:releaseNotesLink>
+        http://openemu.org/rnotes/2.0.9.html
+      </sparkle:releaseNotesLink>
+      <pubDate>Sat, 22 Jun 2019 12:19:50 -0600</pubDate>
+      <enclosure
+        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.0.9.1/OpenEmu_2.0.9.1-experimental.zip"
+        sparkle:version="2.0.9.1"
+        sparkle:dsaSignature="MCwCFCyrfL1qUWEWqRnC/qsiSqJQku4/AhQ36r0Cb06jORwJK/SVxo9k3vhh8Q=="
+        type="application/octet-stream"
+        length="43983306"
+      />
+      <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+      <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
+    </item>
   </channel>
 </rss>
