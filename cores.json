@@ -111,15 +111,6 @@
     "id" : "org.openemu.fceu",
     "releases" : [
       {
-        "sha256" : "34e4fb09846a8150880ee89c4ed7453dbfb3f9e30f1b2cea49f2fd52f7405ad5",
-        "architectures" : [
-          "x86_64"
-        ],
-        "minimumSystemVersion" : "10.11",
-        "url" : "https://github.com/OpenEmu/FCEU-Core/releases/download/v2.2.3.2/FCEU_2.2.3.2.zip",
-        "version" : "2.2.3.2"
-      },
-      {
         "sha256" : "e72f466ed2f1f6ea85cbd09081d2e6676a378818719b1497b0d6214a1d0c4070",
         "architectures" : [
           "x86_64",
@@ -157,15 +148,6 @@
     "id" : "org.openemu.genesisplus",
     "releases" : [
       {
-        "sha256" : "386c1199b93733b7789979d719ecab0fed4ad01b25c7fde54ab88f8e9c907f38",
-        "architectures" : [
-          "x86_64"
-        ],
-        "minimumSystemVersion" : "10.11",
-        "url" : "https://github.com/OpenEmu/GenesisPlus-Core/releases/download/v1.7.4.14/GenesisPlus_1.7.4.14.zip",
-        "version" : "1.7.4.14"
-      },
-      {
         "sha256" : "85cae5eee871e5bf77e65e2a0fccee40be5eda56f12586e7d0bc08aefafe7479",
         "architectures" : [
           "x86_64",
@@ -202,7 +184,7 @@
     "systems" : [
       "openemu.system.snes"
     ],
-    "deprecated" : true
+    "hidden" : true
   },
   {
     "id" : "org.openemu.mednafen",
@@ -353,13 +335,14 @@
     "id" : "org.openemu.prosystem",
     "releases" : [
       {
-        "sha256" : "fda5504aa3ba7b046b60d5e857f095708e403ef7a3e58dc1d3ecc30251265734",
+        "sha256" : "84ab559d7bff9ccaef029ceefdbf09da4b7d45457b92d4325ce530a278741266",
         "architectures" : [
-          "x86_64"
+          "x86_64",
+          "arm64"
         ],
         "minimumSystemVersion" : "10.11",
-        "url" : "https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.4.2/ProSystem_1.4.2.zip",
-        "version" : "1.4.2"
+        "url" : "https://github.com/OpenEmu/ProSystem-Core/releases/download/v1.5.1/ProSystem_1.5.1.zip",
+        "version" : "1.5.1"
       }
     ],
     "name" : "ProSystem",
@@ -370,15 +353,6 @@
   {
     "id" : "org.openemu.snes9x",
     "releases" : [
-      {
-        "sha256" : "e3260caecfe5c55fc7b6ea9f3cbd29a97ae28710f614d555727fbe1f5b4d85f4",
-        "architectures" : [
-          "x86_64"
-        ],
-        "minimumSystemVersion" : "10.11",
-        "url" : "https://github.com/OpenEmu/SNES9x-Core/releases/download/v1.60/SNES9x_1.60.zip",
-        "version" : "1.60"
-      },
       {
         "sha256" : "ae5160f38257c8c99490642ca9fdfbf2d3acca29291cdbbda80d50662e0bf0c0",
         "architectures" : [
@@ -434,15 +408,6 @@
   {
     "id" : "org.openemu.mame",
     "releases" : [
-      {
-        "sha256" : "7e97d79f33f2b8d848321aaba395f05a0c1eb4b316b825ae4654ac14c5ba7866",
-        "architectures" : [
-          "x86_64"
-        ],
-        "minimumSystemVersion" : "10.14",
-        "url" : "https://github.com/OpenEmu/UME-Core/releases/download/v0.235/MAME_0.235.zip",
-        "version" : "0.235.0"
-      },
       {
         "sha256" : "2c0d8de8aca283c31112f9fca76bcab45100b420ba3a7e705a74fa7a0e5980da",
         "architectures" : [
