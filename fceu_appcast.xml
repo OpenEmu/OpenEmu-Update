@@ -6,16 +6,16 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>FCEU Version 2.6.5</title>
+      <title>FCEU Version 2.6.6</title>
       <sparkle:releaseNotesLink>
-        http://openemu.org/category/releasenotes/fceu/FCEU_2.6.5.html
+        http://openemu.org/category/releasenotes/fceu/FCEU_2.6.6.html
       </sparkle:releaseNotesLink>
-      <pubDate>Thu, 22 Jun 2023 19:43:50 -0500</pubDate>
+      <pubDate>Mon, 16 Oct 2023 19:43:50 -0500</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/FCEU-Core/releases/download/v2.6.5/FCEU_2.6.5.zip"
-        sparkle:version="2.6.5"
+        url="https://github.com/OpenEmu/FCEU-Core/releases/download/v2.6.6/FCEU_2.6.6.zip"
+        sparkle:version="2.6.6"
         type="application/octet-stream"
-        length="810232"
+        length="816918"
       />
       <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
     </item>
