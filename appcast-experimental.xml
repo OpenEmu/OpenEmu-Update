@@ -6,18 +6,18 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>OpenEmu Version 2.4</title>
+      <title>OpenEmu Version 2.4.1</title>
       <sparkle:releaseNotesLink>
-        https://openemu.org/rnotes/2.4.html
+        https://openemu.org/rnotes/2.4.1.html
       </sparkle:releaseNotesLink>
-      <pubDate>Fri, 29 Dec 2023 12:19:50 -0600</pubDate>
+      <pubDate>Sat, 30 Dec 2023 12:19:50 -0600</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.4/OpenEmu_2.4-experimental.zip"
-        sparkle:version="2.4"
-        sparkle:dsaSignature="MCwCFCJbFHHGMNnQq80SOPtMqCVLnsW6AhQKfVY8boksSWpJm8ZuXDX8K3evLQ=="
-        sparkle:edSignature="EqMnLl1hClGWxucc4GUKGgGrS91GtDRK3wKD5+61AiI6/r9yG/BAwKPnzZhcclsGPUiNaTo8esiuf4X5A6AyBA=="
+        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.4.1/OpenEmu_2.4.1-experimental.zip"
+        sparkle:version="2.4.1"
+        sparkle:dsaSignature="MC4CFQCAIk+7G0M2qAHYsOJ9ENs25O0UggIVAJPmKXxQvkIYtex2rNib69a507dn"
+        sparkle:edSignature="YZe0QvDuGAr3mruiOljFJuY2jxwb2b1eOGExrtKQ1Vm9xam9ACNYuGCLuTO41TBa7jO4OiHTp3ouC6U4DXVqAg=="
         type="application/octet-stream"
-        length="41252079"
+        length="39560663"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
       <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
