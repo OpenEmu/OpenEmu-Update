@@ -6,17 +6,18 @@
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
-      <title>OpenEmu Version 2.3.3</title>
+      <title>OpenEmu Version 2.4</title>
       <sparkle:releaseNotesLink>
-        https://openemu.org/rnotes/2.3.3.html
+        https://openemu.org/rnotes/2.4.html
       </sparkle:releaseNotesLink>
-      <pubDate>Fri, 8 Jan 2021 12:19:50 -0600</pubDate>
+      <pubDate>Fri, 29 Dec 2023 12:19:50 -0600</pubDate>
       <enclosure
-        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.3.3/OpenEmu_2.3.3-experimental.zip"
-        sparkle:version="2.3.3"
-        sparkle:dsaSignature="MC0CFDEUb6OYnsygtIVUMQiU9R0KF4PJAhUAlXMXMa838aiS6lgEbFNE8gm4nOk="
+        url="https://github.com/OpenEmu/OpenEmu/releases/download/v2.4/OpenEmu_2.4-experimental.zip"
+        sparkle:version="2.4"
+        sparkle:dsaSignature="MCwCFCJbFHHGMNnQq80SOPtMqCVLnsW6AhQKfVY8boksSWpJm8ZuXDX8K3evLQ=="
+        sparkle:edSignature="EqMnLl1hClGWxucc4GUKGgGrS91GtDRK3wKD5+61AiI6/r9yG/BAwKPnzZhcclsGPUiNaTo8esiuf4X5A6AyBA=="
         type="application/octet-stream"
-        length="34510740"
+        length="41252079"
       />
       <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
       <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags>
