@@ -62,6 +62,25 @@
         </images>
     </game>
     <system id="openemu.system.2600">
+            <game
+            name      = "Beer Mania"
+            system    = "openemu.system.2600"
+            developer = "Petros Demetrakopoulos"
+            website   = "https://github.com/petrosDemetrakopoulos/beer-mania"
+            file      = "https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Beer%20Mania/beer_mania.a26"
+            released  = "1652545580"
+            added     = "1652545580"
+            md5       = "3be484c95074b675b854d4723ff7353e"
+            >
+            <description>Just a guy trying to drink as much beer as possible.
+            </description>
+            <images>
+             <image type="title"  src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Beer%20Mania/1.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Beer%20Mania/2.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Beer%20Mania/3.png"></image>
+                <image type="ingame" src="https://raw.githubusercontent.com/OpenEmu/OpenEmu-Update/master/Homebrew/2600/Beer%20Mania/1.png"></image>
+            </images>
+        </game>
         <game
             name      = "Blinky Goes Up"
             system    = "openemu.system.2600"
